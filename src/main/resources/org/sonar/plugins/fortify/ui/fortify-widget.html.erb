@@ -33,7 +33,10 @@
                fortify_name=context_hash['name']
                fortify_version=context_hash['version']
             %>
+            <%# OLD URL
             <a href="<%= ssc_url -%>/flex/index.jsp?projectName=<%= u fortify_name -%>&projectVersionName=<%= u fortify_version -%>" class="action"><%= message('fortify.widget.openReport') -%></a>
+            %>
+            <a href="http://www.hpfod.com/" class="action"><%= message('fortify.widget.openReport') -%></a>
           </p>
         </div>
       </td>
@@ -59,12 +62,12 @@
             </td>
             <td align="center" valign="middle" style="font-weight: bold; color: rgb(255, 255, 255); border: thin solid rgb(128, 128, 128); background-color: rgb(255, 140, 0);">
               <div class="fortify-inner">
-                <%= format_measure('fortify-cfpo') -%>
+                <%= format_measure('fortify-hfpo') -%>
               </div>
             </td>
             <td align="center" valign="middle" style="font-weight: bold; color: rgb(255, 255, 255); border: thin solid rgb(128, 128, 128); background-color: red;">
               <div class="fortify-inner">
-                <%= format_measure('fortify-hfpo') -%>
+                <%= format_measure('fortify-cfpo') -%>
               </div>
             </td>
           </tr>
