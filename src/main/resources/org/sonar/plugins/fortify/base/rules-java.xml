@@ -300,6 +300,10 @@
           <rule>
             <key>unreleased_resource</key><priority>MAJOR</priority><configKey>Unreleased Resource: Streams</configKey>
           </rule>
+          
+          <rule>
+            <key>unreleased_resource_database</key><priority>MAJOR</priority><configKey>Unreleased Resource: Database</configKey>
+          </rule>
         
           <rule>
             <key>unreleased_resource_synchronization</key><priority>MAJOR</priority><configKey>Unreleased Resource: Synchronization</configKey>
