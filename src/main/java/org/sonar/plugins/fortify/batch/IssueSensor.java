@@ -20,8 +20,6 @@
 package org.sonar.plugins.fortify.batch;
 
 import com.google.common.annotations.VisibleForTesting;
-
-import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.sonar.api.batch.Sensor;
 import org.sonar.api.batch.SensorContext;
@@ -46,8 +44,6 @@ public class IssueSensor implements Sensor {
   private final FortifyProject fortifyProject;
   private final RulesProfile profile;
   private ResourceMatcher resourceMatcher;
-  
-  public static final Logger LOG = LoggerFactory.getLogger(IssueSensor.class);
 
   public IssueSensor(FortifyClient client, FortifyProject fortifyProject, RulesProfile profile) {
     this(client, fortifyProject, profile, new ResourceMatcher());
@@ -72,23 +68,17 @@ public class IssueSensor implements Sensor {
     // TODO optimization : load only the issues on enabled rules -> that would prevent from requesting details on issues to be ignored.
     // But that's not possible through Fortify SOAP services
     Collection<IssueWrapper> issues = client.getIssues(fortifyProject.getVersionId());
-    LOG.info("Loading " + issues.size() + " Fortify issues");
+    LoggerFactory.getLogger(IssueSensor.class).info("Loading " + issues.size() + " Fortify issues");
     for (IssueWrapper issue : issues) {
-      LOG.debug("Found issue " + issue.getRuleConfigKey() + " for file " + issue.getFilePath());
       ActiveRule activeRule = profile.getActiveRuleByConfigKey(repositoryKey, issue.getRuleConfigKey());
       if (activeRule != null) {
-        Resource<?> resource = resourceMatcher.resourceOf(issue, project.getFileSystem());
-        if(resource != null) {
-          sensorContext.index(resource);
+        Resource resource = resourceMatcher.resourceOf(issue, project.getFileSystem());
+        if (sensorContext.isIndexed(resource, false)) {
           Violation violation = Violation.create(activeRule, resource);
           violation.setLineId(issue.getLine());
           violation.setMessage(issue.getTextAbstract());
           sensorContext.saveViolation(violation);
-        } else {
-        	LOG.debug("Unable to find file, skipping issue");
         }
-      } else {
-        LOG.debug("Rule not found, skipping issue");
       }
     }
 
@@ -101,7 +91,7 @@ public class IssueSensor implements Sensor {
 
 
   static class ResourceMatcher {
-    Resource<?> resourceOf(IssueWrapper issue, ProjectFileSystem fileSystem) {
+    Resource resourceOf(IssueWrapper issue, ProjectFileSystem fileSystem) {
       // hack for java... still have to be fixed in sonar core
       java.io.File file = new java.io.File(fileSystem.getBasedir(), issue.getFilePath());
       if (Java.isJavaFile(file)) {

@@ -110,7 +110,6 @@ public class IssueSensorTest {
     FortifyProject fortifyProject = mock(FortifyProject.class);
     when(fortifyProject.getVersionId()).thenReturn(3L);
     IssueSensor.ResourceMatcher resourceMatcher = mock(IssueSensor.ResourceMatcher.class, Mockito.withSettings().defaultAnswer(Mockito.RETURNS_SMART_NULLS));
-    when(resourceMatcher.resourceOf(any(IssueWrapper.class), any(ProjectFileSystem.class))).thenReturn(mock(Resource.class));
     IssueSensor sensor = new IssueSensor(client, fortifyProject, profile, resourceMatcher);
     SensorContext context = mock(SensorContext.class);
     when(context.isIndexed(any(Resource.class), eq(false))).thenReturn(true);
@@ -121,7 +120,7 @@ public class IssueSensorTest {
     verify(context).saveViolation(argThat(new ViolationMatcher("SQL Injection", 50, "another message")));
   }
 
-  //@Test
+  @Test
   public void should_not_create_violations_on_unknown_files() {
     RulesProfile profile = new RulesProfile();
     profile.activateRule(Rule.create("fortify-java", "SQL Injection").setConfigKey("SQL"), RulePriority.MAJOR);
@@ -133,7 +132,6 @@ public class IssueSensorTest {
     FortifyProject fortifyProject = mock(FortifyProject.class);
     when(fortifyProject.getVersionId()).thenReturn(3L);
     IssueSensor.ResourceMatcher resourceMatcher = mock(IssueSensor.ResourceMatcher.class, Mockito.withSettings().defaultAnswer(Mockito.RETURNS_SMART_NULLS));
-    when(resourceMatcher.resourceOf(any(IssueWrapper.class), any(ProjectFileSystem.class))).thenReturn(mock(Resource.class));
     IssueSensor sensor = new IssueSensor(client, fortifyProject, profile, resourceMatcher);
     SensorContext context = mock(SensorContext.class);
 
