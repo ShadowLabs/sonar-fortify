@@ -20,6 +20,7 @@
 package org.sonar.plugins.fortify.batch;
 
 import com.google.common.annotations.VisibleForTesting;
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.LoggerFactory;
 import org.sonar.api.batch.Sensor;
 import org.sonar.api.batch.SensorContext;
@@ -93,11 +94,45 @@ public class IssueSensor implements Sensor {
   static class ResourceMatcher {
     Resource resourceOf(IssueWrapper issue, ProjectFileSystem fileSystem) {
       // hack for java... still have to be fixed in sonar core
-      java.io.File file = new java.io.File(fileSystem.getBasedir(), issue.getFilePath());
+      java.io.File file = getFile(fileSystem.getBasedir(), issue.getFilePath());
       if (Java.isJavaFile(file)) {
         return new JavaFile(issue.getPackageName(), issue.getClassName());
       }
       return File.fromIOFile(file, fileSystem.getSourceDirs());
+    }
+    
+	/**
+	 * Checks for overlap between the baseDir and the relativePath, and
+	 * combines them removing duplicated folders
+	 * 
+	 * @param baseDir The absolute base path
+	 * @param filePath the relative path to the file
+	 * @return the combined path with any duplicate folders removed
+	 */
+    @VisibleForTesting
+    java.io.File getFile(java.io.File baseDir, String filePath) {
+      String childPath = StringUtils.stripStart(filePath, "/");
+      
+      String reverseBasePath = StringUtils.reverseDelimited(baseDir.getPath(), java.io.File.separatorChar);
+      if(java.io.File.separatorChar != '/') {
+        reverseBasePath = reverseBasePath.replace(java.io.File.separatorChar, '/');
+      }
+      reverseBasePath = StringUtils.stripStart(reverseBasePath, "/");
+
+      // find the overlap and remove it from the childPath
+      int indexOfDiff = StringUtils.indexOfDifference(reverseBasePath,
+          childPath);
+      if (indexOfDiff > 0) {
+        while (indexOfDiff > 0) {
+          if (childPath.charAt(indexOfDiff) == '/') {
+            break;
+          }
+          indexOfDiff--;
+        }
+        childPath = childPath.substring(indexOfDiff);
+      }
+      
+      return new java.io.File(baseDir, childPath);
     }
   }
 }

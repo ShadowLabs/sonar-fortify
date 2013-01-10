@@ -20,6 +20,7 @@
 package org.sonar.plugins.fortify.batch;
 
 import com.google.common.collect.Lists;
+
 import org.hamcrest.BaseMatcher;
 import org.hamcrest.Description;
 import org.junit.Test;
@@ -153,6 +154,26 @@ public class IssueSensorTest {
     assertThat(resource).isInstanceOf(JavaFile.class);
     assertThat(resource.getKey()).isEqualTo("foo.Hello");
     assertThat(((JavaFile) resource).getParent().getKey()).isEqualTo("foo");
+  }
+  
+  @Test
+  public void getFileWithoutOverlap() {
+	  File baseDir = new File("/home/user/src/");
+	  String filePath = "main/resources/settings.properties";
+	  File file = new IssueSensor.ResourceMatcher().getFile(baseDir, filePath);
+	  
+	  File expected = new File("/home/user/src/main/resources/settings.properties");
+	  assertThat(file).isEqualTo(expected);
+  }
+  
+  @Test
+  public void getFileWithOverlap() {
+	  File baseDir = new File("/home/user/src/");
+	  String filePath = "src/main/resources/settings.properties";
+	  File file = new IssueSensor.ResourceMatcher().getFile(baseDir, filePath);
+	  
+	  File expected = new File("/home/user/src/main/resources/settings.properties");
+	  assertThat(file).isEqualTo(expected);
   }
 
   static class ViolationMatcher extends BaseMatcher<Violation> {
