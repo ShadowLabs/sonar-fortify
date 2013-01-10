@@ -6,19 +6,19 @@
           </rule>
         
           <rule>
-            <key>directory_restriction</key><priority>MINOR</priority><configKey>Directory Restriction</configKey>
+            <key>directory_restriction</key><priority>MAJOR</priority><configKey>Directory Restriction</configKey>
           </rule>
         
           <rule>
-            <key>heap_inspection</key><priority>MINOR</priority><configKey>Heap Inspection</configKey>
+            <key>heap_inspection</key><priority>MAJOR</priority><configKey>Heap Inspection</configKey>
           </rule>
         
           <rule>
-            <key>heap_inspection_swappable_memory</key><priority>MINOR</priority><configKey>Heap Inspection: Swappable Memory</configKey>
+            <key>heap_inspection_swappable_memory</key><priority>MAJOR</priority><configKey>Heap Inspection: Swappable Memory</configKey>
           </rule>
         
           <rule>
-            <key>missing_check_against_null</key><priority>MINOR</priority><configKey>Missing Check against Null</configKey>
+            <key>missing_check_against_null</key><priority>MAJOR</priority><configKey>Missing Check against Null</configKey>
           </rule>
         
           <rule>
@@ -74,7 +74,7 @@
           </rule>
         
           <rule>
-            <key>unchecked_return_value</key><priority>MINOR</priority><configKey>Unchecked Return Value</configKey>
+            <key>unchecked_return_value</key><priority>MAJOR</priority><configKey>Unchecked Return Value</configKey>
           </rule>
         
           <rule>
@@ -82,7 +82,7 @@
           </rule>
         
           <rule>
-            <key>code_correctness_function_not_invoked</key><priority>CRITICAL</priority><configKey>Code Correctness: Function Not Invoked</configKey>
+            <key>code_correctness_function_not_invoked</key><priority>MAJOR</priority><configKey>Code Correctness: Function Not Invoked</configKey>
           </rule>
         
           <rule>
@@ -90,19 +90,19 @@
           </rule>
         
           <rule>
-            <key>code_correctness_macro_misuse</key><priority>MINOR</priority><configKey>Code Correctness: Macro Misuse</configKey>
+            <key>code_correctness_macro_misuse</key><priority>MAJOR</priority><configKey>Code Correctness: Macro Misuse</configKey>
           </rule>
         
           <rule>
-            <key>code_correctness_memory_free_on_stack_variable</key><priority>MINOR</priority><configKey>Code Correctness: Memory Free on Stack Variable</configKey>
+            <key>code_correctness_memory_free_on_stack_variable</key><priority>MAJOR</priority><configKey>Code Correctness: Memory Free on Stack Variable</configKey>
           </rule>
         
           <rule>
-            <key>code_correctness_premature_thread_termination</key><priority>MINOR</priority><configKey>Code Correctness: Premature Thread Termination</configKey>
+            <key>code_correctness_premature_thread_termination</key><priority>MAJOR</priority><configKey>Code Correctness: Premature Thread Termination</configKey>
           </rule>
         
           <rule>
-            <key>dead_code</key><priority>MINOR</priority><configKey>Dead Code</configKey>
+            <key>dead_code</key><priority>MAJOR</priority><configKey>Dead Code</configKey>
           </rule>
         
           <rule>
@@ -118,11 +118,11 @@
           </rule>
         
           <rule>
-            <key>memory_leak</key><priority>CRITICAL</priority><configKey>Memory Leak</configKey>
+            <key>memory_leak</key><priority>MAJOR</priority><configKey>Memory Leak</configKey>
           </rule>
         
           <rule>
-            <key>memory_leak_reallocation</key><priority>MINOR</priority><configKey>Memory Leak: Reallocation</configKey>
+            <key>memory_leak_reallocation</key><priority>MAJOR</priority><configKey>Memory Leak: Reallocation</configKey>
           </rule>
         
           <rule>
@@ -130,27 +130,27 @@
           </rule>
         
           <rule>
-            <key>obsolete</key><priority>MINOR</priority><configKey>Obsolete</configKey>
+            <key>obsolete</key><priority>MAJOR</priority><configKey>Obsolete</configKey>
           </rule>
         
           <rule>
-            <key>obsolete_inadequate_pointer_validation</key><priority>MINOR</priority><configKey>Obsolete: Inadequate Pointer Validation</configKey>
+            <key>obsolete_inadequate_pointer_validation</key><priority>MAJOR</priority><configKey>Obsolete: Inadequate Pointer Validation</configKey>
           </rule>
         
           <rule>
-            <key>poor_style_redundant_initialization</key><priority>MINOR</priority><configKey>Poor Style: Redundant Initialization</configKey>
+            <key>poor_style_redundant_initialization</key><priority>MAJOR</priority><configKey>Poor Style: Redundant Initialization</configKey>
           </rule>
         
           <rule>
-            <key>poor_style_value_never_read</key><priority>MINOR</priority><configKey>Poor Style: Value Never Read</configKey>
+            <key>poor_style_value_never_read</key><priority>MAJOR</priority><configKey>Poor Style: Value Never Read</configKey>
           </rule>
         
           <rule>
-            <key>poor_style_variable_never_used</key><priority>MINOR</priority><configKey>Poor Style: Variable Never Used</configKey>
+            <key>poor_style_variable_never_used</key><priority>MAJOR</priority><configKey>Poor Style: Variable Never Used</configKey>
           </rule>
         
           <rule>
-            <key>portability_flaw</key><priority>MINOR</priority><configKey>Portability Flaw</configKey>
+            <key>portability_flaw</key><priority>MAJOR</priority><configKey>Portability Flaw</configKey>
           </rule>
         
           <rule>
@@ -170,7 +170,7 @@
           </rule>
         
           <rule>
-            <key>undefined_behavior</key><priority>MINOR</priority><configKey>Undefined Behavior</configKey>
+            <key>undefined_behavior</key><priority>MAJOR</priority><configKey>Undefined Behavior</configKey>
           </rule>
         
           <rule>
@@ -178,11 +178,11 @@
           </rule>
         
           <rule>
-            <key>uninitialized_variable</key><priority>MINOR</priority><configKey>Uninitialized Variable</configKey>
+            <key>uninitialized_variable</key><priority>MAJOR</priority><configKey>Uninitialized Variable</configKey>
           </rule>
         
           <rule>
-            <key>unreleased_resource</key><priority>BLOCKER</priority><configKey>Unreleased Resource</configKey>
+            <key>unreleased_resource</key><priority>MAJOR</priority><configKey>Unreleased Resource</configKey>
           </rule>
         
           <rule>
@@ -194,23 +194,23 @@
           </rule>
         
           <rule>
-            <key>system_information_leak</key><priority>MINOR</priority><configKey>System Information Leak</configKey>
+            <key>system_information_leak</key><priority>MAJOR</priority><configKey>System Information Leak</configKey>
           </rule>
         
           <rule>
-            <key>insecure_compiler_optimization</key><priority>MINOR</priority><configKey>Insecure Compiler Optimization</configKey>
+            <key>insecure_compiler_optimization</key><priority>MAJOR</priority><configKey>Insecure Compiler Optimization</configKey>
           </rule>
         
           <rule>
-            <key>insecure_compiler_optimization_pointer_arithmetic</key><priority>MINOR</priority><configKey>Insecure Compiler Optimization: Pointer Arithmetic</configKey>
+            <key>insecure_compiler_optimization_pointer_arithmetic</key><priority>MAJOR</priority><configKey>Insecure Compiler Optimization: Pointer Arithmetic</configKey>
           </rule>
         
           <rule>
-            <key>buffer_overflow</key><priority>BLOCKER</priority><configKey>Buffer Overflow</configKey>
+            <key>buffer_overflow</key><priority>MAJOR</priority><configKey>Buffer Overflow</configKey>
           </rule>
         
           <rule>
-            <key>buffer_overflow_format_string</key><priority>CRITICAL</priority><configKey>Buffer Overflow: Format String</configKey>
+            <key>buffer_overflow_format_string</key><priority>MAJOR</priority><configKey>Buffer Overflow: Format String</configKey>
           </rule>
         
           <rule>
@@ -226,15 +226,15 @@
           </rule>
         
           <rule>
-            <key>command_injection</key><priority>BLOCKER</priority><configKey>Command Injection</configKey>
+            <key>command_injection</key><priority>MAJOR</priority><configKey>Command Injection</configKey>
           </rule>
         
           <rule>
-            <key>denial_of_service</key><priority>MINOR</priority><configKey>Denial of Service</configKey>
+            <key>denial_of_service</key><priority>MAJOR</priority><configKey>Denial of Service</configKey>
           </rule>
         
           <rule>
-            <key>format_string</key><priority>CRITICAL</priority><configKey>Format String</configKey>
+            <key>format_string</key><priority>MAJOR</priority><configKey>Format String</configKey>
           </rule>
         
           <rule>
@@ -246,27 +246,27 @@
           </rule>
         
           <rule>
-            <key>ldap_injection</key><priority>CRITICAL</priority><configKey>LDAP Injection</configKey>
+            <key>ldap_injection</key><priority>MAJOR</priority><configKey>LDAP Injection</configKey>
           </rule>
         
           <rule>
-            <key>ldap_manipulation</key><priority>MINOR</priority><configKey>LDAP Manipulation</configKey>
+            <key>ldap_manipulation</key><priority>MAJOR</priority><configKey>LDAP Manipulation</configKey>
           </rule>
         
           <rule>
-            <key>log_forging</key><priority>MINOR</priority><configKey>Log Forging</configKey>
+            <key>log_forging</key><priority>MAJOR</priority><configKey>Log Forging</configKey>
           </rule>
         
           <rule>
-            <key>out_of_bounds_read</key><priority>MINOR</priority><configKey>Out-of-Bounds Read</configKey>
+            <key>out_of_bounds_read</key><priority>MAJOR</priority><configKey>Out-of-Bounds Read</configKey>
           </rule>
         
           <rule>
-            <key>out_of_bounds_read_off_by_one</key><priority>MINOR</priority><configKey>Out-of-Bounds Read: Off-by-One</configKey>
+            <key>out_of_bounds_read_off_by_one</key><priority>MAJOR</priority><configKey>Out-of-Bounds Read: Off-by-One</configKey>
           </rule>
         
           <rule>
-            <key>out_of_bounds_read_signed_comparison</key><priority>MINOR</priority><configKey>Out-of-Bounds Read: Signed Comparison</configKey>
+            <key>out_of_bounds_read_signed_comparison</key><priority>MAJOR</priority><configKey>Out-of-Bounds Read: Signed Comparison</configKey>
           </rule>
         
           <rule>
@@ -274,19 +274,19 @@
           </rule>
         
           <rule>
-            <key>process_control</key><priority>CRITICAL</priority><configKey>Process Control</configKey>
+            <key>process_control</key><priority>MAJOR</priority><configKey>Process Control</configKey>
           </rule>
         
           <rule>
-            <key>resource_injection</key><priority>MINOR</priority><configKey>Resource Injection</configKey>
+            <key>resource_injection</key><priority>MAJOR</priority><configKey>Resource Injection</configKey>
           </rule>
         
           <rule>
-            <key>sql_injection</key><priority>BLOCKER</priority><configKey>SQL Injection</configKey>
+            <key>sql_injection</key><priority>MAJOR</priority><configKey>SQL Injection</configKey>
           </rule>
         
           <rule>
-            <key>setting_manipulation</key><priority>MINOR</priority><configKey>Setting Manipulation</configKey>
+            <key>setting_manipulation</key><priority>MAJOR</priority><configKey>Setting Manipulation</configKey>
           </rule>
         
           <rule>
@@ -298,7 +298,7 @@
           </rule>
         
           <rule>
-            <key>unsafe_reflection</key><priority>MINOR</priority><configKey>Unsafe Reflection</configKey>
+            <key>unsafe_reflection</key><priority>MAJOR</priority><configKey>Unsafe Reflection</configKey>
           </rule>
         
           <rule>
@@ -306,11 +306,11 @@
           </rule>
         
           <rule>
-            <key>access_control_anonymous_ldap_bind</key><priority>MINOR</priority><configKey>Access Control: Anonymous LDAP Bind</configKey>
+            <key>access_control_anonymous_ldap_bind</key><priority>MAJOR</priority><configKey>Access Control: Anonymous LDAP Bind</configKey>
           </rule>
         
           <rule>
-            <key>access_control_database</key><priority>CRITICAL</priority><configKey>Access Control: Database</configKey>
+            <key>access_control_database</key><priority>MAJOR</priority><configKey>Access Control: Database</configKey>
           </rule>
         
           <rule>
@@ -318,7 +318,7 @@
           </rule>
         
           <rule>
-            <key>insecure_randomness</key><priority>CRITICAL</priority><configKey>Insecure Randomness</configKey>
+            <key>insecure_randomness</key><priority>MAJOR</priority><configKey>Insecure Randomness</configKey>
           </rule>
         
           <rule>
@@ -330,39 +330,39 @@
           </rule>
         
           <rule>
-            <key>password_management</key><priority>MINOR</priority><configKey>Password Management</configKey>
+            <key>password_management</key><priority>MAJOR</priority><configKey>Password Management</configKey>
           </rule>
         
           <rule>
-            <key>password_management_empty_password</key><priority>CRITICAL</priority><configKey>Password Management: Empty Password</configKey>
+            <key>password_management_empty_password</key><priority>MAJOR</priority><configKey>Password Management: Empty Password</configKey>
           </rule>
         
           <rule>
-            <key>password_management_hardcoded_password</key><priority>CRITICAL</priority><configKey>Password Management: Hardcoded Password</configKey>
+            <key>password_management_hardcoded_password</key><priority>MAJOR</priority><configKey>Password Management: Hardcoded Password</configKey>
           </rule>
         
           <rule>
-            <key>password_management_null_password</key><priority>MINOR</priority><configKey>Password Management: Null Password</configKey>
+            <key>password_management_null_password</key><priority>MAJOR</priority><configKey>Password Management: Null Password</configKey>
           </rule>
         
           <rule>
-            <key>password_management_password_in_comment</key><priority>MINOR</priority><configKey>Password Management: Password in Comment</configKey>
+            <key>password_management_password_in_comment</key><priority>MAJOR</priority><configKey>Password Management: Password in Comment</configKey>
           </rule>
         
           <rule>
-            <key>password_management_weak_cryptography</key><priority>MINOR</priority><configKey>Password Management: Weak Cryptography</configKey>
+            <key>password_management_weak_cryptography</key><priority>MAJOR</priority><configKey>Password Management: Weak Cryptography</configKey>
           </rule>
         
           <rule>
-            <key>privacy_violation</key><priority>CRITICAL</priority><configKey>Privacy Violation</configKey>
+            <key>privacy_violation</key><priority>MAJOR</priority><configKey>Privacy Violation</configKey>
           </rule>
         
           <rule>
-            <key>weak_cryptographic_hash</key><priority>MINOR</priority><configKey>Weak Cryptographic Hash</configKey>
+            <key>weak_cryptographic_hash</key><priority>MAJOR</priority><configKey>Weak Cryptographic Hash</configKey>
           </rule>
         
           <rule>
-            <key>weak_cryptographic_hash_hardcoded_salt</key><priority>MINOR</priority><configKey>Weak Cryptographic Hash: Hardcoded Salt</configKey>
+            <key>weak_cryptographic_hash_hardcoded_salt</key><priority>MAJOR</priority><configKey>Weak Cryptographic Hash: Hardcoded Salt</configKey>
           </rule>
         
           <rule>
@@ -370,7 +370,7 @@
           </rule>
         
           <rule>
-            <key>weak_encryption_inadequate_rsa_padding</key><priority>MINOR</priority><configKey>Weak Encryption: Inadequate RSA Padding</configKey>
+            <key>weak_encryption_inadequate_rsa_padding</key><priority>MAJOR</priority><configKey>Weak Encryption: Inadequate RSA Padding</configKey>
           </rule>
         
           <rule>
@@ -378,11 +378,11 @@
           </rule>
         
           <rule>
-            <key>code_correctness_erroneous_synchronization</key><priority>MINOR</priority><configKey>Code Correctness: Erroneous Synchronization</configKey>
+            <key>code_correctness_erroneous_synchronization</key><priority>MAJOR</priority><configKey>Code Correctness: Erroneous Synchronization</configKey>
           </rule>
         
           <rule>
-            <key>insecure_temporary_file</key><priority>MINOR</priority><configKey>Insecure Temporary File</configKey>
+            <key>insecure_temporary_file</key><priority>MAJOR</priority><configKey>Insecure Temporary File</configKey>
           </rule>
         
           <rule>
