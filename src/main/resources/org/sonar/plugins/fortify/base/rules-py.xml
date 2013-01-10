@@ -6,23 +6,23 @@
           </rule>
         
           <rule>
-            <key>html5_overly_permissive_cors_policy</key><priority>MAJOR</priority><configKey>HTML5: Overly Permissive CORS Policy</configKey>
+            <key>html5_overly_permissive_cors_policy</key><priority>MINOR</priority><configKey>HTML5: Overly Permissive CORS Policy</configKey>
           </rule>
         
           <rule>
-            <key>command_injection</key><priority>MAJOR</priority><configKey>Command Injection</configKey>
+            <key>command_injection</key><priority>BLOCKER</priority><configKey>Command Injection</configKey>
           </rule>
         
           <rule>
-            <key>cross_site_scripting_persistent</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Persistent</configKey>
+            <key>cross_site_scripting_persistent</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Persistent</configKey>
           </rule>
         
           <rule>
-            <key>cross_site_scripting_poor_validation</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Poor Validation</configKey>
+            <key>cross_site_scripting_poor_validation</key><priority>MINOR</priority><configKey>Cross-Site Scripting: Poor Validation</configKey>
           </rule>
         
           <rule>
-            <key>cross_site_scripting_reflected</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Reflected</configKey>
+            <key>cross_site_scripting_reflected</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Reflected</configKey>
           </rule>
         
           <rule>
@@ -30,7 +30,7 @@
           </rule>
         
           <rule>
-            <key>open_redirect</key><priority>MAJOR</priority><configKey>Open Redirect</configKey>
+            <key>open_redirect</key><priority>CRITICAL</priority><configKey>Open Redirect</configKey>
           </rule>
         
           <rule>
@@ -38,22 +38,22 @@
           </rule>
         
           <rule>
-            <key>resource_injection</key><priority>MAJOR</priority><configKey>Resource Injection</configKey>
+            <key>resource_injection</key><priority>MINOR</priority><configKey>Resource Injection</configKey>
           </rule>
         
           <rule>
-            <key>sql_injection</key><priority>MAJOR</priority><configKey>SQL Injection</configKey>
+            <key>sql_injection</key><priority>BLOCKER</priority><configKey>SQL Injection</configKey>
           </rule>
         
           <rule>
-            <key>insecure_randomness</key><priority>MAJOR</priority><configKey>Insecure Randomness</configKey>
+            <key>insecure_randomness</key><priority>CRITICAL</priority><configKey>Insecure Randomness</configKey>
           </rule>
         
           <rule>
-            <key>password_management_hardcoded_password</key><priority>MAJOR</priority><configKey>Password Management: Hardcoded Password</configKey>
+            <key>password_management_hardcoded_password</key><priority>CRITICAL</priority><configKey>Password Management: Hardcoded Password</configKey>
           </rule>
         
           <rule>
-            <key>password_management_password_in_comment</key><priority>MAJOR</priority><configKey>Password Management: Password in Comment</configKey>
+            <key>password_management_password_in_comment</key><priority>MINOR</priority><configKey>Password Management: Password in Comment</configKey>
           </rule>
         </rules>

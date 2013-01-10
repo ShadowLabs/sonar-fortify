@@ -2,7 +2,7 @@
         <!-- see names and descriptions in org/sonar/l10n/ -->
     
           <rule>
-            <key>cross_session_contamination</key><priority>MAJOR</priority><configKey>Cross-Session Contamination</configKey>
+            <key>cross_session_contamination</key><priority>MINOR</priority><configKey>Cross-Session Contamination</configKey>
           </rule>
         
           <rule>
@@ -10,23 +10,23 @@
           </rule>
         
           <rule>
-            <key>html5_overly_permissive_message_posting_policy</key><priority>MAJOR</priority><configKey>HTML5: Overly Permissive Message Posting Policy</configKey>
+            <key>html5_overly_permissive_message_posting_policy</key><priority>MINOR</priority><configKey>HTML5: Overly Permissive Message Posting Policy</configKey>
           </rule>
         
           <rule>
-            <key>javascript_hijacking_ad_hoc_ajax</key><priority>MAJOR</priority><configKey>JavaScript Hijacking: Ad Hoc Ajax</configKey>
+            <key>javascript_hijacking_ad_hoc_ajax</key><priority>MINOR</priority><configKey>JavaScript Hijacking: Ad Hoc Ajax</configKey>
           </rule>
         
           <rule>
-            <key>cross_site_scripting_dom</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: DOM</configKey>
+            <key>cross_site_scripting_dom</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: DOM</configKey>
           </rule>
         
           <rule>
-            <key>cross_site_scripting_poor_validation</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Poor Validation</configKey>
+            <key>cross_site_scripting_poor_validation</key><priority>MINOR</priority><configKey>Cross-Site Scripting: Poor Validation</configKey>
           </rule>
         
           <rule>
-            <key>denial_of_service</key><priority>MAJOR</priority><configKey>Denial of Service</configKey>
+            <key>denial_of_service</key><priority>MINOR</priority><configKey>Denial of Service</configKey>
           </rule>
         
           <rule>
@@ -38,7 +38,7 @@
           </rule>
         
           <rule>
-            <key>open_redirect</key><priority>MAJOR</priority><configKey>Open Redirect</configKey>
+            <key>open_redirect</key><priority>CRITICAL</priority><configKey>Open Redirect</configKey>
           </rule>
         
           <rule>
@@ -46,15 +46,15 @@
           </rule>
         
           <rule>
-            <key>resource_injection</key><priority>MAJOR</priority><configKey>Resource Injection</configKey>
+            <key>resource_injection</key><priority>MINOR</priority><configKey>Resource Injection</configKey>
           </rule>
         
           <rule>
-            <key>sql_injection</key><priority>MAJOR</priority><configKey>SQL Injection</configKey>
+            <key>sql_injection</key><priority>BLOCKER</priority><configKey>SQL Injection</configKey>
           </rule>
         
           <rule>
-            <key>access_control_database</key><priority>MAJOR</priority><configKey>Access Control: Database</configKey>
+            <key>access_control_database</key><priority>CRITICAL</priority><configKey>Access Control: Database</configKey>
           </rule>
         
           <rule>
@@ -62,39 +62,39 @@
           </rule>
         
           <rule>
-            <key>insecure_randomness</key><priority>MAJOR</priority><configKey>Insecure Randomness</configKey>
+            <key>insecure_randomness</key><priority>CRITICAL</priority><configKey>Insecure Randomness</configKey>
           </rule>
         
           <rule>
-            <key>password_management</key><priority>MAJOR</priority><configKey>Password Management</configKey>
+            <key>password_management</key><priority>MINOR</priority><configKey>Password Management</configKey>
           </rule>
         
           <rule>
-            <key>password_management_empty_password</key><priority>MAJOR</priority><configKey>Password Management: Empty Password</configKey>
+            <key>password_management_empty_password</key><priority>CRITICAL</priority><configKey>Password Management: Empty Password</configKey>
           </rule>
         
           <rule>
-            <key>password_management_hardcoded_password</key><priority>MAJOR</priority><configKey>Password Management: Hardcoded Password</configKey>
+            <key>password_management_hardcoded_password</key><priority>CRITICAL</priority><configKey>Password Management: Hardcoded Password</configKey>
           </rule>
         
           <rule>
-            <key>password_management_null_password</key><priority>MAJOR</priority><configKey>Password Management: Null Password</configKey>
+            <key>password_management_null_password</key><priority>MINOR</priority><configKey>Password Management: Null Password</configKey>
           </rule>
         
           <rule>
-            <key>password_management_password_in_comment</key><priority>MAJOR</priority><configKey>Password Management: Password in Comment</configKey>
+            <key>password_management_password_in_comment</key><priority>MINOR</priority><configKey>Password Management: Password in Comment</configKey>
           </rule>
         
           <rule>
-            <key>password_management_weak_cryptography</key><priority>MAJOR</priority><configKey>Password Management: Weak Cryptography</configKey>
+            <key>password_management_weak_cryptography</key><priority>MINOR</priority><configKey>Password Management: Weak Cryptography</configKey>
           </rule>
         
           <rule>
-            <key>privacy_violation</key><priority>MAJOR</priority><configKey>Privacy Violation</configKey>
+            <key>privacy_violation</key><priority>CRITICAL</priority><configKey>Privacy Violation</configKey>
           </rule>
         
           <rule>
-            <key>weak_cryptographic_hash</key><priority>MAJOR</priority><configKey>Weak Cryptographic Hash</configKey>
+            <key>weak_cryptographic_hash</key><priority>MINOR</priority><configKey>Weak Cryptographic Hash</configKey>
           </rule>
         
           <rule>

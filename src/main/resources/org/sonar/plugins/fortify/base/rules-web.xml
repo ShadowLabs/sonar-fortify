@@ -2,43 +2,43 @@
         <!-- see names and descriptions in org/sonar/l10n/ -->
     
           <rule>
-            <key>adf_faces_bad_practices_unsecure_attribute</key><priority>MAJOR</priority><configKey>ADF Faces Bad Practices: unsecure Attribute</configKey>
+            <key>adf_faces_bad_practices_unsecure_attribute</key><priority>MINOR</priority><configKey>ADF Faces Bad Practices: unsecure Attribute</configKey>
           </rule>
         
           <rule>
-            <key>castor_bad_practices_query_mode_not_read_only</key><priority>MAJOR</priority><configKey>Castor Bad Practices: Query Mode Not Read-Only</configKey>
+            <key>castor_bad_practices_query_mode_not_read_only</key><priority>MINOR</priority><configKey>Castor Bad Practices: Query Mode Not Read-Only</configKey>
           </rule>
         
           <rule>
-            <key>castor_bad_practices_unspecified_query_mode</key><priority>MAJOR</priority><configKey>Castor Bad Practices: Unspecified Query Mode</configKey>
+            <key>castor_bad_practices_unspecified_query_mode</key><priority>MINOR</priority><configKey>Castor Bad Practices: Unspecified Query Mode</configKey>
           </rule>
         
           <rule>
-            <key>code_correctness_call_to_system_gc</key><priority>MAJOR</priority><configKey>Code Correctness: Call to System.gc()</configKey>
+            <key>code_correctness_call_to_system_gc</key><priority>MINOR</priority><configKey>Code Correctness: Call to System.gc()</configKey>
           </rule>
         
           <rule>
-            <key>code_correctness_class_does_not_implement_equals</key><priority>MAJOR</priority><configKey>Code Correctness: Class Does Not Implement equals</configKey>
+            <key>code_correctness_class_does_not_implement_equals</key><priority>MINOR</priority><configKey>Code Correctness: Class Does Not Implement equals</configKey>
           </rule>
         
           <rule>
-            <key>code_correctness_erroneous_finalize_method</key><priority>MAJOR</priority><configKey>Code Correctness: Erroneous finalize() Method</configKey>
+            <key>code_correctness_erroneous_finalize_method</key><priority>MINOR</priority><configKey>Code Correctness: Erroneous finalize() Method</configKey>
           </rule>
         
           <rule>
-            <key>code_correctness_multiple_stream_commits</key><priority>MAJOR</priority><configKey>Code Correctness: Multiple Stream Commits</configKey>
+            <key>code_correctness_multiple_stream_commits</key><priority>MINOR</priority><configKey>Code Correctness: Multiple Stream Commits</configKey>
           </rule>
         
           <rule>
-            <key>code_correctness_tostring_on_array</key><priority>MAJOR</priority><configKey>Code Correctness: toString on Array</configKey>
+            <key>code_correctness_tostring_on_array</key><priority>MINOR</priority><configKey>Code Correctness: toString on Array</configKey>
           </rule>
         
           <rule>
-            <key>dangerous_field</key><priority>MAJOR</priority><configKey>Dangerous Field</configKey>
+            <key>dangerous_field</key><priority>MINOR</priority><configKey>Dangerous Field</configKey>
           </rule>
         
           <rule>
-            <key>dangerous_method</key><priority>MAJOR</priority><configKey>Dangerous Method</configKey>
+            <key>dangerous_method</key><priority>CRITICAL</priority><configKey>Dangerous Method</configKey>
           </rule>
         
           <rule>
@@ -46,7 +46,7 @@
           </rule>
         
           <rule>
-            <key>ejb_bad_practices_use_of_awt_swing</key><priority>MAJOR</priority><configKey>EJB Bad Practices: Use of AWT/Swing</configKey>
+            <key>ejb_bad_practices_use_of_awt_swing</key><priority>MINOR</priority><configKey>EJB Bad Practices: Use of AWT/Swing</configKey>
           </rule>
         
           <rule>
@@ -54,31 +54,31 @@
           </rule>
         
           <rule>
-            <key>ejb_bad_practices_use_of_sockets</key><priority>MAJOR</priority><configKey>EJB Bad Practices: Use of Sockets</configKey>
+            <key>ejb_bad_practices_use_of_sockets</key><priority>MINOR</priority><configKey>EJB Bad Practices: Use of Sockets</configKey>
           </rule>
         
           <rule>
-            <key>ejb_bad_practices_use_of_synchronization_primitives</key><priority>MAJOR</priority><configKey>EJB Bad Practices: Use of Synchronization Primitives</configKey>
+            <key>ejb_bad_practices_use_of_synchronization_primitives</key><priority>MINOR</priority><configKey>EJB Bad Practices: Use of Synchronization Primitives</configKey>
           </rule>
         
           <rule>
-            <key>ejb_bad_practices_use_of_java_io</key><priority>MAJOR</priority><configKey>EJB Bad Practices: Use of java.io</configKey>
+            <key>ejb_bad_practices_use_of_java_io</key><priority>MINOR</priority><configKey>EJB Bad Practices: Use of java.io</configKey>
           </rule>
         
           <rule>
-            <key>file_disclosure_j2ee</key><priority>MAJOR</priority><configKey>File Disclosure: J2EE</configKey>
+            <key>file_disclosure_j2ee</key><priority>CRITICAL</priority><configKey>File Disclosure: J2EE</configKey>
           </rule>
         
           <rule>
-            <key>file_disclosure_spring</key><priority>MAJOR</priority><configKey>File Disclosure: Spring</configKey>
+            <key>file_disclosure_spring</key><priority>CRITICAL</priority><configKey>File Disclosure: Spring</configKey>
           </rule>
         
           <rule>
-            <key>file_disclosure_spring_webflow</key><priority>MAJOR</priority><configKey>File Disclosure: Spring Webflow</configKey>
+            <key>file_disclosure_spring_webflow</key><priority>CRITICAL</priority><configKey>File Disclosure: Spring Webflow</configKey>
           </rule>
         
           <rule>
-            <key>file_disclosure_struts</key><priority>MAJOR</priority><configKey>File Disclosure: Struts</configKey>
+            <key>file_disclosure_struts</key><priority>CRITICAL</priority><configKey>File Disclosure: Struts</configKey>
           </rule>
         
           <rule>
@@ -102,15 +102,15 @@
           </rule>
         
           <rule>
-            <key>missing_check_against_null</key><priority>MAJOR</priority><configKey>Missing Check against Null</configKey>
+            <key>missing_check_against_null</key><priority>MINOR</priority><configKey>Missing Check against Null</configKey>
           </rule>
         
           <rule>
-            <key>missing_check_for_null_parameter</key><priority>MAJOR</priority><configKey>Missing Check for Null Parameter</configKey>
+            <key>missing_check_for_null_parameter</key><priority>MINOR</priority><configKey>Missing Check for Null Parameter</configKey>
           </rule>
         
           <rule>
-            <key>object_model_violation_erroneous_clone_method</key><priority>MAJOR</priority><configKey>Object Model Violation: Erroneous clone() Method</configKey>
+            <key>object_model_violation_erroneous_clone_method</key><priority>MINOR</priority><configKey>Object Model Violation: Erroneous clone() Method</configKey>
           </rule>
         
           <rule>
@@ -122,7 +122,7 @@
           </rule>
         
           <rule>
-            <key>obsolete_deprecated_by_esapi</key><priority>MAJOR</priority><configKey>Obsolete: Deprecated by ESAPI</configKey>
+            <key>obsolete_deprecated_by_esapi</key><priority>MINOR</priority><configKey>Obsolete: Deprecated by ESAPI</configKey>
           </rule>
         
           <rule>
@@ -146,7 +146,7 @@
           </rule>
         
           <rule>
-            <key>poor_style_explicit_call_to_finalize</key><priority>MAJOR</priority><configKey>Poor Style: Explicit Call to finalize()</configKey>
+            <key>poor_style_explicit_call_to_finalize</key><priority>MINOR</priority><configKey>Poor Style: Explicit Call to finalize()</configKey>
           </rule>
         
           <rule>
@@ -154,7 +154,7 @@
           </rule>
         
           <rule>
-            <key>unchecked_return_value</key><priority>MAJOR</priority><configKey>Unchecked Return Value</configKey>
+            <key>unchecked_return_value</key><priority>MINOR</priority><configKey>Unchecked Return Value</configKey>
           </rule>
         
           <rule>
@@ -170,19 +170,19 @@
           </rule>
         
           <rule>
-            <key>code_correctness_call_to_thread_run</key><priority>MAJOR</priority><configKey>Code Correctness: Call to Thread.run()</configKey>
+            <key>code_correctness_call_to_thread_run</key><priority>MINOR</priority><configKey>Code Correctness: Call to Thread.run()</configKey>
           </rule>
         
           <rule>
-            <key>code_correctness_call_to_notify</key><priority>MAJOR</priority><configKey>Code Correctness: Call to notify()</configKey>
+            <key>code_correctness_call_to_notify</key><priority>MINOR</priority><configKey>Code Correctness: Call to notify()</configKey>
           </rule>
         
           <rule>
-            <key>code_correctness_class_does_not_implement_cloneable</key><priority>MAJOR</priority><configKey>Code Correctness: Class Does Not Implement Cloneable</configKey>
+            <key>code_correctness_class_does_not_implement_cloneable</key><priority>MINOR</priority><configKey>Code Correctness: Class Does Not Implement Cloneable</configKey>
           </rule>
         
           <rule>
-            <key>code_correctness_erroneous_class_compare</key><priority>MAJOR</priority><configKey>Code Correctness: Erroneous Class Compare</configKey>
+            <key>code_correctness_erroneous_class_compare</key><priority>MINOR</priority><configKey>Code Correctness: Erroneous Class Compare</configKey>
           </rule>
         
           <rule>
@@ -190,7 +190,7 @@
           </rule>
         
           <rule>
-            <key>code_correctness_erroneous_string_compare</key><priority>MAJOR</priority><configKey>Code Correctness: Erroneous String Compare</configKey>
+            <key>code_correctness_erroneous_string_compare</key><priority>MINOR</priority><configKey>Code Correctness: Erroneous String Compare</configKey>
           </rule>
         
           <rule>
@@ -198,11 +198,11 @@
           </rule>
         
           <rule>
-            <key>code_correctness_incorrect_serialpersistentfields_modifier</key><priority>MAJOR</priority><configKey>Code Correctness: Incorrect serialPersistentFields Modifier</configKey>
+            <key>code_correctness_incorrect_serialpersistentfields_modifier</key><priority>MINOR</priority><configKey>Code Correctness: Incorrect serialPersistentFields Modifier</configKey>
           </rule>
         
           <rule>
-            <key>code_correctness_misspelled_method_name</key><priority>MAJOR</priority><configKey>Code Correctness: Misspelled Method Name</configKey>
+            <key>code_correctness_misspelled_method_name</key><priority>MINOR</priority><configKey>Code Correctness: Misspelled Method Name</configKey>
           </rule>
         
           <rule>
@@ -214,27 +214,27 @@
           </rule>
         
           <rule>
-            <key>code_correctness_null_argument_to_equals</key><priority>MAJOR</priority><configKey>Code Correctness: null Argument to equals()</configKey>
+            <key>code_correctness_null_argument_to_equals</key><priority>MINOR</priority><configKey>Code Correctness: null Argument to equals()</configKey>
           </rule>
         
           <rule>
-            <key>dead_code_empty_try_block</key><priority>MAJOR</priority><configKey>Dead Code: Empty Try Block</configKey>
+            <key>dead_code_empty_try_block</key><priority>MINOR</priority><configKey>Dead Code: Empty Try Block</configKey>
           </rule>
         
           <rule>
-            <key>dead_code_expression_is_always_false</key><priority>MAJOR</priority><configKey>Dead Code: Expression is Always false</configKey>
+            <key>dead_code_expression_is_always_false</key><priority>MINOR</priority><configKey>Dead Code: Expression is Always false</configKey>
           </rule>
         
           <rule>
-            <key>dead_code_expression_is_always_true</key><priority>MAJOR</priority><configKey>Dead Code: Expression is Always true</configKey>
+            <key>dead_code_expression_is_always_true</key><priority>MINOR</priority><configKey>Dead Code: Expression is Always true</configKey>
           </rule>
         
           <rule>
-            <key>dead_code_unused_field</key><priority>MAJOR</priority><configKey>Dead Code: Unused Field</configKey>
+            <key>dead_code_unused_field</key><priority>MINOR</priority><configKey>Dead Code: Unused Field</configKey>
           </rule>
         
           <rule>
-            <key>dead_code_unused_method</key><priority>MAJOR</priority><configKey>Dead Code: Unused Method</configKey>
+            <key>dead_code_unused_method</key><priority>MINOR</priority><configKey>Dead Code: Unused Method</configKey>
           </rule>
         
           <rule>
@@ -242,7 +242,7 @@
           </rule>
         
           <rule>
-            <key>obsolete</key><priority>MAJOR</priority><configKey>Obsolete</configKey>
+            <key>obsolete</key><priority>MINOR</priority><configKey>Obsolete</configKey>
           </rule>
         
           <rule>
@@ -254,7 +254,7 @@
           </rule>
         
           <rule>
-            <key>poor_style_empty_synchronized_block</key><priority>MAJOR</priority><configKey>Poor Style: Empty Synchronized Block</configKey>
+            <key>poor_style_empty_synchronized_block</key><priority>MINOR</priority><configKey>Poor Style: Empty Synchronized Block</configKey>
           </rule>
         
           <rule>
@@ -262,11 +262,11 @@
           </rule>
         
           <rule>
-            <key>poor_style_redundant_initialization</key><priority>MAJOR</priority><configKey>Poor Style: Redundant Initialization</configKey>
+            <key>poor_style_redundant_initialization</key><priority>MINOR</priority><configKey>Poor Style: Redundant Initialization</configKey>
           </rule>
         
           <rule>
-            <key>poor_style_value_never_read</key><priority>MAJOR</priority><configKey>Poor Style: Value Never Read</configKey>
+            <key>poor_style_value_never_read</key><priority>MINOR</priority><configKey>Poor Style: Value Never Read</configKey>
           </rule>
         
           <rule>
@@ -278,15 +278,15 @@
           </rule>
         
           <rule>
-            <key>unreleased_resource_android_camera</key><priority>MAJOR</priority><configKey>Unreleased Resource: Android Camera</configKey>
+            <key>unreleased_resource_android_camera</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Android Camera</configKey>
           </rule>
         
           <rule>
-            <key>unreleased_resource_android_media</key><priority>MAJOR</priority><configKey>Unreleased Resource: Android Media</configKey>
+            <key>unreleased_resource_android_media</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Android Media</configKey>
           </rule>
         
           <rule>
-            <key>unreleased_resource_android_sqlite_database</key><priority>MAJOR</priority><configKey>Unreleased Resource: Android SQLite Database</configKey>
+            <key>unreleased_resource_android_sqlite_database</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Android SQLite Database</configKey>
           </rule>
         
           <rule>
@@ -298,11 +298,11 @@
           </rule>
         
           <rule>
-            <key>unreleased_resource</key><priority>MAJOR</priority><configKey>Unreleased Resource: Streams</configKey>
+            <key>unreleased_resource</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Streams</configKey>
           </rule>
           
           <rule>
-            <key>unreleased_resource_database</key><priority>MAJOR</priority><configKey>Unreleased Resource: Database</configKey>
+            <key>unreleased_resource_database</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Database</configKey>
           </rule>
         
           <rule>
@@ -310,7 +310,7 @@
           </rule>
         
           <rule>
-            <key>adf_bad_practices_default_url_invoke_disallowed_setting</key><priority>MAJOR</priority><configKey>ADF Bad Practices: Default url-invoke-disallowed Setting</configKey>
+            <key>adf_bad_practices_default_url_invoke_disallowed_setting</key><priority>MINOR</priority><configKey>ADF Bad Practices: Default url-invoke-disallowed Setting</configKey>
           </rule>
         
           <rule>
@@ -318,15 +318,15 @@
           </rule>
         
           <rule>
-            <key>html5_overly_permissive_cors_policy</key><priority>MAJOR</priority><configKey>HTML5: Overly Permissive CORS Policy</configKey>
+            <key>html5_overly_permissive_cors_policy</key><priority>MINOR</priority><configKey>HTML5: Overly Permissive CORS Policy</configKey>
           </rule>
         
           <rule>
-            <key>hidden_field</key><priority>MAJOR</priority><configKey>Hidden Field</configKey>
+            <key>hidden_field</key><priority>MINOR</priority><configKey>Hidden Field</configKey>
           </rule>
         
           <rule>
-            <key>insecure_storage_android_external_storage</key><priority>MAJOR</priority><configKey>Insecure Storage: Android External Storage</configKey>
+            <key>insecure_storage_android_external_storage</key><priority>MINOR</priority><configKey>Insecure Storage: Android External Storage</configKey>
           </rule>
         
           <rule>
@@ -334,11 +334,11 @@
           </rule>
         
           <rule>
-            <key>javascript_hijacking_ad_hoc_ajax</key><priority>MAJOR</priority><configKey>Script Hijacking: Ad Hoc Ajax</configKey>
+            <key>javascript_hijacking_ad_hoc_ajax</key><priority>MINOR</priority><configKey>Script Hijacking: Ad Hoc Ajax</configKey>
           </rule>
         
           <rule>
-            <key>javascript_hijacking_vulnerable_framework</key><priority>MAJOR</priority><configKey>Script Hijacking: Vulnerable Framework</configKey>
+            <key>javascript_hijacking_vulnerable_framework</key><priority>MINOR</priority><configKey>Script Hijacking: Vulnerable Framework</configKey>
           </rule>
         
           <rule>
@@ -346,11 +346,11 @@
           </rule>
         
           <rule>
-            <key>poor_logging_practice_multiple_loggers</key><priority>MAJOR</priority><configKey>Poor Logging Practice: Multiple Loggers</configKey>
+            <key>poor_logging_practice_multiple_loggers</key><priority>MINOR</priority><configKey>Poor Logging Practice: Multiple Loggers</configKey>
           </rule>
         
           <rule>
-            <key>poor_logging_practice_use_of_a_system_output_stream</key><priority>MAJOR</priority><configKey>Poor Logging Practice: Use of a System Output Stream</configKey>
+            <key>poor_logging_practice_use_of_a_system_output_stream</key><priority>MINOR</priority><configKey>Poor Logging Practice: Use of a System Output Stream</configKey>
           </rule>
         
           <rule>
@@ -358,11 +358,11 @@
           </rule>
         
           <rule>
-            <key>system_information_leak</key><priority>MAJOR</priority><configKey>System Information Leak</configKey>
+            <key>system_information_leak</key><priority>MINOR</priority><configKey>System Information Leak</configKey>
           </rule>
         
           <rule>
-            <key>system_information_leak_apache_axis</key><priority>MAJOR</priority><configKey>System Information Leak: Apache Axis</configKey>
+            <key>system_information_leak_apache_axis</key><priority>MINOR</priority><configKey>System Information Leak: Apache Axis</configKey>
           </rule>
         
           <rule>
@@ -370,43 +370,43 @@
           </rule>
         
           <rule>
-            <key>system_information_leak_html_comment_in_jsp</key><priority>MAJOR</priority><configKey>System Information Leak: HTML Comment in JSP</configKey>
+            <key>system_information_leak_html_comment_in_jsp</key><priority>MINOR</priority><configKey>System Information Leak: HTML Comment in JSP</configKey>
           </rule>
         
           <rule>
-            <key>system_information_leak_incomplete_servlet_error_handling</key><priority>MAJOR</priority><configKey>System Information Leak: Incomplete Servlet Error Handling</configKey>
+            <key>system_information_leak_incomplete_servlet_error_handling</key><priority>MINOR</priority><configKey>System Information Leak: Incomplete Servlet Error Handling</configKey>
           </rule>
         
           <rule>
-            <key>system_information_leak_overly_broad_sql_logging</key><priority>MAJOR</priority><configKey>System Information Leak: Overly Broad SQL Logging</configKey>
+            <key>system_information_leak_overly_broad_sql_logging</key><priority>MINOR</priority><configKey>System Information Leak: Overly Broad SQL Logging</configKey>
           </rule>
         
           <rule>
-            <key>trust_boundary_violation</key><priority>MAJOR</priority><configKey>Trust Boundary Violation</configKey>
+            <key>trust_boundary_violation</key><priority>MINOR</priority><configKey>Trust Boundary Violation</configKey>
           </rule>
         
           <rule>
-            <key>unsafe_mobile_code_access_violation</key><priority>MAJOR</priority><configKey>Unsafe Mobile Code: Access Violation</configKey>
+            <key>unsafe_mobile_code_access_violation</key><priority>MINOR</priority><configKey>Unsafe Mobile Code: Access Violation</configKey>
           </rule>
         
           <rule>
-            <key>unsafe_mobile_code_database_access</key><priority>MAJOR</priority><configKey>Unsafe Mobile Code: Database Access</configKey>
+            <key>unsafe_mobile_code_database_access</key><priority>MINOR</priority><configKey>Unsafe Mobile Code: Database Access</configKey>
           </rule>
         
           <rule>
-            <key>unsafe_mobile_code_inner_class</key><priority>MAJOR</priority><configKey>Unsafe Mobile Code: Inner Class</configKey>
+            <key>unsafe_mobile_code_inner_class</key><priority>MINOR</priority><configKey>Unsafe Mobile Code: Inner Class</configKey>
           </rule>
         
           <rule>
-            <key>unsafe_mobile_code_public_finalize_method</key><priority>MAJOR</priority><configKey>Unsafe Mobile Code: Public finalize() Method</configKey>
+            <key>unsafe_mobile_code_public_finalize_method</key><priority>MINOR</priority><configKey>Unsafe Mobile Code: Public finalize() Method</configKey>
           </rule>
         
           <rule>
-            <key>unsafe_mobile_code_unsafe_array_declaration</key><priority>MAJOR</priority><configKey>Unsafe Mobile Code: Unsafe Array Declaration</configKey>
+            <key>unsafe_mobile_code_unsafe_array_declaration</key><priority>MINOR</priority><configKey>Unsafe Mobile Code: Unsafe Array Declaration</configKey>
           </rule>
         
           <rule>
-            <key>unsafe_mobile_code_unsafe_public_field</key><priority>MAJOR</priority><configKey>Unsafe Mobile Code: Unsafe Public Field</configKey>
+            <key>unsafe_mobile_code_unsafe_public_field</key><priority>MINOR</priority><configKey>Unsafe Mobile Code: Unsafe Public Field</configKey>
           </rule>
         
           <rule>
@@ -526,27 +526,27 @@
           </rule>
         
           <rule>
-            <key>axis_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>Axis Misconfiguration: Debug Information</configKey>
+            <key>axis_misconfiguration_debug_information</key><priority>MINOR</priority><configKey>Axis Misconfiguration: Debug Information</configKey>
           </rule>
         
           <rule>
-            <key>axis_misconfiguration_service_enumeration</key><priority>MAJOR</priority><configKey>Axis Misconfiguration: Service Enumeration</configKey>
+            <key>axis_misconfiguration_service_enumeration</key><priority>MINOR</priority><configKey>Axis Misconfiguration: Service Enumeration</configKey>
           </rule>
         
           <rule>
-            <key>axis_service_provider_misconfiguration_plain_text_password</key><priority>MAJOR</priority><configKey>Axis Service Provider Misconfiguration: Plain Text Password</configKey>
+            <key>axis_service_provider_misconfiguration_plain_text_password</key><priority>MINOR</priority><configKey>Axis Service Provider Misconfiguration: Plain Text Password</configKey>
           </rule>
         
           <rule>
-            <key>axis_service_provider_misconfiguration_weak_token</key><priority>MAJOR</priority><configKey>Axis Service Provider Misconfiguration: Weak Token</configKey>
+            <key>axis_service_provider_misconfiguration_weak_token</key><priority>MINOR</priority><configKey>Axis Service Provider Misconfiguration: Weak Token</configKey>
           </rule>
         
           <rule>
-            <key>axis_service_requester_misconfiguration_plain_text_password</key><priority>MAJOR</priority><configKey>Axis Service Requester Misconfiguration: Plain Text Password</configKey>
+            <key>axis_service_requester_misconfiguration_plain_text_password</key><priority>MINOR</priority><configKey>Axis Service Requester Misconfiguration: Plain Text Password</configKey>
           </rule>
         
           <rule>
-            <key>axis_service_requester_misconfiguration_weak_token</key><priority>MAJOR</priority><configKey>Axis Service Requester Misconfiguration: Weak Token</configKey>
+            <key>axis_service_requester_misconfiguration_weak_token</key><priority>MINOR</priority><configKey>Axis Service Requester Misconfiguration: Weak Token</configKey>
           </rule>
         
           <rule>
@@ -554,47 +554,47 @@
           </rule>
         
           <rule>
-            <key>build_misconfiguration_external_ant_dependency_repository</key><priority>MAJOR</priority><configKey>Build Misconfiguration: External Ant Dependency Repository</configKey>
+            <key>build_misconfiguration_external_ant_dependency_repository</key><priority>MINOR</priority><configKey>Build Misconfiguration: External Ant Dependency Repository</configKey>
           </rule>
         
           <rule>
-            <key>build_misconfiguration_external_ivy_dependency_repository</key><priority>MAJOR</priority><configKey>Build Misconfiguration: External Ivy Dependency Repository</configKey>
+            <key>build_misconfiguration_external_ivy_dependency_repository</key><priority>MINOR</priority><configKey>Build Misconfiguration: External Ivy Dependency Repository</configKey>
           </rule>
         
           <rule>
-            <key>build_misconfiguration_external_maven_dependency_repository</key><priority>MAJOR</priority><configKey>Build Misconfiguration: External Maven Dependency Repository</configKey>
+            <key>build_misconfiguration_external_maven_dependency_repository</key><priority>MINOR</priority><configKey>Build Misconfiguration: External Maven Dependency Repository</configKey>
           </rule>
         
           <rule>
-            <key>flex_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>Flex Misconfiguration: Debug Information</configKey>
+            <key>flex_misconfiguration_debug_information</key><priority>MINOR</priority><configKey>Flex Misconfiguration: Debug Information</configKey>
           </rule>
         
           <rule>
-            <key>j2ee_misconfiguration_cookies_disabled</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Cookies Disabled</configKey>
+            <key>j2ee_misconfiguration_cookies_disabled</key><priority>MINOR</priority><configKey>J2EE Misconfiguration: Cookies Disabled</configKey>
           </rule>
         
           <rule>
-            <key>j2ee_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Debug Information</configKey>
+            <key>j2ee_misconfiguration_debug_information</key><priority>MINOR</priority><configKey>J2EE Misconfiguration: Debug Information</configKey>
           </rule>
         
           <rule>
-            <key>j2ee_misconfiguration_direct_jsp_access</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Direct JSP Access</configKey>
+            <key>j2ee_misconfiguration_direct_jsp_access</key><priority>MINOR</priority><configKey>J2EE Misconfiguration: Direct JSP Access</configKey>
           </rule>
         
           <rule>
-            <key>j2ee_misconfiguration_duplicate_security_role</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Duplicate Security Role</configKey>
+            <key>j2ee_misconfiguration_duplicate_security_role</key><priority>MINOR</priority><configKey>J2EE Misconfiguration: Duplicate Security Role</configKey>
           </rule>
         
           <rule>
-            <key>j2ee_misconfiguration_duplicate_servlet_mapping</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Duplicate Servlet Mapping</configKey>
+            <key>j2ee_misconfiguration_duplicate_servlet_mapping</key><priority>MINOR</priority><configKey>J2EE Misconfiguration: Duplicate Servlet Mapping</configKey>
           </rule>
         
           <rule>
-            <key>j2ee_misconfiguration_excessive_servlet_mappings</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Excessive Servlet Mappings</configKey>
+            <key>j2ee_misconfiguration_excessive_servlet_mappings</key><priority>MINOR</priority><configKey>J2EE Misconfiguration: Excessive Servlet Mappings</configKey>
           </rule>
         
           <rule>
-            <key>j2ee_misconfiguration_excessive_session_timeout</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Excessive Session Timeout</configKey>
+            <key>j2ee_misconfiguration_excessive_session_timeout</key><priority>MINOR</priority><configKey>J2EE Misconfiguration: Excessive Session Timeout</configKey>
           </rule>
         
           <rule>
@@ -610,7 +610,7 @@
           </rule>
         
           <rule>
-            <key>j2ee_misconfiguration_insecure_transport</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Insecure Transport</configKey>
+            <key>j2ee_misconfiguration_insecure_transport</key><priority>MINOR</priority><configKey>J2EE Misconfiguration: Insecure Transport</configKey>
           </rule>
         
           <rule>
@@ -618,99 +618,99 @@
           </rule>
         
           <rule>
-            <key>j2ee_misconfiguration_invalid_servlet_name</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Invalid Servlet Name</configKey>
+            <key>j2ee_misconfiguration_invalid_servlet_name</key><priority>MINOR</priority><configKey>J2EE Misconfiguration: Invalid Servlet Name</configKey>
           </rule>
         
           <rule>
-            <key>j2ee_misconfiguration_missing_authentication_method</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Authentication Method</configKey>
+            <key>j2ee_misconfiguration_missing_authentication_method</key><priority>MINOR</priority><configKey>J2EE Misconfiguration: Missing Authentication Method</configKey>
           </rule>
         
           <rule>
-            <key>j2ee_misconfiguration_missing_data_transport_constraint</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Data Transport Constraint</configKey>
+            <key>j2ee_misconfiguration_missing_data_transport_constraint</key><priority>MINOR</priority><configKey>J2EE Misconfiguration: Missing Data Transport Constraint</configKey>
           </rule>
         
           <rule>
-            <key>j2ee_misconfiguration_missing_error_handling</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Error Handling</configKey>
+            <key>j2ee_misconfiguration_missing_error_handling</key><priority>MINOR</priority><configKey>J2EE Misconfiguration: Missing Error Handling</configKey>
           </rule>
         
           <rule>
-            <key>j2ee_misconfiguration_missing_filter_definition</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Filter Definition</configKey>
+            <key>j2ee_misconfiguration_missing_filter_definition</key><priority>MINOR</priority><configKey>J2EE Misconfiguration: Missing Filter Definition</configKey>
           </rule>
         
           <rule>
-            <key>j2ee_misconfiguration_missing_security_role</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Security Role</configKey>
+            <key>j2ee_misconfiguration_missing_security_role</key><priority>MINOR</priority><configKey>J2EE Misconfiguration: Missing Security Role</configKey>
           </rule>
         
           <rule>
-            <key>j2ee_misconfiguration_missing_servlet_mapping</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Servlet Mapping</configKey>
+            <key>j2ee_misconfiguration_missing_servlet_mapping</key><priority>MINOR</priority><configKey>J2EE Misconfiguration: Missing Servlet Mapping</configKey>
           </rule>
         
           <rule>
-            <key>j2ee_misconfiguration_unsafe_bean_declaration</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Unsafe Bean Declaration</configKey>
+            <key>j2ee_misconfiguration_unsafe_bean_declaration</key><priority>MINOR</priority><configKey>J2EE Misconfiguration: Unsafe Bean Declaration</configKey>
           </rule>
         
           <rule>
-            <key>j2ee_misconfiguration_weak_access_permissions</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Weak Access Permissions</configKey>
+            <key>j2ee_misconfiguration_weak_access_permissions</key><priority>MINOR</priority><configKey>J2EE Misconfiguration: Weak Access Permissions</configKey>
           </rule>
         
           <rule>
-            <key>password_management_empty_password_in_configuration_file</key><priority>MAJOR</priority><configKey>Password Management: Empty Password in Configuration File</configKey>
+            <key>password_management_empty_password_in_configuration_file</key><priority>CRITICAL</priority><configKey>Password Management: Empty Password in Configuration File</configKey>
           </rule>
         
           <rule>
-            <key>password_management_password_in_configuration_file</key><priority>MAJOR</priority><configKey>Password Management: Password in Configuration File</configKey>
+            <key>password_management_password_in_configuration_file</key><priority>CRITICAL</priority><configKey>Password Management: Password in Configuration File</configKey>
           </rule>
         
           <rule>
-            <key>struts_misconfiguration_duplicate_form_bean</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Duplicate Form Bean</configKey>
+            <key>struts_misconfiguration_duplicate_form_bean</key><priority>MINOR</priority><configKey>Struts Misconfiguration: Duplicate Form Bean</configKey>
           </rule>
         
           <rule>
-            <key>struts_misconfiguration_invalid_path</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Invalid Path</configKey>
+            <key>struts_misconfiguration_invalid_path</key><priority>MINOR</priority><configKey>Struts Misconfiguration: Invalid Path</configKey>
           </rule>
         
           <rule>
-            <key>struts_misconfiguration_missing_action_input</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Action Input</configKey>
+            <key>struts_misconfiguration_missing_action_input</key><priority>MINOR</priority><configKey>Struts Misconfiguration: Missing Action Input</configKey>
           </rule>
         
           <rule>
-            <key>struts_misconfiguration_missing_exception_type</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Exception Type</configKey>
+            <key>struts_misconfiguration_missing_exception_type</key><priority>MINOR</priority><configKey>Struts Misconfiguration: Missing Exception Type</configKey>
           </rule>
         
           <rule>
-            <key>struts_misconfiguration_missing_form_bean</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Bean</configKey>
+            <key>struts_misconfiguration_missing_form_bean</key><priority>MINOR</priority><configKey>Struts Misconfiguration: Missing Form Bean</configKey>
           </rule>
         
           <rule>
-            <key>struts_misconfiguration_missing_form_bean_name</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Bean Name</configKey>
+            <key>struts_misconfiguration_missing_form_bean_name</key><priority>MINOR</priority><configKey>Struts Misconfiguration: Missing Form Bean Name</configKey>
           </rule>
         
           <rule>
-            <key>struts_misconfiguration_missing_form_bean_type</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Bean Type</configKey>
+            <key>struts_misconfiguration_missing_form_bean_type</key><priority>MINOR</priority><configKey>Struts Misconfiguration: Missing Form Bean Type</configKey>
           </rule>
         
           <rule>
-            <key>struts_misconfiguration_missing_form_property_type</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Property Type</configKey>
+            <key>struts_misconfiguration_missing_form_property_type</key><priority>MINOR</priority><configKey>Struts Misconfiguration: Missing Form Property Type</configKey>
           </rule>
         
           <rule>
-            <key>struts_misconfiguration_missing_forward_name</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Forward Name</configKey>
+            <key>struts_misconfiguration_missing_forward_name</key><priority>MINOR</priority><configKey>Struts Misconfiguration: Missing Forward Name</configKey>
           </rule>
         
           <rule>
-            <key>struts_misconfiguration_missing_forward_path</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Forward Path</configKey>
+            <key>struts_misconfiguration_missing_forward_path</key><priority>MINOR</priority><configKey>Struts Misconfiguration: Missing Forward Path</configKey>
           </rule>
         
           <rule>
-            <key>tomcat_configuration_insecure_transport</key><priority>MAJOR</priority><configKey>Tomcat Configuration: Insecure Transport</configKey>
+            <key>tomcat_configuration_insecure_transport</key><priority>MINOR</priority><configKey>Tomcat Configuration: Insecure Transport</configKey>
           </rule>
         
           <rule>
-            <key>websphere_misconfiguration_missing_nonce</key><priority>MAJOR</priority><configKey>WebSphere Misconfiguration: Missing Nonce</configKey>
+            <key>websphere_misconfiguration_missing_nonce</key><priority>MINOR</priority><configKey>WebSphere Misconfiguration: Missing Nonce</configKey>
           </rule>
         
           <rule>
-            <key>websphere_misconfiguration_servlets_served_by_class_name</key><priority>MAJOR</priority><configKey>WebSphere Misconfiguration: Servlets Served By Class Name</configKey>
+            <key>websphere_misconfiguration_servlets_served_by_class_name</key><priority>MINOR</priority><configKey>WebSphere Misconfiguration: Servlets Served By Class Name</configKey>
           </rule>
         
           <rule>
@@ -718,31 +718,31 @@
           </rule>
         
           <rule>
-            <key>websphere_service_provider_misconfiguration_missing_inbound_encryption</key><priority>MAJOR</priority><configKey>WebSphere Service Provider Misconfiguration: Missing Inbound Encryption</configKey>
+            <key>websphere_service_provider_misconfiguration_missing_inbound_encryption</key><priority>MINOR</priority><configKey>WebSphere Service Provider Misconfiguration: Missing Inbound Encryption</configKey>
           </rule>
         
           <rule>
-            <key>websphere_service_provider_misconfiguration_missing_inbound_signature</key><priority>MAJOR</priority><configKey>WebSphere Service Provider Misconfiguration: Missing Inbound Signature</configKey>
+            <key>websphere_service_provider_misconfiguration_missing_inbound_signature</key><priority>MINOR</priority><configKey>WebSphere Service Provider Misconfiguration: Missing Inbound Signature</configKey>
           </rule>
         
           <rule>
-            <key>websphere_service_provider_misconfiguration_missing_inbound_timestamp</key><priority>MAJOR</priority><configKey>WebSphere Service Provider Misconfiguration: Missing Inbound Timestamp</configKey>
+            <key>websphere_service_provider_misconfiguration_missing_inbound_timestamp</key><priority>MINOR</priority><configKey>WebSphere Service Provider Misconfiguration: Missing Inbound Timestamp</configKey>
           </rule>
         
           <rule>
-            <key>websphere_service_provider_misconfiguration_missing_outbound_encryption</key><priority>MAJOR</priority><configKey>WebSphere Service Provider Misconfiguration: Missing Outbound Encryption</configKey>
+            <key>websphere_service_provider_misconfiguration_missing_outbound_encryption</key><priority>MINOR</priority><configKey>WebSphere Service Provider Misconfiguration: Missing Outbound Encryption</configKey>
           </rule>
         
           <rule>
-            <key>websphere_service_provider_misconfiguration_missing_outbound_signature</key><priority>MAJOR</priority><configKey>WebSphere Service Provider Misconfiguration: Missing Outbound Signature</configKey>
+            <key>websphere_service_provider_misconfiguration_missing_outbound_signature</key><priority>MINOR</priority><configKey>WebSphere Service Provider Misconfiguration: Missing Outbound Signature</configKey>
           </rule>
         
           <rule>
-            <key>websphere_service_provider_misconfiguration_missing_outbound_timestamp</key><priority>MAJOR</priority><configKey>WebSphere Service Provider Misconfiguration: Missing Outbound Timestamp</configKey>
+            <key>websphere_service_provider_misconfiguration_missing_outbound_timestamp</key><priority>MINOR</priority><configKey>WebSphere Service Provider Misconfiguration: Missing Outbound Timestamp</configKey>
           </rule>
         
           <rule>
-            <key>websphere_service_provider_misconfiguration_missing_timestamp_expiration</key><priority>MAJOR</priority><configKey>WebSphere Service Provider Misconfiguration: Missing Timestamp Expiration</configKey>
+            <key>websphere_service_provider_misconfiguration_missing_timestamp_expiration</key><priority>MINOR</priority><configKey>WebSphere Service Provider Misconfiguration: Missing Timestamp Expiration</configKey>
           </rule>
         
           <rule>
@@ -750,15 +750,15 @@
           </rule>
         
           <rule>
-            <key>websphere_service_provider_misconfiguration_unsigned_inbound_timestamp</key><priority>MAJOR</priority><configKey>WebSphere Service Provider Misconfiguration: Unsigned Inbound Timestamp</configKey>
+            <key>websphere_service_provider_misconfiguration_unsigned_inbound_timestamp</key><priority>MINOR</priority><configKey>WebSphere Service Provider Misconfiguration: Unsigned Inbound Timestamp</configKey>
           </rule>
         
           <rule>
-            <key>websphere_service_provider_misconfiguration_unsigned_outbound_timestamp</key><priority>MAJOR</priority><configKey>WebSphere Service Provider Misconfiguration: Unsigned Outbound Timestamp</configKey>
+            <key>websphere_service_provider_misconfiguration_unsigned_outbound_timestamp</key><priority>MINOR</priority><configKey>WebSphere Service Provider Misconfiguration: Unsigned Outbound Timestamp</configKey>
           </rule>
         
           <rule>
-            <key>websphere_service_provider_misconfiguration_weak_token</key><priority>MAJOR</priority><configKey>WebSphere Service Provider Misconfiguration: Weak Token</configKey>
+            <key>websphere_service_provider_misconfiguration_weak_token</key><priority>MINOR</priority><configKey>WebSphere Service Provider Misconfiguration: Weak Token</configKey>
           </rule>
         
           <rule>
@@ -766,31 +766,31 @@
           </rule>
         
           <rule>
-            <key>websphere_service_requester_misconfiguration_missing_inbound_encryption</key><priority>MAJOR</priority><configKey>WebSphere Service Requester Misconfiguration: Missing Inbound Encryption</configKey>
+            <key>websphere_service_requester_misconfiguration_missing_inbound_encryption</key><priority>MINOR</priority><configKey>WebSphere Service Requester Misconfiguration: Missing Inbound Encryption</configKey>
           </rule>
         
           <rule>
-            <key>websphere_service_requester_misconfiguration_missing_inbound_signature</key><priority>MAJOR</priority><configKey>WebSphere Service Requester Misconfiguration: Missing Inbound Signature</configKey>
+            <key>websphere_service_requester_misconfiguration_missing_inbound_signature</key><priority>MINOR</priority><configKey>WebSphere Service Requester Misconfiguration: Missing Inbound Signature</configKey>
           </rule>
         
           <rule>
-            <key>websphere_service_requester_misconfiguration_missing_inbound_timestamp</key><priority>MAJOR</priority><configKey>WebSphere Service Requester Misconfiguration: Missing Inbound Timestamp</configKey>
+            <key>websphere_service_requester_misconfiguration_missing_inbound_timestamp</key><priority>MINOR</priority><configKey>WebSphere Service Requester Misconfiguration: Missing Inbound Timestamp</configKey>
           </rule>
         
           <rule>
-            <key>websphere_service_requester_misconfiguration_missing_outbound_encryption</key><priority>MAJOR</priority><configKey>WebSphere Service Requester Misconfiguration: Missing Outbound Encryption</configKey>
+            <key>websphere_service_requester_misconfiguration_missing_outbound_encryption</key><priority>MINOR</priority><configKey>WebSphere Service Requester Misconfiguration: Missing Outbound Encryption</configKey>
           </rule>
         
           <rule>
-            <key>websphere_service_requester_misconfiguration_missing_outbound_signature</key><priority>MAJOR</priority><configKey>WebSphere Service Requester Misconfiguration: Missing Outbound Signature</configKey>
+            <key>websphere_service_requester_misconfiguration_missing_outbound_signature</key><priority>MINOR</priority><configKey>WebSphere Service Requester Misconfiguration: Missing Outbound Signature</configKey>
           </rule>
         
           <rule>
-            <key>websphere_service_requester_misconfiguration_missing_outbound_timestamp</key><priority>MAJOR</priority><configKey>WebSphere Service Requester Misconfiguration: Missing Outbound Timestamp</configKey>
+            <key>websphere_service_requester_misconfiguration_missing_outbound_timestamp</key><priority>MINOR</priority><configKey>WebSphere Service Requester Misconfiguration: Missing Outbound Timestamp</configKey>
           </rule>
         
           <rule>
-            <key>websphere_service_requester_misconfiguration_missing_timestamp_expiration</key><priority>MAJOR</priority><configKey>WebSphere Service Requester Misconfiguration: Missing Timestamp Expiration</configKey>
+            <key>websphere_service_requester_misconfiguration_missing_timestamp_expiration</key><priority>MINOR</priority><configKey>WebSphere Service Requester Misconfiguration: Missing Timestamp Expiration</configKey>
           </rule>
         
           <rule>
@@ -798,67 +798,67 @@
           </rule>
         
           <rule>
-            <key>websphere_service_requester_misconfiguration_unsigned_inbound_timestamp</key><priority>MAJOR</priority><configKey>WebSphere Service Requester Misconfiguration: Unsigned Inbound Timestamp</configKey>
+            <key>websphere_service_requester_misconfiguration_unsigned_inbound_timestamp</key><priority>MINOR</priority><configKey>WebSphere Service Requester Misconfiguration: Unsigned Inbound Timestamp</configKey>
           </rule>
         
           <rule>
-            <key>websphere_service_requester_misconfiguration_unsigned_outbound_timestamp</key><priority>MAJOR</priority><configKey>WebSphere Service Requester Misconfiguration: Unsigned Outbound Timestamp</configKey>
+            <key>websphere_service_requester_misconfiguration_unsigned_outbound_timestamp</key><priority>MINOR</priority><configKey>WebSphere Service Requester Misconfiguration: Unsigned Outbound Timestamp</configKey>
           </rule>
         
           <rule>
-            <key>websphere_service_requester_misconfiguration_weak_token</key><priority>MAJOR</priority><configKey>WebSphere Service Requester Misconfiguration: Weak Token</configKey>
+            <key>websphere_service_requester_misconfiguration_weak_token</key><priority>MINOR</priority><configKey>WebSphere Service Requester Misconfiguration: Weak Token</configKey>
           </rule>
         
           <rule>
-            <key>weblogic_misconfiguration_missing_timestamp</key><priority>MAJOR</priority><configKey>Weblogic Misconfiguration: Missing Timestamp</configKey>
+            <key>weblogic_misconfiguration_missing_timestamp</key><priority>MINOR</priority><configKey>Weblogic Misconfiguration: Missing Timestamp</configKey>
           </rule>
         
           <rule>
-            <key>weblogic_misconfiguration_weak_token</key><priority>MAJOR</priority><configKey>Weblogic Misconfiguration: Weak Token</configKey>
+            <key>weblogic_misconfiguration_weak_token</key><priority>MINOR</priority><configKey>Weblogic Misconfiguration: Weak Token</configKey>
           </rule>
         
           <rule>
-            <key>poor_error_handling_empty_catch_block</key><priority>MAJOR</priority><configKey>Poor Error Handling: Empty Catch Block</configKey>
+            <key>poor_error_handling_empty_catch_block</key><priority>MINOR</priority><configKey>Poor Error Handling: Empty Catch Block</configKey>
           </rule>
         
           <rule>
-            <key>poor_error_handling_overly_broad_catch</key><priority>MAJOR</priority><configKey>Poor Error Handling: Overly Broad Catch</configKey>
+            <key>poor_error_handling_overly_broad_catch</key><priority>MINOR</priority><configKey>Poor Error Handling: Overly Broad Catch</configKey>
           </rule>
         
           <rule>
-            <key>poor_error_handling_overly_broad_throws</key><priority>MAJOR</priority><configKey>Poor Error Handling: Overly Broad Throws</configKey>
+            <key>poor_error_handling_overly_broad_throws</key><priority>MINOR</priority><configKey>Poor Error Handling: Overly Broad Throws</configKey>
           </rule>
         
           <rule>
-            <key>poor_error_handling_program_catches_nullpointerexception</key><priority>MAJOR</priority><configKey>Poor Error Handling: Program Catches NullPointerException</configKey>
+            <key>poor_error_handling_program_catches_nullpointerexception</key><priority>MINOR</priority><configKey>Poor Error Handling: Program Catches NullPointerException</configKey>
           </rule>
         
           <rule>
-            <key>poor_error_handling_return_inside_finally</key><priority>MAJOR</priority><configKey>Poor Error Handling: Return Inside Finally</configKey>
+            <key>poor_error_handling_return_inside_finally</key><priority>CRITICAL</priority><configKey>Poor Error Handling: Return Inside Finally</configKey>
           </rule>
         
           <rule>
-            <key>poor_error_handling_swallowed_threaddeath</key><priority>MAJOR</priority><configKey>Poor Error Handling: Swallowed ThreadDeath</configKey>
+            <key>poor_error_handling_swallowed_threaddeath</key><priority>MINOR</priority><configKey>Poor Error Handling: Swallowed ThreadDeath</configKey>
           </rule>
         
           <rule>
-            <key>poor_error_handling_throw_inside_finally</key><priority>MAJOR</priority><configKey>Poor Error Handling: Throw Inside Finally</configKey>
+            <key>poor_error_handling_throw_inside_finally</key><priority>MINOR</priority><configKey>Poor Error Handling: Throw Inside Finally</configKey>
           </rule>
         
           <rule>
-            <key>poor_error_handling_unhandled_ssl_exception</key><priority>MAJOR</priority><configKey>Poor Error Handling: Unhandled SSL Exception</configKey>
+            <key>poor_error_handling_unhandled_ssl_exception</key><priority>MINOR</priority><configKey>Poor Error Handling: Unhandled SSL Exception</configKey>
           </rule>
         
           <rule>
-            <key>adf_bad_practices_missing_url_parameter_converter</key><priority>MAJOR</priority><configKey>ADF Bad Practices: Missing URL Parameter Converter</configKey>
+            <key>adf_bad_practices_missing_url_parameter_converter</key><priority>MINOR</priority><configKey>ADF Bad Practices: Missing URL Parameter Converter</configKey>
           </rule>
         
           <rule>
-            <key>command_injection</key><priority>MAJOR</priority><configKey>Command Injection</configKey>
+            <key>command_injection</key><priority>BLOCKER</priority><configKey>Command Injection</configKey>
           </rule>
         
           <rule>
-            <key>cross_site_scripting_dom</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: DOM</configKey>
+            <key>cross_site_scripting_dom</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: DOM</configKey>
           </rule>
         
           <rule>
@@ -866,23 +866,23 @@
           </rule>
         
           <rule>
-            <key>cross_site_scripting_persistent</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Persistent</configKey>
+            <key>cross_site_scripting_persistent</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Persistent</configKey>
           </rule>
         
           <rule>
-            <key>cross_site_scripting_poor_validation</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Poor Validation</configKey>
+            <key>cross_site_scripting_poor_validation</key><priority>MINOR</priority><configKey>Cross-Site Scripting: Poor Validation</configKey>
           </rule>
         
           <rule>
-            <key>cross_site_scripting_reflected</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Reflected</configKey>
+            <key>cross_site_scripting_reflected</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Reflected</configKey>
           </rule>
         
           <rule>
-            <key>dangerous_file_inclusion</key><priority>MAJOR</priority><configKey>Dangerous File Inclusion</configKey>
+            <key>dangerous_file_inclusion</key><priority>CRITICAL</priority><configKey>Dangerous File Inclusion</configKey>
           </rule>
         
           <rule>
-            <key>denial_of_service</key><priority>MAJOR</priority><configKey>Denial of Service</configKey>
+            <key>denial_of_service</key><priority>MINOR</priority><configKey>Denial of Service</configKey>
           </rule>
         
           <rule>
@@ -898,27 +898,27 @@
           </rule>
         
           <rule>
-            <key>ldap_injection</key><priority>MAJOR</priority><configKey>LDAP Injection</configKey>
+            <key>ldap_injection</key><priority>CRITICAL</priority><configKey>LDAP Injection</configKey>
           </rule>
         
           <rule>
-            <key>ldap_manipulation</key><priority>MAJOR</priority><configKey>LDAP Manipulation</configKey>
+            <key>ldap_manipulation</key><priority>MINOR</priority><configKey>LDAP Manipulation</configKey>
           </rule>
         
           <rule>
-            <key>log_forging</key><priority>MAJOR</priority><configKey>Log Forging</configKey>
+            <key>log_forging</key><priority>MINOR</priority><configKey>Log Forging</configKey>
           </rule>
         
           <rule>
-            <key>missing_xml_validation</key><priority>MAJOR</priority><configKey>Missing XML Validation</configKey>
+            <key>missing_xml_validation</key><priority>MINOR</priority><configKey>Missing XML Validation</configKey>
           </rule>
         
           <rule>
-            <key>often_misused_file_upload</key><priority>MAJOR</priority><configKey>Often Misused: File Upload</configKey>
+            <key>often_misused_file_upload</key><priority>MINOR</priority><configKey>Often Misused: File Upload</configKey>
           </rule>
         
           <rule>
-            <key>open_redirect</key><priority>MAJOR</priority><configKey>Open Redirect</configKey>
+            <key>open_redirect</key><priority>CRITICAL</priority><configKey>Open Redirect</configKey>
           </rule>
         
           <rule>
@@ -926,47 +926,47 @@
           </rule>
         
           <rule>
-            <key>process_control</key><priority>MAJOR</priority><configKey>Process Control</configKey>
+            <key>process_control</key><priority>CRITICAL</priority><configKey>Process Control</configKey>
           </rule>
         
           <rule>
-            <key>process_control_invoker_servlet</key><priority>MAJOR</priority><configKey>Process Control: Invoker Servlet</configKey>
+            <key>process_control_invoker_servlet</key><priority>CRITICAL</priority><configKey>Process Control: Invoker Servlet</configKey>
           </rule>
         
           <rule>
-            <key>query_string_injection_amazon_web_services</key><priority>MAJOR</priority><configKey>Query String Injection: Amazon Web Services</configKey>
+            <key>query_string_injection_amazon_web_services</key><priority>CRITICAL</priority><configKey>Query String Injection: Amazon Web Services</configKey>
           </rule>
         
           <rule>
-            <key>query_string_injection_android_provider</key><priority>MAJOR</priority><configKey>Query String Injection: Android Provider</configKey>
+            <key>query_string_injection_android_provider</key><priority>CRITICAL</priority><configKey>Query String Injection: Android Provider</configKey>
           </rule>
         
           <rule>
-            <key>resource_injection</key><priority>MAJOR</priority><configKey>Resource Injection</configKey>
+            <key>resource_injection</key><priority>MINOR</priority><configKey>Resource Injection</configKey>
           </rule>
         
           <rule>
-            <key>sql_injection</key><priority>MAJOR</priority><configKey>SQL Injection</configKey>
+            <key>sql_injection</key><priority>BLOCKER</priority><configKey>SQL Injection</configKey>
           </rule>
         
           <rule>
-            <key>sql_injection_hibernate</key><priority>MAJOR</priority><configKey>SQL Injection: Hibernate</configKey>
+            <key>sql_injection_hibernate</key><priority>BLOCKER</priority><configKey>SQL Injection: Hibernate</configKey>
           </rule>
         
           <rule>
-            <key>sql_injection_jdo</key><priority>MAJOR</priority><configKey>SQL Injection: JDO</configKey>
+            <key>sql_injection_jdo</key><priority>BLOCKER</priority><configKey>SQL Injection: JDO</configKey>
           </rule>
         
           <rule>
-            <key>sql_injection_persistence</key><priority>MAJOR</priority><configKey>SQL Injection: Persistence</configKey>
+            <key>sql_injection_persistence</key><priority>BLOCKER</priority><configKey>SQL Injection: Persistence</configKey>
           </rule>
         
           <rule>
-            <key>sql_injection_ibatis_data_map</key><priority>MAJOR</priority><configKey>SQL Injection: iBatis Data Map</configKey>
+            <key>sql_injection_ibatis_data_map</key><priority>BLOCKER</priority><configKey>SQL Injection: iBatis Data Map</configKey>
           </rule>
         
           <rule>
-            <key>setting_manipulation</key><priority>MAJOR</priority><configKey>Setting Manipulation</configKey>
+            <key>setting_manipulation</key><priority>MINOR</priority><configKey>Setting Manipulation</configKey>
           </rule>
         
           <rule>
@@ -1010,35 +1010,35 @@
           </rule>
         
           <rule>
-            <key>struts_form_does_not_extend_validation_class</key><priority>MAJOR</priority><configKey>Struts: Form Does Not Extend Validation Class</configKey>
+            <key>struts_form_does_not_extend_validation_class</key><priority>MINOR</priority><configKey>Struts: Form Does Not Extend Validation Class</configKey>
           </rule>
         
           <rule>
-            <key>struts_form_field_without_validator</key><priority>MAJOR</priority><configKey>Struts: Form Field Without Validator</configKey>
+            <key>struts_form_field_without_validator</key><priority>MINOR</priority><configKey>Struts: Form Field Without Validator</configKey>
           </rule>
         
           <rule>
-            <key>struts_plugin_framework_not_in_use</key><priority>MAJOR</priority><configKey>Struts: Plugin Framework Not In Use</configKey>
+            <key>struts_plugin_framework_not_in_use</key><priority>MINOR</priority><configKey>Struts: Plugin Framework Not In Use</configKey>
           </rule>
         
           <rule>
-            <key>struts_unused_action_form</key><priority>MAJOR</priority><configKey>Struts: Unused Action Form</configKey>
+            <key>struts_unused_action_form</key><priority>MINOR</priority><configKey>Struts: Unused Action Form</configKey>
           </rule>
         
           <rule>
-            <key>struts_unused_validation_form</key><priority>MAJOR</priority><configKey>Struts: Unused Validation Form</configKey>
+            <key>struts_unused_validation_form</key><priority>MINOR</priority><configKey>Struts: Unused Validation Form</configKey>
           </rule>
         
           <rule>
-            <key>struts_unvalidated_action_form</key><priority>MAJOR</priority><configKey>Struts: Unvalidated Action Form</configKey>
+            <key>struts_unvalidated_action_form</key><priority>MINOR</priority><configKey>Struts: Unvalidated Action Form</configKey>
           </rule>
         
           <rule>
-            <key>struts_validator_turned_off</key><priority>MAJOR</priority><configKey>Struts: Validator Turned Off</configKey>
+            <key>struts_validator_turned_off</key><priority>MINOR</priority><configKey>Struts: Validator Turned Off</configKey>
           </rule>
         
           <rule>
-            <key>struts_validator_without_form_field</key><priority>MAJOR</priority><configKey>Struts: Validator Without Form Field</configKey>
+            <key>struts_validator_without_form_field</key><priority>MINOR</priority><configKey>Struts: Validator Without Form Field</configKey>
           </rule>
         
           <rule>
@@ -1046,11 +1046,11 @@
           </rule>
         
           <rule>
-            <key>unsafe_reflection</key><priority>MAJOR</priority><configKey>Unsafe Reflection</configKey>
+            <key>unsafe_reflection</key><priority>MINOR</priority><configKey>Unsafe Reflection</configKey>
           </rule>
         
           <rule>
-            <key>xml_injection</key><priority>MAJOR</priority><configKey>XML Injection</configKey>
+            <key>xml_injection</key><priority>CRITICAL</priority><configKey>XML Injection</configKey>
           </rule>
         
           <rule>
@@ -1058,19 +1058,19 @@
           </rule>
         
           <rule>
-            <key>access_control_amazon_web_services</key><priority>MAJOR</priority><configKey>Access Control: Amazon Web Services</configKey>
+            <key>access_control_amazon_web_services</key><priority>CRITICAL</priority><configKey>Access Control: Amazon Web Services</configKey>
           </rule>
         
           <rule>
-            <key>access_control_android_provider</key><priority>MAJOR</priority><configKey>Access Control: Android Provider</configKey>
+            <key>access_control_android_provider</key><priority>CRITICAL</priority><configKey>Access Control: Android Provider</configKey>
           </rule>
         
           <rule>
-            <key>access_control_anonymous_ldap_bind</key><priority>MAJOR</priority><configKey>Access Control: Anonymous LDAP Bind</configKey>
+            <key>access_control_anonymous_ldap_bind</key><priority>MINOR</priority><configKey>Access Control: Anonymous LDAP Bind</configKey>
           </rule>
         
           <rule>
-            <key>access_control_database</key><priority>MAJOR</priority><configKey>Access Control: Database</configKey>
+            <key>access_control_database</key><priority>CRITICAL</priority><configKey>Access Control: Database</configKey>
           </rule>
         
           <rule>
@@ -1090,39 +1090,39 @@
           </rule>
         
           <rule>
-            <key>android_bad_practices_just_provider_writepermission_defined</key><priority>MAJOR</priority><configKey>Android Bad Practices: Just Provider writePermission Defined</configKey>
+            <key>android_bad_practices_just_provider_writepermission_defined</key><priority>CRITICAL</priority><configKey>Android Bad Practices: Just Provider writePermission Defined</configKey>
           </rule>
         
           <rule>
-            <key>android_bad_practices_missing_broadcaster_permission</key><priority>MAJOR</priority><configKey>Android Bad Practices: Missing Broadcaster Permission</configKey>
+            <key>android_bad_practices_missing_broadcaster_permission</key><priority>CRITICAL</priority><configKey>Android Bad Practices: Missing Broadcaster Permission</configKey>
           </rule>
         
           <rule>
-            <key>android_bad_practices_missing_component_permission</key><priority>MAJOR</priority><configKey>Android Bad Practices: Missing Component Permission</configKey>
+            <key>android_bad_practices_missing_component_permission</key><priority>CRITICAL</priority><configKey>Android Bad Practices: Missing Component Permission</configKey>
           </rule>
         
           <rule>
-            <key>android_bad_practices_missing_receiver_permission</key><priority>MAJOR</priority><configKey>Android Bad Practices: Missing Receiver Permission</configKey>
+            <key>android_bad_practices_missing_receiver_permission</key><priority>CRITICAL</priority><configKey>Android Bad Practices: Missing Receiver Permission</configKey>
           </rule>
         
           <rule>
-            <key>android_bad_practices_missing_exported_attribute</key><priority>MAJOR</priority><configKey>Android Bad Practices: Missing exported Attribute</configKey>
+            <key>android_bad_practices_missing_exported_attribute</key><priority>CRITICAL</priority><configKey>Android Bad Practices: Missing exported Attribute</configKey>
           </rule>
         
           <rule>
-            <key>android_bad_practices_provider_permission_defined</key><priority>MAJOR</priority><configKey>Android Bad Practices: Provider permission Defined</configKey>
+            <key>android_bad_practices_provider_permission_defined</key><priority>CRITICAL</priority><configKey>Android Bad Practices: Provider permission Defined</configKey>
           </rule>
         
           <rule>
-            <key>android_bad_practices_sticky_broadcast</key><priority>MAJOR</priority><configKey>Android Bad Practices: Sticky Broadcast</configKey>
+            <key>android_bad_practices_sticky_broadcast</key><priority>CRITICAL</priority><configKey>Android Bad Practices: Sticky Broadcast</configKey>
           </rule>
         
           <rule>
-            <key>android_bad_practices_normal_permission</key><priority>MAJOR</priority><configKey>Android Bad Practices: normal Permission</configKey>
+            <key>android_bad_practices_normal_permission</key><priority>CRITICAL</priority><configKey>Android Bad Practices: normal Permission</configKey>
           </rule>
         
           <rule>
-            <key>cookie_security_cookie_not_sent_over_ssl</key><priority>MAJOR</priority><configKey>Cookie Security: Cookie not Sent Over SSL</configKey>
+            <key>cookie_security_cookie_not_sent_over_ssl</key><priority>MINOR</priority><configKey>Cookie Security: Cookie not Sent Over SSL</configKey>
           </rule>
         
           <rule>
@@ -1134,7 +1134,7 @@
           </rule>
         
           <rule>
-            <key>cookie_security_persistent_cookie</key><priority>MAJOR</priority><configKey>Cookie Security: Persistent Cookie</configKey>
+            <key>cookie_security_persistent_cookie</key><priority>MINOR</priority><configKey>Cookie Security: Persistent Cookie</configKey>
           </rule>
         
           <rule>
@@ -1142,27 +1142,27 @@
           </rule>
         
           <rule>
-            <key>insecure_randomness</key><priority>MAJOR</priority><configKey>Insecure Randomness</configKey>
+            <key>insecure_randomness</key><priority>CRITICAL</priority><configKey>Insecure Randomness</configKey>
           </rule>
         
           <rule>
-            <key>missing_securitymanager_check_cloneable</key><priority>MAJOR</priority><configKey>Missing SecurityManager Check: Cloneable</configKey>
+            <key>missing_securitymanager_check_cloneable</key><priority>MINOR</priority><configKey>Missing SecurityManager Check: Cloneable</configKey>
           </rule>
         
           <rule>
-            <key>missing_securitymanager_check_serializable</key><priority>MAJOR</priority><configKey>Missing SecurityManager Check: Serializable</configKey>
+            <key>missing_securitymanager_check_serializable</key><priority>MINOR</priority><configKey>Missing SecurityManager Check: Serializable</configKey>
           </rule>
         
           <rule>
-            <key>password_management</key><priority>MAJOR</priority><configKey>Password Management</configKey>
+            <key>password_management</key><priority>MINOR</priority><configKey>Password Management</configKey>
           </rule>
         
           <rule>
-            <key>password_management_empty_password</key><priority>MAJOR</priority><configKey>Password Management: Empty Password</configKey>
+            <key>password_management_empty_password</key><priority>CRITICAL</priority><configKey>Password Management: Empty Password</configKey>
           </rule>
         
           <rule>
-            <key>password_management_hardcoded_password</key><priority>MAJOR</priority><configKey>Password Management: Hardcoded Password</configKey>
+            <key>password_management_hardcoded_password</key><priority>CRITICAL</priority><configKey>Password Management: Hardcoded Password</configKey>
           </rule>
         
           <rule>
@@ -1170,11 +1170,11 @@
           </rule>
         
           <rule>
-            <key>password_management_null_password</key><priority>MAJOR</priority><configKey>Password Management: Null Password</configKey>
+            <key>password_management_null_password</key><priority>MINOR</priority><configKey>Password Management: Null Password</configKey>
           </rule>
         
           <rule>
-            <key>password_management_password_in_comment</key><priority>MAJOR</priority><configKey>Password Management: Password in Comment</configKey>
+            <key>password_management_password_in_comment</key><priority>MINOR</priority><configKey>Password Management: Password in Comment</configKey>
           </rule>
         
           <rule>
@@ -1182,15 +1182,15 @@
           </rule>
         
           <rule>
-            <key>password_management_weak_cryptography</key><priority>MAJOR</priority><configKey>Password Management: Weak Cryptography</configKey>
+            <key>password_management_weak_cryptography</key><priority>MINOR</priority><configKey>Password Management: Weak Cryptography</configKey>
           </rule>
         
           <rule>
-            <key>privacy_violation</key><priority>MAJOR</priority><configKey>Privacy Violation</configKey>
+            <key>privacy_violation</key><priority>CRITICAL</priority><configKey>Privacy Violation</configKey>
           </rule>
         
           <rule>
-            <key>privacy_violation_password</key><priority>MAJOR</priority><configKey>Privacy Violation: Password</configKey>
+            <key>privacy_violation_password</key><priority>CRITICAL</priority><configKey>Privacy Violation: Password</configKey>
           </rule>
         
           <rule>
@@ -1198,27 +1198,27 @@
           </rule>
         
           <rule>
-            <key>privilege_management_android_data_storage</key><priority>MAJOR</priority><configKey>Privilege Management: Android Data Storage</configKey>
+            <key>privilege_management_android_data_storage</key><priority>CRITICAL</priority><configKey>Privilege Management: Android Data Storage</configKey>
           </rule>
         
           <rule>
-            <key>privilege_management_android_disable</key><priority>MAJOR</priority><configKey>Privilege Management: Android Disable</configKey>
+            <key>privilege_management_android_disable</key><priority>CRITICAL</priority><configKey>Privilege Management: Android Disable</configKey>
           </rule>
         
           <rule>
-            <key>privilege_management_android_location</key><priority>MAJOR</priority><configKey>Privilege Management: Android Location</configKey>
+            <key>privilege_management_android_location</key><priority>CRITICAL</priority><configKey>Privilege Management: Android Location</configKey>
           </rule>
         
           <rule>
-            <key>privilege_management_android_messaging</key><priority>MAJOR</priority><configKey>Privilege Management: Android Messaging</configKey>
+            <key>privilege_management_android_messaging</key><priority>CRITICAL</priority><configKey>Privilege Management: Android Messaging</configKey>
           </rule>
         
           <rule>
-            <key>privilege_management_android_network</key><priority>MAJOR</priority><configKey>Privilege Management: Android Network</configKey>
+            <key>privilege_management_android_network</key><priority>CRITICAL</priority><configKey>Privilege Management: Android Network</configKey>
           </rule>
         
           <rule>
-            <key>privilege_management_android_telephony</key><priority>MAJOR</priority><configKey>Privilege Management: Android Telephony</configKey>
+            <key>privilege_management_android_telephony</key><priority>CRITICAL</priority><configKey>Privilege Management: Android Telephony</configKey>
           </rule>
         
           <rule>
@@ -1234,19 +1234,19 @@
           </rule>
         
           <rule>
-            <key>privilege_management_overly_broad_access_specifier</key><priority>MAJOR</priority><configKey>Privilege Management: Overly Broad Access Specifier</configKey>
+            <key>privilege_management_overly_broad_access_specifier</key><priority>MINOR</priority><configKey>Privilege Management: Overly Broad Access Specifier</configKey>
           </rule>
         
           <rule>
-            <key>privilege_management_unnecessary_permission</key><priority>MAJOR</priority><configKey>Privilege Management: Unnecessary Permission</configKey>
+            <key>privilege_management_unnecessary_permission</key><priority>CRITICAL</priority><configKey>Privilege Management: Unnecessary Permission</configKey>
           </rule>
         
           <rule>
-            <key>weak_cryptographic_hash</key><priority>MAJOR</priority><configKey>Weak Cryptographic Hash</configKey>
+            <key>weak_cryptographic_hash</key><priority>MINOR</priority><configKey>Weak Cryptographic Hash</configKey>
           </rule>
         
           <rule>
-            <key>weak_cryptographic_hash_hardcoded_salt</key><priority>MAJOR</priority><configKey>Weak Cryptographic Hash: Hardcoded Salt</configKey>
+            <key>weak_cryptographic_hash_hardcoded_salt</key><priority>MINOR</priority><configKey>Weak Cryptographic Hash: Hardcoded Salt</configKey>
           </rule>
         
           <rule>
@@ -1254,7 +1254,7 @@
           </rule>
         
           <rule>
-            <key>weak_encryption_inadequate_rsa_padding</key><priority>MAJOR</priority><configKey>Weak Encryption: Inadequate RSA Padding</configKey>
+            <key>weak_encryption_inadequate_rsa_padding</key><priority>MINOR</priority><configKey>Weak Encryption: Inadequate RSA Padding</configKey>
           </rule>
         
           <rule>
@@ -1266,7 +1266,7 @@
           </rule>
         
           <rule>
-            <key>code_correctness_call_to_sleep_in_lock</key><priority>MAJOR</priority><configKey>Code Correctness: Call to sleep() in Lock</configKey>
+            <key>code_correctness_call_to_sleep_in_lock</key><priority>MINOR</priority><configKey>Code Correctness: Call to sleep() in Lock</configKey>
           </rule>
         
           <rule>
@@ -1286,7 +1286,7 @@
           </rule>
         
           <rule>
-            <key>race_condition_format_flaw</key><priority>MAJOR</priority><configKey>Race Condition: Format Flaw</configKey>
+            <key>race_condition_format_flaw</key><priority>MINOR</priority><configKey>Race Condition: Format Flaw</configKey>
           </rule>
         
           <rule>
@@ -1298,6 +1298,6 @@
           </rule>
         
           <rule>
-            <key>session_fixation</key><priority>MAJOR</priority><configKey>Session Fixation</configKey>
+            <key>session_fixation</key><priority>CRITICAL</priority><configKey>Session Fixation</configKey>
           </rule>
         </rules>

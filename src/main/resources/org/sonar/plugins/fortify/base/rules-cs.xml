@@ -2,19 +2,19 @@
         <!-- see names and descriptions in org/sonar/l10n/ -->
     
           <rule>
-            <key>code_correctness_call_to_gc_collect</key><priority>MAJOR</priority><configKey>Code Correctness: Call to GC.Collect()</configKey>
+            <key>code_correctness_call_to_gc_collect</key><priority>MINOR</priority><configKey>Code Correctness: Call to GC.Collect()</configKey>
           </rule>
         
           <rule>
-            <key>code_correctness_class_does_not_implement_equals</key><priority>MAJOR</priority><configKey>Code Correctness: Class Does Not Implement Equals</configKey>
+            <key>code_correctness_class_does_not_implement_equals</key><priority>MINOR</priority><configKey>Code Correctness: Class Does Not Implement Equals</configKey>
           </rule>
         
           <rule>
-            <key>code_correctness_tostring_on_array</key><priority>MAJOR</priority><configKey>Code Correctness: toString on Array</configKey>
+            <key>code_correctness_tostring_on_array</key><priority>MINOR</priority><configKey>Code Correctness: toString on Array</configKey>
           </rule>
         
           <rule>
-            <key>missing_check_against_null</key><priority>MAJOR</priority><configKey>Missing Check against Null</configKey>
+            <key>missing_check_against_null</key><priority>MINOR</priority><configKey>Missing Check against Null</configKey>
           </rule>
         
           <rule>
@@ -26,27 +26,27 @@
           </rule>
         
           <rule>
-            <key>unchecked_return_value</key><priority>MAJOR</priority><configKey>Unchecked Return Value</configKey>
+            <key>unchecked_return_value</key><priority>MINOR</priority><configKey>Unchecked Return Value</configKey>
           </rule>
         
           <rule>
-            <key>asp_net_bad_practices_unminified_code</key><priority>MAJOR</priority><configKey>ASP.NET Bad Practices: Unminified Code</configKey>
+            <key>asp_net_bad_practices_unminified_code</key><priority>CRITICAL</priority><configKey>ASP.NET Bad Practices: Unminified Code</configKey>
           </rule>
         
           <rule>
-            <key>code_correctness_class_implements_icloneable</key><priority>MAJOR</priority><configKey>Code Correctness: Class Implements ICloneable</configKey>
+            <key>code_correctness_class_implements_icloneable</key><priority>MINOR</priority><configKey>Code Correctness: Class Implements ICloneable</configKey>
           </rule>
         
           <rule>
-            <key>code_correctness_erroneous_class_compare</key><priority>MAJOR</priority><configKey>Code Correctness: Erroneous Class Compare</configKey>
+            <key>code_correctness_erroneous_class_compare</key><priority>MINOR</priority><configKey>Code Correctness: Erroneous Class Compare</configKey>
           </rule>
         
           <rule>
-            <key>code_correctness_missing_serializable_attribute</key><priority>MAJOR</priority><configKey>Code Correctness: Missing [Serializable] Attribute</configKey>
+            <key>code_correctness_missing_serializable_attribute</key><priority>MINOR</priority><configKey>Code Correctness: Missing [Serializable] Attribute</configKey>
           </rule>
         
           <rule>
-            <key>code_correctness_misspelled_method_name</key><priority>MAJOR</priority><configKey>Code Correctness: Misspelled Method Name</configKey>
+            <key>code_correctness_misspelled_method_name</key><priority>MINOR</priority><configKey>Code Correctness: Misspelled Method Name</configKey>
           </rule>
         
           <rule>
@@ -54,15 +54,15 @@
           </rule>
         
           <rule>
-            <key>code_correctness_null_argument_to_equals</key><priority>MAJOR</priority><configKey>Code Correctness: null Argument to Equals()</configKey>
+            <key>code_correctness_null_argument_to_equals</key><priority>MINOR</priority><configKey>Code Correctness: null Argument to Equals()</configKey>
           </rule>
         
           <rule>
-            <key>dead_code_unused_field</key><priority>MAJOR</priority><configKey>Dead Code: Unused Field</configKey>
+            <key>dead_code_unused_field</key><priority>MINOR</priority><configKey>Dead Code: Unused Field</configKey>
           </rule>
         
           <rule>
-            <key>dead_code_unused_method</key><priority>MAJOR</priority><configKey>Dead Code: Unused Method</configKey>
+            <key>dead_code_unused_method</key><priority>MINOR</priority><configKey>Dead Code: Unused Method</configKey>
           </rule>
         
           <rule>
@@ -70,7 +70,7 @@
           </rule>
         
           <rule>
-            <key>obsolete</key><priority>MAJOR</priority><configKey>Obsolete</configKey>
+            <key>obsolete</key><priority>MINOR</priority><configKey>Obsolete</configKey>
           </rule>
         
           <rule>
@@ -78,7 +78,7 @@
           </rule>
         
           <rule>
-            <key>unreleased_resource</key><priority>MAJOR</priority><configKey>Unreleased Resource: Streams</configKey>
+            <key>unreleased_resource</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Streams</configKey>
           </rule>
         
           <rule>
@@ -86,7 +86,7 @@
           </rule>
         
           <rule>
-            <key>unreleased_resource_unmanaged_object</key><priority>MAJOR</priority><configKey>Unreleased Resource: Unmanaged Object(unmanaged_object)</configKey>
+            <key>unreleased_resource_unmanaged_object</key><priority>CRITICAL</priority><configKey>Unreleased Resource: Unmanaged Object(unmanaged_object)</configKey>
           </rule>
         
           <rule>
@@ -94,27 +94,27 @@
           </rule>
         
           <rule>
-            <key>html5_overly_permissive_cors_policy</key><priority>MAJOR</priority><configKey>HTML5: Overly Permissive CORS Policy</configKey>
+            <key>html5_overly_permissive_cors_policy</key><priority>MINOR</priority><configKey>HTML5: Overly Permissive CORS Policy</configKey>
           </rule>
         
           <rule>
-            <key>hidden_field</key><priority>MAJOR</priority><configKey>Hidden Field</configKey>
+            <key>hidden_field</key><priority>MINOR</priority><configKey>Hidden Field</configKey>
           </rule>
         
           <rule>
-            <key>javascript_hijacking_vulnerable_framework</key><priority>MAJOR</priority><configKey>JavaScript Hijacking: Vulnerable Framework</configKey>
+            <key>javascript_hijacking_vulnerable_framework</key><priority>MINOR</priority><configKey>JavaScript Hijacking: Vulnerable Framework</configKey>
           </rule>
         
           <rule>
-            <key>poor_logging_practice_use_of_a_system_output_stream</key><priority>MAJOR</priority><configKey>Poor Logging Practice: Use of a System Output Stream</configKey>
+            <key>poor_logging_practice_use_of_a_system_output_stream</key><priority>MINOR</priority><configKey>Poor Logging Practice: Use of a System Output Stream</configKey>
           </rule>
         
           <rule>
-            <key>system_information_leak</key><priority>MAJOR</priority><configKey>System Information Leak</configKey>
+            <key>system_information_leak</key><priority>MINOR</priority><configKey>System Information Leak</configKey>
           </rule>
         
           <rule>
-            <key>trust_boundary_violation</key><priority>MAJOR</priority><configKey>Trust Boundary Violation</configKey>
+            <key>trust_boundary_violation</key><priority>MINOR</priority><configKey>Trust Boundary Violation</configKey>
           </rule>
         
           <rule>
@@ -150,7 +150,7 @@
           </rule>
         
           <rule>
-            <key>asp_net_misconfiguration_session_cookies_disabled</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Session Cookies Disabled</configKey>
+            <key>asp_net_misconfiguration_session_cookies_disabled</key><priority>MINOR</priority><configKey>ASP.NET Misconfiguration: Session Cookies Disabled</configKey>
           </rule>
         
           <rule>
@@ -166,31 +166,31 @@
           </rule>
         
           <rule>
-            <key>cookie_security_httponly_not_set_on_session_cookie</key><priority>MAJOR</priority><configKey>Cookie Security: HTTPOnly not Set on Application Cookie</configKey>
+            <key>cookie_security_httponly_not_set_on_session_cookie</key><priority>MINOR</priority><configKey>Cookie Security: HTTPOnly not Set on Application Cookie</configKey>
           </rule>
         
           <rule>
-            <key>external_content_content_delivery_network</key><priority>MAJOR</priority><configKey>External Content: Content Delivery Network</configKey>
+            <key>external_content_content_delivery_network</key><priority>CRITICAL</priority><configKey>External Content: Content Delivery Network</configKey>
           </rule>
         
           <rule>
-            <key>password_management_empty_password_in_configuration_file</key><priority>MAJOR</priority><configKey>Password Management: Empty Password in Configuration File</configKey>
+            <key>password_management_empty_password_in_configuration_file</key><priority>CRITICAL</priority><configKey>Password Management: Empty Password in Configuration File</configKey>
           </rule>
         
           <rule>
-            <key>password_management_password_in_configuration_file</key><priority>MAJOR</priority><configKey>Password Management: Password in Configuration File</configKey>
+            <key>password_management_password_in_configuration_file</key><priority>CRITICAL</priority><configKey>Password Management: Password in Configuration File</configKey>
           </rule>
         
           <rule>
-            <key>wcf_misconfiguration_anonymous_message_client</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Anonymous Message Client</configKey>
+            <key>wcf_misconfiguration_anonymous_message_client</key><priority>MINOR</priority><configKey>WCF Misconfiguration: Anonymous Message Client</configKey>
           </rule>
         
           <rule>
-            <key>wcf_misconfiguration_anonymous_transport_client</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Anonymous Transport Client</configKey>
+            <key>wcf_misconfiguration_anonymous_transport_client</key><priority>MINOR</priority><configKey>WCF Misconfiguration: Anonymous Transport Client</configKey>
           </rule>
         
           <rule>
-            <key>wcf_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Debug Information</configKey>
+            <key>wcf_misconfiguration_debug_information</key><priority>MINOR</priority><configKey>WCF Misconfiguration: Debug Information</configKey>
           </rule>
         
           <rule>
@@ -198,71 +198,71 @@
           </rule>
         
           <rule>
-            <key>wcf_misconfiguration_insufficient_audit_failure_handling</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Insufficient Audit Failure Handling</configKey>
+            <key>wcf_misconfiguration_insufficient_audit_failure_handling</key><priority>MINOR</priority><configKey>WCF Misconfiguration: Insufficient Audit Failure Handling</configKey>
           </rule>
         
           <rule>
-            <key>wcf_misconfiguration_insufficient_logging</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Insufficient Logging</configKey>
+            <key>wcf_misconfiguration_insufficient_logging</key><priority>MINOR</priority><configKey>WCF Misconfiguration: Insufficient Logging</configKey>
           </rule>
         
           <rule>
-            <key>wcf_misconfiguration_msmq_anonymous_transport_client</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: MSMQ Anonymous Transport Client</configKey>
+            <key>wcf_misconfiguration_msmq_anonymous_transport_client</key><priority>MINOR</priority><configKey>WCF Misconfiguration: MSMQ Anonymous Transport Client</configKey>
           </rule>
         
           <rule>
-            <key>wcf_misconfiguration_metadata</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Metadata</configKey>
+            <key>wcf_misconfiguration_metadata</key><priority>MINOR</priority><configKey>WCF Misconfiguration: Metadata</configKey>
           </rule>
         
           <rule>
-            <key>wcf_misconfiguration_security_not_enabled</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Security Not Enabled</configKey>
+            <key>wcf_misconfiguration_security_not_enabled</key><priority>MINOR</priority><configKey>WCF Misconfiguration: Security Not Enabled</configKey>
           </rule>
         
           <rule>
-            <key>wcf_misconfiguration_service_enumeration</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Service Enumeration</configKey>
+            <key>wcf_misconfiguration_service_enumeration</key><priority>MINOR</priority><configKey>WCF Misconfiguration: Service Enumeration</configKey>
           </rule>
         
           <rule>
-            <key>wcf_misconfiguration_throttling_not_enabled</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Throttling Not Enabled</configKey>
+            <key>wcf_misconfiguration_throttling_not_enabled</key><priority>MINOR</priority><configKey>WCF Misconfiguration: Throttling Not Enabled</configKey>
           </rule>
         
           <rule>
-            <key>wcf_misconfiguration_transport_security_enabled</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Transport Security Enabled</configKey>
+            <key>wcf_misconfiguration_transport_security_enabled</key><priority>MINOR</priority><configKey>WCF Misconfiguration: Transport Security Enabled</configKey>
           </rule>
         
           <rule>
-            <key>wcf_misconfiguration_unauthorized_access</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Unauthorized Access</configKey>
+            <key>wcf_misconfiguration_unauthorized_access</key><priority>MINOR</priority><configKey>WCF Misconfiguration: Unauthorized Access</configKey>
           </rule>
         
           <rule>
-            <key>wcf_misconfiguration_unsafe_revocation_mode</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Unsafe Revocation Mode</configKey>
+            <key>wcf_misconfiguration_unsafe_revocation_mode</key><priority>MINOR</priority><configKey>WCF Misconfiguration: Unsafe Revocation Mode</configKey>
           </rule>
         
           <rule>
-            <key>wcf_misconfiguration_weak_token</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Weak Token</configKey>
+            <key>wcf_misconfiguration_weak_token</key><priority>MINOR</priority><configKey>WCF Misconfiguration: Weak Token</configKey>
           </rule>
         
           <rule>
-            <key>wse_misconfiguration_insufficient_encryption</key><priority>MAJOR</priority><configKey>WSE Misconfiguration: Insufficient Encryption</configKey>
+            <key>wse_misconfiguration_insufficient_encryption</key><priority>MINOR</priority><configKey>WSE Misconfiguration: Insufficient Encryption</configKey>
           </rule>
         
           <rule>
-            <key>wse_misconfiguration_missing_authorization</key><priority>MAJOR</priority><configKey>WSE Misconfiguration: Missing Authorization</configKey>
+            <key>wse_misconfiguration_missing_authorization</key><priority>MINOR</priority><configKey>WSE Misconfiguration: Missing Authorization</configKey>
           </rule>
         
           <rule>
-            <key>wse_misconfiguration_unsigned_fault_timestamp</key><priority>MAJOR</priority><configKey>WSE Misconfiguration: Unsigned Fault Timestamp</configKey>
+            <key>wse_misconfiguration_unsigned_fault_timestamp</key><priority>MINOR</priority><configKey>WSE Misconfiguration: Unsigned Fault Timestamp</configKey>
           </rule>
         
           <rule>
-            <key>wse_misconfiguration_unsigned_request_timestamp</key><priority>MAJOR</priority><configKey>WSE Misconfiguration: Unsigned Request Timestamp</configKey>
+            <key>wse_misconfiguration_unsigned_request_timestamp</key><priority>MINOR</priority><configKey>WSE Misconfiguration: Unsigned Request Timestamp</configKey>
           </rule>
         
           <rule>
-            <key>wse_misconfiguration_unsigned_response_timestamp</key><priority>MAJOR</priority><configKey>WSE Misconfiguration: Unsigned Response Timestamp</configKey>
+            <key>wse_misconfiguration_unsigned_response_timestamp</key><priority>MINOR</priority><configKey>WSE Misconfiguration: Unsigned Response Timestamp</configKey>
           </rule>
         
           <rule>
-            <key>poor_error_handling_empty_catch_block</key><priority>MAJOR</priority><configKey>Poor Error Handling: Empty Catch Block</configKey>
+            <key>poor_error_handling_empty_catch_block</key><priority>MINOR</priority><configKey>Poor Error Handling: Empty Catch Block</configKey>
           </rule>
         
           <rule>
@@ -270,31 +270,31 @@
           </rule>
         
           <rule>
-            <key>poor_error_handling_program_catches_nullreferenceexception</key><priority>MAJOR</priority><configKey>Poor Error Handling: Program Catches NullReferenceException</configKey>
+            <key>poor_error_handling_program_catches_nullreferenceexception</key><priority>MINOR</priority><configKey>Poor Error Handling: Program Catches NullReferenceException</configKey>
           </rule>
         
           <rule>
-            <key>command_injection</key><priority>MAJOR</priority><configKey>Command Injection</configKey>
+            <key>command_injection</key><priority>BLOCKER</priority><configKey>Command Injection</configKey>
           </rule>
         
           <rule>
-            <key>cross_site_scripting_persistent</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Persistent</configKey>
+            <key>cross_site_scripting_persistent</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Persistent</configKey>
           </rule>
         
           <rule>
-            <key>cross_site_scripting_poor_validation</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Poor Validation</configKey>
+            <key>cross_site_scripting_poor_validation</key><priority>MINOR</priority><configKey>Cross-Site Scripting: Poor Validation</configKey>
           </rule>
         
           <rule>
-            <key>cross_site_scripting_reflected</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Reflected</configKey>
+            <key>cross_site_scripting_reflected</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Reflected</configKey>
           </rule>
         
           <rule>
-            <key>dangerous_file_inclusion</key><priority>MAJOR</priority><configKey>Dangerous File Inclusion</configKey>
+            <key>dangerous_file_inclusion</key><priority>CRITICAL</priority><configKey>Dangerous File Inclusion</configKey>
           </rule>
         
           <rule>
-            <key>denial_of_service</key><priority>MAJOR</priority><configKey>Denial of Service</configKey>
+            <key>denial_of_service</key><priority>MINOR</priority><configKey>Denial of Service</configKey>
           </rule>
         
           <rule>
@@ -302,19 +302,19 @@
           </rule>
         
           <rule>
-            <key>ldap_injection</key><priority>MAJOR</priority><configKey>LDAP Injection</configKey>
+            <key>ldap_injection</key><priority>CRITICAL</priority><configKey>LDAP Injection</configKey>
           </rule>
         
           <rule>
-            <key>ldap_manipulation</key><priority>MAJOR</priority><configKey>LDAP Manipulation</configKey>
+            <key>ldap_manipulation</key><priority>MINOR</priority><configKey>LDAP Manipulation</configKey>
           </rule>
         
           <rule>
-            <key>log_forging</key><priority>MAJOR</priority><configKey>Log Forging</configKey>
+            <key>log_forging</key><priority>MINOR</priority><configKey>Log Forging</configKey>
           </rule>
         
           <rule>
-            <key>missing_xml_validation</key><priority>MAJOR</priority><configKey>Missing XML Validation</configKey>
+            <key>missing_xml_validation</key><priority>MINOR</priority><configKey>Missing XML Validation</configKey>
           </rule>
         
           <rule>
@@ -322,11 +322,11 @@
           </rule>
         
           <rule>
-            <key>often_misused_file_upload</key><priority>MAJOR</priority><configKey>Often Misused: File Upload</configKey>
+            <key>often_misused_file_upload</key><priority>MINOR</priority><configKey>Often Misused: File Upload</configKey>
           </rule>
         
           <rule>
-            <key>open_redirect</key><priority>MAJOR</priority><configKey>Open Redirect</configKey>
+            <key>open_redirect</key><priority>CRITICAL</priority><configKey>Open Redirect</configKey>
           </rule>
         
           <rule>
@@ -334,11 +334,11 @@
           </rule>
         
           <rule>
-            <key>resource_injection</key><priority>MAJOR</priority><configKey>Resource Injection</configKey>
+            <key>resource_injection</key><priority>MINOR</priority><configKey>Resource Injection</configKey>
           </rule>
         
           <rule>
-            <key>sql_injection</key><priority>MAJOR</priority><configKey>SQL Injection</configKey>
+            <key>sql_injection</key><priority>BLOCKER</priority><configKey>SQL Injection</configKey>
           </rule>
         
           <rule>
@@ -346,23 +346,23 @@
           </rule>
         
           <rule>
-            <key>sql_injection_linq</key><priority>MAJOR</priority><configKey>SQL Injection: LINQ</configKey>
+            <key>sql_injection_linq</key><priority>BLOCKER</priority><configKey>SQL Injection: LINQ</configKey>
           </rule>
         
           <rule>
-            <key>sql_injection_nhibernate</key><priority>MAJOR</priority><configKey>SQL Injection: NHibernate</configKey>
+            <key>sql_injection_nhibernate</key><priority>BLOCKER</priority><configKey>SQL Injection: NHibernate</configKey>
           </rule>
         
           <rule>
-            <key>sql_injection_subsonic</key><priority>MAJOR</priority><configKey>SQL Injection: SubSonic</configKey>
+            <key>sql_injection_subsonic</key><priority>BLOCKER</priority><configKey>SQL Injection: SubSonic</configKey>
           </rule>
         
           <rule>
-            <key>setting_manipulation</key><priority>MAJOR</priority><configKey>Setting Manipulation</configKey>
+            <key>setting_manipulation</key><priority>MINOR</priority><configKey>Setting Manipulation</configKey>
           </rule>
         
           <rule>
-            <key>unsafe_reflection</key><priority>MAJOR</priority><configKey>Unsafe Reflection</configKey>
+            <key>unsafe_reflection</key><priority>MINOR</priority><configKey>Unsafe Reflection</configKey>
           </rule>
         
           <rule>
@@ -374,7 +374,7 @@
           </rule>
         
           <rule>
-            <key>xml_injection</key><priority>MAJOR</priority><configKey>XML Injection</configKey>
+            <key>xml_injection</key><priority>CRITICAL</priority><configKey>XML Injection</configKey>
           </rule>
         
           <rule>
@@ -398,7 +398,7 @@
           </rule>
         
           <rule>
-            <key>asp_net_misconfiguration_viewstatemac_disabled</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: ViewStateMac Disabled</configKey>
+            <key>asp_net_misconfiguration_viewstatemac_disabled</key><priority>MINOR</priority><configKey>ASP.NET Misconfiguration: ViewStateMac Disabled</configKey>
           </rule>
         
           <rule>
@@ -406,11 +406,11 @@
           </rule>
         
           <rule>
-            <key>access_control_anonymous_ldap_bind</key><priority>MAJOR</priority><configKey>Access Control: Anonymous LDAP Bind</configKey>
+            <key>access_control_anonymous_ldap_bind</key><priority>MINOR</priority><configKey>Access Control: Anonymous LDAP Bind</configKey>
           </rule>
         
           <rule>
-            <key>access_control_database</key><priority>MAJOR</priority><configKey>Access Control: Database</configKey>
+            <key>access_control_database</key><priority>CRITICAL</priority><configKey>Access Control: Database</configKey>
           </rule>
         
           <rule>
@@ -418,11 +418,11 @@
           </rule>
         
           <rule>
-            <key>cookie_security_cookie_not_sent_over_ssl</key><priority>MAJOR</priority><configKey>Cookie Security: Cookie not Sent Over SSL</configKey>
+            <key>cookie_security_cookie_not_sent_over_ssl</key><priority>MINOR</priority><configKey>Cookie Security: Cookie not Sent Over SSL</configKey>
           </rule>
         
           <rule>
-            <key>cookie_security_httponly_not_set</key><priority>MAJOR</priority><configKey>Cookie Security: HTTPOnly not Set</configKey>
+            <key>cookie_security_httponly_not_set</key><priority>MINOR</priority><configKey>Cookie Security: HTTPOnly not Set</configKey>
           </rule>
         
           <rule>
@@ -434,7 +434,7 @@
           </rule>
         
           <rule>
-            <key>cookie_security_persistent_cookie</key><priority>MAJOR</priority><configKey>Cookie Security: Persistent Cookie</configKey>
+            <key>cookie_security_persistent_cookie</key><priority>MINOR</priority><configKey>Cookie Security: Persistent Cookie</configKey>
           </rule>
         
           <rule>
@@ -442,23 +442,23 @@
           </rule>
         
           <rule>
-            <key>header_checking_disabled</key><priority>MAJOR</priority><configKey>Header Checking Disabled</configKey>
+            <key>header_checking_disabled</key><priority>MINOR</priority><configKey>Header Checking Disabled</configKey>
           </rule>
         
           <rule>
-            <key>insecure_randomness</key><priority>MAJOR</priority><configKey>Insecure Randomness</configKey>
+            <key>insecure_randomness</key><priority>CRITICAL</priority><configKey>Insecure Randomness</configKey>
           </rule>
         
           <rule>
-            <key>password_management</key><priority>MAJOR</priority><configKey>Password Management</configKey>
+            <key>password_management</key><priority>MINOR</priority><configKey>Password Management</configKey>
           </rule>
         
           <rule>
-            <key>password_management_empty_password</key><priority>MAJOR</priority><configKey>Password Management: Empty Password</configKey>
+            <key>password_management_empty_password</key><priority>CRITICAL</priority><configKey>Password Management: Empty Password</configKey>
           </rule>
         
           <rule>
-            <key>password_management_hardcoded_password</key><priority>MAJOR</priority><configKey>Password Management: Hardcoded Password</configKey>
+            <key>password_management_hardcoded_password</key><priority>CRITICAL</priority><configKey>Password Management: Hardcoded Password</configKey>
           </rule>
         
           <rule>
@@ -466,23 +466,23 @@
           </rule>
         
           <rule>
-            <key>password_management_null_password</key><priority>MAJOR</priority><configKey>Password Management: Null Password</configKey>
+            <key>password_management_null_password</key><priority>MINOR</priority><configKey>Password Management: Null Password</configKey>
           </rule>
         
           <rule>
-            <key>password_management_password_in_comment</key><priority>MAJOR</priority><configKey>Password Management: Password in Comment</configKey>
+            <key>password_management_password_in_comment</key><priority>MINOR</priority><configKey>Password Management: Password in Comment</configKey>
           </rule>
         
           <rule>
-            <key>password_management_weak_cryptography</key><priority>MAJOR</priority><configKey>Password Management: Weak Cryptography</configKey>
+            <key>password_management_weak_cryptography</key><priority>MINOR</priority><configKey>Password Management: Weak Cryptography</configKey>
           </rule>
         
           <rule>
-            <key>privacy_violation</key><priority>MAJOR</priority><configKey>Privacy Violation</configKey>
+            <key>privacy_violation</key><priority>CRITICAL</priority><configKey>Privacy Violation</configKey>
           </rule>
         
           <rule>
-            <key>privacy_violation_image</key><priority>MAJOR</priority><configKey>Privacy Violation: Image</configKey>
+            <key>privacy_violation_image</key><priority>CRITICAL</priority><configKey>Privacy Violation: Image</configKey>
           </rule>
         
           <rule>
@@ -490,7 +490,7 @@
           </rule>
         
           <rule>
-            <key>weak_cryptographic_hash</key><priority>MAJOR</priority><configKey>Weak Cryptographic Hash</configKey>
+            <key>weak_cryptographic_hash</key><priority>MINOR</priority><configKey>Weak Cryptographic Hash</configKey>
           </rule>
         
           <rule>
@@ -498,7 +498,7 @@
           </rule>
         
           <rule>
-            <key>weak_encryption_inadequate_rsa_padding</key><priority>MAJOR</priority><configKey>Weak Encryption: Inadequate RSA Padding</configKey>
+            <key>weak_encryption_inadequate_rsa_padding</key><priority>MINOR</priority><configKey>Weak Encryption: Inadequate RSA Padding</configKey>
           </rule>
         
           <rule>
