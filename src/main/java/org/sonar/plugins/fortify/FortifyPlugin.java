@@ -43,6 +43,8 @@ import java.util.List;
   @Property(key = FortifyConstants.PROPERTY_PASSWORD, name = "SSC Password", type = PropertyType.PASSWORD),
   @Property(key = FortifyConstants.PROPERTY_ENABLE, name = "Enable Fortify", type = PropertyType.BOOLEAN, defaultValue = "false",
     description = "Enable import of Fortify audit report", global = true, project = true),
+  @Property(key = FortifyConstants.PROPERTY_REPORT_LINK_ENABLED, name = "Enable Report Link", type = PropertyType.BOOLEAN,
+    defaultValue = "true", description = "Enable the 'Open Report' link on the Fortify widget"),
 
   // optional project properties
   @Property(key = FortifyConstants.PROPERTY_PROJECT_NAME, name = "Fortify Project Name", global = false, project = true),

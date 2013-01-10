@@ -32,8 +32,11 @@
                ssc_url = controller.java_facade.getConfigurationValue('sonar.fortify.sscUrl')
                fortify_name=context_hash['name']
                fortify_version=context_hash['version']
+               show_link = controller.java_facade.getConfigurationValue('sonar.fortify.reportLinkEnabled')
             %>
-            <a href="http://www.hpfod.com/" class="action"><%= message('fortify.widget.openReport') -%></a>
+            <% if show_link == 'true' %>
+            <a href="<%= ssc_url -%>/flex/index.jsp?projectName=<%= u fortify_name -%>&projectVersionName=<%= u fortify_version -%>" class="action"><%= message('fortify.widget.openReport') -%></a>
+            <% end %>
           </p>
         </div>
       </td>
