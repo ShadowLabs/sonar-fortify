@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Sending unvalidated data to a web browser can result in the browser executing malicious code. Settings in the configuration can minimize and reduce the exposure to cross-site scripting
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Cross-site scripting (XSS) vulnerabilities occur when:<br /><br />1. Data enters a web application through an untrusted source, most frequently a web request or database.<br /><br />2. The data is included in dynamic content that is sent to a web user without being validated for malicious code. <br /><br />The malicious content sent to the web browser often takes the form of a segment of JavaScript, but may also include HTML, Flash or any other type of code that the browser may execute. The variety of attacks based on XSS is almost limitless, but they commonly include transmitting private data like cookies or other session information to the attacker, redirecting the victim to web content controlled by the attacker, or performing other malicious operations on the user's machine under the guise of the vulnerable site.<br /><br />Since attacks against XSS vulnerabilities often involve communicating with or redirecting to a malicious site controlled by the attacker, the ability to inject references to content on other domains is integral to many exploits. AntiSamy can be configured to prevent links to external domains, which diminishes the damage an attacker can cause through an XSS attack. However, this protection is only a partial solution and does not address the overall threat posed by XSS vulnerabilities. <br /><br /><b>Example 1:</b> The following AntiSamy configuration entry allows links to URLs outside of the domain on which the application is running.<br /><pre><br />		&lt;attribute name="href" onInvalid="filterTag"&gt;<br />			&lt;regexp-list&gt;<br />				&lt;regexp name="onsiteURL"/&gt;<br />				&lt;regexp name="offsiteURL"/&gt;<br />			&lt;/regexp-list&gt;<br />		&lt;/attribute&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

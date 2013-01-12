@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The functions, checkCallingOrSelfPermission() or checkCallingOrSelfUriPermission(), should be used with care as it allows the calling program, without the required or no permissions, to bypass the permission check, by using your application's permissions.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  The function <code>checkCallingOrSelfPermission()</code> or <code>checkCallingOrSelfUriPermission()</code> determine whether the calling program has the required permission to access a certain service or a given URI.  However, these functions should be used with care as they can grant access to malicious applications, lacking the appropriate permissions, by assuming your applications permissions. <br /><br />This means a malicious application, without appropriate permissions, can bypass its permission check by using your application's permission to get access to otherwise denied resources. This can result in what is known as the confused deputy attack.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

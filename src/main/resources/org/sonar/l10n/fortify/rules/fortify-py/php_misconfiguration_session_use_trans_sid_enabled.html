@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Configuring PHP to pass the session ID on the URL opens the door to session fixation and session hijacking attacks.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  When enabled, the <code>session.use_trans_sid</code> causes PHP to pass the session ID on the URL, which makes it much easier for attackers to hijack active sessions or trick users into using an existing session already under the attackers' control. <br /><br />Parameters passed on the URL are more visible than POST parameters and cookie values because they often appear in browser histories, bookmarks, log files, and other highly exposed locations. If attackers learn the secret session identifier for an active session on a system, then they could possibly supply the session identifier back to the program in order to hijack the user's session.<br /><br />Beyond session hijacking, exposing the session ID on the URL also facilitates session fixation attacks. In the canonical exploit of session fixation vulnerabilities, an attacker creates a new session on a web application and records the associated session identifier. The attacker then causes the victim to authenticate against the server using that session identifier, giving the attacker access to the user's account through the active session. Passing the session identifier on the URL allows attackers to reach a large number of potential victims by sending URLs that include a compromised session identifier to victims via email or another mass communication mechanism.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

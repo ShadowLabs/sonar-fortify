@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  A missing signature means the integrity of a SOAP message cannot be guaranteed.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Any part of a message that is not signed has the potential to be intercepted and modified without the knowledge of the sender or the receiver. Without a signature, the receiver cannot cryptographically verify that the contents of a message really originated with the sender.<br /><br /><b>Example 1:</b> The following WS-SecurityPolicy policy entry does not require SOAP message bodies to be signed since the <code>&lt;SignedParts&gt;</code> tag does not contain a <code>&lt;sp:Body&gt;</code> tag:<br /><pre><br />&lt;sp:SignedParts&gt;<br />  &lt;sp:Header .../&gt;<br />&lt;/sp:SignedParts&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

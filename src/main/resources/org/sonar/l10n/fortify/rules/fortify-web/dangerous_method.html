@@ -1,10 +1,12 @@
-
-							<h2>ABSTRACT</h2>
-							<p>
-							  <Paragraph>The method <Replace key="EnclosingFunction.name"/> in <Replace key="PrimaryLocation.file"/> calls <Replace key="PrimaryCall.name"/> with untrusted data.</Paragraph>
-							</p>
-							<h2>EXPLANATION</h2>
-							<p>
-							  The annotation FortifySink has been applied to this function. This is used to indicate that this function is dangerous when called with tainted data.<br>
-							</p>
-							 						
+<h2>ABSTRACT</h2>
+<p>
+  <p>The method <Replace key="$call.function.name$"/> has been annotated as dangerous. All uses of this method will be flagged as issues.</p>
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  The annotation FortifyDangerous has been applied to this method. This is used to indicate that it is dangerous and all uses should be examined for safety.<br /><p>In this case the dangerous method you are using is <Replace key="$call.function.name$"/> in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/>.</p>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

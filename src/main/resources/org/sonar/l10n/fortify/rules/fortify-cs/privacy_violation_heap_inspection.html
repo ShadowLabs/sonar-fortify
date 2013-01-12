@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Storing sensitive data in a <code>String</code> object makes it impossible to reliably purge the data from memory.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Sensitive data (such as passwords, social security numbers, credit card numbers etc) stored in memory can be leaked if it is stored in a managed <code>String</code> object. <code>String</code> objects are not pinned, so the garbage collector can relocate these objects at will and leave several copies in memory.  These objects are not encrypted by default, so anyone that can read the process' memory will be able to see the contents.  Furthermore, if the process' memory gets swapped out to disk, the unencrypted contents of the string will be written to a swap file.  Lastly, since <code>String</code> objects are immutable, removing the value of a <code>String</code> from memory can only be done by the CLR garbage collector. The garbage collector is not required to run unless the CLR is low on memory, so there is no guarantee as to when garbage collection will take place. In the event of an application crash, a memory dump of the application might reveal sensitive data.<br /><br /><b>Example 1:</b> The following method returns a password from the console and stores it in an insecure <code>String</code> object.<br /><pre><br />public static String getPassword() {<br />    String inputPassword = "";<br />    ConsoleKeyInfo nextKey = Console.ReadKey(true);<br />    while (nextKey.Key != Console.ReadKey(true)) {<br />        inputPassword.AppendChar(nextKey.KeyChar);<br />        Console.Write("*");<br />        nextKey = Console.ReadKey(true);<br />    }<br />    return inputPassword;<br />}<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

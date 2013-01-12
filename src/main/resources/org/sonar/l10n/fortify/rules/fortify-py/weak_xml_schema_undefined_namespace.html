@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Specifying a namespace of <code>##any</code> in the <code>&lt;any&gt;</code> element means the schema allows elements beyond what is explicitly defined in the schema, thereby making it easier to craft malicious documents.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  A schema that does not restrict element namespaces permits arbitrary elements to be included in a valid document. This makes it easier for attackers to perform attacks like XML Injection by including tags that do not conform to the standards imposed on the rest of the document.<br /><br />The following schema allows unrestricted namespaces.<br /><pre><br />&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; &gt;<br /> &lt;xs:element name='foo'&gt;<br />  &lt;xs:complexType&gt;<br />   &lt;xs:sequence&gt;<br />     &lt;xs:any namespace='##any' /&gt;<br />   &lt;/xs:sequence&gt;<br />  &lt;/xs:complexType&gt;<br /> &lt;/xs:element&gt;<br />&lt;/xs:schema&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

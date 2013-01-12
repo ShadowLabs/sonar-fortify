@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Disabling header checking opens the door for attackers to perform header manipulation attacks such as HTTP Response Splitting.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  By default, the .NET framework prevents new line characters from being sent to APIs that set header values. However, this behavior can be disabled in configuration files by setting the <code>enableHeaderChecking</code> attribute on the <code>&lt;httpRuntime&gt;</code> tag to <code>false</code>.<br />When this check is disabled, code that allows user input to reach header setting APIs is vulnerable to attacks like HTTP Response Splitting.<br /><br /><p><br />In this case the <code>enableHeaderChecking</code> attribute is set to <code>false</code> on the <code>&lt;httpRuntime&gt;</code> tag defined in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/>.<br /></p>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

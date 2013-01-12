@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Include statements that refer to remote files can allow an attacker to inject malicious content into the program.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  When enabled, the <code>allow_url_include</code> option allows PHP functions that specify a file for inclusion in the current page, such as <code>include()</code> and <code>require()</code>, to accept an HTTP or FTP URL to a remote file. The option, which was introduced in PHP 5.2.0 and is disabled by default, is dangerous because it can allow attackers to introduce malicious content into an application. At best, including remote files leaves the application susceptible to attackers who alter the remote file to include malicious content. At worst, if attackers can control a URL that the application uses to specify the remote file to include, then they can inject arbitrary malicious content into the application by supplying a URL to a remote server.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

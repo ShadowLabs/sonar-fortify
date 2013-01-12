@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Operating on remote files can allow an attacker to inject malicious content into the program.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  When enabled, the <code>allow_url_fopen</code> option allows PHP functions that accept a filename to operate on remote files using an HTTP or FTP URL. The option, which was introduced in PHP 4.0.4 and is enabled by default, is dangerous because it can allow attackers to introduce malicious content into an application. At best, operating on remote files leaves the application susceptible to attackers who alter the remote file to include malicious content. At worst, if attackers can control a URL that the application operates on, then they can inject arbitrary malicious content into the application by supplying a URL to a remote server. <br /><br /><b>Example 1:</b> The following code opens a file whose name is controlled by a request parameter and reads its contents. Because the value of <code>$file</code> is controlled by a request parameter, an attacker could violate the programmer's assumptions by providing a URL to a remote file. <br /><br /><pre><br />&lt;?php<br />$file = fopen ($_GET[&quot;file&quot;], &quot;r&quot;);<br />if (!$file) {<br />    // handle errors<br />}<br />while (!feof ($file)) {<br />    $line = fgets ($file, 1024);<br />    // operate on file content<br />}<br />fclose($file);<br />?&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Debug code can create unintended entry points in a deployed web application.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  A common development practice is to add "back door" code specifically designed for debugging or testing purposes that is not intended to be shipped or deployed with the application. When this sort of debug code is accidentally left in the application, the application is open to unintended modes of interaction. These back door entry points create security risks because they are not considered during design or testing and fall outside of the expected operating conditions of the application.<br /><br />The most common example of forgotten debug code is a <code>Main()</code> method appearing in a web application. Although this is an acceptable practice during product development, classes that are part of a production ASP.NET application should not define a <code>Main()</code>.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

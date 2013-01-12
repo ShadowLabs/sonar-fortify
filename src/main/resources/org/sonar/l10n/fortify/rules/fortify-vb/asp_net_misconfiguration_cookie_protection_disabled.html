@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The contents of unprotected cookies could be viewed or modified by attackers.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Cookies are often used to store important information about users, such as personal information, authentication tokens and a history of their activity. If this information is stored in plaintext, anyone with access to machines used to interact with the application will have access to the information stored in the cookie. Worse yet, if attackers are allowed to arbitrarily modify the data stored in cookies, they can falsify information provided to the application and potentially alter its behavior to their advantage.<br /><br />In many cases, an application can validate input from cookies programmatically according to the context in which it is used, but the ASP.NET validation framework provides an excellent way to both protect the contents of the cookie and to verify that the cookie has not been modified unexpectedly. Without this approach, it is difficult, and often impossible, to establish with a high level of confidence that all input is validated.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Automatic input escaping is fragile and does nothing to prevent many types of attacks.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  If enabled, the <code>magic_quotes_gpc</code> and <code>magic_quotes_runtime</code> configuration options cause PHP to automatically escape all ' (single-quote), &quot; (double quote), \ (backslash) and NUL characters in input read from the Web (GET, POST, and Cookies or GPC) and other input sources (database, file system, and so on or runtime) respectively. This weak attempt at handling input validation at the server-level is fragile even for SQL injection, the vulnerability it was designed to protect against, and does nothing to prevent other common attacks against Web applications. In recognition of their inadequacy, both options have been deprecated and removed from PHP 6.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

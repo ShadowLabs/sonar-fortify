@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The PHP <code>open_basedir</code> configuration option contains a design flaw that leaves it vulnerable to file access race conditions, which can allow an attacker to circumvent access control checks on the file system.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  When present, the <code>open_basedir</code> configuration option attempts to prevent PHP programs from operating on files outside of the directory trees specified in php.ini. Although the <code>open_basedir</code> option is an overall boon to security, the implementation suffers from a race condition that can permit attackers to bypass its restrictions in some circumstances [2]. A time-of-check, time-of-use (TOCTOU) race condition exists between the time PHP performs the access permission check and when the file is opened. As with file system race conditions in other languages, this vulnerability can allow attackers to replace a symlink to a file that passes the access control check with another for which the test would otherwise fail, thereby gaining access to the protected file.<br /><br />The window of vulnerability for such an attack is the period of time between when the access check is performed and when the file is opened. Even though the calls are performed in close succession, modern operating systems offer no guarantee about the amount of code that will be executed before the process yields the CPU. Attackers have a variety of techniques for expanding the length of the window of opportunity in order to make exploits easier, but even with a small window, an exploit attempt can simply be repeated over and over until it is successful.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

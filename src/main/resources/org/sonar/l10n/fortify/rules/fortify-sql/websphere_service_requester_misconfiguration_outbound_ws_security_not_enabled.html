@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Requests that do not use WS-Security make it hard to guarantee message integrity or confidentiality.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  WS-Security is an enhancement to SOAP that provides end-to-end message integrity and confidential regardless of the transport protocol. When WS-Security is not used, message rely on transport security for integrity and confidentiality. If a service relays messages to other services, messages are exposed to the weakest transport mechanism used between relay points. WS-Security removes the transport security dependency and builds security into the message.<br /><br /><p><br />In this case, the file <Replace key="PrimaryLocation.file"/> does not contain a <code>&lt;securityRequestGeneratorServiceConfig&gt;</code> tag.</p> The absence of an <code>&lt;securityRequestGeneratorServiceConfig&gt;</code> tag in the IBM WebSphere WS-Security client deployment descriptor extension file indicates that outbound message security is not enabled.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

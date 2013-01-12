@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Encryption keys can compromise system security in a way that cannot be easily remedied.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  It is never a good idea to hardcode an encryption key. Not only does hardcoding an encryption key allow all of the project's developers to view the encryption key, it also makes fixing the problem extremely difficult. Once the code is in production, the encryption key cannot be changed without patching the software. If the account protected by the encryption key is compromised, the owners of the system will be forced to choose between security and availability.<br /><br /><p><br />In this case the encryption key is located at <Replace key="PrimaryCall.name" link="PrimaryLocation"/> in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/>.<br /></p><br /><b>Example:</b> The following code uses a hardcoded encryption key:<br /><br /><pre><br />...<br />char encyrptionKey[] = "lakdsljkalkjlksdfkl";<br />...<br /></pre><br /><br />Anyone who has access to the code will have access to the encryption key. Once the program has shipped, there is no way to change the encryption key unless the program is patched. An employee with access to this information can use it to break into the system. Even worse, if attackers have access to the executable for the application they can disassemble the code, which will contain the value of the encryption key used.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Revealing system data or debugging information helps an adversary learn about the system and form a plan of attack.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  An information leak occurs when system data or debugging information leaves the program through an output stream or logging function.<br /><br /><p><br />In this case the parameter <code>sendStacktraceDetailsWithFaults</code> is set to <code>true</code> in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/>.<br /></p><br /><br />This parameter tells Apache Axis 2 to send fault messages to clients. Fault messages contain stack traces and in some cases the error message tells the attacker precisely what sort of an attack the system is vulnerable to. For example, a database error message can reveal that the application is vulnerable to a SQL injection attack. Other error messages can reveal more oblique clues about the system.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

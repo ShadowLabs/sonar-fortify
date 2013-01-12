@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program can potentially dereference a null pointer, thereby causing a segmentation fault.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Null pointer exceptions usually occur when one or more of the programmer's assumptions is violated. A check-after-dereference error occurs when a program dereferences a pointer that can be null before checking if the pointer is null.<br /><p><br />In this case the variable can be null when it is dereferenced at line <Replace key="PrimaryLocation.line"/>, thereby causing a segmentation fault. <br /></p><br />Most null pointer issues result in general software reliability problems, but if an attacker can intentionally trigger a null pointer dereference, the attacker might be able to use the resulting exception to bypass security logic or to cause the application to reveal debugging information that will be valuable in planning subsequent attacks.<br /> <br /><b>Example:</b> In the following code, the programmer assumes that the variable <code>ptr</code> is not <code>NULL</code>.  That assumption is made explicit when the programmer dereferences the pointer.  This assumption is later contradicted when the programmer checks <code>ptr</code> against <code>NULL</code>. If <code>ptr</code> can be <code>NULL</code> when it is checked in the <code>if</code> statement then it can also be <code>NULL</code> when it dereferenced and may cause a segmentation fault. <br /><br /><pre><br />ptr-&gt;field = val;<br />...<br />if (ptr != NULL) {<br />	...<br />}<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

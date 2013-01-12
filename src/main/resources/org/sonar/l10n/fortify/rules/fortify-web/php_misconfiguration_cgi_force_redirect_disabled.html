@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Permitting users to invoke the PHP interpreter over the Web directly can allow attackers to bypass permission checks and access protected files on the server.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  If the PHP interpreter is installed as a CGI binary then requests for PHP resources are typically redirected by the Web server to the interpreter. In this situation, when a user requests http://www.example.com/content/page.php, the server first performs the necessary access control checks on the directory /content, then redirects control to the PHP interpreter with a request to http://www.example.com/cgi-bin/php/content/page.php.<br /><br />If <code>cgi.force_redirect</code>, which is enabled by default, is disabled, then attackers with access to /cgi-bin/php can use the permissions of the PHP interpreter to access arbitrary Web documents, thus bypassing any access control checks that would have been performed by the server.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

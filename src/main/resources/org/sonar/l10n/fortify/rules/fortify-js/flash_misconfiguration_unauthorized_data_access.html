@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program allows HTTP and HTTPS SWF applications to communicate.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Starting with Flash Player 7, SWF applications loaded over HTTP are not allowed to access data of SWF applications loaded over HTTPS by default. Adobe Flash allows developers to alter this restriction either programmatically or via appropriate settings in the <code>crossdomain.xml</code> configuration file. However, caution should be taken when defining these settings because HTTP loaded SWF applications are subject to man-in-the-middle attacks, and thus should not be trusted.<br /><br /><b>Example:</b> The <code>crossdomain.xml</code> file below turns off the restriction that prevents HTTP loaded SWF applications from accessing the data of HTTPS loaded SWF applications by setting the value of the <code>secure</code> attribute to <code>false</code>.<br /><br /><pre><br />  &lt;cross-domain-policy&gt;<br />    &lt;allow-access-from domain="*" secure="false"/&gt;<br />  &lt;/cross-domain-policy&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

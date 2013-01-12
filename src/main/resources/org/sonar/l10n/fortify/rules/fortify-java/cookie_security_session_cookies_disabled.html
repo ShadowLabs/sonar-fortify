@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program does not use cookies to transmit session identifiers, which can leave the door open to Session Fixation and Session Hijacking attacks.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Most web applications use a session identifier to uniquely identify users, which is typically stored in a cookie and transmitted transparently between the server and the web browser. <br />  <p><br />In this case, the <code>session.use_cookies</code> or <code>session.use_only_cookies</code> property is set to <code>0</code> or <code>off</code> in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/>, which prevents the application from storing session identifiers in cookies.<br /></p><br /><br />Applications that do not store session identifiers in cookies sometimes transmit them as an HTTP request parameter or as part of the URL. Accepting session identifiers specified in URLs makes it easy for attackers to perform Session Fixation attacks. <br /><br />Placing session identifiers in URLs can also increase the chances of successful Session Hijacking attacks against the application. Session Hijacking occurs when an attacker takes control of a victim's active session or session identifier. It is common practice for web servers, application servers, and web proxies to store requested URLs. If session identifiers are included in URLs, they are also logged. Increasing the number of places session identifiers are viewed and stored increases the chances they will be compromised by an attacker.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

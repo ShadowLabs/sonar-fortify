@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The <code>&lt;any&gt;</code> element makes it easier to perform attacks like XML Injection.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  The <code>&lt;any&gt;</code> element means arbitrary tags can be included in a valid document. Permitting arbitrary content makes it easier for attackers to to perform attacks like XML Injection.<br /><br />Example: Imagine you are using the following schema for validation.       <br /><br /><pre><br />&lt;?xml version=&quot;1.0&quot;?&gt;<br />&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;  &gt;<br />  &lt;xs:element name=&quot;cart&quot; &gt;<br />    &lt;xs:complexType&gt;<br />      &lt;xs:sequence&gt;<br />	&lt;xs:element name=&quot;itemID&quot; maxOccurs=&quot;1&quot; /&gt;<br />	&lt;xs:element name=&quot;price&quot; maxOccurs=&quot;1&quot; /&gt;<br />	&lt;xs:element name=&quot;description&quot; maxOccurs=&quot;1&quot;/&gt;<br />      &lt;/xs:sequence&gt;<br />    &lt;/xs:complexType&gt;<br />  &lt;/xs:element&gt;<br />  &lt;xs:element name=&quot;description&quot; type=&quot;xs:string&quot;/&gt;<br />  &lt;xs:element name=&quot;name&quot; type=&quot;xs:string&quot;/&gt;<br />  &lt;xs:element name=&quot;price&quot; type=&quot;xs:decimal&quot;/&gt;<br />  &lt;xs:element name=&quot;code&quot; type=&quot;xs:string&quot;/&gt;<br />&lt;/xs:schema&gt;<br /></pre><br /><br />Since this schema uses the <code>&lt;any&gt;</code> element, the following XML documentation will be considered valid.<br /><br /><pre><br />&lt;?xml version=\&quot;1.0\&quot; ?&gt;<br />&lt;cart&gt;<br />  &lt;itemID&gt;123&lt;/itemID&gt;<br />  &lt;price&gt;50.00&lt;/price&gt;<br />  &lt;price&gt;1.0&lt;/price&gt;<br />&lt;/cart&gt;<br /></pre><br /><br />This is especially dangerous when using SAX parsers since later nodes will overwrite previous nodes.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Impersonating user credentials could allow an attacker to gain unauthorized access to protected resources.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Microsoft ASP.NET applications can impersonate the security context of the current user or the process that invoked them in order to execute privileged operations. Although impersonation contexts serve a variety of useful purposes, such as reducing the overall number of authentication attempts that must be made, a program that retains elevated privileges unnecessarily poses a risk to the overall security of the system. If an attacker exploits another vulnerability in the program while it is running in another security context, any unauthorized operations the attacker performs will be executed with the corresponding privileges.<br /><br /><b>Example 1:</b> The following code example represents a typical use pattern for impersonating credentials using the <code>WindowsIdentity.Impersonate()</code> method.<br /><br /><pre><br />using System.Security.Principal;<br />...<br />	<br />//Get the identity of the current user<br />IIdentity contextId = HttpContext.Current.User.Identity;<br />WindowsIdentity userId = (WindowsIdentity)contextId;<br /><br />//Temporarily impersonate<br />WindowsImpersonationContext imp = userId.Impersonate();<br /><br />//Perform tasks using the caller's security context<br />DoSecuritySensitiveTasks();<br /><br />//Clean up and restore our old security context<br />impersonate.Undo();<br /></pre><br /><br />The code in Example 1 impersonates the current user's security context and uses it to perform a privileged operation. After calling <code>DoSecuritySensitiveTasks()</code>, the code attempts to restore the original security context, but if <code>DoSecuritySensitiveTasks()</code> throws an exception, the <code>Undo()</code> method will never be called and the program will continue to use the impersonated security context.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

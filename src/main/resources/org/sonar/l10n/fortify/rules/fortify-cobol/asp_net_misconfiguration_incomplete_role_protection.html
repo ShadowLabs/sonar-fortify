@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Unprotected role information in cookies can be viewed or modified by attackers.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  If the <code>cacheRolesInCookie</code> attribute of the <code>configuration/system.web/authentication/forms</code> element in <code>web.config</code> is set to <code>true</code>, then the roles for each user are cached in a cookie. If this information is stored in plaintext, anyone with access to machines used to interact with the application will have access to the information stored in the cookie. Worse yet, if attackers are allowed to arbitrarily modify the data stored in cookies, they can falsify information provided to the application and potentially alter its behavior to their advantage.<br /><br />In many cases, an application can validate input from cookies programmatically according to the context in which it is used, but the ASP.NET validation framework provides an excellent way to verify that the cookie has not been modified unexpectedly. Without this approach, it is difficult, and often impossible, to establish with a high level of confidence that all input is validated.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

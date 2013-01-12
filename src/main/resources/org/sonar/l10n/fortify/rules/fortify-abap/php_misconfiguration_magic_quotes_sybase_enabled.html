@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Automatic input escaping is fragile and does nothing to prevent many types of attacks.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  If enabled, the <code>magic_quotes_sybase</code> configuration option escapes a single-quote with a single-quote instead of backslash if <code>magic_quotes_gpc</code> or <code>magic_quotes_runtime</code> are enabled. It also completely overrides <code>magic_quotes_gpc</code>, in which case, even when <code>magic_quotes_gpc</code> is enabled, neither double quotes, backslashes or NULs will be escaped. <br /><code>magic_quotes_gpc</code> and <code>magic_quotes_runtime</code>, when enabled, cause PHP to automatically escape all ' (single-quote), &quot; (double quote), \ (backslash) and NUL characters in input read from the Web (GET, POST, and Cookies or GPC) and other input sources (database, file system, and so on or runtime) respectively. This weak attempt at handling input validation at the server-level is fragile even for SQL injection, the vulnerability it was designed to protect against, and does nothing to prevent other common attacks against Web applications. In recognition of their inadequacy, this feature has been deprecated as of PHP 5.3.0 and removed as of PHP 5.4.0. <code>magic_quotes_gpc</code> and <code>magic_quotes_runtime</code> have been deprecated and removed from PHP 6.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

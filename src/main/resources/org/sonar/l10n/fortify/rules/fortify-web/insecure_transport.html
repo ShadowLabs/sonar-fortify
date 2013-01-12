@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The call uses HTTP instead of HTTPS to communicate with the server.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  All communication over HTTP, FTP or gopher is unauthenticated and unencrypted. It is thus, subject to compromise, especially in the mobile environment where devices frequently connect to unsecured, public, wireless networks using WiFi connections.<br /><br /><b>Example 1:</b> The following example reads data using the HTTP protocol (versus using HTTPS).<br /><br /><pre><br /><br />   URL url = new URL("http://www.android.com/");<br />   HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();<br />   try {<br />     InputStream in = new BufferedInputStream(urlConnection.getInputStream());<br />     readStream(in);<br />     ...<br />   }<br /><br /></pre><br /><br />The incoming stream,<code>instream</code>, may have been compromised as it is delivered over an unencrypted and unauthenticated channel.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

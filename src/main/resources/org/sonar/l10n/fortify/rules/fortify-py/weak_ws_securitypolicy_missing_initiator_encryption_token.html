@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Unencrypted messages fail to protect confidentiality.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Encryption at the SOAP message level ensures true end-to-end confidentiality. SOAP messages can be sent over a number transport protocols such as HTTPS, HTTP, TCP, SMTP, UDP, etc. Message-level encryption ensures the confidentiality of the message regardless of the transport protocol. A common scenario among web services is to relay SOAP messages between services, so message-level encryption means message senders and receivers do not need to worry about all transport security between any relay points. <br /><br /><b>Example 1:</b> The following WS-SecurityPolicy policy entry uses asymmetric binding, but does not specify an initiator encryption token:<br /><pre><br />&lt;sp:AsymmetricBinding&gt;<br />  &lt;wsp:Policy&gt;<br />    &lt;sp:InitiatorSignatureToken&gt;<br />      &lt;wsp:Policy&gt;<br />      ...<br />      &lt;/wsp:Policy&gt;<br />    &lt;/sp:InitiatorSignatureToken&gt;<br />    &lt;sp:RecipientEncryptionToken&gt;<br />      &lt;wsp:Policy&gt;<br />      ...<br />      &lt;/wsp:Policy&gt;<br />    &lt;/sp:RecipientEncryptionToken&gt;<br />    &lt;sp:RecipientSignatureToken&gt;<br />      &lt;wsp:Policy&gt;<br />      ...<br />      &lt;/wsp:Policy&gt;<br />    &lt;/sp:RecipientSignatureToken&gt;<br />      ...<br />  &lt;/wsp:Policy&gt;<br />&lt;/sp:AsymmetricBinding&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

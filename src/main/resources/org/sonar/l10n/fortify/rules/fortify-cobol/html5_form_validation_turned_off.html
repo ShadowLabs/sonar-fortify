@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  HTML5 validation of input form fields is disabled.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  HTML5 provides a new ability to do simple input form fields validation. One can specify whether an input form field is required by using the <code>required</code> attribute. Specifying the field type makes sure that the input is checked against its type. One can even supply a customizable <code>pattern</code> attribute that checks the input against a regular expression. However, this validation gets disabled when adding a <code>novalidate</code> attribute on a form tag and a <code>formnovalidate</code> attribute on a submit input tag.<br /><br /><b>Example 1:</b> The following sample disables form validation via a <code>novalidate</code> attribute.<br /><br /><pre><br />      &lt;form action="demo_form.asp" novalidate="novalidate"&gt;<br />        E-mail: &lt;input type="email" name="user_email" /&gt;<br />        &lt;input type="submit" /&gt;<br />      &lt;/form&gt;<br /></pre><br /><br /><b>Example 2:</b> The following sample disables form validation via a <code>formnovalidate</code> attribute.<br /><br /><pre><br />      &lt;form action="demo_form.asp" &gt;<br />        E-mail: &lt;input type="email" name="user_email" /&gt;<br />        &lt;input type="submit" formnovalidate="formnovalidate"/&gt;<br />      &lt;/form&gt;<br /></pre><br /><br />HTML forms with disabled validation are not user-friendly and can potentially expose the server to numerous types of attacks. Unchecked input is the root cause of vulnerabilities like cross-site scripting, process control, and SQL injection.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

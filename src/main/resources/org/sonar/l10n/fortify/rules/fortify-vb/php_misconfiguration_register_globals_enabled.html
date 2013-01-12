@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Configuring PHP to register all environment, GET, POST, cookie, and server variables globally can lead to unexpected behavior and leaves the door open for attackers.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  When enabled, the <code>register_globals</code> option causes PHP to register all EGPCS (Environment, GET, POST, Cookie, and Server) variables globally, where they can be accessed in any scope in any PHP program. This option encourages programmers to write programs that are more-or-less unaware of the origin of values they rely on, which can lead to unexpected behavior in benign environments and leaves the door open to attackers in malicious environments. In recognition the dangerous security implications of <code>register_globals</code>, the option was disabled by default in PHP 4.2.0 and was deprecated and removed in PHP 6.<br /><br /><b>Example 1:</b> The following code is vulnerable to cross-site scripting. The programmer assumes the value of <code>$username</code> originates from the server-controlled session, but an attacker can supply a malicious value for <code>$username</code> as a request parameter instead. With <code>register_globals</code> enabled, this code will include a malicious value submitted by an attacker in the dynamic HTML content it generates.<br /><br /><pre><br />&lt;?php<br />if (isset($username)) {<br />    echo &quot;Hello &lt;b&gt;$username&lt;/b&gt;&quot;;<br />} else {<br />    echo &quot;Hello &lt;b&gt;Guest&lt;/b&gt;&lt;br /&gt;&quot;;<br />    echo &quot;Would you like to login?&quot;;<br /><br />}<br />?&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

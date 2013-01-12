@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  An ASP .NET application must enable custom error pages in order to prevent attackers from mining information from the framework's built-in error responses.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  ASP .NET applications should be configured to use custom error pages instead of the framework default page. The default error page gives detailed information about the error that occurred, and should not be used in production environments. The <code>mode</code> attribute of the <code>&lt;customErrors&gt;</code> tag defines whether custom or default error pages are used. <br /><p><br />In this case the <code>mode</code> attribute is set to <code>Off</code> on the <code>&lt;customErrors&gt;</code> tag defined in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/>.<br /></p><br />Attackers can leverage the additional information provided by a default error page to mount attacks targeted on the framework, database, or other resources used by the application.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

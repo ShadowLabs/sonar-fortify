@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Using a UsernameToken with a plain text password over an unencrypted channel exposes the password to attackers who can sniff the SOAP messages.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Sending cleartext passwords over an unencrypted channel can expose the credential to attackers who can sniff the SOAP message.<br /><br />The following Axis 2 client configuration uses UsernameToken (a password):<br /><pre><br />&lt;axisconfig name=&quot;AxisJava2.0&quot;&gt;<br />...<br />    &lt;parameter name=&quot;OutflowSecurity&quot;&gt;<br />      &lt;action&gt;<br />        &lt;items&gt;UsernameToken&lt;/items&gt;<br />        &lt;user&gt;bob&lt;/user&gt;<br />        &lt;passwordCallbackClass&gt;org.apache.rampart.samples.PWCBHandler&lt;/passwordCallbackClass&gt;<br />        &lt;passwordType&gt;PasswordText&lt;/passwordType&gt;<br />      &lt;/action&gt;<br />    &lt;/parameter&gt;<br />...   <br />&lt;/axisconfig&gt;    <br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

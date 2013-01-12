@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Attackers can spoof DNS entries. Do not rely on DNS names for security.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Many DNS servers are susceptible to spoofing attacks, so you should assume that your software will someday run in an environment with a compromised DNS server. If attackers are allowed to make DNS updates (sometimes called DNS cache poisoning), they can route your network traffic through their machines or make it appear as if their IP addresses are part of your domain. Do not base the security of your system on DNS names.<br /><p><br />In this case, DNS information enters the program at <Replace key="PrimaryCall.name" link="PrimaryLocation"/> in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/>.<br /></p><br /><b>Example 1:</b> The following code uses a DNS lookup to determine whether or not an inbound request is from a trusted host. If an attacker can poison the DNS cache, they can gain trusted status.<br /><br /><pre><br /> struct hostent *hp;<br /> struct in_addr myaddr;<br /> char* tHost = "trustme.trusty.com";<br /> myaddr.s_addr=inet_addr(ip_addr_string);<br /> <br /> hp = gethostbyaddr((char *) &amp;myaddr,<br />      sizeof(struct in_addr), AF_INET);<br /> if (hp &amp;&amp; !strncmp(hp-&gt;h_name, tHost, sizeof(tHost))) {<br /> trusted = true;<br /> } else {<br /> trusted = false;<br /> }<br /></pre><br /><br />IP addresses are more reliable than DNS names, but they can also be spoofed. Attackers can easily forge the source IP address of the packets they send, but response packets will return to the forged IP address. To see the response packets, the attacker has to sniff the traffic between the victim machine and the forged IP address. In order to accomplish the required sniffing, attackers typically attempt to locate themselves on the same subnet as the victim machine. Attackers may be able to circumvent this requirement by using source routing, but source routing is disabled across much of the Internet today. In summary, IP address verification can be a useful part of an authentication scheme, but it should not be the single factor required for authentication.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

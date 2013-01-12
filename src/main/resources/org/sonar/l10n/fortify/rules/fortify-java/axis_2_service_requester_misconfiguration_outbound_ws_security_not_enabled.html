@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Service providers that don't use WS-Security make it hard to guarantee message integrity or confidentiality.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  WS-Security is an extension of SOAP that provides end-to-end message integrity and confidentiality regardless of the transport protocol. When WS-Security is not used, messages rely on transport security for integrity and confidentiality. If a service relays messages to other services, messages are exposed to the weakest transport mechanism used between relay points. WS-Security eliminates the transport security dependency and builds security into the message itself.<br /><br /><p><br />In this case, the file <Replace key="PrimaryLocation.file"/> does not contain an <code>OutflowSecurity</code> parameter.</p> The absence of an <code>OutflowSecurity</code> parameter in the Apache Axis 2 configuration file indicates that outbound message security is not enabled.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

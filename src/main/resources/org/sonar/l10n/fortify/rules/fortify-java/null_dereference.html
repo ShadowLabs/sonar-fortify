@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program can potentially dereference a null pointer, thereby raising a <code>NullPointerException</code>.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Null pointer errors are usually the result of one or more programmer assumptions being violated. <br /><p><br />In this case the variable can be null when it is dereferenced at line <Replace key="PrimaryLocation.line"/>, thereby raising a <code>NullPointerException</code>.<br /></p><br />Most null pointer issues result in general software reliability problems, but if an attacker can intentionally trigger a null pointer dereference, the attacker might be able to use the resulting exception to bypass security logic or to cause the application to reveal debugging information that will be valuable in planning subsequent attacks.<br /> <br /><b>Example:</b> In the following code, the programmer assumes that the system always has a property named "<code>cmd</code>" defined. If an attacker can control the program's environment so that "<code>cmd</code>" is not defined, the program throws a null pointer exception when it attempts to call the <code>trim()</code> method.<br /><br /><pre><br />String val = null;<br />...<br />cmd = System.getProperty("cmd");<br />if (cmd)<br />	val = util.translateCommand(cmd);<br />...<br />cmd = val.trim();<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>
