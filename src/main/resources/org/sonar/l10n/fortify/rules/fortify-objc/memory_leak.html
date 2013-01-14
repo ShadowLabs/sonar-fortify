@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  An object allocates memory for a member variable and fails to free it in its <code>dealloc()</code> method.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Memory leaks have two common and sometimes overlapping causes:<br /> <br />- Error conditions and other exceptional circumstances.<br /> <br />- Confusion over which part of the program is responsible for freeing the memory.<br /><p><br />In this case the memory allocated in <Replace key="FirstTraceLocation.file"/> at line <Replace key="FirstTraceLocation.line"/> is not freed in the object's <code>dealloc()</code> method.<br /></p><br />Most memory leaks result in general software reliability problems, but if an attacker can intentionally trigger a memory leak, the attacker might be able to launch a denial of service attack (by crashing the program) or take advantage of other unexpected program behavior resulting from a low memory condition [1].<br /> <br /><b>Example 1:</b> The Objective-C object allocates memory in the <code>init()</code> method but fails to free it in the <code>deallocate()</code> method, resulting in a memory leak:<br /> <br /><pre><br />- (void)init<br />{<br />    myVar = [NSString alloc] init];<br />    ...<br />}<br /> <br />- (void)dealloc<br />{<br />    [otherVar release];  <br />}<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

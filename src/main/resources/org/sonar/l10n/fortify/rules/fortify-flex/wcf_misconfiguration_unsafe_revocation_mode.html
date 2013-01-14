@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Because the program fails to enable certificate revocation checking, it will accept certificates that are either known or are suspected to be compromised.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  The certificate revocation list (CRL) is an optional component of a public key infrastructure (PKI) deployment that is created and signed by a certification authority and contains a list of certificates that it has issued and later revoked. Certificates can be revoked by a certification authority administrator, for example, if an issued certificate is known or suspected to be compromised. <br />	<br /><b>Example 1:</b> In the following example, a service behavior is configured to perform no revocation checking when authenticating a certificate.<br /><br /><pre><br />&lt;behavior name="DefaultBehavior" returnUnknownExceptionsAsFaults="false"&gt;<br />  &lt;serviceCredentials&gt;<br />    &lt;serviceCertificate<br />      x509FindType="FindBySubjectName"<br />      findValue="MyCertificate"<br />      storeLocation="LocalMachine"<br />      storeName="My"/&gt;<br />    &lt;clientCertificate&gt;<br />      &lt;authentication certificateValidationMode="ChainTrust" revocationMode="None"/&gt;<br />    &lt;/clientCertificate&gt;<br />  &lt;/serviceCredentials&gt;<br />  &lt;metadataPublishing enableGetWsdl="true" enableMetadataExchange="true" enableHelpPage="true"/&gt;<br />&lt;/behavior&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

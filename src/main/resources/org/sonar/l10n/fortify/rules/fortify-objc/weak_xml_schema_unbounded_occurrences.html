@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Setting a <code>maxOccurs</code> value to unbounded can lead to resources exhaustion and ultimately a denial of service.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Processing XML documents can be computationally expensive. Attackers can take advantage of schemas that allow unbounded elements by supplying an application with a very large number elements causing the application to exhaust system resources.<br /><br />The following is an example of a schema that allows unbounded <code>bar</code> elements.<br /><pre><br />&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; &gt;<br />  &lt;xs:element name=&quot;foo&quot; &gt;<br />    &lt;xs:complexType&gt;<br />      &lt;xs:sequence&gt;<br />	&lt;xs:element name=&quot;bar&quot; maxOccurs=&quot;unbounded&quot; /&gt;<br />      &lt;/xs:sequence&gt;<br />    &lt;/xs:complexType&gt;<br />  &lt;/xs:element&gt;<br />&lt;/xs:schema&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

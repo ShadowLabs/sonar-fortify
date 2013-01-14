@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Logging too much information about SQL queries can leak system information or compromise private user data.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  SQL queries should not be logged in production systems. SQL queries often contain sensitive information, such as credit card details or social security numbers, and logging this information in plain text can compromise its confidentiality.<br /><br /><b>Example 1:</b> The following entries from <code>log4j.properties</code> file causes all queries to be logged at the <code>info</code> level. <br /><pre><br />...<br />log4j.logger.net.sf.hibernate.type=info<br />log4j.logger.net.sf.hibernate.tool.hbm2ddl=info<br />...<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

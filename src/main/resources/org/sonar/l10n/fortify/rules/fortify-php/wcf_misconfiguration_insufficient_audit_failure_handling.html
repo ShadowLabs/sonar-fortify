@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program is configured not to generate an exception when it fails to write to an audit log.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  If WCF is configured not to throw an exception when it is unable to write to an audit log, the program will not be notified of the failure and auditing of critical security events may not occur.<br />	<br /><b>Example 1:</b> The <code>&lt;behavior/&gt;</code> element of the WCF configuration file below instructs WCF to not notify the application when WCF fails to write to an audit log.<br /><br /><pre><br />&lt;behaviors&gt;<br />   &lt;serviceBehaviors&gt;<br />      &lt;behavior name="NewBehavior"&gt;<br />         &lt;serviceSecurityAudit auditLogLocation="Application"<br />             suppressAuditFailure="true"<br />             serviceAuthorizationAuditLevel="Success"<br />             messageAuthenticationAuditLevel="Success" /&gt;<br />      &lt;/behavior&gt;<br />   &lt;/serviceBehaviors&gt;<br />&lt;/behaviors&gt;<br /><br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

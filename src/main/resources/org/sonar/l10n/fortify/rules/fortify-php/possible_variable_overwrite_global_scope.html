@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program invokes a function that can overwrite global variables, which can open the door for attackers.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Functions that can overwrite global variables that are already initialized can allow an attacker to influence the execution of code that relies on the overwritten variables. <br /><p>In this case the function <Replace key="PrimaryCall.name"/> in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/></p> can overwrite global variables.  <br /><br /><b>Example 1:</b> If an attacker supplies a malicious value for <code>str</code> in the following segment of PHP code, then the call to <code>mb_parse_str()</code> might overwrite any arbitrary variables, including <code>first</code>.  In this case, if a malicious value that contains JavaScript overwrites <code>first</code>, then the program is vulnerable to cross-site scripting. <br /><br /><pre><br />&lt;?php<br />    $first="User";<br />    ...<br />    $str =  $_SERVER['QUERY_STRING'];<br />    mb_parse_str($str);<br />    echo $first;<br />?&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

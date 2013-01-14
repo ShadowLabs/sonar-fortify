@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Revealing system data or debugging information helps an adversary learn about the system and form a plan of attack.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  An information leak occurs when system data or debugging information leaves the program through an output stream or logging function.<br /><br /><p><br />    In this case system data or debugging information is produced by <Replace key="SourceFunction.name"/> and leaked by <Replace key="SinkFunction.name"/> in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/>.<br /></p><br /><br /><b>Example:</b> The following code prints an exception to the standard error stream:<br /><br /><pre><br />&lt;?php<br />    ...<br />    echo "Server error! Printing the backtrace";<br />    debug_print_backtrace();<br />    ...<br />?&gt;<br /></pre><br /><br />Depending upon the system configuration, this information can be dumped to a console, written to a log file, or exposed to a remote user. In some cases the error message tells the attacker precisely what sort of an attack the system is vulnerable to. For example, a database error message can reveal that the application is vulnerable to a SQL injection attack. Other error messages can reveal more oblique clues about the system. In the example above, the search path could imply information about the type of operating system, the applications installed on the system, and the amount of care that the administrators have put into configuring the program.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program uses a weak class reference, which might allow an attacker to execute unauthorized code.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  The program references a user-defined class that is not uniquely identified.  When .NET loads this weakly identified class, the CLR type loader searches for the class in the following locations in the specified order:<br /><br />- If the assembly of the type is known, the loader searches the configuration file's redirect locations, GAC, the current assembly using configuration information, and the application base directory. <br /><br />- If the assembly is unknown, the loader searches the current assembly, mscorlib, and the location returned by the TypeResolve event handler.<br /><br />This CLR search order can be modified with hooks such as the Type Forwarding mechanism and the AppDomain.TypeResolve event.<br /><br />If an attacker exploits the CLR search order by creating an alternative class with the same name and placing it in an alternative location that the CLR will load first, the CLR will unintentionally execute the attacker-supplied code. <br /><br /><b>Example 1:</b> The <code>&lt;behaviorExtensions/&gt;</code> element of the WCF configuration file below instructs WCF to add a custom behavior class to a particular WCF extension.<br /><br /><pre><br />&lt;system.serviceModel&gt;<br />    &lt;extensions&gt;<br />        &lt;behaviorExtensions&gt;<br />            &lt;add name="myBehavior" type="MyBehavior" /&gt;<br />       &lt;/behaviorExtensions&gt;<br />    &lt;/extensions&gt;<br />&lt;/system.serviceModel&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

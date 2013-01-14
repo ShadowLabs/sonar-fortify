@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program declares a permission with the <code>normal</code> protection level.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  When declaring a custom permission, there are four options for specifying permission's protection level: <code>normal</code>, <code>dangerous</code>, <code>signature</code>, and <code>signature or system</code>. <code>Normal</code> permissions are granted to any application that requests them. <code>Dangerous</code> permissions are granted only after user confirmation. <code>Signature</code> permissions are granted only to applications signed by the same developer key as the package that defines the permission. <code>Signature or system</code> permissions are similar to <code>signature</code> permissions, but are also granted to packages in the Android system image.<br /><br /><b>Example 1:</b> Below is an example of a custom permission declared with the <code>normal</code> protection level.<br /><br /><pre> &lt;permission android:name="custom.PERMISSION"<br />                     android:label="@string/label_permission"<br />                     android:description="@string/desc_permission"<br />                     android:protectionLevel="normal"&gt; <br />      &lt;/permission&gt;</pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

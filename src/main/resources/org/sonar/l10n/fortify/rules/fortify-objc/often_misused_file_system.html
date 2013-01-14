@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The identified call uses methods which follow symbolic links.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Certain identified functions are known to blindly follow symbolic links.  When this happens, your application will open, read, or write data to the file that the symbolic link points to instead of the representation of the symbolic link.  An attacker can fool the application into writing to alternate or critical system files or provide compromised data to the application.<br /><br /><b>Example 1:</b> The following code utilizes functions which follow symbolic links:<br /><br /><pre><br />...<br />	struct stat output;<br />	int ret = stat(aFilePath, &amp;output);<br />	// error handling omitted for this example<br />	struct timespec accessTime = output.st_atime;<br />...<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

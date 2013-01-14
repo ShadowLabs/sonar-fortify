@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program performs SMS operations.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  SMS operations must not be performed without cause or consideration. Malicious software exploits these APIs to steal money and data from unwary users.<br /><br /><b>Example 1:</b> In these cases, the program sends a text based SMS.<br /><br /><pre>[[UIApplication sharedApplication] openURL: @"sms:+3912345678"];<br /><br />//or<br /><br />[[CTMessageCenter sharedMessageCenter]sendSMSWithText:msgField.text serviceCenter:nil toAddress:@"phonenumber"];</pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

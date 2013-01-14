@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Because the program fails to enable authentication when connecting to MSMQ queues, an attacker can anonymously submit messages to the queue for processing.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  If authentication is not used to connect to an MSMQ queue used to deliver a message to another program, an attacker could submit an anonymous message that is malicious.<br /><br /><b>Example 1:</b> The <code>&lt;netMsmqBinding/&gt;</code> element of the WCF configuration file below instructs WCF to disable authentication when connecting to an MSMQ queue for message delivery.<br /><br /><pre><br />    &lt;bindings&gt;<br />      &lt;netMsmqBinding&gt;<br />        &lt;binding&gt;<br />          &lt;security&gt;<br />            &lt;transport msmqAuthenticationMode="None" /&gt;<br />          &lt;/security&gt;<br />        &lt;/binding&gt;<br />      &lt;/netMsmqBinding&gt;<br />    &lt;/bindings&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

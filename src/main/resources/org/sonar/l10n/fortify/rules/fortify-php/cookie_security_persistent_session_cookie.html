@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Persistent session cookies can lead to account compromise.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  A persistent session cookie remains valid even after a user closes his browser and is often used as part of a "Remember Me" feature. Consequently, a persistent session cookie allows users to remain authenticated to an application even after closing their browsers - assuming they didn't explicitly log out. This means the next person that opens the browser will automatically be logged in as the last user. Unless your application is deployed in a controlled environment where users are not allowed to log on from shared machines, it is possible for attackers to compromise your users' accounts even after they've closed their browsers.<br /><p><br />In this case the <code>session.cookie_lifetime</code> property is set to a non-zero number in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/>.<br /></p><br /><br /><b>Example:</b> The following code sets the session cookie to expire in 10 years.<br /><pre><br />session_set_cookie_params(time()+60*60*24*365*10, "/", "www.example.com", false, true);<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program creates a cookie, but fails to set the <code>HttpOnly</code> flag to <code>true</code>.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Microsoft Internet Explorer supports the <code>HttpOnly</code> cookie property that prevents client-side scripts from accessing the cookie. Cross-Site Scripting attacks often access cookies in an attempt to steal session identifiers or authentication tokens. When <code>HttpOnly</code> is not enabled, attackers can more easily access user cookies.<br />  <p><br />In this case a cookie set in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/>, but the <code>HttpOnly</code> parameter is not set or is set to <code>false</code>.<br />  </p><br /><br /><b>Example 1:</b> The code in the example below creates a cookie without setting the <code>HttpOnly</code> property.<br /><pre><br />setcookie("emailCookie", $email, 0, "/", "www.example.com", TRUE);  //Missing 7th parameter to set HttpOnly<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

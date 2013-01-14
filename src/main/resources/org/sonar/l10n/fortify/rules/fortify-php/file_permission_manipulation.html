@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Allowing user input to directly alter file permissions could enable an attacker to access otherwise protected system resources.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  File permission manipulation errors occur when any of the following conditions are met:<br /><br />1. An attacker can specify a path used in an operation that modifies permissions on the file system.<br /><br />2. An attacker can specify the permissions assigned by an operation on the filesystem. <br /><br /><p><br />In this case, an attacker can control the value that enters the program at <Replace key="SourceFunction" link="SourceLocation"/> in <Replace key="SourceLocation.file"/> at line <Replace key="SourceLocation.line"/>, which is passed to the file system operation <Replace key="SinkFunction" link="SinkLocation"/> in <Replace key="SinkLocation.file"/> at line <Replace key="SinkLocation.line"/>.<br /></p><br /><b>Example:</b> The following code is designed to set proper file permissions for users uploading Web pages through FTP. It uses input from an HTTP request to mark a file as viewable for external users.<br /><br /><pre><br />	$rName = $_GET['publicReport'];<br />	chmod("/home/". authenticateUser . "/public_html" . rName,"0755");<br />...<br /></pre><br /><br />However, if an attacker provides a malicious value for <code>publicReport</code>, such as "<code>../../localuser/public_html/.htpasswd</code>", the application will make the specified file readable to the attacker.<br /><br /><b>Example 2:</b> The following code uses input from a configuration file to set the default permission mask. If attackers can alter the configuration file, they can use the program to gain access to files manipulated by the program. If the program is also vulnerable path manipulation, an attacker can use this vulnerability to access arbitrary files on system. <br /><br /><pre><br />...<br />$mask = $CONFIG_TXT['perms'];<br />chmod($filename,$mask);<br />...<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

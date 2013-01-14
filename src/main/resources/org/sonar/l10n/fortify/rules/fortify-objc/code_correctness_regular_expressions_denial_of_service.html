@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Untrusted data is passed to the application and used as a regular expression.  This can cause the thread to over-consume CPU resources.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  There is a vulnerability in implementations of regular expression evaluators and related methods that can cause the thread to hang when evaluating repeating and alternating overlappting of nested and repeated regex groups. This defect can be used to execute a DOS (Denial of Service) attack.<br />		<b>Example 1:</b> If the following regular expressions are used in the identified vulnerable code a denial of service could occur:<br />		<pre><br />		(e+)+<br />		([a-zA-Z]+)*<br />		(e|ee)+<br />		</pre><br /><br />Example of problematic code relying on a flawed regular expressions:<br /><br /><pre><br /><br />NSString *regex = @"^(e+)+$";<br />NSPredicate *pred = [NSPRedicate predicateWithFormat:@"SELF MATCHES %@", regex];<br />if ([pred evaluateWithObject:mystring])<br />{<br />  //do something<br />}<br /><br /></pre><br />		Most regular expression parsers build Nondeterministic Finite Automaton (NFA) structures when evaluating regular expressions.  The NFA tries all possible matches until a complete match is found.  Given the example above, if the attacker supplies the match string "eeeeZ" then there are 16 internal evaluations that the regex parser must go through to identify a match.  If the attacker provides 16 "e"s ("eeeeeeeeeeeeeeeeZ") as the match string then the regex parser must go through 65536 (2^16) evaluations.  The attacker can easily consume computing resources by increasing the number of consecutive match characters.  There are no known regular expression implementations which are immune to this vulnerability.  All platforms and languages are vulnerable to this attack.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

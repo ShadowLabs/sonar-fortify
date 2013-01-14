@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The application configuration should ensure that SSL is used for all access controlled pages.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  If an application uses SSL to guarantee confidential communication with client browsers, the application configuration should make it impossible to view any access controlled page without SSL. <br /><br />There are three common ways for SSL to be bypassed:<br /><br />- A user manually enters URL and types "HTTP" rather than "HTTPS".<br /><br />- Attackers intentionally send a user to an insecure URL.<br /><br />- A programmer erroneously creates a relative link to a page in the application, failing to switch from HTTP to HTTPS. (This is particularly easy to do when the link moves between public and secured areas on a web site.)
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

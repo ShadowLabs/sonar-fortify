@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The identified call may best-fit characters.  Unsupported characters passed to default API methods can be best-fit mapped to dangerous characters.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  When character sets are mismatched between the operating system and applications running on the operating system, unsupported characters passed to default API methods can be best-fit mapped to dangerous characters.<br /><br /><b>Example 1:</b>In Objective-C, the following example converts an NSString object containing a UTF-8 character to ASCII data then back:<br /><br /><pre><br />...<br />unichar ellipsis = 0x2026;<br />NSString *myString = [NSString stringWithFormat:@"My Test String%C", <br />     ellipsis];<br />NSData *asciiData = [myString dataUsingEncoding:NSASCIIStringEncoding<br />   allowLossyConversion:YES];<br />NSString *asciiString = [[NSString alloc] initWithData:asciiData<br />  encoding:NSASCIIStringEncoding];<br />NSLog(@"Original: %@ (length %d)", myString, [myString length]);<br />NSLog(@"Best-fit-mapped: %@ (length %d)", asciiString, [asciiString length]);<br />// output:<br />// Original: My Test String... (length 15)<br />// Best-fit-mapped: My Test String... (length 17)<br />...<br /></pre><br /><br />If you look at the output carefully, the "..." character was translated to three consecutive periods.  If you had sized your output buffer based on the input buffer your application could be vulnerable to buffer overflow.  Other characters can get mapped from one character to two.  The greek "fi" character will get mapped to an "f" followed by an "i".  By front loading the buffer with these characters an attacker gains complete control over the number of characters used to overflow the buffer.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

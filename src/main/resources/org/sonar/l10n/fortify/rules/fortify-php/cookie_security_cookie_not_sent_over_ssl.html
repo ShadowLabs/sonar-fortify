@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program creates a cookie without setting the <code>secure</code> flag to <code>true</code>
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Modern web browsers support a <code>secure</code> flag for each cookie.  If the flag is set, the browser will only send the cookie over HTTPS. Sending cookies over an unencrypted channel can expose them to network sniffing attacks, so the secure flag helps keep a cookie's value confidential. This is especially important if the cookie contains private data or carries a session identifier.<br />  <p><br />  In this case, the program creates a cookie in <Replace key="FirstTraceLocation.file"/> at line <Replace key="FirstTraceLocation.line"/>, but the Secure parameter is not passed to <code>setcookie()</code> or is passed with the value <code>false</code>.<br />  </p><br /><br /><b>Example 1:</b> In the example below, the code adds a cookie to the response without setting the <code>secure</code> flag.<br /><pre><br />...<br />setcookie("emailCookie", $email, 0, "/", "www.example.com");<br />...<br /></pre><br /><br />If an application uses both HTTPS and HTTP, but does not set the <code>secure</code> flag, cookies set during an HTTPS request will also be sent during subsequent HTTP requests. Attackers can then compromise the cookie by sniffing the unencrypted network traffic, which is particularly easy over wireless networks.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

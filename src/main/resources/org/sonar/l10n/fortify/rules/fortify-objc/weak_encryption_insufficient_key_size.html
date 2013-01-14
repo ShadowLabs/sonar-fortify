@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The method uses a strong encryption algorithm but a small key size, leaving the encrypted data open to a brute force attack.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Current cryptography guidelines suggest that key lengths of at least 128 bits should be used with the AES algorithm. However, increased computing power and advances in factoring techniques[1] are challenging the security of 128 bit AES encryption.<br /><br /><b>Example 1:</b> The following code utilizes an weak encryption algorithm and insufficient key size.<br /><pre><br />ccStatus = CCCrypt(    encryptOrDecrypt,<br />                            kCCAlgorithmDES,<br />                            typeOfSymmetricOpts,<br />                            (const void *)[self getSymmetricKeyBytes],<br />                            64,<br />                            iv,<br />                            (const void *) [plainText bytes],<br />                            plainTextBufferSize,<br />                            (void *)bufferPtr,<br />                            bufferPtrSize,<br />                            &amp;movedBytes<br />                        );<br /></pre><br /><br />When it comes to symmetric encryption, the key lengths should be at least 128 bits.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

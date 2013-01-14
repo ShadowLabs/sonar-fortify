@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program uses unvalidated user input to bypass intended cross-domain policy restrictions.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  By default, Flash applications are subject to the Same Origin Policy which ensures that two SWF applications can access each other's data only if they come from the same domain. Adobe Flash allows developers to alter the policy either programmatically or via appropriate settings in the <code>crossdomain.xml</code> configuration file. However, caution should be taken when deciding who can influence the settings because an overly permissive cross-domain policy will allow a malicious application to communicate with the victim application in an inappropriate way, leading to spoofing, data theft, relay and other attacks. Policy restrictions bypass vulnerabilities occur when:<br /><br />1. Data enters an application from an untrusted source.<br /><p><br />In this case the data enters at <Replace key="SourceFunction" link="SourceLocation"/> in <Replace key="SourceLocation.file"/> at line <Replace key="SourceLocation.line"/>.<br /></p><br />2. The data is used to load or modify cross-domain policy settings.<br /><p><br />In this case the data is used by <Replace key="SinkFunction" link="SinkLocation"/> in <Replace key="SinkLocation.file"/> at line <Replace key="SinkLocation.line"/>.<br /></p><br /><br /><b>Example 1:</b> The code below uses the value of one of the parameters to the loaded SWF file as the URL to load the cross-domain policy file from.<br /><br /><pre><br />   ...<br />   var params:Object = LoaderInfo(this.root.loaderInfo).parameters;<br />   var url:String = String(params["url"]);<br />   flash.system.Security.loadPolicyFile(url);<br />   ...<br /></pre><br /><br /><b>Example 2:</b> The code below uses the value of one of the parameters to the loaded SWF file to define the list of trusted domains.<br /><br /><pre><br />   ...<br />   var params:Object = LoaderInfo(this.root.loaderInfo).parameters;<br />   var domain:String = String(params["domain"]);<br />   flash.system.Security.allowDomain(domain);<br />   ...<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

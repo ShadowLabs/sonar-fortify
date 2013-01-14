@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The integrity of tokens cannot be guaranteed on unsigned tokens. Similarly, the confidentiality of tokens cannot be guaranteed on unencrypted tokens.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  The WS-SecurityPolicy standard supports seven assertions when specifying supporting tokens: SupportingTokens, SignedSupportingTokens, EndorsingSupportingTokens, SignedEndorsingSupportingTokens, SignedEncryptedSupportingTokens, EndorsingEncryptedSupportingTokens and SignedEndorsingEncryptedSupportingTokens.<br />It might be possible to breach the integrity or confidentiality of tokens that are not signed or encrypted. Endorsing tokens sign the message signature to prevent tampering of the message signature.<br /><br /><b>Example 1:</b> The following WS-SecurityPolicy policy entry allows <code>UsernameToken</code>s to be sent in SOAP messages without a signature or encryption:<br /><pre><br />&lt;sp:SupportingTokens&gt;<br />  &lt;wsp:Policy&gt;<br />    &lt;sp:UsernameToken<br />      sp:IncludeToken="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200512/IncludeToken/AlwaysToRecipient"&gt;<br />      &lt;wsp:Policy&gt;<br />        &lt;sp:WssUsernameToken10/&gt;<br />      &lt;/wsp:Policy&gt;<br />    &lt;/sp:UsernameToken&gt;<br />  &lt;/wsp:Policy&gt;<br />&lt;/sp:SupportingTokens&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

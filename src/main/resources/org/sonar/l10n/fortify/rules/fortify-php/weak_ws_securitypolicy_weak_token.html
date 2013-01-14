@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Using a UsernameToken with a plain text password over an unencrypted channel exposes the password to attackers who can sniff the SOAP messages.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Sending clear text passwords over an unencrypted channel can expose the credential to attackers who can sniff the SOAP message.<br /><br /><b>Example 1:</b> The following WS-SecurityPolicy policy entry uses the UsernameToken with a plain text password:<br /><pre><br />  &lt;sp:SupportingTokens&gt;<br />    &lt;wsp:Policy&gt;<br />      &lt;sp:UsernameToken<br />        sp:IncludeToken="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200512/IncludeToken/AlwaysToRecipient"&gt;<br />        &lt;wsp:Policy&gt;<br />          &lt;sp:WssUsernameToken11/&gt;<br />        &lt;/wsp:Policy&gt;<br />      &lt;/sp:UsernameToken&gt;<br />    &lt;/wsp:Policy&gt;<br />  &lt;/sp:SupportingTokens&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Certificates that are self-issued might not be trustworthy.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Programs can be configured to validate X.509 certificates in one of three ways. By default, certificates are validated through their chain of trust back to a trusted root authority. This setting is known as <code>ChainTrust</code> and provides the maximum level of assurance that the certificate is valid. By default all certificates are validated using <code>ChainTrust</code>.<br /><br />To make use of a certificate that was not issued by a trusted root authority, a program can be configured to trust certificates issued by its peers by setting either <code>PeerTrust</code> or <code>PeerOrChainTrust</code>. These settings should not be used in production environments because they significantly reduce the level of security granted by certificates.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

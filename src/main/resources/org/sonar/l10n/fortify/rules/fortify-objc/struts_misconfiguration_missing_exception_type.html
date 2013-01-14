@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  An <code>&lt;exception&gt;</code> tag that does not contain a <code>type</code> attribute will not be used.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  The <code>&lt;exception&gt;</code> tag requires that an exception type be defined. A missing or empty <code>type</code> attribute is indicative of either a superfluous exception handler or an accidental omission. If a developer intended to handle an exception, but forgot to define the exception type, then the application might leak sensitive information about the system.<br /><b>Example 1:</b> The following configuration omits the type from the <code>&lt;exception&gt;</code> tag.<br /><pre><br />  &lt;global-exceptions&gt;<br />    &lt;exception<br />      key="error.key"<br />      handler="com.mybank.ExceptionHandler"/&gt;<br />  &lt;/global-exceptions&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

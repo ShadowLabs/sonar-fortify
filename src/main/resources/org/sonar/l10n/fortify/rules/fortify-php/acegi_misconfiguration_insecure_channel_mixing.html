@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Allowing users jump between HTTP and HTTPS leaves the application vulnerable to session hijacking.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Many applications use cookies to communicate a user's session identifier. When the application is accessed over HTTPS, cookies are protected (attackers are unable to sniff them). But if developers allow HTTP access to non-sensitive parts of the application, the session identifier can be stolen. When a user browses to an unprotected part of the site, the cookie, containing the session ID, is sent in the clear. If attackers sniff the traffic, they can see the session ID and use it to take control of the user's session.<br /><p><br />In this case both HTTP and HTTPS are in use in the same application. The <code>filterInvocationDefinitionSource</code> property at line <Replace key="PrimaryLocation.line"/> in <Replace key="PrimaryLocation.file"/>  contains a <code>&lt;value&gt;</code> tag with both <code>REQUIRES_INSECURE_CHANNEL</code> and <code>REQUIRES_SECURE_CHANNEL</code> directives.<br /></p><br /><br />The following example shows a configuration that mixes insecure and secure channels:<br /><pre><br />  &lt;property name="filterInvocationDefinitionSource"&gt;<br />    &lt;value&gt;<br />      CONVERT_URL_TO_LOWERCASE_BEFORE_COMPARISON<br />      \A/secure/.*\Z=REQUIRES_SECURE_CHANNEL<br />      \A/acegilogin.jsp.*\Z=REQUIRES_SECURE_CHANNEL<br />      \A/j_acegi_security_check.*\Z=REQUIRES_SECURE_CHANNEL<br />      \A.*\Z=REQUIRES_INSECURE_CHANNEL<br />    &lt;/value&gt;<br />  &lt;/property&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

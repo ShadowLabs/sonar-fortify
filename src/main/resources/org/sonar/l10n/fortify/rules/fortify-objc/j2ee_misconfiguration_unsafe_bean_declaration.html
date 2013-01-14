@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Entity beans should not be declared remote.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Entity beans that expose a remote interface become part of an application's attack surface. For performance reasons, an application should rarely use remote entity beans, so there is a good chance that a remote entity bean declaration is an error.<br />    <br /><b>Example 1:</b> The following entity bean declaration includes a remote interface:<br /><br /><pre><br />&lt;ejb-jar&gt;<br />&lt;enterprise-beans&gt;<br />&lt;entity&gt;<br />&lt;ejb-name&gt;EmployeeRecord&lt;/ejb-name&gt;<br />&lt;home&gt;com.wombat.empl.EmployeeRecordHome&lt;/home&gt;<br />&lt;remote&gt;com.wombat.empl.EmployeeRecord&lt;/remote&gt;<br />...<br />&lt;/entity&gt;<br />...<br />&lt;/enterprise-beans&gt;<br />&lt;/ejb-jar&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  A security constraint that does not specify a user data constraint cannot guarantee that restricted resources will be protected at the transport layer.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  <code>web.xml</code> security constraints are typically used for role based access control, but the optional <code>user-data-constraint</code> element specifies a transport guarantee that prevents content from being transmitted insecurely.<br /><br />Within the <code>&lt;user-data-constraint&gt;</code> tag, the <code>&lt;transport-guarantee&gt;</code> tag defines how communication should be handled. There are three levels of transport guarantee:<br /><br />1) <code>NONE</code> means that the application does not require any transport guarantees.<br />2) <code>INTEGRAL</code> means that the application requires that data sent between the client and server be sent in such a way that it cannot be changed in transit.<br />3) <code>CONFIDENTIAL</code> means that the application requires that data be transmitted in a fashion that prevents other entities from observing the contents of the transmission.<br /><br /><p>In this case, the security constraint defined at line <Replace key="PrimaryLocation.line"/> in <Replace key="PrimaryLocation.file"/> does not specify a transport guarantee.</p><br /><br />In most circumstances, the use of <code>INTEGRAL</code> or <code>CONFIDENTIAL</code> means that SSL/TLS is required. If the <code>&lt;user-data-constraint&gt;</code> and <code>&lt;transport-guarantee&gt;</code> tags are omitted, the transport guarantee defaults to <code>NONE</code>.<br /><br /><b>Example 1:</b> The following security constraint does not specify a transport guarantee.<br /><pre><br />&lt;security-constraint&gt;<br />    &lt;web-resource-collection&gt;<br />        &lt;web-resource-name&gt;Storefront&lt;/web-resource-name&gt;<br />        &lt;description&gt;Allow Customers and Employees access to online store front&lt;/description&gt;<br />        &lt;url-pattern&gt;/store/shop/*&lt;/url-pattern&gt;<br />    &lt;/web-resource-collection&gt;<br />    &lt;auth-constraint&gt;<br />        &lt;description&gt;Anyone&lt;/description&gt;<br />        &lt;role-name&gt;anyone&lt;/role-name&gt;<br />    &lt;/auth-constraint&gt;<br />&lt;/security-constraint&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

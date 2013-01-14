@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  A session cookie with an overly broad domain can be attacked through other applications sharing the same base domain.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Developers often set session cookies to be a base domain like "<code>.example.com</code>". This exposes the session cookie to all web applications on the base domain and any sub-domains. Sharing session cookies across applications can lead a vulnerability in one application to cause a compromise in another.<br /><br />  <b>Example 1:</b><br />  Imagine you have a secure application deployed at <code>http://secure.example.com/</code> and the application sets a session cookie with domain "<code>.example.com</code>" when users log in.<br /><br />For example:<br /><pre><br />session_set_cookie_params(0, "/", ".example.com", true, true);<br /></pre><br /><br />  Suppose you have another less secure application at <code>http://insecure.example.com/</code> and it contains a cross-site scripting vulnerability. Any user authenticated to <code>http://secure.example.com</code> that browses to <code>http://insecure.example.com</code> risks exposing their session cookie from <code>http://secure.example.com</code>.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

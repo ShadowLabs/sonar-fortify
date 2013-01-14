@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Permitting users to upload files can allow attackers to inject dangerous content or execute malicious code
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  When enabled, the <code>file_uploads</code> option allows PHP users to upload arbitrary files to the server. Permitting users to upload files does not represent a security vulnerability itself. However, this capability can enable a variety attacks because it gives malicious users an avenue to introduce data into the server environment.  <br /><br />Regardless of the language a program is written in, the most devastating attacks often involve remote code execution, whereby an attacker succeeds in executing malicious code in the program's context. If attackers are allowed to upload files to a directory that is accessible from the Web and cause these files to be passed to the PHP interpreter, then they can cause malicious code contained in these files to execute on the server. <br /><br /><b>Example 1:</b> The following code processes uploaded files and moves them into a directory under the Web root. Attackers can upload malicious PHP source files to this program and subsequently request them from the server, which will cause them to be executed by the PHP interpreter. <br /><br /><pre><br />&lt;?php <br />$udir = 'upload/'; // Relative path under Web root <br />$ufile = $udir . basename($_FILES['userfile']['name']); <br />if (move_uploaded_file($_FILES['userfile']['tmp_name'], $ufile)) { <br />    echo &quot;Valid upload received\n&quot;; <br />} else { <br />    echo &quot;Invalid upload rejected\n&quot;; <br />} ?&gt;<br /></pre><br /><br />Even if a program stores uploaded files under a directory that isn't accessible from the Web, attackers might still be able to leverage the ability to introduce malicious content into the server environment to mount other attacks. If the program is susceptible to path manipulation, command injection, or remote include vulnerabilities, then an attacker might upload a file with malicious content and cause the program to read or execute it by exploiting another vulnerability.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

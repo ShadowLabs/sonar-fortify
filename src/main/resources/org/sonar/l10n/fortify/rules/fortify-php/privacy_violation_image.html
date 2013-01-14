@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The application server persists sensitive information to disk in an unencrypted format. This data may not be removed under all conditions.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Configuring a Chart Image handler to persist images to disk may result in a privacy violation if the chart contains sensitive information.<br /><br /><b>Example 1:</b> The following application setting within the <code>web.config</code> file forces a Data Visualization control to persist any graphs it produces to disk:<br /><br /><pre><br />&lt;configuration&gt;<br />	&lt;appSettings&gt;<br />        &lt;add key="ChartImageHandler" value="storage=file;timeout=20;deleteAfterServicing=false;" /&gt;<br />    &lt;/appSettings&gt;<br />&lt;/configuration&gt;<br /><br /></pre><br /><br />The <code>value</code> attribute of the <code>add</code> element contains the setting <code>"storage=file"</code>. This is problematic if any Data Visualization control displays sensitive data to the user because .NET stores the image in an unencrypted format on disk.<br /><br />To make matters worse, this element contains the problematic attribute <code>"deleteAfterServicing=false"</code>. This instructs .NET to not delete an image after the infrastructure has served it to the user. If the image is sensitive, .NET will not delete it and it is now available for future inspection.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

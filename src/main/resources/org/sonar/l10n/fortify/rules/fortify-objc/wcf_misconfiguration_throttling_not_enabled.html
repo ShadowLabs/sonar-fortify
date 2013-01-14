@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Not placing a limit on the use of system resources could result in resource exhaustion and ultimately a denial of service.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Windows Communication Foundation (WCF) offers the ability to throttle service requests. Allowing too many client requests can flood a system and exhaust its resources. On the other hand, allowing only a small number of requests to a service can prevent legitimate users from using the service. Each service should be individually tuned to and configured to allow the appropriate amount of resources.<br /><br /><p><br />In this case, <Replace key="PrimaryLocation.file"/> does not contain a <code>&lt;serviceThrottling&gt;</code> tag which indicates the service is using default resource allocation values that are likely to be suboptimal.<br /></p>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

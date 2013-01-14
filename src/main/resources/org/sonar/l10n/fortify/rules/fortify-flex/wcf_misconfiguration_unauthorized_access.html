@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  This service does not use an authorization control.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  When a client calls a particular WCF service, WCF provides various authorization schemes that verify that the caller has permission to execute the service method on the server. If authorization controls are not enabled for WCF services, an authenticated user can achieve privilege escalation.<br /><br /><p><br />WCF will not perform an authorization check to verify that the user has the necessary permissions to execute the web service method, as depicted in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/>.<br /></p><br /><b>Example 1:</b> The following configuration instructs WCF to not check the authorization level of the client when executing the service:<br /><br /><pre><br />&lt;behaviors&gt;<br />  &lt;serviceBehaviors&gt;<br />    &lt;behavior&gt;<br />      ...<br />      &lt;serviceAuthorization principalPermissionMode="None" /&gt;<br />    &lt;/behavior&gt;<br />  &lt;/serviceBehaviors&gt;<br />&lt;/behaviors&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

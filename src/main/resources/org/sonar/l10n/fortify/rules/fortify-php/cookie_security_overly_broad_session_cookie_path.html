@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  A session cookie with an overly broad path can be compromised through applications sharing the same domain.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Developers often set session cookies to be the root context path ("<code>/</code>").  Doing so exposes the cookie to all web applications on the same domain name. Leaking session cookies can lead to account compromises because an attacker can steal the session cookie using a vulnerability in any of the applications on the domain.<br /><br />  <b>Example 1:</b><br />Imagine you have a forum application deployed at <code>http://communitypages.example.com/MyForum</code> and the application sets a session cookie with path "<code>/</code>" when users log in to the forum.<br /><br />For example:<br /><pre><br />session_set_cookie_params(0, "/", "communitypages.example.com", true, true);<br /></pre><br /><br />Suppose an attacker creates another application at <code>http://communitypages.example.com/EvilSite</code> and posts a link to this site on the forum. When a user of the forum clicks on the link, his browser will send the session cookie set by <code>/MyForum</code> to the application running at <code>/EvilSite</code>. By stealing the session cookie, the attacker is able to compromise the account of any forum user that browsed to <code>/EvilSite</code>.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Not explicitly setting the <code>&lt;authorization&gt;</code> tag can result in privilege escalation or anonymous access.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  The <code>&lt;authorization&gt;</code> element specifies a list of authorization rules. If an <code>&lt;authorization&gt;</code> element exists and no rules apply to a sender, access is denied [1].<br />In this case, no <code>&lt;authorization&gt;</code> tag exists in <Replace key="PrimaryLocation.file"/> and anonymous access might be possible.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

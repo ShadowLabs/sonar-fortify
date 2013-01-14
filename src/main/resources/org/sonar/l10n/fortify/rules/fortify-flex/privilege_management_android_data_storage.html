@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program requests permission to write data to Android's external storage.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Files written to external storage are readable and writeable by arbitrary programs and users. Programs must never write sensitive information, for instance personally identifiable information, to external storage. When you connect the Android device via USB to a PC or other device it enables USB mass storage mode. Any file written to external storage can be read and modified in this mode. In addition, files in external storage will remain there even after the application that wrote them is uninstalled, further increasing the risk that any sensitive information stored in them will be compromised. <br />	<br /><b>Example 1:</b>The <code>&lt;uses-permission .../%gt;</code> element of AndroidManifest.xml includes the dangerous attribute.<br /><br /><pre> &lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/&gt; </pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

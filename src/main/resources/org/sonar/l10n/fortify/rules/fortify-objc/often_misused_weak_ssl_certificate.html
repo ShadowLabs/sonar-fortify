@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The call either does not verify the hostname of the SSL server certificate or allows self signed certificates to be used in HTTPS protocol negotiations.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  During development developers build their applications with test or self signed SSL certificates.  This allows the developers to test HTTPS functionality without going through the processes of formally requesting and attesting to a SSL certificate.  However, many times the code which allows the use of self signed certificates is left in allowing for HTTPS based Man-In-The-Middle (MITM) attacks.<br /> <br /><b>Example 1:</b> The following code allows any HTTPS certificate for all HTTPS connections:<br /> <br /><pre><br />implementation NSURLRequest (IgnoreSSL)<br /><br />+ (BOOL)allowsAnyHTTPSCertificateForHost:(NSString *)host<br />{<br />    return YES;<br />}<br /><br />@end<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

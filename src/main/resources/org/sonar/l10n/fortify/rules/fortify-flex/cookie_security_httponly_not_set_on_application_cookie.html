@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program does not set the <code>HttpCookie.HttpOnly</code> property to <code>true</code>.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  The default value for the <code>httpOnlyCookies</code> attribute is false, meaning that the cookie is accessible through a client-side script. This is an unnecessary cross-site scripting threat, resulting in stolen cookies. Stolen cookies can contain sensitive information identifying the user to the site, such as the ASP.NET session ID or forms authentication ticket, and can be replayed by the attacker in order to masquerade as the user or obtain sensitive information.<br />  <p><br />  In this case, the program ignores the <code>HttpCookie.HttpOnly</code> property, which defaults to <code>false</code> or deliberately sets the value to <code>false</code> in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/>.<br />  </p><br /><br /><b>Example 1:</b> Vulnerable configuration:<br /><pre><br />&lt;configuration&gt;<br />  &lt;system.web&gt;<br />    &lt;httpCookies httpOnlyCookies="false"&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

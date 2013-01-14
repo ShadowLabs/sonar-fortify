@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Debugging information helps attackers learn about the system and plan a form of attack.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Windows Communication Framework (WCF) services can be configured to expose debugging information. Debug information should not be used in production environments. The <code>&lt;serviceDebug&gt;</code> tag defines whether the debug information feature is enabled for a WCF service.<br /><br /><p><br />In this case, the <code>&lt;serviceDebug&gt;</code> tag is present in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/>.<br /></p><br /><br />If the attribute <code>includeExceptionDetailInFaults</code> is set to <code>true</code>, exception information from the application will be returned to clients. Attackers can leverage the additional information they gain from debugging output to mount attacks targeted on the framework, database, or other resources used by the application.<br /><br />Example: The following configuration file includes the <code>&lt;serviceDebug&gt;</code> tag:<br /><pre><br />&lt;configuration&gt;<br />  &lt;system.serviceModel&gt;<br />    &lt;behaviors&gt;<br />      &lt;serviceBehaviors&gt;<br />        &lt;behavior name=&quot;MyServiceBehavior&quot;&gt;<br />          &lt;serviceDebug includeExceptionDetailInFaults=&quot;True&quot; httpHelpPageEnabled=&quot;True&quot;/&gt;<br />...       <br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

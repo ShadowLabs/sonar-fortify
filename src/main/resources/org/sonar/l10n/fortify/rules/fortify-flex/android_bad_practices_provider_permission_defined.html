@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program declares a content provider with the combined read and write access <code>permission</code>.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  A content provider declared with the combined read and write <code>permission</code> will be accessible to the entities that request either read or write access to the provider. However, in many cases, just like in the case of files on a file system, entities that need read access to the data stored by the provider should no be allowed to modify the data. Setting the <code>permission</code> attribute does not allow to distinguish between data users and interactions that affect the data's integrity.<br /><br /><b>Example 1:</b> Below is an example of a content provider declared with the combined read and write access <code>permission</code>.<br /><br /><pre> &lt;provider android:name=".ContentProvider" android:permission="content.permission.READ_AND_WRITE_CONTENT"/&gt; </pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

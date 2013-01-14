@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program fails to set the <code>HttpOnly</code> flag on session cookies.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Microsoft Internet Explorer supports the <code>HttpOnly</code> cookie property that prevents client-side scripts from accessing the cookie. Cross-Site Scripting attacks often access cookies in an attempt to steal session identifiers or authentication tokens. When <code>HttpOnly</code> is not enabled, attackers can more easily access user cookies.<br /><p><br />In this case the <code>session.cookie_httponly</code> property is set to <code>0</code> or <code>off</code> in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/>.<br /></p><br /><br /><b>Example 1:</b> The code in the example below disables the <code>HttpOnly</code> flag for session cookies.<br /><pre><br />session.cookie_httponly=0<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

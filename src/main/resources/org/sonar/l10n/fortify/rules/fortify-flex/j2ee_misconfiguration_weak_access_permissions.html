@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Permission to invoke EJB methods should not be granted to the <code>ANYONE</code> role.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  If the EJB deployment descriptor contains one or more method permissions that grant access to the special <code>ANYONE</code> role, it indicates that access control for the application has not been fully thought through or that the application is structured in such a way that reasonable access control restrictions are impossible. <br /><br /><b>Example 1:</b> The following deployment descriptor grants <code>ANYONE</code> permission to invoke the <code>Employee</code> EJB's method named <code>getSalary()</code>. <br /><br /><pre><br />&lt;ejb-jar&gt;<br />	...<br />	&lt;assembly-descriptor&gt;<br />		&lt;method-permission&gt;<br />			&lt;role-name&gt;ANYONE&lt;/role-name&gt;<br />			&lt;method&gt;<br />				&lt;ejb-name&gt;Employee&lt;/ejb-name&gt;<br />				&lt;method-name&gt;getSalary&lt;/method-name&gt;<br />		&lt;/method-permission&gt;<br />	&lt;/assembly-descriptor&gt;<br />	...<br />&lt;/ejb-jar&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

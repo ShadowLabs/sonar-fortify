@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Attackers can control an argument to the performSelector method which could allow them to create unexpected control flow paths through the application, potentially bypassing security checks.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.<br /><br /><p><br />In this case the untrusted data enters the program at <Replace key="SourceFunction" link="SourceLocation"/> in <Replace key="SourceLocation.file"/> at line <Replace key="SourceLocation.line"/>. It is passed to the reflection API at <Replace key="SinkFunction" link="SinkLocation"/> in <Replace key="SinkLocation.file"/> at line <Replace key="SinkLocation.line"/>.<br /></p><br /><b>Example 1:</b> A common reason that programmers use the selector API is to implement their own command dispatcher. The following example shows a Objective-C command dispatcher that uses reflection to execute an arbitrary method identified by a value read from a custom URL scheme request. This implementation allows an attacker to call any function matching the method signature defined in the UIApplicationDelegate class.<br /><br /><pre><br />...<br />- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url <br />  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation  {<br />    <br />    NSString *query = [url query];<br />    NSString *pathExt = [url pathExtension];<br />    [self performSelector:NSSelectorFromString(pathExt) withObject:query];<br />...<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

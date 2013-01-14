@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  A hardcoded salt can compromise system security in a way that cannot be easily remedied.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  It is never a good idea to hardcode a salt. Not only does a hardcoded salt allow all of the project's developers to view the salt, it also makes fixing the problem extremely difficult. Once the code is in production, the salt cannot be easily changed. If attackers know the value of the salt, they can compute rainbow tables for the application and more easily reverse hashed values.<br /><p><br />In this case a hardcoded salt was found in the call to <Replace key="PrimaryCall.name" link="PrimaryLocation"/> in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/>.<br /></p><br /><br /><b>Example 1:</b> The following code uses a hardcoded salt:<br /><pre><br />    ...<br />    crypt($password, 'ms');<br />    ...<br /></pre><br /><br />This code will run successfully, but anyone who has access to it will have access to the salt. Once the program has shipped, there is no going back from the salt "ms". A devious employee with access to this information can use it to break into the system.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

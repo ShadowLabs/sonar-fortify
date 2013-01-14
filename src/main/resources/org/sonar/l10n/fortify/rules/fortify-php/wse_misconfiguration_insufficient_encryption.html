@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Failing to encrypt a signature increases the chance of a successful brute-force attack.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  The <code>MessageProtectionOrder</code> attribute allows you to specify the order in which signatures and encryption are applied (and whether or not the signatures should be encrypted). Setting the <code>MessageProtectionOrder</code> attribute to anything other than <code>SignBeforeEncryptAndEncryptSignature</code> constitutes a potential security problem.<br /><br />Below is a list of possible alternative to <code>SignBeforeEncryptAndEncryptSignature</code> and associated problems.<br />SignBeforeEncrypt - The signature is applied to the unencrypted message, but the signature itself is not encrypted.<br />EncryptBeforeSign - Message contents are encrypted then signed. <br /><br />Messages signed with a low entropy keys, such as passwords, are more vulnerable to brute force attacks.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

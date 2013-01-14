@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The identified call uses the HTTP <code>GET</code> instead of <code>POST</code> method to send data to the server.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  HTTP requests which utilize the <code>GET</code> method allow the URL and request parameters to be cached in the browser's URL cache, intermediary proxies, and server logs.  This could expose sensitive information to individuals who do not have appropriate rights to the data.<br /><b>Example 1:</b> The following code makes an HTTP request using the GET HTTP method instead of POST.<br /><br /><pre><br />...<br />	NSString * const USER_URL = @"https://www.somesvr.com/someapp/user";<br />...<br />	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:USER_URL]];<br />	[request setHTTPMethod:@"GET"];<br />...<br /></pre><br /><br /><b>Example 2:</b> If the application uses NSURLRequest then the default HTTP method is GET.<br /><br /><pre><br />...<br />	NSURLRequest *theRequest=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.apple.com/"]<br />                        cachePolicy:NSURLRequestUseProtocolCachePolicy<br />                    timeoutInterval:60.0];<br />	NSURLConnection *theConnection=[[NSURLConnection alloc] initWithRequest:theRequest delegate:self];<br />	if (theConnection) {<br />    	// Create the NSMutableData to hold the received data.<br />    	// receivedData is an instance variable declared elsewhere.<br />    		receivedData = [[NSMutableData data] retain];<br />	} else {<br />...<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

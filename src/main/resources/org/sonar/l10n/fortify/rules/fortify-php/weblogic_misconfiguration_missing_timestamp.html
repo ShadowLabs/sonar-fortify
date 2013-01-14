@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  A missing timestamp can leave a SOAP message open to replay attacks.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  A Security timestamp indicates the freshness of a message's security data. If an attacker intercepts a message retransmits it at a later time, the receiver can reject the replay attack because the timestamp will indicate that the message is stale.<br /><br />To prevent attackers from tampering with timestamps, timestamps should be signed. Without a signed timestamp, an attacker could intercept a SOAP message, modify the timestamp, and send the message on without the receiver's knowledge. Under these circumstances, an attacker can trick a recipient into accepting a malicious message.<br />  <br /><b>Example 1:</b> The following policy entry has the <code>&lt;MessageAge&gt;</code> tag commented out. <br /><pre><br />&lt;wsp:Policy<br />  xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"<br />  xmlns:wssp="http://www.bea.com/wls90/security/policy"<br />  xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"<br />  &gt;<br />...<br />&lt;!--   &lt;wssp:MessageAge/&gt; --&gt;<br /><br />&lt;/wsp:Policy&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

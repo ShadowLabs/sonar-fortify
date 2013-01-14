@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Using a UsernameToken with a plain text password over an unencrypted channel exposes the password to attackers who can sniff the SOAP messages.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Sending clear text passwords over an unencrypted channel can expose the credential to attackers who can sniff the SOAP message.<br /><br />The following WebSphere client configuration uses the UsernameToken:<br /><pre><br />&lt;com.ibm.etools.webservice.wscext:WsClientExtension xmi:version=&quot;2.0&quot; xmlns:xmi=&quot;http://www.omg.org/XMI&quot; xmlns:com.ibm.etools.webservice.wscext=&quot;http://www.ibm.com/websphere/appserver/schemas/5.0.2/wscext.xmi&quot; xmi:id=&quot;WsClientExtension_1151349988084&quot;&gt;<br />...<br />        &lt;securityRequestGeneratorServiceConfig xmi:id=&quot;SecurityRequestGeneratorServiceConfig_1154318832968&quot;&gt;<br />          &lt;securityToken xmi:id=&quot;SecurityToken_1211395747219&quot; name=&quot;basicauth&quot; uri=&quot;&quot; localName=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#UsernameToken&quot;/&gt;<br />...<br />&lt;/com.ibm.etools.webservice.wscext:WsClientExtension&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program does not explicitly assign an access permission to this public component.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Any application can access public components that are not explicitly assigned an access permission in their manifest definition. <br /><br />The default value of the <code>exported</code> attribute for the activity, receiver and service components in an Android application depends on the presence or absence of an <code>intent-filter</code>. Presence of an <code>intent-filter</code> implies, the component is intended for external use, thus setting the <code>exported</code> attribute to true. This component is now accessible to any other applications on the Android platform. <br /><br /><b>Example 1:</b> Below is an example of an Android activity with an <code>intent-filter</code> and no explicit access permission set.<br /><br /><pre> &lt;activity android:name=".AndroidActivity"/&gt; </pre><br /><pre>   &lt;intent-filter android:label="activityName"/&gt; </pre><br /><pre>    &lt;action android:name=".someFunAction"/&gt; </pre><br /><pre>   &lt;/intent-filter&gt; </pre><br /><pre>    ... </pre><br /><pre> &lt;/activity&gt; </pre><br /><br />This activity can be exploited by malicious applications.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

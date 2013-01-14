@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Weak security constraints do not provide adequate protection for security-critical resources.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  <p><br />In this case, there is only one <code>&lt;security-constraint&gt;</code> tag in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/> and the <code>&lt;url-pattern&gt;</code> tag contains a wildcard (*), which represents an overly-broad match. <br /></p><br /><br />A single <code>&lt;security constraint&gt;</code> element suggests the program does not employ role-based access control, which is commonly accepted best practice for protecting sensitive operations in secure web applications. If the application provides access to sensitive operations or data, there might not be sufficient controls in place to prevent unauthorized users from gaining access. Furthermore, if there is a wildcard (*) in the <code>&lt;url-pattern&gt;</code>, it can be an indication that the pattern is overly broad.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

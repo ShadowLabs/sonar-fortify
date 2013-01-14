@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The application is configured to allow WebSphere to serve Servlets by their class names.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Allowing Servlets to be served by their class name allows any attacker who knows a Servlet's name to invoke it directly, even when it is not mapped in the application's deployment descriptor. <br /><br />For example, consider an application that contains a Servlet named <code>com.ibm.websphere.samples.MyServlet</code>. When <code>serveServletsByClassnameEnabled</code> is set to <code>true</code> in <code>ibm-web-ext.xmi</code>, it is possible to call the servlet by requesting:<br /><code>http://www.example.com/SomeContextPath/servlet/com.ibm.websphere.samples.MyServlet</code>.<br /><br />Worse, depending on the server's classloader structure, an attacker might be able to invoke Servlets from other applications hosted in the same WebSphere instance.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

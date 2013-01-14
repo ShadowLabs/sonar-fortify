@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  No transport or message security has been defined.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Applications that transmit messages without transport or message security cannot guarantee the integrity or confidentiality of the messages. When a WCF security binding is set to <code>None</code>, both transport and message security are disabled.<br /><br /><p><br />In this case, the security mode is set to <code>None</code> in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/>.<br /></p><br /><br />The following configuration sets the security mode to <code>None</code>.<br /><br /><pre><br />&lt;system.serviceModel&gt;<br />&lt;bindings&gt;<br />  &lt;wsHttpBinding&gt;<br />    &lt;binding name=&quot;MyBinding&quot;&gt;<br />      &lt;security mode=&quot;None&quot;/&gt;<br />    &lt;/binding&gt;<br />&lt;/bindings&gt;<br />&lt;/system.serviceModel&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

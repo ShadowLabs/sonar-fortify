@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Using the Run-As authentication replacement feature in Acegi can lead to a privilege escalation vulnerability.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Acegi Security allows for temporarily replacing the Authentication object in the SecurityContext during the secure object callback phase. This only occurs if the original Authentication object was successfully processed by the AuthenticationManager and AccessDecisionManager. The RunAsManager creates this Authentication object.<br />Typically developers use RunAsManager to configure one or more additional roles for an authenticated user for the duration of a method invocation. This is useful for a secure bean that needs to access a remote application. Since the remote application might demand different credentials, this allows translating between calling roles and those needed by the remote application so that the remote access can succeed. The new Authentication object (called RunAsUserToken) will be simply accepted as a valid Authentication object without any further authentication or authorization check.<br />Adding new roles or privileges to the new Authentication object has the potential to temporarily elevate the user's privileges, allowing the user to take an unauthorized action.<br />The following configuration shows using RunAsManager to add the role "UBER_BOSS" to a user who has the role "ROLE_PEON", thus temporarily elevating this user to have manager privileges, which enables all peons to get data from the PrivateCatalog.<br /><br />&lt;bean id="bankManagerSecurity" class="org.acegisecurity.intercept.method.aopalliance.MethodSecurityInterceptor"&gt;<br />...<br /> &lt;property name="objectDefinitionSource"&gt;<br />   &lt;value><br />     com.example.service.PrivateCatalog.getData=ROLE_PEON,RUN_AS_UBER_BOSS<br />...<br />   &lt;/value&gt;<br /> &lt;/property&gt;<br />&lt;/bean&gt;
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  When token protection is not enabled, the integrity of tokens might not be guaranteed since token protection enforces token signing.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Any part of a message that is not signed has the potential to be intercepted and modified without the knowledge of the sender or the receiver. Without a signature, the receiver cannot cryptographically verify that the contents of a message really originated with the sender.<br /><br /><b>Example 1:</b> The following WS-SecurityPolicy policy entry omits the <code>&lt;ProtectTokens&gt;</code> tag:<br /><pre><br />&lt;sp:AsymmetricBinding&gt;<br />  &lt;wsp:Policy&gt;<br />    &lt;sp:InitiatorToken&gt;<br />    ...<br />    &lt;/sp:InitiatorToken&gt;<br />    &lt;sp:RecipientToken&gt;<br />    ...<br />    &lt;/sp:RecipientToken&gt;<br />    &lt;sp:AlgorithmSuite&gt;<br />    ...<br />    &lt;/sp:AlgorithmSuite&gt;<br />    &lt;sp:Layout&gt;<br />    ...<br />    &lt;/sp:Layout&gt;<br />    &lt;sp:IncludeTimestamp/&gt;<br /><br />    &lt;sp:OnlySignEntireHeadersAndBody/&gt;<br />  &lt;/wsp:Policy&gt;<br />&lt;/sp:AsymmetricBinding&gt;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

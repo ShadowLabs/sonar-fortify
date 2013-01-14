@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Attackers can control the filesystem path argument which allows them to access or modify otherwise protected files.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Path manipulation errors occur when the following two conditions are met:<br /><br />1. An attacker can specify a path used in an operation on the filesystem. <br /><br />2. By specifying the resource, the attacker gains a capability that would not otherwise be permitted.<br /><br />For example, the program may give the attacker the ability to overwrite the specified file or run with a configuration controlled by the attacker. <br /><p><br />In this case, the attacker can specify the value that enters the program at <Replace key="SourceFunction" link="SourceLocation"/> in <Replace key="SourceLocation.file"/> at line <Replace key="SourceLocation.line"/>, and this value is used to access a filesystem resource at <Replace key="SinkFunction" link="SinkLocation"/> in <Replace key="SinkLocation.file"/> at line <Replace key="SinkLocation.line"/>.<br /></p><br /><b>Example 1:</b> The following code uses input from the user to create a file path. The programmer has not considered the possibility that an attacker could provide a file name such as "<code>../../etc/passwd</code>", which could cause the application to delete the specified configuration file. <br /><br /><pre><br />- (NSData*) testFileManager {<br />    <br />    NSString *rootfolder = @"/Documents/";<br />    NSString *filePath = [rootfolder stringByAppendingString:[fileName text]];<br />    <br />    NSFileManager *fm = [NSFileManager defaultManager];<br />    return [fm contentsAtPath:filePath];<br />}<br /></pre><br /><br /><b>Example 2:</b> The following code uses input from the command line to determine which file to open and echo back to the user. If the program runs with privileges and malicious users can create soft links to the file, they can use the program to read the first part of any file on the system. <br /><br /><pre><br />ifstream ifs(argv[0]);<br />string s;<br />ifs &gt;&gt; s;<br />cout &lt;&lt; s;<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

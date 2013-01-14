@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The identified method writes data to iOS's photo album unencrypted.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Files saved to the photo album are world-readable and can be accessed by any application on the device. This could allow an attacker to steal sensitive photos (check images used in paperless check deposits are one example). <br /><br /><b>Example 1:</b> In the code below, <code>UIImageWriteToSavedPhotosAlbum</code> is used to save images to the photo album.<br /><br /><pre> <br /><br />- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info<br />{<br />	// Access the uncropped image from info dictionary<br />	UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];<br />    <br />	// Save image<br />    	UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);<br />    <br />	[picker release];<br />}<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

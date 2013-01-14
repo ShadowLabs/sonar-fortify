@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program declares a content provider with only the <code>writePermission</code> defined.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  While it is a good idea to define separate read and write permissions for content providers, defining only the <code>writePermission</code> could be misleading. Due to the nature of SQL, generating true write-only queries is generally impossible: even when the user does not have direct access to the data, an attacker can reconstruct the stored data by manipulating the <code>where</code> clause.<br /><br /><b>Example:</b> Below is an example of a content provider declared with only the <code>writePermission</code>.<br /><br /><pre> &lt;provider android:name=".ContentProvider" android:writePermission="content.permission.WRITE_CONTENT"/&gt; </pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>
