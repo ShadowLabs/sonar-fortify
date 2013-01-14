@@ -28,7 +28,7 @@ import java.util.List;
 
 public final class FortifyRuleRepositories extends ExtensionProvider implements ServerExtension {
 
-  public static final List<String> SUPPORTED_LANGUAGES = ImmutableList.of("abap", "cobol", "cpp", "cs", "java", "js", "py", "sql", "vb", "web", "xml");
+  public static final List<String> SUPPORTED_LANGUAGES = ImmutableList.of("abap", "cobol", "cpp", "cs", "java", "js", "py", "sql", "vb", "web", "xml", "flex", "php", "objc");
 
   @Override
   public List<FortifyRuleRepository> provide() {
