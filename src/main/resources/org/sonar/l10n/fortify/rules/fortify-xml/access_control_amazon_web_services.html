@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Accessing a SimpleDB database with a user-controlled item name and without proper access control can allow an attacker to view unauthorized records.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Database access control errors occur when:<br /><br />1.	Data enters a program from an untrusted source.<br /><p><br />In this case the data enters at <Replace key="SourceFunction" link="SourceLocation"/> in <Replace key="SourceLocation.file"/> at line <Replace key="SourceLocation.line"/>. <br /></p><br /><br />2.  The data is used to specify the item name in a SimpleDB access call.<br /><p><br />In this case the data is used by <Replace key="SinkFunction" link="SinkLocation"/> in <Replace key="SinkLocation.file"/> at line <Replace key="SinkLocation.line"/>.<br /></p><br /><br /><b>Example 1:</b> The following code operates on a database of invoices named after the date of their transaction. The program first authenticates customers and subsequently lets them select from a list previous invoices.<br /><br /><pre><br />...<br />String selectedInvoice = request.getParameter("invoiceDate");<br />...<br />AmazonSimpleDBClient sdbc = new AmazonSimpleDBClient(appAWSCredentials);<br />GetAttributesResult sdbResult = sdbc.getAttributes(new GetAttributesRequest("invoices", selectedInvoice));<br />...<br /></pre><br /><br />Although the code in Example 1 generates a list of invoices that belong to the current user, an attacker can bypass this behavior to request any desired invoice. Because the code in this example does not check to ensure that the user has permission to access the requested invoice, it will display any invoice, even if it does not belong to the current user.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

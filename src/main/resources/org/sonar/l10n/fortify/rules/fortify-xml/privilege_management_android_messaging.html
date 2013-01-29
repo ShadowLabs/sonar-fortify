@@ -1,10 +1,10 @@
 <h2>ABSTRACT</h2>
 <p>
-  The program asks to perform SMS operations.
+  The program performs SMS operations.
 </p>
 <h2>EXPLANATION</h2>
 <p>
-  Permissions to send and receive SMS must not be requested without cause, nor granted without consideration. Malicious software exploits these permissions to steal money and data from unwary users.<br /><br /><b>Example 1:</b> In this case, the <code>&lt;uses-permission .../&gt;</code> element includes a messaging <br />permission attribute.<br /><br /><pre> &lt;uses-permission android:name="android.permission.SEND_SMS"/&gt; </pre>
+  SMS operations must not be performed without cause or consideration. Malicious software exploits these APIs to steal money and data from unwary users.<br /><br /><b>Example:</b> In this case, the program sends a text based SMS.<br /><br /><pre>sms.sendTextMessage(recipient, null, message, PendingIntent.getBroadcast(SmsMessaging.this, 0, new Intent(ACTION_SMS_SENT), 0), null);</pre>
 </p>
 <h2>REFERENCES</h2>
 <p>

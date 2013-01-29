@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Using <code>System.out</code> or <code>System.err</code> rather than a dedicated logging facility makes it difficult to monitor the behavior of the program.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  <b>Example 1:</b> The first Java program that a developer learns to write often looks like this:<br /><br /><pre><br />public class MyClass <br />  public static void main(String[] args) {<br />    System.out.println("hello world");<br />  }<br />}<br /></pre><br /><br />While most programmers go on to learn many nuances and subtleties about Java, a surprising number hang on to this first lesson and never give up on writing messages to standard output using <code>System.out.println()</code>.<br /><br />The problem is that writing directly to standard output or standard error is often used as an unstructured form of logging. Structured logging facilities provide features like logging levels, uniform formatting, a logger identifier, timestamps, and, perhaps most critically, the ability to direct the log messages to the right place. When the use of system output streams is jumbled together with the code that uses loggers properly, the result is often a well-kept log that is missing critical information.<br /><br />Developers widely accept the need for structured logging, but many continue to use system output streams in their "pre-production" development. If the code you are reviewing is past the initial phases of development, use of <code>System.out</code> or <code>System.err</code> may indicate an oversight in the move to a structured logging system.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

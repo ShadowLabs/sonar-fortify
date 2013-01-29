@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  If a Servlet fails to catch all exceptions, it might reveal debugging information that will help an adversary form a plan of attack.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  When a Servlet throws an exception, the default error response the Servlet container sends back to the user typically includes debugging information. This information is of great value to an attacker. For example, a stack trace might show the attacker a malformed SQL query string, the type of database being used, and the version of the application container. This information enables the attacker to target known vulnerabilities in these components.<br /><br /><b>Example 1:</b> In the following method a DNS lookup failure will cause the Servlet to throw an exception.<br /><br /><pre><br />protected void doPost (HttpServletRequest req,                 <br />                    HttpServletResponse res)<br />              throws IOException {<br />    String ip = req.getRemoteAddr();<br />    InetAddress addr = InetAddress.getByName(ip);<br />    ...<br />    out.println("hello " + addr.getHostName());<br />}<br /></pre><br /><br /><b>Example 2:</b> The following method will throw a <code>NullPointerException</code> if the parameter "name" is not part of the request.<br /><br /><pre><br />protected void doPost (HttpServletRequest req,                 <br />                    HttpServletResponse res)<br />              throws IOException {<br />    String name = getParameter("name");<br />    ...<br />    out.println("hello " + name.trim());<br />}<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

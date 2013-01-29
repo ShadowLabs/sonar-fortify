@@ -14,7 +14,7 @@ REFS = 7;
 
 file = 'rules.csv'
 language_mapping = { 'dotnet' => 'cs', 'python' => 'py', 'javascript' => 'js', 'jsp' => 'web', 'tsql' => 'sql', 'actionscript' => 'flex'}
-copy_langs = { 'java' => 'web', 'config' => 'xml'}
+copy_langs = { 'java' => 'jsp', 'jsp' => 'xml'}
 global_langs = ['config', 'content']
 supported_langs = ['abap', 'cobol', 'cpp', 'cs', 'java', 'js', 'sql', 'vb', 'web', 'py', 'xml', 'flex', 'php', 'objc']
 

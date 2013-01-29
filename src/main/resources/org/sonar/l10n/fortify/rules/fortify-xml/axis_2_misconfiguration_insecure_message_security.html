@@ -4,7 +4,7 @@
 </p>
 <h2>EXPLANATION</h2>
 <p>
-  If a service relays messages to other services, the messages are exposed to the weakest transport mechanism used between relay points. REST by itself does not include any security mechanisms, so this service relies on the transport layer for message integrity and confidentiality.<br /><br />The following configuration enables REST:<br /><pre><br />&lt;axisconfig name=&quot;AxisJava2.0&quot;&gt;<br />...<br />    &lt;parameter name=&quot;disableREST&quot; locked=&quot;true&quot;&gt;false&lt;/parameter&gt;<br />...<br />&lt;/axisconfig&gt;<br /></pre>
+  If a service relays messages to other services, the messages are exposed to the weakest transport mechanism used between relay points. REST by itself does not include any security mechanisms, so this service relies on the transport layer for message integrity and confidentiality.<br /><br /><p><br />In this case, the method <Replace key="PrimaryCall.name" link="PrimaryLocation"/> sets the property <code>enableREST</code> to <code>true</code> in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/>.<br /></p>
 </p>
 <h2>REFERENCES</h2>
 <p>

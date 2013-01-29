@@ -1,6 +1,72 @@
 <rules>
 	<!-- see names and descriptions in org/sonar/l10n/ -->
 	<rule>
+		<key>asp_net_misconfiguration_header_checking_disabled</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Header Checking Disabled</configKey>
+	</rule>
+	<rule>
+		<key>often_misused_file_upload</key><priority>MAJOR</priority><configKey>Often Misused: File Upload</configKey>
+	</rule>
+	<rule>
+		<key>hidden_field</key><priority>MAJOR</priority><configKey>Hidden Field</configKey>
+	</rule>
+	<rule>
+		<key>hardcoded_domain_in_html</key><priority>MAJOR</priority><configKey>Hardcoded Domain in HTML</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_request_forgery</key><priority>MAJOR</priority><configKey>Cross-Site Request Forgery</configKey>
+	</rule>
+	<rule>
+		<key>password_management_insecure_submission</key><priority>BLOCKER</priority><configKey>Password Management: Insecure Submission</configKey>
+	</rule>
+	<rule>
+		<key>privacy_violation_password</key><priority>BLOCKER</priority><configKey>Privacy Violation: Password</configKey>
+	</rule>
+	<rule>
+		<key>password_management_password_in_html_form</key><priority>BLOCKER</priority><configKey>Password Management: Password in HTML Form</configKey>
+	</rule>
+	<rule>
+		<key>privacy_violation_autocomplete</key><priority>BLOCKER</priority><configKey>Privacy Violation: Autocomplete</configKey>
+	</rule>
+	<rule>
+		<key>html5_form_validation_turned_off</key><priority>MAJOR</priority><configKey>HTML5: Form Validation Turned Off</configKey>
+	</rule>
+	<rule>
+		<key>header_checking_disabled</key><priority>MAJOR</priority><configKey>Header Checking Disabled</configKey>
+	</rule>
+	<rule>
+		<key>asp_net_misconfiguration_excessive_session_timeout</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Excessive Session Timeout</configKey>
+	</rule>
+	<rule>
+		<key>file_disclosure_spring_webflow</key><priority>BLOCKER</priority><configKey>File Disclosure: Spring Webflow</configKey>
+	</rule>
+	<rule>
+		<key>often_misused_spring_remote_service</key><priority>BLOCKER</priority><configKey>Often Misused: Spring Remote Service</configKey>
+	</rule>
+	<rule>
+		<key>often_misused_spring_web_service</key><priority>BLOCKER</priority><configKey>Often Misused: Spring Web Service</configKey>
+	</rule>
+	<rule>
+		<key>struts_form_field_without_validator</key><priority>MAJOR</priority><configKey>Struts: Form Field Without Validator</configKey>
+	</rule>
+	<rule>
+		<key>struts_validator_without_form_field</key><priority>MAJOR</priority><configKey>Struts: Validator Without Form Field</configKey>
+	</rule>
+	<rule>
+		<key>struts_unvalidated_action_form</key><priority>MAJOR</priority><configKey>Struts: Unvalidated Action Form</configKey>
+	</rule>
+	<rule>
+		<key>struts_unused_validation_form</key><priority>MAJOR</priority><configKey>Struts: Unused Validation Form</configKey>
+	</rule>
+	<rule>
+		<key>struts_unused_action_form</key><priority>MAJOR</priority><configKey>Struts: Unused Action Form</configKey>
+	</rule>
+	<rule>
+		<key>struts_duplicate_validation_forms</key><priority>MAJOR</priority><configKey>Struts: Duplicate Validation Forms</configKey>
+	</rule>
+	<rule>
+		<key>struts_form_does_not_extend_validation_class</key><priority>MAJOR</priority><configKey>Struts: Form Does Not Extend Validation Class</configKey>
+	</rule>
+	<rule>
 		<key>tomcat_configuration_insecure_transport</key><priority>MAJOR</priority><configKey>Tomcat Configuration: Insecure Transport</configKey>
 	</rule>
 	<rule>
@@ -113,9 +179,6 @@
 	</rule>
 	<rule>
 		<key>http_verb_tampering</key><priority>BLOCKER</priority><configKey>HTTP Verb Tampering</configKey>
-	</rule>
-	<rule>
-		<key>asp_net_misconfiguration_header_checking_disabled</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Header Checking Disabled</configKey>
 	</rule>
 	<rule>
 		<key>asp_net_misconfiguration_viewstatemac_disabled</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: ViewStateMac Disabled</configKey>
@@ -604,15 +667,6 @@
 		<key>privilege_management_android_network</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Network</configKey>
 	</rule>
 	<rule>
-		<key>struts_form_does_not_extend_validation_class</key><priority>MAJOR</priority><configKey>Struts: Form Does Not Extend Validation Class</configKey>
-	</rule>
-	<rule>
-		<key>privacy_violation_password</key><priority>BLOCKER</priority><configKey>Privacy Violation: Password</configKey>
-	</rule>
-	<rule>
-		<key>android_bad_practices_normal_permission</key><priority>BLOCKER</priority><configKey>Android Bad Practices: normal Permission</configKey>
-	</rule>
-	<rule>
 		<key>android_bad_practices_just_provider_writepermission_defined</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Just Provider writePermission Defined</configKey>
 	</rule>
 	<rule>
@@ -673,159 +727,105 @@
 		<key>html5_overly_permissive_cors_policy</key><priority>MAJOR</priority><configKey>HTML5: Overly Permissive CORS Policy</configKey>
 	</rule>
 	<rule>
-		<key>often_misused_file_upload</key><priority>MAJOR</priority><configKey>Often Misused: File Upload</configKey>
-	</rule>
-	<rule>
-		<key>hidden_field</key><priority>MAJOR</priority><configKey>Hidden Field</configKey>
-	</rule>
-	<rule>
-		<key>hardcoded_domain_in_html</key><priority>MAJOR</priority><configKey>Hardcoded Domain in HTML</configKey>
-	</rule>
-	<rule>
-		<key>cross_site_request_forgery</key><priority>MAJOR</priority><configKey>Cross-Site Request Forgery</configKey>
-	</rule>
-	<rule>
-		<key>password_management_insecure_submission</key><priority>BLOCKER</priority><configKey>Password Management: Insecure Submission</configKey>
-	</rule>
-	<rule>
-		<key>password_management_password_in_html_form</key><priority>BLOCKER</priority><configKey>Password Management: Password in HTML Form</configKey>
-	</rule>
-	<rule>
-		<key>privacy_violation_autocomplete</key><priority>BLOCKER</priority><configKey>Privacy Violation: Autocomplete</configKey>
-	</rule>
-	<rule>
-		<key>html5_form_validation_turned_off</key><priority>MAJOR</priority><configKey>HTML5: Form Validation Turned Off</configKey>
-	</rule>
-	<rule>
-		<key>header_checking_disabled</key><priority>MAJOR</priority><configKey>Header Checking Disabled</configKey>
-	</rule>
-	<rule>
-		<key>asp_net_misconfiguration_excessive_session_timeout</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Excessive Session Timeout</configKey>
-	</rule>
-	<rule>
-		<key>file_disclosure_spring_webflow</key><priority>BLOCKER</priority><configKey>File Disclosure: Spring Webflow</configKey>
-	</rule>
-	<rule>
-		<key>often_misused_spring_remote_service</key><priority>BLOCKER</priority><configKey>Often Misused: Spring Remote Service</configKey>
-	</rule>
-	<rule>
-		<key>often_misused_spring_web_service</key><priority>BLOCKER</priority><configKey>Often Misused: Spring Web Service</configKey>
-	</rule>
-	<rule>
-		<key>struts_form_field_without_validator</key><priority>MAJOR</priority><configKey>Struts: Form Field Without Validator</configKey>
-	</rule>
-	<rule>
-		<key>struts_validator_without_form_field</key><priority>MAJOR</priority><configKey>Struts: Validator Without Form Field</configKey>
-	</rule>
-	<rule>
-		<key>struts_unvalidated_action_form</key><priority>MAJOR</priority><configKey>Struts: Unvalidated Action Form</configKey>
-	</rule>
-	<rule>
-		<key>struts_unused_validation_form</key><priority>MAJOR</priority><configKey>Struts: Unused Validation Form</configKey>
-	</rule>
-	<rule>
-		<key>struts_unused_action_form</key><priority>MAJOR</priority><configKey>Struts: Unused Action Form</configKey>
-	</rule>
-	<rule>
-		<key>struts_duplicate_validation_forms</key><priority>MAJOR</priority><configKey>Struts: Duplicate Validation Forms</configKey>
-	</rule>
-	<rule>
-		<key>insecure_storage_missing_encryption_on_stored_private_media</key><priority>BLOCKER</priority><configKey>Insecure Storage: Missing Encryption on Stored Private Media</configKey>
-	</rule>
-	<rule>
-		<key>sql_injection</key><priority>BLOCKER</priority><configKey>SQL Injection</configKey>
-	</rule>
-	<rule>
-		<key>access_control_database</key><priority>BLOCKER</priority><configKey>Access Control: Database</configKey>
-	</rule>
-	<rule>
-		<key>privacy_violation</key><priority>BLOCKER</priority><configKey>Privacy Violation</configKey>
-	</rule>
-	<rule>
-		<key>log_forging</key><priority>MAJOR</priority><configKey>Log Forging</configKey>
-	</rule>
-	<rule>
-		<key>path_manipulation</key><priority>BLOCKER</priority><configKey>Path Manipulation</configKey>
-	</rule>
-	<rule>
-		<key>resource_injection</key><priority>MAJOR</priority><configKey>Resource Injection</configKey>
-	</rule>
-	<rule>
-		<key>format_string</key><priority>BLOCKER</priority><configKey>Format String</configKey>
-	</rule>
-	<rule>
-		<key>cross_site_scripting_reflected</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Reflected</configKey>
-	</rule>
-	<rule>
-		<key>cross_site_scripting_persistent</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Persistent</configKey>
-	</rule>
-	<rule>
-		<key>cross_site_scripting_poor_validation</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Poor Validation</configKey>
-	</rule>
-	<rule>
-		<key>unsafe_reflection</key><priority>MAJOR</priority><configKey>Unsafe Reflection</configKey>
-	</rule>
-	<rule>
-		<key>xpath_injection</key><priority>BLOCKER</priority><configKey>XPath Injection</configKey>
-	</rule>
-	<rule>
-		<key>insecure_transport_http_get</key><priority>BLOCKER</priority><configKey>Insecure Transport: HTTP GET</configKey>
-	</rule>
-	<rule>
-		<key>often_misused_file_system</key><priority>MAJOR</priority><configKey>Often Misused: File System</configKey>
-	</rule>
-	<rule>
-		<key>often_misused_encoding</key><priority>MAJOR</priority><configKey>Often Misused: Encoding</configKey>
-	</rule>
-	<rule>
-		<key>unreleased_resource_streams</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Streams</configKey>
-	</rule>
-	<rule>
-		<key>memory_leak</key><priority>BLOCKER</priority><configKey>Memory Leak</configKey>
-	</rule>
-	<rule>
-		<key>insecure_transport</key><priority>BLOCKER</priority><configKey>Insecure Transport</configKey>
-	</rule>
-	<rule>
-		<key>json_injection</key><priority>BLOCKER</priority><configKey>JSON Injection</configKey>
-	</rule>
-	<rule>
-		<key>code_correctness_regular_expressions_denial_of_service</key><priority>BLOCKER</priority><configKey>Code Correctness: Regular Expressions Denial of Service</configKey>
-	</rule>
-	<rule>
-		<key>privacy_violation_keyboard_caching</key><priority>BLOCKER</priority><configKey>Privacy Violation: Keyboard Caching</configKey>
-	</rule>
-	<rule>
-		<key>privacy_violation_screen_caching</key><priority>BLOCKER</priority><configKey>Privacy Violation: Screen Caching</configKey>
-	</rule>
-	<rule>
-		<key>key_management_hardcoded_encryption_key</key><priority>BLOCKER</priority><configKey>Key Management: Hardcoded Encryption Key</configKey>
-	</rule>
-	<rule>
-		<key>password_management_null_password</key><priority>MAJOR</priority><configKey>Password Management: Null Password</configKey>
-	</rule>
-	<rule>
-		<key>password_management_empty_password</key><priority>BLOCKER</priority><configKey>Password Management: Empty Password</configKey>
-	</rule>
-	<rule>
-		<key>password_management_hardcoded_password</key><priority>BLOCKER</priority><configKey>Password Management: Hardcoded Password</configKey>
-	</rule>
-	<rule>
-		<key>often_misused_weak_ssl_certificate</key><priority>MAJOR</priority><configKey>Often Misused: Weak SSL Certificate</configKey>
-	</rule>
-	<rule>
-		<key>xml_external_entity_injection</key><priority>BLOCKER</priority><configKey>XML External Entity Injection</configKey>
-	</rule>
-	<rule>
-		<key>xml_injection</key><priority>BLOCKER</priority><configKey>XML Injection</configKey>
-	</rule>
-	<rule>
-		<key>often_misused_sms</key><priority>BLOCKER</priority><configKey>Often Misused: SMS</configKey>
+		<key>weak_encryption_insufficient_key_size</key><priority>BLOCKER</priority><configKey>Weak Encryption: Insufficient Key Size</configKey>
 	</rule>
 	<rule>
 		<key>weak_encryption</key><priority>BLOCKER</priority><configKey>Weak Encryption</configKey>
 	</rule>
 	<rule>
-		<key>weak_encryption_insufficient_key_size</key><priority>BLOCKER</priority><configKey>Weak Encryption: Insufficient Key Size</configKey>
+		<key>often_misused_sms</key><priority>BLOCKER</priority><configKey>Often Misused: SMS</configKey>
+	</rule>
+	<rule>
+		<key>xml_injection</key><priority>BLOCKER</priority><configKey>XML Injection</configKey>
+	</rule>
+	<rule>
+		<key>xml_external_entity_injection</key><priority>BLOCKER</priority><configKey>XML External Entity Injection</configKey>
+	</rule>
+	<rule>
+		<key>often_misused_weak_ssl_certificate</key><priority>MAJOR</priority><configKey>Often Misused: Weak SSL Certificate</configKey>
+	</rule>
+	<rule>
+		<key>password_management_hardcoded_password</key><priority>BLOCKER</priority><configKey>Password Management: Hardcoded Password</configKey>
+	</rule>
+	<rule>
+		<key>password_management_empty_password</key><priority>BLOCKER</priority><configKey>Password Management: Empty Password</configKey>
+	</rule>
+	<rule>
+		<key>password_management_null_password</key><priority>MAJOR</priority><configKey>Password Management: Null Password</configKey>
+	</rule>
+	<rule>
+		<key>key_management_hardcoded_encryption_key</key><priority>BLOCKER</priority><configKey>Key Management: Hardcoded Encryption Key</configKey>
+	</rule>
+	<rule>
+		<key>privacy_violation_screen_caching</key><priority>BLOCKER</priority><configKey>Privacy Violation: Screen Caching</configKey>
+	</rule>
+	<rule>
+		<key>privacy_violation_keyboard_caching</key><priority>BLOCKER</priority><configKey>Privacy Violation: Keyboard Caching</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_regular_expressions_denial_of_service</key><priority>BLOCKER</priority><configKey>Code Correctness: Regular Expressions Denial of Service</configKey>
+	</rule>
+	<rule>
+		<key>json_injection</key><priority>BLOCKER</priority><configKey>JSON Injection</configKey>
+	</rule>
+	<rule>
+		<key>insecure_transport</key><priority>BLOCKER</priority><configKey>Insecure Transport</configKey>
+	</rule>
+	<rule>
+		<key>memory_leak</key><priority>BLOCKER</priority><configKey>Memory Leak</configKey>
+	</rule>
+	<rule>
+		<key>unreleased_resource_streams</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Streams</configKey>
+	</rule>
+	<rule>
+		<key>often_misused_encoding</key><priority>MAJOR</priority><configKey>Often Misused: Encoding</configKey>
+	</rule>
+	<rule>
+		<key>often_misused_file_system</key><priority>MAJOR</priority><configKey>Often Misused: File System</configKey>
+	</rule>
+	<rule>
+		<key>insecure_transport_http_get</key><priority>BLOCKER</priority><configKey>Insecure Transport: HTTP GET</configKey>
+	</rule>
+	<rule>
+		<key>xpath_injection</key><priority>BLOCKER</priority><configKey>XPath Injection</configKey>
+	</rule>
+	<rule>
+		<key>unsafe_reflection</key><priority>MAJOR</priority><configKey>Unsafe Reflection</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_scripting_poor_validation</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Poor Validation</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_scripting_persistent</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Persistent</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_scripting_reflected</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Reflected</configKey>
+	</rule>
+	<rule>
+		<key>format_string</key><priority>BLOCKER</priority><configKey>Format String</configKey>
+	</rule>
+	<rule>
+		<key>resource_injection</key><priority>MAJOR</priority><configKey>Resource Injection</configKey>
+	</rule>
+	<rule>
+		<key>path_manipulation</key><priority>BLOCKER</priority><configKey>Path Manipulation</configKey>
+	</rule>
+	<rule>
+		<key>log_forging</key><priority>MAJOR</priority><configKey>Log Forging</configKey>
+	</rule>
+	<rule>
+		<key>privacy_violation</key><priority>BLOCKER</priority><configKey>Privacy Violation</configKey>
+	</rule>
+	<rule>
+		<key>access_control_database</key><priority>BLOCKER</priority><configKey>Access Control: Database</configKey>
+	</rule>
+	<rule>
+		<key>sql_injection</key><priority>BLOCKER</priority><configKey>SQL Injection</configKey>
+	</rule>
+	<rule>
+		<key>insecure_storage_missing_encryption_on_stored_private_media</key><priority>BLOCKER</priority><configKey>Insecure Storage: Missing Encryption on Stored Private Media</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_normal_permission</key><priority>BLOCKER</priority><configKey>Android Bad Practices: normal Permission</configKey>
 	</rule>
 </rules>

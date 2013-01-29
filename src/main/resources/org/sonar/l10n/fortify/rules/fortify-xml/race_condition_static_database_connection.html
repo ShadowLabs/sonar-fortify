@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Database connections stored in static fields will be shared between threads.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  A transactional resource object such as database connection can only be associated with one transaction at a time. For this reason, a connection should not be shared between threads and should not be stored in a static field. See Section 4.2.3 of the J2EE Specification for more details.<br /><br /><b>Example 1:</b> <br /><br /><pre><br />public class ConnectionManager {<br /><br />private static Connection conn = initDbConn();<br />...<br />}<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

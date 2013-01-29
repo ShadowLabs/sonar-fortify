@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Without proper access control, executing an LDAP statement that contains a user-controlled value can allow an attacker to access unauthorized records.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Executing LDAP queries under an anonymous bind, effectively without authentication, can allow an attacker to abuse a poorly configured LDAP environment. <br /><br /><b>Example 1:</b> The following code creates the <code>DirContext ctx</code> using an anonymous bind. <br /><br /><pre><br />...<br />env.put(Context.SECURITY_AUTHENTICATION, "none");<br />DirContext ctx = new InitialDirContext(env);<br />...<br /></pre><br /><br />All LDAP queries executed against <code>ctx</code> will be performed without authentication and access control. An attacker might be able to manipulate one of these queries in an unexpected way to gain access to records that would otherwise be protected by the directory's access control mechanism.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

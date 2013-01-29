@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+   Allowing database persistent entities to be auto-populated by request parameters will allow an attacker to create unintended records in association entities or update unintended fields in the entity object.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Persistent objects are bound to the underlying database and updated automatically by the persistence framework, such as Hibernate or JPA. Allowing these objects to be dynamically bound to the request by Spring MVC will allow an attacker to inject unexpected values into the database by providing additional request parameters.<br /><b>Example 1:</b> The <code>Order</code>, <code>Customer</code>, and <code>Profile</code> are Hibernate persisted classes.<br /><pre><br />public class Order {<br />	String ordered;<br />	List lineItems;<br />	Customer cust;<br />...<br />}<br />public class Customer {<br />	String customerId;<br />	...<br />    Profile p;<br />...<br />} <br />public class Profile {<br />	String profileId;<br />	String username;<br />	String password;<br />	...<br />}<br /></pre><br /><code>OrderController</code> is the Spring controller class handling the request:<br /><pre><br />@Controller<br />public class OrderController {<br />...<br />	@RequestMapping("/updateOrder")<br />	public String updateOrder(Order order) {<br />		...<br />		session.save(order);<br />	}<br />}<br /></pre><br />Because command classes are automatically bound to the request, an attacker can use this vulnerability to update another user's password by adding the following request parameters to the request: &quot;http://www.yourcorp.com/webApp/updateOrder?order.customer.profile.profileId=1234&amp;order.customer.profile.password=urpowned&quot;
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

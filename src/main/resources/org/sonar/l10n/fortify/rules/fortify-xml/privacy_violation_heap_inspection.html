@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Storing sensitive data in a <code>String</code> object makes it impossible to reliably purge the data from memory.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Sensitive data (such as passwords, social security numbers, credit card numbers etc) stored in memory can be leaked if memory is not cleared after use. Often, <code>String</code>s are used store sensitive data, however, since <code>String</code> objects are immutable, removing the value of a <code>String</code> from memory can only be done by the JVM garbage collector. The garbage collector is not required to run unless the JVM is low on memory, so there is no guarantee as to when garbage collection will take place. In the event of an application crash, a memory dump of the application might reveal sensitive data.<br /><br /><b>Example 1:</b> The following code converts a password from a character array to a <code>String</code>.<br /><pre><br />private JPasswordField pf;<br />...<br />final char[] password = pf.getPassword();<br />...<br />String passwordAsString = new String(password);<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

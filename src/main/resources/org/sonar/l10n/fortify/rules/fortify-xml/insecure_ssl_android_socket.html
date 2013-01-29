@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The method fails to make SSL verification checks.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Calls to <code>createSocket()</code>, that take in InetAddress as a function parameter, do not perform hostname verification. <br /><br />Similarily, calls to <code>getInsecure()</code> returns a SSL socket factory with all SSL checks disabled.<br /><br />Both of these render the application susceptible to Man-in-the-Middle attack. <br /><br />For example the application when trying to connect to https://safesecureserver.banking.com would readily accept a certificate issued to https://hackedserver.banking.com.The application would now potentially leak sensitive user information on a broken SSL connection to the hacked server.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

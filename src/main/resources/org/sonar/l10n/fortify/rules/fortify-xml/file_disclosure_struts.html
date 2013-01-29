@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Constructing a server-side redirect path with user input could allow an attacker to download application binaries (including application classes or jar files) or view arbitrary files within protected directories.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  A file disclosure occur when:<br />1. Data enters a program from an untrusted source.<br /><p><br />In this case the data enters at <Replace key="SourceFunction" link="SourceLocation"/> in <Replace key="SourceLocation.file"/> at line <Replace key="SourceLocation.line"/>. <br /></p><br /><br />2. The data is used to dynamically construct a path. <br /><br /><p><br />In this case the data is passed to <Replace key="SinkFunction" link="SinkLocation"/> in <Replace key="SinkLocation.file"/> at line <Replace key="SinkLocation.line"/>.<br /></p><br /><br /><b>Example 1:</b> The following code takes untrusted data and uses it to build a path which is used in a server side forward. <br /><br /><pre><br />...<br />	String returnURL = request.getParameter("returnURL");<br />	return new ActionForward(returnURL); <br />	...<br /></pre><br /><br />If an attacker provided a URL with the request parameter matching a sensitive file location, they would be able to view that file. For example, &quot;http://www.yourcorp.com/webApp/logic?returnURL=WEB-INF/applicationContext.xml&quot; would allow them to view the applicationContext.xml of the application. <br />Once the attacker had the applicationContext.xml, they could locate and download other configuration files referenced in the applicationContext.xml or even class or jar files. This would allow attackers to gain sensitive infomation about an application and target it for other types of attack.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

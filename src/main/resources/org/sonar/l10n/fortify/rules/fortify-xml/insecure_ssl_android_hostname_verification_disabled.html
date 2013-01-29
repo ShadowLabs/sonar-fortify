@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Hostname verification is disabled when making SSL connections.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Use of <code>AllowAllHostnameVerifier()</code> or <code>SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER</code> essentially turns off hostname verification when using SSL connections. This is equivalent to trusting all certificates. <br /><br /><b>Example 1:</b>The application sets the hostname verifier as below.<br /><br /><pre><br />... <br />SSLSocketFactory sf = new CustomSSLSocketFactory(trustStore);<br />sf.setHostnameVerifier(SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);<br />...<br /></pre><br /><br />This application when trying to connect to https://safesecureserver.banking.com would readily accept a certificate issued to https://hackedserver.banking.com.The application would now potentially leak sensitive user information on a broken SSL connection to the hacked server.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

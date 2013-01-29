@@ -1,262 +1,196 @@
 <rules>
 	<!-- see names and descriptions in org/sonar/l10n/ -->
 	<rule>
-		<key>android_bad_practices_normal_permission</key><priority>BLOCKER</priority><configKey>Android Bad Practices: normal Permission</configKey>
-	</rule>
-	<rule>
-		<key>portability_flaw_file_separator</key><priority>BLOCKER</priority><configKey>Portability Flaw: File Separator</configKey>
-	</rule>
-	<rule>
-		<key>flash_misconfiguration_policy_restrictions_bypass</key><priority>MAJOR</priority><configKey>Flash Misconfiguration: Policy Restrictions Bypass</configKey>
-	</rule>
-	<rule>
-		<key>cross_site_flashing</key><priority>BLOCKER</priority><configKey>Cross-Site Flashing</configKey>
-	</rule>
-	<rule>
-		<key>cross_site_scripting_reflected</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Reflected</configKey>
-	</rule>
-	<rule>
-		<key>cross_site_scripting_persistent</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Persistent</configKey>
-	</rule>
-	<rule>
-		<key>cross_site_scripting_poor_validation</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Poor Validation</configKey>
-	</rule>
-	<rule>
-		<key>system_information_leak</key><priority>MAJOR</priority><configKey>System Information Leak</configKey>
-	</rule>
-	<rule>
-		<key>privacy_violation</key><priority>BLOCKER</priority><configKey>Privacy Violation</configKey>
-	</rule>
-	<rule>
-		<key>path_manipulation</key><priority>BLOCKER</priority><configKey>Path Manipulation</configKey>
-	</rule>
-	<rule>
-		<key>password_management</key><priority>MAJOR</priority><configKey>Password Management</configKey>
-	</rule>
-	<rule>
-		<key>password_management_weak_cryptography</key><priority>MAJOR</priority><configKey>Password Management: Weak Cryptography</configKey>
-	</rule>
-	<rule>
-		<key>dynamic_code_evaluation_code_injection</key><priority>BLOCKER</priority><configKey>Dynamic Code Evaluation: Code Injection</configKey>
-	</rule>
-	<rule>
-		<key>log_forging</key><priority>MAJOR</priority><configKey>Log Forging</configKey>
-	</rule>
-	<rule>
-		<key>unsafe_reflection</key><priority>MAJOR</priority><configKey>Unsafe Reflection</configKey>
-	</rule>
-	<rule>
-		<key>open_redirect</key><priority>BLOCKER</priority><configKey>Open Redirect</configKey>
-	</rule>
-	<rule>
-		<key>command_injection</key><priority>BLOCKER</priority><configKey>Command Injection</configKey>
-	</rule>
-	<rule>
-		<key>flash_misconfiguration_overly_permissive_cross_domain_policy</key><priority>MAJOR</priority><configKey>Flash Misconfiguration: Overly Permissive Cross-Domain Policy</configKey>
-	</rule>
-	<rule>
-		<key>flash_misconfiguration_unauthorized_data_access</key><priority>MAJOR</priority><configKey>Flash Misconfiguration: Unauthorized Data Access</configKey>
-	</rule>
-	<rule>
-		<key>password_management_null_password</key><priority>MAJOR</priority><configKey>Password Management: Null Password</configKey>
-	</rule>
-	<rule>
-		<key>password_management_empty_password</key><priority>BLOCKER</priority><configKey>Password Management: Empty Password</configKey>
-	</rule>
-	<rule>
-		<key>password_management_hardcoded_password</key><priority>BLOCKER</priority><configKey>Password Management: Hardcoded Password</configKey>
-	</rule>
-	<rule>
-		<key>password_management_password_in_comment</key><priority>MAJOR</priority><configKey>Password Management: Password in Comment</configKey>
-	</rule>
-	<rule>
-		<key>sql_injection</key><priority>BLOCKER</priority><configKey>SQL Injection</configKey>
-	</rule>
-	<rule>
-		<key>access_control_database</key><priority>BLOCKER</priority><configKey>Access Control: Database</configKey>
-	</rule>
-	<rule>
-		<key>privacy_violation_password</key><priority>BLOCKER</priority><configKey>Privacy Violation: Password</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_android_network</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Network</configKey>
-	</rule>
-	<rule>
-		<key>wcf_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Debug Information</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_android_messaging</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Messaging</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_android_disable</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Disable</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_android_data_storage</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Data Storage</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_android_location</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Location</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_android_telephony</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Telephony</configKey>
-	</rule>
-	<rule>
-		<key>android_bad_practices_application_permission_defined</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Application Permission Defined</configKey>
-	</rule>
-	<rule>
-		<key>android_bad_practices_missing_component_permission</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Missing Component Permission</configKey>
-	</rule>
-	<rule>
-		<key>android_bad_practices_missing_exported_flag_or_component_permission</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Missing Exported Flag or Component Permission</configKey>
-	</rule>
-	<rule>
-		<key>android_bad_practices_unnecessary_component_exposure</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Unnecessary Component Exposure</configKey>
-	</rule>
-	<rule>
-		<key>android_bad_practices_mixed_component_functionality</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Mixed Component Functionality</configKey>
-	</rule>
-	<rule>
-		<key>insecure_storage_android_backup_storage</key><priority>MAJOR</priority><configKey>Insecure Storage: Android Backup Storage</configKey>
-	</rule>
-	<rule>
-		<key>android_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>Android Misconfiguration: Debug Information</configKey>
-	</rule>
-	<rule>
-		<key>privacy_violation_image</key><priority>BLOCKER</priority><configKey>Privacy Violation: Image</configKey>
-	</rule>
-	<rule>
-		<key>asp_net_misconfiguration_request_validation_disabled</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Request Validation Disabled</configKey>
-	</rule>
-	<rule>
-		<key>flex_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>Flex Misconfiguration: Debug Information</configKey>
-	</rule>
-	<rule>
-		<key>password_management_password_in_configuration_file</key><priority>BLOCKER</priority><configKey>Password Management: Password in Configuration File</configKey>
-	</rule>
-	<rule>
-		<key>weblogic_misconfiguration_weak_token</key><priority>MAJOR</priority><configKey>Weblogic Misconfiguration: Weak Token</configKey>
-	</rule>
-	<rule>
-		<key>weblogic_misconfiguration_missing_timestamp</key><priority>MAJOR</priority><configKey>Weblogic Misconfiguration: Missing Timestamp</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_weak_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Weak Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_insecure_transport</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Insecure Transport</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_insufficient_supporting_token_protection</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Insufficient Supporting Token Protection</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_tokens_not_protected</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Tokens Not Protected</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_timestamp</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Timestamp</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_encryption_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_signature_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_initiator_encryption_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Initiator Encryption Token</configKey>
-	</rule>
-	<rule>
-		<key>html5_overly_permissive_cors_policy</key><priority>MAJOR</priority><configKey>HTML5: Overly Permissive CORS Policy</configKey>
-	</rule>
-	<rule>
-		<key>flash_misconfiguration_overly_permissive_custom_headers_policy</key><priority>MAJOR</priority><configKey>Flash Misconfiguration: Overly Permissive Custom Headers Policy</configKey>
-	</rule>
-	<rule>
-		<key>wcf_misconfiguration_transport_security_enabled</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Transport Security Enabled</configKey>
-	</rule>
-	<rule>
-		<key>asp_net_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Debug Information</configKey>
-	</rule>
-	<rule>
-		<key>wcf_misconfiguration_unauthorized_access</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Unauthorized Access</configKey>
-	</rule>
-	<rule>
-		<key>adf_bad_practices_missing_url_parameter_converter</key><priority>MAJOR</priority><configKey>ADF Bad Practices: Missing URL Parameter Converter</configKey>
-	</rule>
-	<rule>
-		<key>adf_bad_practices_default_url_invoke_disallowed_setting</key><priority>MAJOR</priority><configKey>ADF Bad Practices: Default url-invoke-disallowed Setting</configKey>
-	</rule>
-	<rule>
-		<key>wcf_misconfiguration_unsafe_revocation_mode</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Unsafe Revocation Mode</configKey>
-	</rule>
-	<rule>
-		<key>weak_cryptographic_hash</key><priority>MAJOR</priority><configKey>Weak Cryptographic Hash</configKey>
-	</rule>
-	<rule>
-		<key>wcf_misconfiguration_msmq_anonymous_transport_client</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: MSMQ Anonymous Transport Client</configKey>
-	</rule>
-	<rule>
-		<key>wcf_misconfiguration_security_not_enabled</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Security Not Enabled</configKey>
-	</rule>
-	<rule>
-		<key>wcf_misconfiguration_insufficient_audit_failure_handling</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Insufficient Audit Failure Handling</configKey>
-	</rule>
-	<rule>
-		<key>wcf_misconfiguration_insufficient_logging</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Insufficient Logging</configKey>
-	</rule>
-	<rule>
-		<key>wcf_misconfiguration_weak_class_reference</key><priority>BLOCKER</priority><configKey>WCF Misconfiguration: Weak Class Reference</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_unnecessary_permission</key><priority>BLOCKER</priority><configKey>Privilege Management: Unnecessary Permission</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_missing_intent_permission</key><priority>BLOCKER</priority><configKey>Privilege Management: Missing Intent Permission</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_initiator_signature_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Initiator Signature Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_recipient_encryption_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Recipient Encryption Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_recipient_signature_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Recipient Signature Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_encryption_on_message_body</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption on Message Body</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_encryption_on_message_headers</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption on Message Headers</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_encryption_on_message_attachments</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption on Message Attachments</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_signature_on_message_body</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature on Message Body</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_signature_on_message_headers</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature on Message Headers</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_signature_on_message_attachments</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature on Message Attachments</configKey>
-	</rule>
-	<rule>
-		<key>cross_site_scripting_external_links</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: External Links</configKey>
-	</rule>
-	<rule>
-		<key>struts_2_validation_file_without_action</key><priority>MAJOR</priority><configKey>Struts 2: Validation File Without Action</configKey>
-	</rule>
-	<rule>
-		<key>struts_2_validator_without_action_field</key><priority>MAJOR</priority><configKey>Struts 2: Validator Without Action Field</configKey>
+		<key>struts_2_undeclared_validator</key><priority>MAJOR</priority><configKey>Struts 2: Undeclared Validator</configKey>
 	</rule>
 	<rule>
 		<key>struts_2_duplicate_validators</key><priority>MAJOR</priority><configKey>Struts 2: Duplicate Validators</configKey>
 	</rule>
 	<rule>
-		<key>struts_2_duplicate_action_field_validators</key><priority>MAJOR</priority><configKey>Struts 2: Duplicate Action Field Validators</configKey>
+		<key>struts_2_validator_without_action_field</key><priority>MAJOR</priority><configKey>Struts 2: Validator Without Action Field</configKey>
 	</rule>
 	<rule>
-		<key>struts_2_undeclared_validator</key><priority>MAJOR</priority><configKey>Struts 2: Undeclared Validator</configKey>
+		<key>struts_2_validation_file_without_action</key><priority>MAJOR</priority><configKey>Struts 2: Validation File Without Action</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_scripting_external_links</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: External Links</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_signature_on_message_attachments</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature on Message Attachments</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_signature_on_message_headers</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature on Message Headers</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_signature_on_message_body</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature on Message Body</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_encryption_on_message_attachments</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption on Message Attachments</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_encryption_on_message_headers</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption on Message Headers</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_encryption_on_message_body</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption on Message Body</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_recipient_signature_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Recipient Signature Token</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_recipient_encryption_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Recipient Encryption Token</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_initiator_signature_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Initiator Signature Token</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_initiator_encryption_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Initiator Encryption Token</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_signature_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature Token</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_encryption_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption Token</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_timestamp</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Timestamp</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_tokens_not_protected</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Tokens Not Protected</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_insufficient_supporting_token_protection</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Insufficient Supporting Token Protection</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_insecure_transport</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Insecure Transport</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_weak_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Weak Token</configKey>
+	</rule>
+	<rule>
+		<key>weblogic_misconfiguration_missing_timestamp</key><priority>MAJOR</priority><configKey>Weblogic Misconfiguration: Missing Timestamp</configKey>
+	</rule>
+	<rule>
+		<key>weblogic_misconfiguration_weak_token</key><priority>MAJOR</priority><configKey>Weblogic Misconfiguration: Weak Token</configKey>
+	</rule>
+	<rule>
+		<key>password_management_password_in_configuration_file</key><priority>BLOCKER</priority><configKey>Password Management: Password in Configuration File</configKey>
+	</rule>
+	<rule>
+		<key>flex_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>Flex Misconfiguration: Debug Information</configKey>
+	</rule>
+	<rule>
+		<key>asp_net_misconfiguration_request_validation_disabled</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Request Validation Disabled</configKey>
+	</rule>
+	<rule>
+		<key>privacy_violation_image</key><priority>BLOCKER</priority><configKey>Privacy Violation: Image</configKey>
+	</rule>
+	<rule>
+		<key>android_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>Android Misconfiguration: Debug Information</configKey>
+	</rule>
+	<rule>
+		<key>insecure_storage_android_backup_storage</key><priority>MAJOR</priority><configKey>Insecure Storage: Android Backup Storage</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_mixed_component_functionality</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Mixed Component Functionality</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_unnecessary_component_exposure</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Unnecessary Component Exposure</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_missing_exported_flag_or_component_permission</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Missing Exported Flag or Component Permission</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_missing_component_permission</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Missing Component Permission</configKey>
 	</rule>
 	<rule>
 		<key>php_misconfiguration_register_globals_enabled</key><priority>BLOCKER</priority><configKey>PHP Misconfiguration: register_globals Enabled</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_android_telephony</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Telephony</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_android_location</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Location</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_android_data_storage</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Data Storage</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_android_disable</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Disable</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_android_messaging</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Messaging</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Debug Information</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_android_network</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Network</configKey>
+	</rule>
+	<rule>
+		<key>privacy_violation_password</key><priority>BLOCKER</priority><configKey>Privacy Violation: Password</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_normal_permission</key><priority>BLOCKER</priority><configKey>Android Bad Practices: normal Permission</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_just_provider_writepermission_defined</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Just Provider writePermission Defined</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_provider_permission_defined</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Provider permission Defined</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_missing_intent_permission</key><priority>BLOCKER</priority><configKey>Privilege Management: Missing Intent Permission</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_unnecessary_permission</key><priority>BLOCKER</priority><configKey>Privilege Management: Unnecessary Permission</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_weak_class_reference</key><priority>BLOCKER</priority><configKey>WCF Misconfiguration: Weak Class Reference</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_insufficient_logging</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Insufficient Logging</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_insufficient_audit_failure_handling</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Insufficient Audit Failure Handling</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_security_not_enabled</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Security Not Enabled</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_msmq_anonymous_transport_client</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: MSMQ Anonymous Transport Client</configKey>
+	</rule>
+	<rule>
+		<key>weak_cryptographic_hash</key><priority>MAJOR</priority><configKey>Weak Cryptographic Hash</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_unsafe_revocation_mode</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Unsafe Revocation Mode</configKey>
+	</rule>
+	<rule>
+		<key>adf_bad_practices_default_url_invoke_disallowed_setting</key><priority>MAJOR</priority><configKey>ADF Bad Practices: Default url-invoke-disallowed Setting</configKey>
+	</rule>
+	<rule>
+		<key>adf_bad_practices_missing_url_parameter_converter</key><priority>MAJOR</priority><configKey>ADF Bad Practices: Missing URL Parameter Converter</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_unauthorized_access</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Unauthorized Access</configKey>
+	</rule>
+	<rule>
+		<key>asp_net_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Debug Information</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_transport_security_enabled</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Transport Security Enabled</configKey>
+	</rule>
+	<rule>
+		<key>flash_misconfiguration_unauthorized_data_access</key><priority>MAJOR</priority><configKey>Flash Misconfiguration: Unauthorized Data Access</configKey>
+	</rule>
+	<rule>
+		<key>flash_misconfiguration_overly_permissive_custom_headers_policy</key><priority>MAJOR</priority><configKey>Flash Misconfiguration: Overly Permissive Custom Headers Policy</configKey>
+	</rule>
+	<rule>
+		<key>flash_misconfiguration_overly_permissive_cross_domain_policy</key><priority>MAJOR</priority><configKey>Flash Misconfiguration: Overly Permissive Cross-Domain Policy</configKey>
+	</rule>
+	<rule>
+		<key>html5_overly_permissive_cors_policy</key><priority>MAJOR</priority><configKey>HTML5: Overly Permissive CORS Policy</configKey>
 	</rule>
 	<rule>
 		<key>php_misconfiguration_allow_url_fopen_enabled</key><priority>BLOCKER</priority><configKey>PHP Misconfiguration: allow_url_fopen Enabled</configKey>
@@ -790,9 +724,75 @@
 		<key>often_misused_file_upload</key><priority>MAJOR</priority><configKey>Often Misused: File Upload</configKey>
 	</rule>
 	<rule>
-		<key>android_bad_practices_just_provider_writepermission_defined</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Just Provider writePermission Defined</configKey>
+		<key>access_control_database</key><priority>BLOCKER</priority><configKey>Access Control: Database</configKey>
 	</rule>
 	<rule>
-		<key>android_bad_practices_provider_permission_defined</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Provider permission Defined</configKey>
+		<key>sql_injection</key><priority>BLOCKER</priority><configKey>SQL Injection</configKey>
+	</rule>
+	<rule>
+		<key>password_management_password_in_comment</key><priority>MAJOR</priority><configKey>Password Management: Password in Comment</configKey>
+	</rule>
+	<rule>
+		<key>password_management_hardcoded_password</key><priority>BLOCKER</priority><configKey>Password Management: Hardcoded Password</configKey>
+	</rule>
+	<rule>
+		<key>password_management_empty_password</key><priority>BLOCKER</priority><configKey>Password Management: Empty Password</configKey>
+	</rule>
+	<rule>
+		<key>password_management_null_password</key><priority>MAJOR</priority><configKey>Password Management: Null Password</configKey>
+	</rule>
+	<rule>
+		<key>command_injection</key><priority>BLOCKER</priority><configKey>Command Injection</configKey>
+	</rule>
+	<rule>
+		<key>open_redirect</key><priority>BLOCKER</priority><configKey>Open Redirect</configKey>
+	</rule>
+	<rule>
+		<key>unsafe_reflection</key><priority>MAJOR</priority><configKey>Unsafe Reflection</configKey>
+	</rule>
+	<rule>
+		<key>log_forging</key><priority>MAJOR</priority><configKey>Log Forging</configKey>
+	</rule>
+	<rule>
+		<key>dynamic_code_evaluation_code_injection</key><priority>BLOCKER</priority><configKey>Dynamic Code Evaluation: Code Injection</configKey>
+	</rule>
+	<rule>
+		<key>password_management_weak_cryptography</key><priority>MAJOR</priority><configKey>Password Management: Weak Cryptography</configKey>
+	</rule>
+	<rule>
+		<key>password_management</key><priority>MAJOR</priority><configKey>Password Management</configKey>
+	</rule>
+	<rule>
+		<key>path_manipulation</key><priority>BLOCKER</priority><configKey>Path Manipulation</configKey>
+	</rule>
+	<rule>
+		<key>privacy_violation</key><priority>BLOCKER</priority><configKey>Privacy Violation</configKey>
+	</rule>
+	<rule>
+		<key>system_information_leak</key><priority>MAJOR</priority><configKey>System Information Leak</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_scripting_poor_validation</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Poor Validation</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_scripting_persistent</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Persistent</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_scripting_reflected</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Reflected</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_flashing</key><priority>BLOCKER</priority><configKey>Cross-Site Flashing</configKey>
+	</rule>
+	<rule>
+		<key>flash_misconfiguration_policy_restrictions_bypass</key><priority>MAJOR</priority><configKey>Flash Misconfiguration: Policy Restrictions Bypass</configKey>
+	</rule>
+	<rule>
+		<key>portability_flaw_file_separator</key><priority>BLOCKER</priority><configKey>Portability Flaw: File Separator</configKey>
+	</rule>
+	<rule>
+		<key>struts_2_duplicate_action_field_validators</key><priority>MAJOR</priority><configKey>Struts 2: Duplicate Action Field Validators</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_application_permission_defined</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Application Permission Defined</configKey>
 	</rule>
 </rules>

@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program registers a receiver without specifying the broadcaster permission.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Receiver registered without the broadcaster permission will receive messages from any broadcaster. If these messages contain malicious data or come from a malicious broadcaster, the application may be compromised.<br /><br /><b>Example 1:</b> The following code registers a receiver without specifying the broadcaster permission.<br /><pre><br />...<br />context.registerReceiver(broadcastReceiver, intentFilter);<br />...<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

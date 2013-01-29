@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Storing a non-serializable object as an <code>HttpSession</code> attribute can damage application reliability.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  A J2EE application can make use of multiple JVMs in order to improve application reliability and performance. In order to make the multiple JVMs appear as a single application to the end user, the J2EE container can replicate an <code>HttpSession</code> object across multiple JVMs so that if one JVM becomes unavailable another can step in and take its place without disrupting the flow of the application.<br /><br />In order for session replication to work, the values the application stores as attributes in the session must implement the <code>Serializable</code> interface. <br /><br /><b>Example 1:</b> The following class adds itself to the session, but because it is not serializable, the session can no longer be replicated.<br /><br /><pre><br />public class DataGlob {<br />   String globName;<br />   String globValue;<br /><br />   public void addToSession(HttpSession session) {<br />     session.setAttribute("glob", this);<br />   }<br />}<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

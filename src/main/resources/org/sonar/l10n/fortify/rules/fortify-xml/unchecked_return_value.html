@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Ignoring a method's return value can cause the program to overlook unexpected states and conditions.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  It is not uncommon for Java programmers to misunderstand <code>read()</code> and related methods that are part of many <code>java.io</code> classes. Most errors and unusual events in Java result in an exception being thrown. (This is one of the advantages that Java has over languages like C: Exceptions make it easier for programmers to think about what can go wrong.) But the stream and reader classes do not consider it unusual or exceptional if only a small amount of data becomes available. These classes simply add the small amount of data to the return buffer, and set the return value to the number of bytes or characters read. There is no guarantee that the amount of data returned is equal to the amount of data requested.<br /><br />This behavior makes it important for programmers to examine the return value from <code>read()</code> and other IO methods to ensure that they receive the amount of data they expect.<br /><br /><p><br />In this case the value of <Replace key="PrimaryCall.name" link="PrimaryLocation"/> is unchecked in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/>.<br /></p><br /><br /><b>Example:</b> The following code loops through a set of users, reading a private data file for each user. The programmer assumes that the files are always exactly 1 kilobyte in size and therefore ignores the return value from <code>read()</code>. If an attacker can create a smaller file, the program will recycle the remainder of the data from the previous user and handle it as though it belongs to the attacker.<br /><br /><pre><br />FileInputStream fis;<br />byte[] byteArray = new byte[1024];<br />for (Iterator i=users.iterator(); i.hasNext();) {<br />    String userName = (String) i.next();<br />    String pFileName = PFILE_ROOT + "/" + userName;<br />    FileInputStream fis = new FileInputStream(pFileName);   <br />    fis.read(byteArray); // the file is always 1k bytes<br />    fis.close();<br />    processPFile(userName, byteArray);<br />}<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

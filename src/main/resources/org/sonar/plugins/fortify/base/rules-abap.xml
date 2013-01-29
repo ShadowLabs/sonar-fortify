@@ -67,6 +67,81 @@
 		<key>log_forging</key><priority>MAJOR</priority><configKey>Log Forging</configKey>
 	</rule>
 	<rule>
+		<key>weak_ws_securitypolicy_weak_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Weak Token</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_insecure_transport</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Insecure Transport</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_insufficient_supporting_token_protection</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Insufficient Supporting Token Protection</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_tokens_not_protected</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Tokens Not Protected</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_timestamp</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Timestamp</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_encryption_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption Token</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_signature_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature Token</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_initiator_encryption_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Initiator Encryption Token</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_initiator_signature_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Initiator Signature Token</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_recipient_encryption_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Recipient Encryption Token</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_recipient_signature_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Recipient Signature Token</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_encryption_on_message_body</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption on Message Body</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_encryption_on_message_headers</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption on Message Headers</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_encryption_on_message_attachments</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption on Message Attachments</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_signature_on_message_body</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature on Message Body</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_signature_on_message_headers</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature on Message Headers</configKey>
+	</rule>
+	<rule>
+		<key>weak_ws_securitypolicy_missing_signature_on_message_attachments</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature on Message Attachments</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_scripting_external_links</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: External Links</configKey>
+	</rule>
+	<rule>
+		<key>struts_2_validation_file_without_action</key><priority>MAJOR</priority><configKey>Struts 2: Validation File Without Action</configKey>
+	</rule>
+	<rule>
+		<key>struts_2_validator_without_action_field</key><priority>MAJOR</priority><configKey>Struts 2: Validator Without Action Field</configKey>
+	</rule>
+	<rule>
+		<key>struts_2_duplicate_validators</key><priority>MAJOR</priority><configKey>Struts 2: Duplicate Validators</configKey>
+	</rule>
+	<rule>
+		<key>struts_2_duplicate_action_field_validators</key><priority>MAJOR</priority><configKey>Struts 2: Duplicate Action Field Validators</configKey>
+	</rule>
+	<rule>
+		<key>struts_2_undeclared_validator</key><priority>MAJOR</priority><configKey>Struts 2: Undeclared Validator</configKey>
+	</rule>
+	<rule>
+		<key>php_misconfiguration_register_globals_enabled</key><priority>BLOCKER</priority><configKey>PHP Misconfiguration: register_globals Enabled</configKey>
+	</rule>
+	<rule>
+		<key>html5_overly_permissive_cors_policy</key><priority>MAJOR</priority><configKey>HTML5: Overly Permissive CORS Policy</configKey>
+	</rule>
+	<rule>
 		<key>flash_misconfiguration_overly_permissive_cross_domain_policy</key><priority>MAJOR</priority><configKey>Flash Misconfiguration: Overly Permissive Cross-Domain Policy</configKey>
 	</rule>
 	<rule>
@@ -179,87 +254,6 @@
 	</rule>
 	<rule>
 		<key>flex_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>Flex Misconfiguration: Debug Information</configKey>
-	</rule>
-	<rule>
-		<key>password_management_password_in_configuration_file</key><priority>BLOCKER</priority><configKey>Password Management: Password in Configuration File</configKey>
-	</rule>
-	<rule>
-		<key>weblogic_misconfiguration_weak_token</key><priority>MAJOR</priority><configKey>Weblogic Misconfiguration: Weak Token</configKey>
-	</rule>
-	<rule>
-		<key>weblogic_misconfiguration_missing_timestamp</key><priority>MAJOR</priority><configKey>Weblogic Misconfiguration: Missing Timestamp</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_weak_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Weak Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_insecure_transport</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Insecure Transport</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_insufficient_supporting_token_protection</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Insufficient Supporting Token Protection</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_tokens_not_protected</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Tokens Not Protected</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_timestamp</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Timestamp</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_encryption_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_signature_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_initiator_encryption_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Initiator Encryption Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_initiator_signature_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Initiator Signature Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_recipient_encryption_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Recipient Encryption Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_recipient_signature_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Recipient Signature Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_encryption_on_message_body</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption on Message Body</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_encryption_on_message_headers</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption on Message Headers</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_encryption_on_message_attachments</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption on Message Attachments</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_signature_on_message_body</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature on Message Body</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_signature_on_message_headers</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature on Message Headers</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_signature_on_message_attachments</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature on Message Attachments</configKey>
-	</rule>
-	<rule>
-		<key>cross_site_scripting_external_links</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: External Links</configKey>
-	</rule>
-	<rule>
-		<key>struts_2_validation_file_without_action</key><priority>MAJOR</priority><configKey>Struts 2: Validation File Without Action</configKey>
-	</rule>
-	<rule>
-		<key>struts_2_validator_without_action_field</key><priority>MAJOR</priority><configKey>Struts 2: Validator Without Action Field</configKey>
-	</rule>
-	<rule>
-		<key>struts_2_duplicate_validators</key><priority>MAJOR</priority><configKey>Struts 2: Duplicate Validators</configKey>
-	</rule>
-	<rule>
-		<key>struts_2_duplicate_action_field_validators</key><priority>MAJOR</priority><configKey>Struts 2: Duplicate Action Field Validators</configKey>
-	</rule>
-	<rule>
-		<key>struts_2_undeclared_validator</key><priority>MAJOR</priority><configKey>Struts 2: Undeclared Validator</configKey>
-	</rule>
-	<rule>
-		<key>php_misconfiguration_register_globals_enabled</key><priority>BLOCKER</priority><configKey>PHP Misconfiguration: register_globals Enabled</configKey>
 	</rule>
 	<rule>
 		<key>php_misconfiguration_allow_url_fopen_enabled</key><priority>BLOCKER</priority><configKey>PHP Misconfiguration: allow_url_fopen Enabled</configKey>
@@ -667,6 +661,9 @@
 		<key>j2ee_misconfiguration_invalid_servlet_name</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Invalid Servlet Name</configKey>
 	</rule>
 	<rule>
+		<key>password_management_password_in_configuration_file</key><priority>BLOCKER</priority><configKey>Password Management: Password in Configuration File</configKey>
+	</rule>
+	<rule>
 		<key>j2ee_misconfiguration_missing_servlet_mapping</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Servlet Mapping</configKey>
 	</rule>
 	<rule>
@@ -793,6 +790,9 @@
 		<key>often_misused_file_upload</key><priority>MAJOR</priority><configKey>Often Misused: File Upload</configKey>
 	</rule>
 	<rule>
-		<key>html5_overly_permissive_cors_policy</key><priority>MAJOR</priority><configKey>HTML5: Overly Permissive CORS Policy</configKey>
+		<key>weblogic_misconfiguration_weak_token</key><priority>MAJOR</priority><configKey>Weblogic Misconfiguration: Weak Token</configKey>
+	</rule>
+	<rule>
+		<key>weblogic_misconfiguration_missing_timestamp</key><priority>MAJOR</priority><configKey>Weblogic Misconfiguration: Missing Timestamp</configKey>
 	</rule>
 </rules>

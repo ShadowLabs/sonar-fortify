@@ -1,172 +1,172 @@
 <rules>
 	<!-- see names and descriptions in org/sonar/l10n/ -->
 	<rule>
-		<key>weak_cryptographic_hash</key><priority>MAJOR</priority><configKey>Weak Cryptographic Hash</configKey>
-	</rule>
-	<rule>
-		<key>weak_encryption_inadequate_rsa_padding</key><priority>MAJOR</priority><configKey>Weak Encryption: Inadequate RSA Padding</configKey>
-	</rule>
-	<rule>
-		<key>password_management_password_in_comment</key><priority>MAJOR</priority><configKey>Password Management: Password in Comment</configKey>
-	</rule>
-	<rule>
-		<key>insecure_transport</key><priority>BLOCKER</priority><configKey>Insecure Transport</configKey>
-	</rule>
-	<rule>
-		<key>insecure_transport_http_get</key><priority>BLOCKER</priority><configKey>Insecure Transport: HTTP GET</configKey>
-	</rule>
-	<rule>
-		<key>cakephp_misconfiguration_excessive_session_timeout</key><priority>MAJOR</priority><configKey>CakePHP Misconfiguration: Excessive Session Timeout</configKey>
-	</rule>
-	<rule>
-		<key>cakephp_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>CakePHP Misconfiguration: Debug Information</configKey>
-	</rule>
-	<rule>
-		<key>password_management_hardcoded_password</key><priority>BLOCKER</priority><configKey>Password Management: Hardcoded Password</configKey>
-	</rule>
-	<rule>
-		<key>password_management_empty_password</key><priority>BLOCKER</priority><configKey>Password Management: Empty Password</configKey>
-	</rule>
-	<rule>
-		<key>password_management_null_password</key><priority>MAJOR</priority><configKey>Password Management: Null Password</configKey>
-	</rule>
-	<rule>
-		<key>dangerous_function</key><priority>BLOCKER</priority><configKey>Dangerous Function</configKey>
-	</rule>
-	<rule>
-		<key>possible_variable_overwrite_functional_scope</key><priority>BLOCKER</priority><configKey>Possible Variable Overwrite: Functional Scope</configKey>
-	</rule>
-	<rule>
-		<key>possible_variable_overwrite_global_scope</key><priority>BLOCKER</priority><configKey>Possible Variable Overwrite: Global Scope</configKey>
-	</rule>
-	<rule>
-		<key>often_misused_file_upload</key><priority>MAJOR</priority><configKey>Often Misused: File Upload</configKey>
-	</rule>
-	<rule>
-		<key>insecure_randomness</key><priority>BLOCKER</priority><configKey>Insecure Randomness</configKey>
-	</rule>
-	<rule>
-		<key>weak_encryption</key><priority>BLOCKER</priority><configKey>Weak Encryption</configKey>
-	</rule>
-	<rule>
-		<key>weak_cryptographic_hash_hardcoded_salt</key><priority>MAJOR</priority><configKey>Weak Cryptographic Hash: Hardcoded Salt</configKey>
-	</rule>
-	<rule>
-		<key>php_misconfiguration_register_globals_enabled</key><priority>BLOCKER</priority><configKey>PHP Misconfiguration: register_globals Enabled</configKey>
-	</rule>
-	<rule>
-		<key>cookie_security_persistent_session_cookie</key><priority>BLOCKER</priority><configKey>Cookie Security: Persistent Session Cookie</configKey>
-	</rule>
-	<rule>
-		<key>cookie_security_session_cookie_not_sent_over_ssl</key><priority>MAJOR</priority><configKey>Cookie Security: Session Cookie not Sent Over SSL</configKey>
-	</rule>
-	<rule>
-		<key>cookie_security_httponly_not_set_on_session_cookie</key><priority>MAJOR</priority><configKey>Cookie Security: HTTPOnly not Set on Session Cookie</configKey>
-	</rule>
-	<rule>
-		<key>cookie_security_overly_broad_session_cookie_path</key><priority>BLOCKER</priority><configKey>Cookie Security: Overly Broad Session Cookie Path</configKey>
-	</rule>
-	<rule>
-		<key>cookie_security_overly_broad_session_cookie_domain</key><priority>BLOCKER</priority><configKey>Cookie Security: Overly Broad Session Cookie Domain</configKey>
-	</rule>
-	<rule>
-		<key>cookie_security_persistent_cookie</key><priority>MAJOR</priority><configKey>Cookie Security: Persistent Cookie</configKey>
-	</rule>
-	<rule>
-		<key>cookie_security_cookie_not_sent_over_ssl</key><priority>MAJOR</priority><configKey>Cookie Security: Cookie not Sent Over SSL</configKey>
-	</rule>
-	<rule>
-		<key>cookie_security_httponly_not_set</key><priority>MAJOR</priority><configKey>Cookie Security: HTTPOnly not Set</configKey>
-	</rule>
-	<rule>
-		<key>cookie_security_overly_broad_path</key><priority>BLOCKER</priority><configKey>Cookie Security: Overly Broad Path</configKey>
-	</rule>
-	<rule>
-		<key>cookie_security_overly_broad_domain</key><priority>BLOCKER</priority><configKey>Cookie Security: Overly Broad Domain</configKey>
-	</rule>
-	<rule>
-		<key>http_parameter_pollution</key><priority>BLOCKER</priority><configKey>HTTP Parameter Pollution</configKey>
-	</rule>
-	<rule>
-		<key>open_redirect</key><priority>BLOCKER</priority><configKey>Open Redirect</configKey>
-	</rule>
-	<rule>
-		<key>xquery_injection</key><priority>BLOCKER</priority><configKey>XQuery Injection</configKey>
-	</rule>
-	<rule>
-		<key>xslt_injection</key><priority>BLOCKER</priority><configKey>XSLT Injection</configKey>
-	</rule>
-	<rule>
-		<key>xml_injection</key><priority>BLOCKER</priority><configKey>XML Injection</configKey>
-	</rule>
-	<rule>
-		<key>xpath_injection</key><priority>BLOCKER</priority><configKey>XPath Injection</configKey>
-	</rule>
-	<rule>
-		<key>code_correctness_regular_expressions_denial_of_service</key><priority>BLOCKER</priority><configKey>Code Correctness: Regular Expressions Denial of Service</configKey>
-	</rule>
-	<rule>
-		<key>unsafe_reflection</key><priority>MAJOR</priority><configKey>Unsafe Reflection</configKey>
-	</rule>
-	<rule>
-		<key>cross_site_scripting_persistent</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Persistent</configKey>
-	</rule>
-	<rule>
-		<key>cross_site_scripting_reflected</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Reflected</configKey>
-	</rule>
-	<rule>
-		<key>password_management_weak_cryptography</key><priority>MAJOR</priority><configKey>Password Management: Weak Cryptography</configKey>
-	</rule>
-	<rule>
-		<key>password_management</key><priority>MAJOR</priority><configKey>Password Management</configKey>
-	</rule>
-	<rule>
-		<key>header_manipulation_cookies</key><priority>BLOCKER</priority><configKey>Header Manipulation: Cookies</configKey>
-	</rule>
-	<rule>
-		<key>header_manipulation</key><priority>BLOCKER</priority><configKey>Header Manipulation</configKey>
-	</rule>
-	<rule>
-		<key>html5_overly_permissive_cors_policy</key><priority>MAJOR</priority><configKey>HTML5: Overly Permissive CORS Policy</configKey>
-	</rule>
-	<rule>
-		<key>log_forging</key><priority>MAJOR</priority><configKey>Log Forging</configKey>
-	</rule>
-	<rule>
-		<key>privacy_violation</key><priority>BLOCKER</priority><configKey>Privacy Violation</configKey>
-	</rule>
-	<rule>
-		<key>system_information_leak</key><priority>MAJOR</priority><configKey>System Information Leak</configKey>
-	</rule>
-	<rule>
-		<key>setting_manipulation</key><priority>MAJOR</priority><configKey>Setting Manipulation</configKey>
-	</rule>
-	<rule>
-		<key>file_permission_manipulation</key><priority>MAJOR</priority><configKey>File Permission Manipulation</configKey>
-	</rule>
-	<rule>
-		<key>path_manipulation</key><priority>BLOCKER</priority><configKey>Path Manipulation</configKey>
-	</rule>
-	<rule>
-		<key>dynamic_code_evaluation_code_injection</key><priority>BLOCKER</priority><configKey>Dynamic Code Evaluation: Code Injection</configKey>
-	</rule>
-	<rule>
-		<key>command_injection</key><priority>BLOCKER</priority><configKey>Command Injection</configKey>
-	</rule>
-	<rule>
-		<key>access_control_database</key><priority>BLOCKER</priority><configKey>Access Control: Database</configKey>
-	</rule>
-	<rule>
-		<key>sql_injection</key><priority>BLOCKER</priority><configKey>SQL Injection</configKey>
-	</rule>
-	<rule>
-		<key>cross_site_scripting_poor_validation</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Poor Validation</configKey>
+		<key>resource_injection</key><priority>MAJOR</priority><configKey>Resource Injection</configKey>
 	</rule>
 	<rule>
 		<key>dangerous_file_inclusion</key><priority>BLOCKER</priority><configKey>Dangerous File Inclusion</configKey>
 	</rule>
 	<rule>
-		<key>resource_injection</key><priority>MAJOR</priority><configKey>Resource Injection</configKey>
+		<key>cross_site_scripting_poor_validation</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Poor Validation</configKey>
+	</rule>
+	<rule>
+		<key>sql_injection</key><priority>BLOCKER</priority><configKey>SQL Injection</configKey>
+	</rule>
+	<rule>
+		<key>access_control_database</key><priority>BLOCKER</priority><configKey>Access Control: Database</configKey>
+	</rule>
+	<rule>
+		<key>command_injection</key><priority>BLOCKER</priority><configKey>Command Injection</configKey>
+	</rule>
+	<rule>
+		<key>dynamic_code_evaluation_code_injection</key><priority>BLOCKER</priority><configKey>Dynamic Code Evaluation: Code Injection</configKey>
+	</rule>
+	<rule>
+		<key>path_manipulation</key><priority>BLOCKER</priority><configKey>Path Manipulation</configKey>
+	</rule>
+	<rule>
+		<key>file_permission_manipulation</key><priority>MAJOR</priority><configKey>File Permission Manipulation</configKey>
+	</rule>
+	<rule>
+		<key>setting_manipulation</key><priority>MAJOR</priority><configKey>Setting Manipulation</configKey>
+	</rule>
+	<rule>
+		<key>system_information_leak</key><priority>MAJOR</priority><configKey>System Information Leak</configKey>
+	</rule>
+	<rule>
+		<key>privacy_violation</key><priority>BLOCKER</priority><configKey>Privacy Violation</configKey>
+	</rule>
+	<rule>
+		<key>log_forging</key><priority>MAJOR</priority><configKey>Log Forging</configKey>
+	</rule>
+	<rule>
+		<key>html5_overly_permissive_cors_policy</key><priority>MAJOR</priority><configKey>HTML5: Overly Permissive CORS Policy</configKey>
+	</rule>
+	<rule>
+		<key>header_manipulation</key><priority>BLOCKER</priority><configKey>Header Manipulation</configKey>
+	</rule>
+	<rule>
+		<key>header_manipulation_cookies</key><priority>BLOCKER</priority><configKey>Header Manipulation: Cookies</configKey>
+	</rule>
+	<rule>
+		<key>password_management</key><priority>MAJOR</priority><configKey>Password Management</configKey>
+	</rule>
+	<rule>
+		<key>password_management_weak_cryptography</key><priority>MAJOR</priority><configKey>Password Management: Weak Cryptography</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_scripting_reflected</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Reflected</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_scripting_persistent</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Persistent</configKey>
+	</rule>
+	<rule>
+		<key>unsafe_reflection</key><priority>MAJOR</priority><configKey>Unsafe Reflection</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_regular_expressions_denial_of_service</key><priority>BLOCKER</priority><configKey>Code Correctness: Regular Expressions Denial of Service</configKey>
+	</rule>
+	<rule>
+		<key>xpath_injection</key><priority>BLOCKER</priority><configKey>XPath Injection</configKey>
+	</rule>
+	<rule>
+		<key>xml_injection</key><priority>BLOCKER</priority><configKey>XML Injection</configKey>
+	</rule>
+	<rule>
+		<key>xslt_injection</key><priority>BLOCKER</priority><configKey>XSLT Injection</configKey>
+	</rule>
+	<rule>
+		<key>xquery_injection</key><priority>BLOCKER</priority><configKey>XQuery Injection</configKey>
+	</rule>
+	<rule>
+		<key>open_redirect</key><priority>BLOCKER</priority><configKey>Open Redirect</configKey>
+	</rule>
+	<rule>
+		<key>http_parameter_pollution</key><priority>BLOCKER</priority><configKey>HTTP Parameter Pollution</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_overly_broad_domain</key><priority>BLOCKER</priority><configKey>Cookie Security: Overly Broad Domain</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_overly_broad_path</key><priority>BLOCKER</priority><configKey>Cookie Security: Overly Broad Path</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_httponly_not_set</key><priority>MAJOR</priority><configKey>Cookie Security: HTTPOnly not Set</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_cookie_not_sent_over_ssl</key><priority>MAJOR</priority><configKey>Cookie Security: Cookie not Sent Over SSL</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_persistent_cookie</key><priority>MAJOR</priority><configKey>Cookie Security: Persistent Cookie</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_overly_broad_session_cookie_domain</key><priority>BLOCKER</priority><configKey>Cookie Security: Overly Broad Session Cookie Domain</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_overly_broad_session_cookie_path</key><priority>BLOCKER</priority><configKey>Cookie Security: Overly Broad Session Cookie Path</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_httponly_not_set_on_session_cookie</key><priority>MAJOR</priority><configKey>Cookie Security: HTTPOnly not Set on Session Cookie</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_session_cookie_not_sent_over_ssl</key><priority>MAJOR</priority><configKey>Cookie Security: Session Cookie not Sent Over SSL</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_persistent_session_cookie</key><priority>BLOCKER</priority><configKey>Cookie Security: Persistent Session Cookie</configKey>
+	</rule>
+	<rule>
+		<key>weak_cryptographic_hash</key><priority>MAJOR</priority><configKey>Weak Cryptographic Hash</configKey>
+	</rule>
+	<rule>
+		<key>weak_cryptographic_hash_hardcoded_salt</key><priority>MAJOR</priority><configKey>Weak Cryptographic Hash: Hardcoded Salt</configKey>
+	</rule>
+	<rule>
+		<key>weak_encryption</key><priority>BLOCKER</priority><configKey>Weak Encryption</configKey>
+	</rule>
+	<rule>
+		<key>insecure_randomness</key><priority>BLOCKER</priority><configKey>Insecure Randomness</configKey>
+	</rule>
+	<rule>
+		<key>often_misused_file_upload</key><priority>MAJOR</priority><configKey>Often Misused: File Upload</configKey>
+	</rule>
+	<rule>
+		<key>possible_variable_overwrite_global_scope</key><priority>BLOCKER</priority><configKey>Possible Variable Overwrite: Global Scope</configKey>
+	</rule>
+	<rule>
+		<key>possible_variable_overwrite_functional_scope</key><priority>BLOCKER</priority><configKey>Possible Variable Overwrite: Functional Scope</configKey>
+	</rule>
+	<rule>
+		<key>dangerous_function</key><priority>BLOCKER</priority><configKey>Dangerous Function</configKey>
+	</rule>
+	<rule>
+		<key>password_management_null_password</key><priority>MAJOR</priority><configKey>Password Management: Null Password</configKey>
+	</rule>
+	<rule>
+		<key>password_management_empty_password</key><priority>BLOCKER</priority><configKey>Password Management: Empty Password</configKey>
+	</rule>
+	<rule>
+		<key>password_management_hardcoded_password</key><priority>BLOCKER</priority><configKey>Password Management: Hardcoded Password</configKey>
+	</rule>
+	<rule>
+		<key>cakephp_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>CakePHP Misconfiguration: Debug Information</configKey>
+	</rule>
+	<rule>
+		<key>cakephp_misconfiguration_excessive_session_timeout</key><priority>MAJOR</priority><configKey>CakePHP Misconfiguration: Excessive Session Timeout</configKey>
+	</rule>
+	<rule>
+		<key>insecure_transport_http_get</key><priority>BLOCKER</priority><configKey>Insecure Transport: HTTP GET</configKey>
+	</rule>
+	<rule>
+		<key>insecure_transport</key><priority>BLOCKER</priority><configKey>Insecure Transport</configKey>
+	</rule>
+	<rule>
+		<key>password_management_password_in_comment</key><priority>MAJOR</priority><configKey>Password Management: Password in Comment</configKey>
+	</rule>
+	<rule>
+		<key>weak_encryption_inadequate_rsa_padding</key><priority>MAJOR</priority><configKey>Weak Encryption: Inadequate RSA Padding</configKey>
+	</rule>
+	<rule>
+		<key>php_misconfiguration_register_globals_enabled</key><priority>BLOCKER</priority><configKey>PHP Misconfiguration: register_globals Enabled</configKey>
 	</rule>
 	<rule>
 		<key>php_misconfiguration_allow_url_fopen_enabled</key><priority>BLOCKER</priority><configKey>PHP Misconfiguration: allow_url_fopen Enabled</configKey>
@@ -199,6 +199,9 @@
 		<key>race_condition_php_design_flaw</key><priority>MAJOR</priority><configKey>Race Condition: PHP Design Flaw</configKey>
 	</rule>
 	<rule>
+		<key>access_control_weak_security_constraint</key><priority>BLOCKER</priority><configKey>Access Control: Weak Security Constraint</configKey>
+	</rule>
+	<rule>
 		<key>php_misconfiguration_safe_mode_disabled</key><priority>BLOCKER</priority><configKey>PHP Misconfiguration: safe_mode Disabled</configKey>
 	</rule>
 	<rule>
@@ -209,6 +212,96 @@
 	</rule>
 	<rule>
 		<key>cookie_security_session_cookies_disabled</key><priority>MAJOR</priority><configKey>Cookie Security: Session Cookies Disabled</configKey>
+	</rule>
+	<rule>
+		<key>j2ee_misconfiguration_cookies_disabled</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Cookies Disabled</configKey>
+	</rule>
+	<rule>
+		<key>asp_net_misconfiguration_session_cookies_disabled</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Session Cookies Disabled</configKey>
+	</rule>
+	<rule>
+		<key>sql_injection_ibatis_data_map</key><priority>BLOCKER</priority><configKey>SQL Injection: iBatis Data Map</configKey>
+	</rule>
+	<rule>
+		<key>system_information_leak_overly_broad_sql_logging</key><priority>MAJOR</priority><configKey>System Information Leak: Overly Broad SQL Logging</configKey>
+	</rule>
+	<rule>
+		<key>j2ee_misconfiguration_duplicate_servlet_mapping</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Duplicate Servlet Mapping</configKey>
+	</rule>
+	<rule>
+		<key>j2ee_misconfiguration_invalid_servlet_name</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Invalid Servlet Name</configKey>
+	</rule>
+	<rule>
+		<key>j2ee_misconfiguration_missing_servlet_mapping</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Servlet Mapping</configKey>
+	</rule>
+	<rule>
+		<key>j2ee_misconfiguration_excessive_servlet_mappings</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Excessive Servlet Mappings</configKey>
+	</rule>
+	<rule>
+		<key>j2ee_misconfiguration_excessive_session_timeout</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Excessive Session Timeout</configKey>
+	</rule>
+	<rule>
+		<key>j2ee_misconfiguration_missing_security_role</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Security Role</configKey>
+	</rule>
+	<rule>
+		<key>j2ee_misconfiguration_duplicate_security_role</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Duplicate Security Role</configKey>
+	</rule>
+	<rule>
+		<key>j2ee_misconfiguration_missing_data_transport_constraint</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Data Transport Constraint</configKey>
+	</rule>
+	<rule>
+		<key>j2ee_misconfiguration_missing_authentication_method</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Authentication Method</configKey>
+	</rule>
+	<rule>
+		<key>j2ee_misconfiguration_missing_filter_definition</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Filter Definition</configKey>
+	</rule>
+	<rule>
+		<key>j2ee_misconfiguration_direct_jsp_access</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Direct JSP Access</configKey>
+	</rule>
+	<rule>
+		<key>struts_misconfiguration_missing_form_bean_name</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Bean Name</configKey>
+	</rule>
+	<rule>
+		<key>struts_misconfiguration_missing_form_bean_type</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Bean Type</configKey>
+	</rule>
+	<rule>
+		<key>struts_misconfiguration_duplicate_form_bean</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Duplicate Form Bean</configKey>
+	</rule>
+	<rule>
+		<key>struts_misconfiguration_missing_forward_name</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Forward Name</configKey>
+	</rule>
+	<rule>
+		<key>struts_misconfiguration_missing_forward_path</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Forward Path</configKey>
+	</rule>
+	<rule>
+		<key>struts_misconfiguration_missing_form_bean</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Bean</configKey>
+	</rule>
+	<rule>
+		<key>struts_misconfiguration_missing_action_input</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Action Input</configKey>
+	</rule>
+	<rule>
+		<key>struts_misconfiguration_missing_exception_type</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Exception Type</configKey>
+	</rule>
+	<rule>
+		<key>struts_misconfiguration_invalid_path</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Invalid Path</configKey>
+	</rule>
+	<rule>
+		<key>struts_misconfiguration_missing_form_property_type</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Property Type</configKey>
+	</rule>
+	<rule>
+		<key>struts_plugin_framework_not_in_use</key><priority>MAJOR</priority><configKey>Struts: Plugin Framework Not In Use</configKey>
+	</rule>
+	<rule>
+		<key>struts_validator_turned_off</key><priority>MAJOR</priority><configKey>Struts: Validator Turned Off</configKey>
+	</rule>
+	<rule>
+		<key>tomcat_configuration_insecure_transport</key><priority>MAJOR</priority><configKey>Tomcat Configuration: Insecure Transport</configKey>
+	</rule>
+	<rule>
+		<key>struts_form_does_not_extend_validation_class</key><priority>MAJOR</priority><configKey>Struts: Form Does Not Extend Validation Class</configKey>
+	</rule>
+	<rule>
+		<key>struts_duplicate_validation_forms</key><priority>MAJOR</priority><configKey>Struts: Duplicate Validation Forms</configKey>
 	</rule>
 	<rule>
 		<key>struts_unused_action_form</key><priority>MAJOR</priority><configKey>Struts: Unused Action Form</configKey>
@@ -776,98 +869,5 @@
 	</rule>
 	<rule>
 		<key>acegi_misconfiguration_run_as_authentication_replacement</key><priority>BLOCKER</priority><configKey>Acegi Misconfiguration: Run-As Authentication Replacement</configKey>
-	</rule>
-	<rule>
-		<key>access_control_weak_security_constraint</key><priority>BLOCKER</priority><configKey>Access Control: Weak Security Constraint</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_cookies_disabled</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Cookies Disabled</configKey>
-	</rule>
-	<rule>
-		<key>asp_net_misconfiguration_session_cookies_disabled</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Session Cookies Disabled</configKey>
-	</rule>
-	<rule>
-		<key>sql_injection_ibatis_data_map</key><priority>BLOCKER</priority><configKey>SQL Injection: iBatis Data Map</configKey>
-	</rule>
-	<rule>
-		<key>system_information_leak_overly_broad_sql_logging</key><priority>MAJOR</priority><configKey>System Information Leak: Overly Broad SQL Logging</configKey>
-	</rule>
-	<rule>
-		<key>struts_duplicate_validation_forms</key><priority>MAJOR</priority><configKey>Struts: Duplicate Validation Forms</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_invalid_servlet_name</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Invalid Servlet Name</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_missing_servlet_mapping</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Servlet Mapping</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_excessive_servlet_mappings</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Excessive Servlet Mappings</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_excessive_session_timeout</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Excessive Session Timeout</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_missing_security_role</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Security Role</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_duplicate_security_role</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Duplicate Security Role</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_missing_data_transport_constraint</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Data Transport Constraint</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_missing_authentication_method</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Authentication Method</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_missing_filter_definition</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Filter Definition</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_direct_jsp_access</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Direct JSP Access</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_missing_form_bean_name</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Bean Name</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_missing_form_bean_type</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Bean Type</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_duplicate_form_bean</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Duplicate Form Bean</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_missing_forward_name</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Forward Name</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_missing_forward_path</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Forward Path</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_missing_form_bean</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Bean</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_missing_action_input</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Action Input</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_missing_exception_type</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Exception Type</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_invalid_path</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Invalid Path</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_missing_form_property_type</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Property Type</configKey>
-	</rule>
-	<rule>
-		<key>struts_plugin_framework_not_in_use</key><priority>MAJOR</priority><configKey>Struts: Plugin Framework Not In Use</configKey>
-	</rule>
-	<rule>
-		<key>struts_validator_turned_off</key><priority>MAJOR</priority><configKey>Struts: Validator Turned Off</configKey>
-	</rule>
-	<rule>
-		<key>tomcat_configuration_insecure_transport</key><priority>MAJOR</priority><configKey>Tomcat Configuration: Insecure Transport</configKey>
-	</rule>
-	<rule>
-		<key>struts_form_does_not_extend_validation_class</key><priority>MAJOR</priority><configKey>Struts: Form Does Not Extend Validation Class</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_duplicate_servlet_mapping</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Duplicate Servlet Mapping</configKey>
 	</rule>
 </rules>

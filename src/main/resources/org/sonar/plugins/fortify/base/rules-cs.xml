@@ -1,363 +1,6 @@
 <rules>
 	<!-- see names and descriptions in org/sonar/l10n/ -->
 	<rule>
-		<key>cookie_security_session_cookies_disabled</key><priority>MAJOR</priority><configKey>Cookie Security: Session Cookies Disabled</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_cookies_disabled</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Cookies Disabled</configKey>
-	</rule>
-	<rule>
-		<key>asp_net_misconfiguration_session_cookies_disabled</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Session Cookies Disabled</configKey>
-	</rule>
-	<rule>
-		<key>sql_injection_ibatis_data_map</key><priority>BLOCKER</priority><configKey>SQL Injection: iBatis Data Map</configKey>
-	</rule>
-	<rule>
-		<key>system_information_leak_overly_broad_sql_logging</key><priority>MAJOR</priority><configKey>System Information Leak: Overly Broad SQL Logging</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_duplicate_servlet_mapping</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Duplicate Servlet Mapping</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_invalid_servlet_name</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Invalid Servlet Name</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_missing_servlet_mapping</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Servlet Mapping</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_excessive_servlet_mappings</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Excessive Servlet Mappings</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_excessive_session_timeout</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Excessive Session Timeout</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_missing_security_role</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Security Role</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_duplicate_security_role</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Duplicate Security Role</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_missing_data_transport_constraint</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Data Transport Constraint</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_missing_authentication_method</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Authentication Method</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_missing_filter_definition</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Filter Definition</configKey>
-	</rule>
-	<rule>
-		<key>j2ee_misconfiguration_direct_jsp_access</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Direct JSP Access</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_missing_form_bean_name</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Bean Name</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_missing_form_bean_type</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Bean Type</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_duplicate_form_bean</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Duplicate Form Bean</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_missing_forward_name</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Forward Name</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_missing_forward_path</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Forward Path</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_missing_form_bean</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Bean</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_missing_action_input</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Action Input</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_missing_exception_type</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Exception Type</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_invalid_path</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Invalid Path</configKey>
-	</rule>
-	<rule>
-		<key>struts_misconfiguration_missing_form_property_type</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Property Type</configKey>
-	</rule>
-	<rule>
-		<key>struts_plugin_framework_not_in_use</key><priority>MAJOR</priority><configKey>Struts: Plugin Framework Not In Use</configKey>
-	</rule>
-	<rule>
-		<key>struts_validator_turned_off</key><priority>MAJOR</priority><configKey>Struts: Validator Turned Off</configKey>
-	</rule>
-	<rule>
-		<key>tomcat_configuration_insecure_transport</key><priority>MAJOR</priority><configKey>Tomcat Configuration: Insecure Transport</configKey>
-	</rule>
-	<rule>
-		<key>struts_form_does_not_extend_validation_class</key><priority>MAJOR</priority><configKey>Struts: Form Does Not Extend Validation Class</configKey>
-	</rule>
-	<rule>
-		<key>struts_duplicate_validation_forms</key><priority>MAJOR</priority><configKey>Struts: Duplicate Validation Forms</configKey>
-	</rule>
-	<rule>
-		<key>struts_unused_action_form</key><priority>MAJOR</priority><configKey>Struts: Unused Action Form</configKey>
-	</rule>
-	<rule>
-		<key>struts_unused_validation_form</key><priority>MAJOR</priority><configKey>Struts: Unused Validation Form</configKey>
-	</rule>
-	<rule>
-		<key>struts_unvalidated_action_form</key><priority>MAJOR</priority><configKey>Struts: Unvalidated Action Form</configKey>
-	</rule>
-	<rule>
-		<key>struts_validator_without_form_field</key><priority>MAJOR</priority><configKey>Struts: Validator Without Form Field</configKey>
-	</rule>
-	<rule>
-		<key>struts_form_field_without_validator</key><priority>MAJOR</priority><configKey>Struts: Form Field Without Validator</configKey>
-	</rule>
-	<rule>
-		<key>often_misused_spring_web_service</key><priority>BLOCKER</priority><configKey>Often Misused: Spring Web Service</configKey>
-	</rule>
-	<rule>
-		<key>often_misused_spring_remote_service</key><priority>BLOCKER</priority><configKey>Often Misused: Spring Remote Service</configKey>
-	</rule>
-	<rule>
-		<key>file_disclosure_spring_webflow</key><priority>BLOCKER</priority><configKey>File Disclosure: Spring Webflow</configKey>
-	</rule>
-	<rule>
-		<key>asp_net_misconfiguration_excessive_session_timeout</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Excessive Session Timeout</configKey>
-	</rule>
-	<rule>
-		<key>header_checking_disabled</key><priority>MAJOR</priority><configKey>Header Checking Disabled</configKey>
-	</rule>
-	<rule>
-		<key>html5_form_validation_turned_off</key><priority>MAJOR</priority><configKey>HTML5: Form Validation Turned Off</configKey>
-	</rule>
-	<rule>
-		<key>privacy_violation_autocomplete</key><priority>BLOCKER</priority><configKey>Privacy Violation: Autocomplete</configKey>
-	</rule>
-	<rule>
-		<key>password_management_password_in_html_form</key><priority>BLOCKER</priority><configKey>Password Management: Password in HTML Form</configKey>
-	</rule>
-	<rule>
-		<key>privacy_violation_password</key><priority>BLOCKER</priority><configKey>Privacy Violation: Password</configKey>
-	</rule>
-	<rule>
-		<key>password_management_insecure_submission</key><priority>BLOCKER</priority><configKey>Password Management: Insecure Submission</configKey>
-	</rule>
-	<rule>
-		<key>cross_site_request_forgery</key><priority>MAJOR</priority><configKey>Cross-Site Request Forgery</configKey>
-	</rule>
-	<rule>
-		<key>hardcoded_domain_in_html</key><priority>MAJOR</priority><configKey>Hardcoded Domain in HTML</configKey>
-	</rule>
-	<rule>
-		<key>hidden_field</key><priority>MAJOR</priority><configKey>Hidden Field</configKey>
-	</rule>
-	<rule>
-		<key>often_misused_file_upload</key><priority>MAJOR</priority><configKey>Often Misused: File Upload</configKey>
-	</rule>
-	<rule>
-		<key>html5_overly_permissive_cors_policy</key><priority>MAJOR</priority><configKey>HTML5: Overly Permissive CORS Policy</configKey>
-	</rule>
-	<rule>
-		<key>flash_misconfiguration_overly_permissive_cross_domain_policy</key><priority>MAJOR</priority><configKey>Flash Misconfiguration: Overly Permissive Cross-Domain Policy</configKey>
-	</rule>
-	<rule>
-		<key>flash_misconfiguration_overly_permissive_custom_headers_policy</key><priority>MAJOR</priority><configKey>Flash Misconfiguration: Overly Permissive Custom Headers Policy</configKey>
-	</rule>
-	<rule>
-		<key>flash_misconfiguration_unauthorized_data_access</key><priority>MAJOR</priority><configKey>Flash Misconfiguration: Unauthorized Data Access</configKey>
-	</rule>
-	<rule>
-		<key>wcf_misconfiguration_transport_security_enabled</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Transport Security Enabled</configKey>
-	</rule>
-	<rule>
-		<key>asp_net_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Debug Information</configKey>
-	</rule>
-	<rule>
-		<key>wcf_misconfiguration_unauthorized_access</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Unauthorized Access</configKey>
-	</rule>
-	<rule>
-		<key>adf_bad_practices_missing_url_parameter_converter</key><priority>MAJOR</priority><configKey>ADF Bad Practices: Missing URL Parameter Converter</configKey>
-	</rule>
-	<rule>
-		<key>adf_bad_practices_default_url_invoke_disallowed_setting</key><priority>MAJOR</priority><configKey>ADF Bad Practices: Default url-invoke-disallowed Setting</configKey>
-	</rule>
-	<rule>
-		<key>wcf_misconfiguration_unsafe_revocation_mode</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Unsafe Revocation Mode</configKey>
-	</rule>
-	<rule>
-		<key>weak_cryptographic_hash</key><priority>MAJOR</priority><configKey>Weak Cryptographic Hash</configKey>
-	</rule>
-	<rule>
-		<key>wcf_misconfiguration_msmq_anonymous_transport_client</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: MSMQ Anonymous Transport Client</configKey>
-	</rule>
-	<rule>
-		<key>wcf_misconfiguration_security_not_enabled</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Security Not Enabled</configKey>
-	</rule>
-	<rule>
-		<key>wcf_misconfiguration_insufficient_audit_failure_handling</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Insufficient Audit Failure Handling</configKey>
-	</rule>
-	<rule>
-		<key>wcf_misconfiguration_insufficient_logging</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Insufficient Logging</configKey>
-	</rule>
-	<rule>
-		<key>wcf_misconfiguration_weak_class_reference</key><priority>BLOCKER</priority><configKey>WCF Misconfiguration: Weak Class Reference</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_unnecessary_permission</key><priority>BLOCKER</priority><configKey>Privilege Management: Unnecessary Permission</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_missing_intent_permission</key><priority>BLOCKER</priority><configKey>Privilege Management: Missing Intent Permission</configKey>
-	</rule>
-	<rule>
-		<key>android_bad_practices_provider_permission_defined</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Provider permission Defined</configKey>
-	</rule>
-	<rule>
-		<key>android_bad_practices_just_provider_writepermission_defined</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Just Provider writePermission Defined</configKey>
-	</rule>
-	<rule>
-		<key>android_bad_practices_normal_permission</key><priority>BLOCKER</priority><configKey>Android Bad Practices: normal Permission</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_android_network</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Network</configKey>
-	</rule>
-	<rule>
-		<key>wcf_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Debug Information</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_android_messaging</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Messaging</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_android_disable</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Disable</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_android_data_storage</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Data Storage</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_android_location</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Location</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_android_telephony</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Telephony</configKey>
-	</rule>
-	<rule>
-		<key>android_bad_practices_application_permission_defined</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Application Permission Defined</configKey>
-	</rule>
-	<rule>
-		<key>android_bad_practices_missing_component_permission</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Missing Component Permission</configKey>
-	</rule>
-	<rule>
-		<key>android_bad_practices_missing_exported_flag_or_component_permission</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Missing Exported Flag or Component Permission</configKey>
-	</rule>
-	<rule>
-		<key>android_bad_practices_unnecessary_component_exposure</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Unnecessary Component Exposure</configKey>
-	</rule>
-	<rule>
-		<key>android_bad_practices_mixed_component_functionality</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Mixed Component Functionality</configKey>
-	</rule>
-	<rule>
-		<key>insecure_storage_android_backup_storage</key><priority>MAJOR</priority><configKey>Insecure Storage: Android Backup Storage</configKey>
-	</rule>
-	<rule>
-		<key>android_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>Android Misconfiguration: Debug Information</configKey>
-	</rule>
-	<rule>
-		<key>privacy_violation_image</key><priority>BLOCKER</priority><configKey>Privacy Violation: Image</configKey>
-	</rule>
-	<rule>
-		<key>asp_net_misconfiguration_request_validation_disabled</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Request Validation Disabled</configKey>
-	</rule>
-	<rule>
-		<key>flex_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>Flex Misconfiguration: Debug Information</configKey>
-	</rule>
-	<rule>
-		<key>password_management_password_in_configuration_file</key><priority>BLOCKER</priority><configKey>Password Management: Password in Configuration File</configKey>
-	</rule>
-	<rule>
-		<key>weblogic_misconfiguration_weak_token</key><priority>MAJOR</priority><configKey>Weblogic Misconfiguration: Weak Token</configKey>
-	</rule>
-	<rule>
-		<key>weblogic_misconfiguration_missing_timestamp</key><priority>MAJOR</priority><configKey>Weblogic Misconfiguration: Missing Timestamp</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_weak_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Weak Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_insecure_transport</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Insecure Transport</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_insufficient_supporting_token_protection</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Insufficient Supporting Token Protection</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_tokens_not_protected</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Tokens Not Protected</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_timestamp</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Timestamp</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_encryption_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_signature_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_initiator_encryption_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Initiator Encryption Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_initiator_signature_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Initiator Signature Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_recipient_encryption_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Recipient Encryption Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_recipient_signature_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Recipient Signature Token</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_encryption_on_message_body</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption on Message Body</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_encryption_on_message_headers</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption on Message Headers</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_encryption_on_message_attachments</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption on Message Attachments</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_signature_on_message_body</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature on Message Body</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_signature_on_message_headers</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature on Message Headers</configKey>
-	</rule>
-	<rule>
-		<key>weak_ws_securitypolicy_missing_signature_on_message_attachments</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature on Message Attachments</configKey>
-	</rule>
-	<rule>
-		<key>cross_site_scripting_external_links</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: External Links</configKey>
-	</rule>
-	<rule>
-		<key>struts_2_validation_file_without_action</key><priority>MAJOR</priority><configKey>Struts 2: Validation File Without Action</configKey>
-	</rule>
-	<rule>
-		<key>struts_2_validator_without_action_field</key><priority>MAJOR</priority><configKey>Struts 2: Validator Without Action Field</configKey>
-	</rule>
-	<rule>
-		<key>struts_2_duplicate_validators</key><priority>MAJOR</priority><configKey>Struts 2: Duplicate Validators</configKey>
-	</rule>
-	<rule>
-		<key>struts_2_duplicate_action_field_validators</key><priority>MAJOR</priority><configKey>Struts 2: Duplicate Action Field Validators</configKey>
-	</rule>
-	<rule>
-		<key>struts_2_undeclared_validator</key><priority>MAJOR</priority><configKey>Struts 2: Undeclared Validator</configKey>
-	</rule>
-	<rule>
-		<key>php_misconfiguration_register_globals_enabled</key><priority>BLOCKER</priority><configKey>PHP Misconfiguration: register_globals Enabled</configKey>
-	</rule>
-	<rule>
-		<key>php_misconfiguration_allow_url_fopen_enabled</key><priority>BLOCKER</priority><configKey>PHP Misconfiguration: allow_url_fopen Enabled</configKey>
-	</rule>
-	<rule>
-		<key>php_misconfiguration_allow_url_include_enabled</key><priority>BLOCKER</priority><configKey>PHP Misconfiguration: allow_url_include Enabled</configKey>
-	</rule>
-	<rule>
-		<key>php_misconfiguration_cgi_force_redirect_disabled</key><priority>BLOCKER</priority><configKey>PHP Misconfiguration: cgi.force_redirect Disabled</configKey>
-	</rule>
-	<rule>
-		<key>system_information_leak_php_errors</key><priority>MAJOR</priority><configKey>System Information Leak: PHP Errors</configKey>
-	</rule>
-	<rule>
 		<key>system_information_leak_php_version</key><priority>MAJOR</priority><configKey>System Information Leak: PHP Version</configKey>
 	</rule>
 	<rule>
@@ -493,7 +136,7 @@
 		<key>axis_2_service_provider_misconfiguration_missing_inbound_timestamp</key><priority>MAJOR</priority><configKey>Axis 2 Service Provider Misconfiguration: Missing Inbound Timestamp</configKey>
 	</rule>
 	<rule>
-		<key>cookie_security_overly_broad_session_cookie_path</key><priority>BLOCKER</priority><configKey>Cookie Security: Overly Broad Session Cookie Path</configKey>
+		<key>axis_2_service_provider_misconfiguration_missing_outbound_timestamp</key><priority>MAJOR</priority><configKey>Axis 2 Service Provider Misconfiguration: Missing Outbound Timestamp</configKey>
 	</rule>
 	<rule>
 		<key>axis_2_service_requester_misconfiguration_missing_inbound_timestamp</key><priority>MAJOR</priority><configKey>Axis 2 Service Requester Misconfiguration: Missing Inbound Timestamp</configKey>
@@ -727,262 +370,619 @@
 		<key>cookie_security_overly_broad_session_cookie_domain</key><priority>BLOCKER</priority><configKey>Cookie Security: Overly Broad Session Cookie Domain</configKey>
 	</rule>
 	<rule>
-		<key>privacy_violation_heap_inspection</key><priority>BLOCKER</priority><configKey>Privacy Violation: Heap Inspection</configKey>
+		<key>cookie_security_overly_broad_session_cookie_path</key><priority>BLOCKER</priority><configKey>Cookie Security: Overly Broad Session Cookie Path</configKey>
 	</rule>
 	<rule>
-		<key>asp_net_mvc_bad_practices_request_parameters_bound_into_persisted_objects</key><priority>BLOCKER</priority><configKey>ASP.NET MVC Bad Practices: Request Parameters Bound into Persisted Objects</configKey>
+		<key>cookie_security_session_cookies_disabled</key><priority>MAJOR</priority><configKey>Cookie Security: Session Cookies Disabled</configKey>
 	</rule>
 	<rule>
-		<key>code_correctness_class_does_not_implement_equals</key><priority>MAJOR</priority><configKey>Code Correctness: Class Does Not Implement Equals</configKey>
+		<key>j2ee_misconfiguration_cookies_disabled</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Cookies Disabled</configKey>
 	</rule>
 	<rule>
-		<key>cookie_security_persistent_cookie</key><priority>MAJOR</priority><configKey>Cookie Security: Persistent Cookie</configKey>
+		<key>asp_net_misconfiguration_session_cookies_disabled</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Session Cookies Disabled</configKey>
 	</rule>
 	<rule>
-		<key>poor_logging_practice_use_of_a_system_output_stream</key><priority>MAJOR</priority><configKey>Poor Logging Practice: Use of a System Output Stream</configKey>
+		<key>sql_injection_ibatis_data_map</key><priority>BLOCKER</priority><configKey>SQL Injection: iBatis Data Map</configKey>
 	</rule>
 	<rule>
-		<key>poor_error_handling_program_catches_nullreferenceexception</key><priority>MAJOR</priority><configKey>Poor Error Handling: Program Catches NullReferenceException</configKey>
+		<key>system_information_leak_overly_broad_sql_logging</key><priority>MAJOR</priority><configKey>System Information Leak: Overly Broad SQL Logging</configKey>
 	</rule>
 	<rule>
-		<key>poor_error_handling_overly_broad_catch</key><priority>MAJOR</priority><configKey>Poor Error Handling: Overly Broad Catch</configKey>
+		<key>j2ee_misconfiguration_duplicate_servlet_mapping</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Duplicate Servlet Mapping</configKey>
 	</rule>
 	<rule>
-		<key>poor_error_handling_empty_catch_block</key><priority>MAJOR</priority><configKey>Poor Error Handling: Empty Catch Block</configKey>
+		<key>j2ee_misconfiguration_invalid_servlet_name</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Invalid Servlet Name</configKey>
 	</rule>
 	<rule>
-		<key>object_model_violation_just_one_of_equals_and_gethashcode_defined</key><priority>MAJOR</priority><configKey>Object Model Violation: Just One of Equals() and GetHashCode() Defined</configKey>
+		<key>j2ee_misconfiguration_missing_servlet_mapping</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Servlet Mapping</configKey>
 	</rule>
 	<rule>
-		<key>asp_net_bad_practices_non_serializable_object_stored_in_session</key><priority>BLOCKER</priority><configKey>ASP.NET Bad Practices: Non-Serializable Object Stored in Session</configKey>
+		<key>j2ee_misconfiguration_excessive_servlet_mappings</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Excessive Servlet Mappings</configKey>
 	</rule>
 	<rule>
-		<key>dead_code_unused_method</key><priority>MAJOR</priority><configKey>Dead Code: Unused Method</configKey>
+		<key>j2ee_misconfiguration_excessive_session_timeout</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Excessive Session Timeout</configKey>
 	</rule>
 	<rule>
-		<key>code_correctness_null_argument_to_equals</key><priority>MAJOR</priority><configKey>Code Correctness: null Argument to Equals()</configKey>
+		<key>j2ee_misconfiguration_missing_security_role</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Security Role</configKey>
 	</rule>
 	<rule>
-		<key>dead_code_unused_field</key><priority>MAJOR</priority><configKey>Dead Code: Unused Field</configKey>
+		<key>j2ee_misconfiguration_duplicate_security_role</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Duplicate Security Role</configKey>
 	</rule>
 	<rule>
-		<key>code_correctness_missing_serializable_attribute</key><priority>MAJOR</priority><configKey>Code Correctness: Missing [Serializable] Attribute</configKey>
+		<key>j2ee_misconfiguration_missing_data_transport_constraint</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Data Transport Constraint</configKey>
 	</rule>
 	<rule>
-		<key>code_correctness_misspelled_method_name</key><priority>MAJOR</priority><configKey>Code Correctness: Misspelled Method Name</configKey>
+		<key>j2ee_misconfiguration_missing_authentication_method</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Authentication Method</configKey>
 	</rule>
 	<rule>
-		<key>code_correctness_call_to_gc_collect</key><priority>MAJOR</priority><configKey>Code Correctness: Call to GC.Collect()</configKey>
+		<key>j2ee_misconfiguration_missing_filter_definition</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Missing Filter Definition</configKey>
 	</rule>
 	<rule>
-		<key>code_correctness_class_implements_icloneable</key><priority>MAJOR</priority><configKey>Code Correctness: Class Implements ICloneable</configKey>
+		<key>j2ee_misconfiguration_direct_jsp_access</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Direct JSP Access</configKey>
 	</rule>
 	<rule>
-		<key>password_management_password_in_comment</key><priority>MAJOR</priority><configKey>Password Management: Password in Comment</configKey>
+		<key>struts_misconfiguration_missing_form_bean_name</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Bean Name</configKey>
 	</rule>
 	<rule>
-		<key>code_correctness_tostring_on_array</key><priority>MAJOR</priority><configKey>Code Correctness: ToString on Array</configKey>
+		<key>struts_misconfiguration_missing_form_bean_type</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Bean Type</configKey>
 	</rule>
 	<rule>
-		<key>asp_net_bad_practices_leftover_debug_code</key><priority>MAJOR</priority><configKey>ASP.NET Bad Practices: Leftover Debug Code</configKey>
+		<key>struts_misconfiguration_duplicate_form_bean</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Duplicate Form Bean</configKey>
 	</rule>
 	<rule>
-		<key>cookie_security_httponly_not_set</key><priority>MAJOR</priority><configKey>Cookie Security: HTTPOnly not Set</configKey>
+		<key>struts_misconfiguration_missing_forward_name</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Forward Name</configKey>
 	</rule>
 	<rule>
-		<key>cookie_security_cookie_not_sent_over_ssl</key><priority>MAJOR</priority><configKey>Cookie Security: Cookie not Sent Over SSL</configKey>
+		<key>struts_misconfiguration_missing_forward_path</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Forward Path</configKey>
 	</rule>
 	<rule>
-		<key>asp_net_bad_practices_use_of_impersonation_context</key><priority>MAJOR</priority><configKey>ASP.NET Bad Practices: Use of Impersonation Context</configKey>
+		<key>struts_misconfiguration_missing_form_bean</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Bean</configKey>
 	</rule>
 	<rule>
-		<key>unreleased_resource</key><priority>BLOCKER</priority><configKey>Unreleased Resource</configKey>
+		<key>struts_misconfiguration_missing_action_input</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Action Input</configKey>
 	</rule>
 	<rule>
-		<key>unreleased_resource_database</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Database</configKey>
+		<key>struts_misconfiguration_missing_exception_type</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Exception Type</configKey>
 	</rule>
 	<rule>
-		<key>unreleased_resource_streams</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Streams</configKey>
+		<key>struts_misconfiguration_invalid_path</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Invalid Path</configKey>
 	</rule>
 	<rule>
-		<key>missing_check_against_null</key><priority>MAJOR</priority><configKey>Missing Check against Null</configKey>
+		<key>struts_misconfiguration_missing_form_property_type</key><priority>MAJOR</priority><configKey>Struts Misconfiguration: Missing Form Property Type</configKey>
 	</rule>
 	<rule>
-		<key>null_dereference</key><priority>BLOCKER</priority><configKey>Null Dereference</configKey>
+		<key>struts_plugin_framework_not_in_use</key><priority>MAJOR</priority><configKey>Struts: Plugin Framework Not In Use</configKey>
 	</rule>
 	<rule>
-		<key>unreleased_resource_unmanaged_object</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Unmanaged Object</configKey>
+		<key>struts_validator_turned_off</key><priority>MAJOR</priority><configKey>Struts: Validator Turned Off</configKey>
 	</rule>
 	<rule>
-		<key>unreleased_resource_synchronization</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Synchronization</configKey>
+		<key>tomcat_configuration_insecure_transport</key><priority>MAJOR</priority><configKey>Tomcat Configuration: Insecure Transport</configKey>
 	</rule>
 	<rule>
-		<key>missing_xml_validation</key><priority>MAJOR</priority><configKey>Missing XML Validation</configKey>
+		<key>struts_form_does_not_extend_validation_class</key><priority>MAJOR</priority><configKey>Struts: Form Does Not Extend Validation Class</configKey>
 	</rule>
 	<rule>
-		<key>access_control_anonymous_ldap_bind</key><priority>MAJOR</priority><configKey>Access Control: Anonymous LDAP Bind</configKey>
+		<key>struts_duplicate_validation_forms</key><priority>MAJOR</priority><configKey>Struts: Duplicate Validation Forms</configKey>
 	</rule>
 	<rule>
-		<key>unchecked_return_value</key><priority>MAJOR</priority><configKey>Unchecked Return Value</configKey>
+		<key>struts_unused_action_form</key><priority>MAJOR</priority><configKey>Struts: Unused Action Form</configKey>
 	</rule>
 	<rule>
-		<key>often_misused_authentication</key><priority>BLOCKER</priority><configKey>Often Misused: Authentication</configKey>
+		<key>struts_unused_validation_form</key><priority>MAJOR</priority><configKey>Struts: Unused Validation Form</configKey>
 	</rule>
 	<rule>
-		<key>insecure_randomness</key><priority>BLOCKER</priority><configKey>Insecure Randomness</configKey>
+		<key>struts_unvalidated_action_form</key><priority>MAJOR</priority><configKey>Struts: Unvalidated Action Form</configKey>
 	</rule>
 	<rule>
-		<key>password_management_empty_password</key><priority>BLOCKER</priority><configKey>Password Management: Empty Password</configKey>
+		<key>struts_validator_without_form_field</key><priority>MAJOR</priority><configKey>Struts: Validator Without Form Field</configKey>
 	</rule>
 	<rule>
-		<key>password_management_null_password</key><priority>MAJOR</priority><configKey>Password Management: Null Password</configKey>
+		<key>struts_form_field_without_validator</key><priority>MAJOR</priority><configKey>Struts: Form Field Without Validator</configKey>
 	</rule>
 	<rule>
-		<key>password_management_hardcoded_password</key><priority>BLOCKER</priority><configKey>Password Management: Hardcoded Password</configKey>
+		<key>often_misused_spring_web_service</key><priority>BLOCKER</priority><configKey>Often Misused: Spring Web Service</configKey>
 	</rule>
 	<rule>
-		<key>asp_net_misconfiguration_persistent_authentication</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Persistent Authentication</configKey>
+		<key>often_misused_spring_remote_service</key><priority>BLOCKER</priority><configKey>Often Misused: Spring Remote Service</configKey>
 	</rule>
 	<rule>
-		<key>value_shadowing_server_variable</key><priority>BLOCKER</priority><configKey>Value Shadowing: Server Variable</configKey>
+		<key>file_disclosure_spring_webflow</key><priority>BLOCKER</priority><configKey>File Disclosure: Spring Webflow</configKey>
 	</rule>
 	<rule>
-		<key>value_shadowing</key><priority>BLOCKER</priority><configKey>Value Shadowing</configKey>
+		<key>asp_net_misconfiguration_excessive_session_timeout</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Excessive Session Timeout</configKey>
 	</rule>
 	<rule>
-		<key>weak_encryption_inadequate_rsa_padding</key><priority>MAJOR</priority><configKey>Weak Encryption: Inadequate RSA Padding</configKey>
+		<key>header_checking_disabled</key><priority>MAJOR</priority><configKey>Header Checking Disabled</configKey>
 	</rule>
 	<rule>
-		<key>weak_encryption_insufficient_key_size</key><priority>BLOCKER</priority><configKey>Weak Encryption: Insufficient Key Size</configKey>
+		<key>html5_form_validation_turned_off</key><priority>MAJOR</priority><configKey>HTML5: Form Validation Turned Off</configKey>
 	</rule>
 	<rule>
-		<key>weak_encryption</key><priority>BLOCKER</priority><configKey>Weak Encryption</configKey>
+		<key>privacy_violation_autocomplete</key><priority>BLOCKER</priority><configKey>Privacy Violation: Autocomplete</configKey>
 	</rule>
 	<rule>
-		<key>cookie_security_overly_broad_domain</key><priority>BLOCKER</priority><configKey>Cookie Security: Overly Broad Domain</configKey>
+		<key>password_management_password_in_html_form</key><priority>BLOCKER</priority><configKey>Password Management: Password in HTML Form</configKey>
 	</rule>
 	<rule>
-		<key>cookie_security_overly_broad_path</key><priority>BLOCKER</priority><configKey>Cookie Security: Overly Broad Path</configKey>
+		<key>privacy_violation_password</key><priority>BLOCKER</priority><configKey>Privacy Violation: Password</configKey>
 	</rule>
 	<rule>
-		<key>obsolete</key><priority>MAJOR</priority><configKey>Obsolete</configKey>
+		<key>password_management_insecure_submission</key><priority>BLOCKER</priority><configKey>Password Management: Insecure Submission</configKey>
 	</rule>
 	<rule>
-		<key>asp_net_bad_practices_unminified_code</key><priority>BLOCKER</priority><configKey>ASP.NET Bad Practices: Unminified Code</configKey>
+		<key>cross_site_request_forgery</key><priority>MAJOR</priority><configKey>Cross-Site Request Forgery</configKey>
 	</rule>
 	<rule>
-		<key>external_content_content_delivery_network</key><priority>BLOCKER</priority><configKey>External Content: Content Delivery Network</configKey>
+		<key>hardcoded_domain_in_html</key><priority>MAJOR</priority><configKey>Hardcoded Domain in HTML</configKey>
 	</rule>
 	<rule>
-		<key>wcf_misconfiguration_metadata</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Metadata</configKey>
+		<key>hidden_field</key><priority>MAJOR</priority><configKey>Hidden Field</configKey>
 	</rule>
 	<rule>
-		<key>dynamic_code_evaluation_script_injection</key><priority>BLOCKER</priority><configKey>Dynamic Code Evaluation: Script Injection</configKey>
+		<key>often_misused_file_upload</key><priority>MAJOR</priority><configKey>Often Misused: File Upload</configKey>
 	</rule>
 	<rule>
-		<key>code_correctness_regular_expressions_denial_of_service</key><priority>BLOCKER</priority><configKey>Code Correctness: Regular Expressions Denial of Service</configKey>
+		<key>php_misconfiguration_allow_url_include_enabled</key><priority>BLOCKER</priority><configKey>PHP Misconfiguration: allow_url_include Enabled</configKey>
 	</rule>
 	<rule>
-		<key>sql_injection_linq</key><priority>BLOCKER</priority><configKey>SQL Injection: LINQ</configKey>
+		<key>php_misconfiguration_allow_url_fopen_enabled</key><priority>BLOCKER</priority><configKey>PHP Misconfiguration: allow_url_fopen Enabled</configKey>
 	</rule>
 	<rule>
-		<key>xml_injection</key><priority>BLOCKER</priority><configKey>XML Injection</configKey>
+		<key>php_misconfiguration_register_globals_enabled</key><priority>BLOCKER</priority><configKey>PHP Misconfiguration: register_globals Enabled</configKey>
 	</rule>
 	<rule>
-		<key>xpath_injection</key><priority>BLOCKER</priority><configKey>XPath Injection</configKey>
+		<key>struts_2_undeclared_validator</key><priority>MAJOR</priority><configKey>Struts 2: Undeclared Validator</configKey>
 	</rule>
 	<rule>
-		<key>access_control_ldap</key><priority>BLOCKER</priority><configKey>Access Control: LDAP</configKey>
+		<key>struts_2_duplicate_action_field_validators</key><priority>MAJOR</priority><configKey>Struts 2: Duplicate Action Field Validators</configKey>
 	</rule>
 	<rule>
-		<key>ldap_injection</key><priority>BLOCKER</priority><configKey>LDAP Injection</configKey>
+		<key>struts_2_duplicate_validators</key><priority>MAJOR</priority><configKey>Struts 2: Duplicate Validators</configKey>
 	</rule>
 	<rule>
-		<key>ldap_manipulation</key><priority>MAJOR</priority><configKey>LDAP Manipulation</configKey>
+		<key>struts_2_validator_without_action_field</key><priority>MAJOR</priority><configKey>Struts 2: Validator Without Action Field</configKey>
 	</rule>
 	<rule>
-		<key>command_injection</key><priority>BLOCKER</priority><configKey>Command Injection</configKey>
+		<key>struts_2_validation_file_without_action</key><priority>MAJOR</priority><configKey>Struts 2: Validation File Without Action</configKey>
 	</rule>
 	<rule>
-		<key>password_management_weak_cryptography</key><priority>MAJOR</priority><configKey>Password Management: Weak Cryptography</configKey>
+		<key>cross_site_scripting_external_links</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: External Links</configKey>
 	</rule>
 	<rule>
-		<key>password_management</key><priority>MAJOR</priority><configKey>Password Management</configKey>
+		<key>weak_ws_securitypolicy_missing_signature_on_message_attachments</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature on Message Attachments</configKey>
 	</rule>
 	<rule>
-		<key>trust_boundary_violation</key><priority>MAJOR</priority><configKey>Trust Boundary Violation</configKey>
+		<key>weak_ws_securitypolicy_missing_signature_on_message_headers</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature on Message Headers</configKey>
 	</rule>
 	<rule>
-		<key>sql_injection</key><priority>BLOCKER</priority><configKey>SQL Injection</configKey>
+		<key>weak_ws_securitypolicy_missing_signature_on_message_body</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature on Message Body</configKey>
 	</rule>
 	<rule>
-		<key>header_manipulation</key><priority>BLOCKER</priority><configKey>Header Manipulation</configKey>
+		<key>weak_ws_securitypolicy_missing_encryption_on_message_attachments</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption on Message Attachments</configKey>
 	</rule>
 	<rule>
-		<key>header_manipulation_cookies</key><priority>BLOCKER</priority><configKey>Header Manipulation: Cookies</configKey>
+		<key>weak_ws_securitypolicy_missing_encryption_on_message_headers</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption on Message Headers</configKey>
 	</rule>
 	<rule>
-		<key>sql_injection_nhibernate</key><priority>BLOCKER</priority><configKey>SQL Injection: NHibernate</configKey>
+		<key>weak_ws_securitypolicy_missing_encryption_on_message_body</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption on Message Body</configKey>
 	</rule>
 	<rule>
-		<key>setting_manipulation</key><priority>MAJOR</priority><configKey>Setting Manipulation</configKey>
+		<key>weak_ws_securitypolicy_missing_recipient_signature_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Recipient Signature Token</configKey>
 	</rule>
 	<rule>
-		<key>sql_injection_subsonic</key><priority>BLOCKER</priority><configKey>SQL Injection: SubSonic</configKey>
+		<key>weak_ws_securitypolicy_missing_recipient_encryption_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Recipient Encryption Token</configKey>
 	</rule>
 	<rule>
-		<key>access_control_database</key><priority>BLOCKER</priority><configKey>Access Control: Database</configKey>
+		<key>weak_ws_securitypolicy_missing_initiator_signature_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Initiator Signature Token</configKey>
 	</rule>
 	<rule>
-		<key>sql_injection_castle_activerecord</key><priority>BLOCKER</priority><configKey>SQL Injection: Castle ActiveRecord</configKey>
+		<key>weak_ws_securitypolicy_missing_initiator_encryption_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Initiator Encryption Token</configKey>
 	</rule>
 	<rule>
-		<key>code_correctness_erroneous_class_compare</key><priority>MAJOR</priority><configKey>Code Correctness: Erroneous Class Compare</configKey>
+		<key>weak_ws_securitypolicy_missing_signature_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Signature Token</configKey>
 	</rule>
 	<rule>
-		<key>unsafe_reflection</key><priority>MAJOR</priority><configKey>Unsafe Reflection</configKey>
+		<key>weak_ws_securitypolicy_missing_encryption_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Encryption Token</configKey>
 	</rule>
 	<rule>
-		<key>resource_injection</key><priority>MAJOR</priority><configKey>Resource Injection</configKey>
+		<key>weak_ws_securitypolicy_missing_timestamp</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Missing Timestamp</configKey>
 	</rule>
 	<rule>
-		<key>cross_site_scripting_poor_validation</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Poor Validation</configKey>
+		<key>weak_ws_securitypolicy_tokens_not_protected</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Tokens Not Protected</configKey>
 	</rule>
 	<rule>
-		<key>cross_site_scripting_persistent</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Persistent</configKey>
+		<key>weak_ws_securitypolicy_insufficient_supporting_token_protection</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Insufficient Supporting Token Protection</configKey>
 	</rule>
 	<rule>
-		<key>cross_site_scripting_reflected</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Reflected</configKey>
+		<key>weak_ws_securitypolicy_insecure_transport</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Insecure Transport</configKey>
 	</rule>
 	<rule>
-		<key>dangerous_file_inclusion</key><priority>BLOCKER</priority><configKey>Dangerous File Inclusion</configKey>
+		<key>weak_ws_securitypolicy_weak_token</key><priority>MAJOR</priority><configKey>Weak WS-SecurityPolicy: Weak Token</configKey>
 	</rule>
 	<rule>
-		<key>log_forging</key><priority>MAJOR</priority><configKey>Log Forging</configKey>
+		<key>weblogic_misconfiguration_missing_timestamp</key><priority>MAJOR</priority><configKey>Weblogic Misconfiguration: Missing Timestamp</configKey>
 	</rule>
 	<rule>
-		<key>open_redirect</key><priority>BLOCKER</priority><configKey>Open Redirect</configKey>
+		<key>weblogic_misconfiguration_weak_token</key><priority>MAJOR</priority><configKey>Weblogic Misconfiguration: Weak Token</configKey>
 	</rule>
 	<rule>
-		<key>denial_of_service_routing</key><priority>BLOCKER</priority><configKey>Denial of Service: Routing</configKey>
+		<key>system_information_leak_php_errors</key><priority>MAJOR</priority><configKey>System Information Leak: PHP Errors</configKey>
 	</rule>
 	<rule>
-		<key>path_manipulation</key><priority>BLOCKER</priority><configKey>Path Manipulation</configKey>
+		<key>password_management_password_in_configuration_file</key><priority>BLOCKER</priority><configKey>Password Management: Password in Configuration File</configKey>
 	</rule>
 	<rule>
-		<key>privacy_violation</key><priority>BLOCKER</priority><configKey>Privacy Violation</configKey>
+		<key>flex_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>Flex Misconfiguration: Debug Information</configKey>
 	</rule>
 	<rule>
-		<key>system_information_leak</key><priority>MAJOR</priority><configKey>System Information Leak</configKey>
+		<key>asp_net_misconfiguration_request_validation_disabled</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Request Validation Disabled</configKey>
 	</rule>
 	<rule>
-		<key>denial_of_service</key><priority>MAJOR</priority><configKey>Denial of Service</configKey>
+		<key>privacy_violation_image</key><priority>BLOCKER</priority><configKey>Privacy Violation: Image</configKey>
+	</rule>
+	<rule>
+		<key>android_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>Android Misconfiguration: Debug Information</configKey>
+	</rule>
+	<rule>
+		<key>insecure_storage_android_backup_storage</key><priority>MAJOR</priority><configKey>Insecure Storage: Android Backup Storage</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_mixed_component_functionality</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Mixed Component Functionality</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_unnecessary_component_exposure</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Unnecessary Component Exposure</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_missing_exported_flag_or_component_permission</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Missing Exported Flag or Component Permission</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_missing_component_permission</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Missing Component Permission</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_application_permission_defined</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Application Permission Defined</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_android_telephony</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Telephony</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_android_location</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Location</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_android_data_storage</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Data Storage</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_android_disable</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Disable</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_android_messaging</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Messaging</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Debug Information</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_android_network</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Network</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_normal_permission</key><priority>BLOCKER</priority><configKey>Android Bad Practices: normal Permission</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_just_provider_writepermission_defined</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Just Provider writePermission Defined</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_provider_permission_defined</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Provider permission Defined</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_missing_intent_permission</key><priority>BLOCKER</priority><configKey>Privilege Management: Missing Intent Permission</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_unnecessary_permission</key><priority>BLOCKER</priority><configKey>Privilege Management: Unnecessary Permission</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_weak_class_reference</key><priority>BLOCKER</priority><configKey>WCF Misconfiguration: Weak Class Reference</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_insufficient_logging</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Insufficient Logging</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_insufficient_audit_failure_handling</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Insufficient Audit Failure Handling</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_security_not_enabled</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Security Not Enabled</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_msmq_anonymous_transport_client</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: MSMQ Anonymous Transport Client</configKey>
+	</rule>
+	<rule>
+		<key>weak_cryptographic_hash</key><priority>MAJOR</priority><configKey>Weak Cryptographic Hash</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_unsafe_revocation_mode</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Unsafe Revocation Mode</configKey>
+	</rule>
+	<rule>
+		<key>adf_bad_practices_default_url_invoke_disallowed_setting</key><priority>MAJOR</priority><configKey>ADF Bad Practices: Default url-invoke-disallowed Setting</configKey>
+	</rule>
+	<rule>
+		<key>adf_bad_practices_missing_url_parameter_converter</key><priority>MAJOR</priority><configKey>ADF Bad Practices: Missing URL Parameter Converter</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_unauthorized_access</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Unauthorized Access</configKey>
+	</rule>
+	<rule>
+		<key>asp_net_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Debug Information</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_transport_security_enabled</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Transport Security Enabled</configKey>
+	</rule>
+	<rule>
+		<key>flash_misconfiguration_unauthorized_data_access</key><priority>MAJOR</priority><configKey>Flash Misconfiguration: Unauthorized Data Access</configKey>
+	</rule>
+	<rule>
+		<key>flash_misconfiguration_overly_permissive_custom_headers_policy</key><priority>MAJOR</priority><configKey>Flash Misconfiguration: Overly Permissive Custom Headers Policy</configKey>
+	</rule>
+	<rule>
+		<key>flash_misconfiguration_overly_permissive_cross_domain_policy</key><priority>MAJOR</priority><configKey>Flash Misconfiguration: Overly Permissive Cross-Domain Policy</configKey>
+	</rule>
+	<rule>
+		<key>html5_overly_permissive_cors_policy</key><priority>MAJOR</priority><configKey>HTML5: Overly Permissive CORS Policy</configKey>
+	</rule>
+	<rule>
+		<key>php_misconfiguration_cgi_force_redirect_disabled</key><priority>BLOCKER</priority><configKey>PHP Misconfiguration: cgi.force_redirect Disabled</configKey>
 	</rule>
 	<rule>
 		<key>portability_flaw_file_separator</key><priority>BLOCKER</priority><configKey>Portability Flaw: File Separator</configKey>
 	</rule>
 	<rule>
-		<key>axis_2_service_provider_misconfiguration_missing_outbound_timestamp</key><priority>MAJOR</priority><configKey>Axis 2 Service Provider Misconfiguration: Missing Outbound Timestamp</configKey>
+		<key>denial_of_service</key><priority>MAJOR</priority><configKey>Denial of Service</configKey>
+	</rule>
+	<rule>
+		<key>system_information_leak</key><priority>MAJOR</priority><configKey>System Information Leak</configKey>
+	</rule>
+	<rule>
+		<key>privacy_violation</key><priority>BLOCKER</priority><configKey>Privacy Violation</configKey>
+	</rule>
+	<rule>
+		<key>path_manipulation</key><priority>BLOCKER</priority><configKey>Path Manipulation</configKey>
+	</rule>
+	<rule>
+		<key>denial_of_service_routing</key><priority>BLOCKER</priority><configKey>Denial of Service: Routing</configKey>
+	</rule>
+	<rule>
+		<key>open_redirect</key><priority>BLOCKER</priority><configKey>Open Redirect</configKey>
+	</rule>
+	<rule>
+		<key>log_forging</key><priority>MAJOR</priority><configKey>Log Forging</configKey>
+	</rule>
+	<rule>
+		<key>dangerous_file_inclusion</key><priority>BLOCKER</priority><configKey>Dangerous File Inclusion</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_scripting_reflected</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Reflected</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_scripting_persistent</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Persistent</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_scripting_poor_validation</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Poor Validation</configKey>
+	</rule>
+	<rule>
+		<key>resource_injection</key><priority>MAJOR</priority><configKey>Resource Injection</configKey>
+	</rule>
+	<rule>
+		<key>unsafe_reflection</key><priority>MAJOR</priority><configKey>Unsafe Reflection</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_erroneous_class_compare</key><priority>MAJOR</priority><configKey>Code Correctness: Erroneous Class Compare</configKey>
+	</rule>
+	<rule>
+		<key>sql_injection_castle_activerecord</key><priority>BLOCKER</priority><configKey>SQL Injection: Castle ActiveRecord</configKey>
+	</rule>
+	<rule>
+		<key>access_control_database</key><priority>BLOCKER</priority><configKey>Access Control: Database</configKey>
+	</rule>
+	<rule>
+		<key>sql_injection_subsonic</key><priority>BLOCKER</priority><configKey>SQL Injection: SubSonic</configKey>
+	</rule>
+	<rule>
+		<key>setting_manipulation</key><priority>MAJOR</priority><configKey>Setting Manipulation</configKey>
+	</rule>
+	<rule>
+		<key>sql_injection_nhibernate</key><priority>BLOCKER</priority><configKey>SQL Injection: NHibernate</configKey>
+	</rule>
+	<rule>
+		<key>header_manipulation_cookies</key><priority>BLOCKER</priority><configKey>Header Manipulation: Cookies</configKey>
+	</rule>
+	<rule>
+		<key>header_manipulation</key><priority>BLOCKER</priority><configKey>Header Manipulation</configKey>
+	</rule>
+	<rule>
+		<key>sql_injection</key><priority>BLOCKER</priority><configKey>SQL Injection</configKey>
+	</rule>
+	<rule>
+		<key>trust_boundary_violation</key><priority>MAJOR</priority><configKey>Trust Boundary Violation</configKey>
+	</rule>
+	<rule>
+		<key>password_management</key><priority>MAJOR</priority><configKey>Password Management</configKey>
+	</rule>
+	<rule>
+		<key>password_management_weak_cryptography</key><priority>MAJOR</priority><configKey>Password Management: Weak Cryptography</configKey>
+	</rule>
+	<rule>
+		<key>command_injection</key><priority>BLOCKER</priority><configKey>Command Injection</configKey>
+	</rule>
+	<rule>
+		<key>ldap_manipulation</key><priority>MAJOR</priority><configKey>LDAP Manipulation</configKey>
+	</rule>
+	<rule>
+		<key>ldap_injection</key><priority>BLOCKER</priority><configKey>LDAP Injection</configKey>
+	</rule>
+	<rule>
+		<key>access_control_ldap</key><priority>BLOCKER</priority><configKey>Access Control: LDAP</configKey>
+	</rule>
+	<rule>
+		<key>xpath_injection</key><priority>BLOCKER</priority><configKey>XPath Injection</configKey>
+	</rule>
+	<rule>
+		<key>xml_injection</key><priority>BLOCKER</priority><configKey>XML Injection</configKey>
+	</rule>
+	<rule>
+		<key>sql_injection_linq</key><priority>BLOCKER</priority><configKey>SQL Injection: LINQ</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_regular_expressions_denial_of_service</key><priority>BLOCKER</priority><configKey>Code Correctness: Regular Expressions Denial of Service</configKey>
+	</rule>
+	<rule>
+		<key>dynamic_code_evaluation_script_injection</key><priority>BLOCKER</priority><configKey>Dynamic Code Evaluation: Script Injection</configKey>
+	</rule>
+	<rule>
+		<key>wcf_misconfiguration_metadata</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Metadata</configKey>
+	</rule>
+	<rule>
+		<key>external_content_content_delivery_network</key><priority>BLOCKER</priority><configKey>External Content: Content Delivery Network</configKey>
+	</rule>
+	<rule>
+		<key>asp_net_bad_practices_unminified_code</key><priority>BLOCKER</priority><configKey>ASP.NET Bad Practices: Unminified Code</configKey>
+	</rule>
+	<rule>
+		<key>obsolete</key><priority>MAJOR</priority><configKey>Obsolete</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_overly_broad_path</key><priority>BLOCKER</priority><configKey>Cookie Security: Overly Broad Path</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_overly_broad_domain</key><priority>BLOCKER</priority><configKey>Cookie Security: Overly Broad Domain</configKey>
+	</rule>
+	<rule>
+		<key>weak_encryption</key><priority>BLOCKER</priority><configKey>Weak Encryption</configKey>
+	</rule>
+	<rule>
+		<key>weak_encryption_insufficient_key_size</key><priority>BLOCKER</priority><configKey>Weak Encryption: Insufficient Key Size</configKey>
+	</rule>
+	<rule>
+		<key>weak_encryption_inadequate_rsa_padding</key><priority>MAJOR</priority><configKey>Weak Encryption: Inadequate RSA Padding</configKey>
+	</rule>
+	<rule>
+		<key>value_shadowing</key><priority>BLOCKER</priority><configKey>Value Shadowing</configKey>
+	</rule>
+	<rule>
+		<key>value_shadowing_server_variable</key><priority>BLOCKER</priority><configKey>Value Shadowing: Server Variable</configKey>
+	</rule>
+	<rule>
+		<key>asp_net_misconfiguration_persistent_authentication</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Persistent Authentication</configKey>
+	</rule>
+	<rule>
+		<key>password_management_hardcoded_password</key><priority>BLOCKER</priority><configKey>Password Management: Hardcoded Password</configKey>
+	</rule>
+	<rule>
+		<key>password_management_null_password</key><priority>MAJOR</priority><configKey>Password Management: Null Password</configKey>
+	</rule>
+	<rule>
+		<key>password_management_empty_password</key><priority>BLOCKER</priority><configKey>Password Management: Empty Password</configKey>
+	</rule>
+	<rule>
+		<key>insecure_randomness</key><priority>BLOCKER</priority><configKey>Insecure Randomness</configKey>
+	</rule>
+	<rule>
+		<key>often_misused_authentication</key><priority>BLOCKER</priority><configKey>Often Misused: Authentication</configKey>
+	</rule>
+	<rule>
+		<key>unchecked_return_value</key><priority>MAJOR</priority><configKey>Unchecked Return Value</configKey>
+	</rule>
+	<rule>
+		<key>access_control_anonymous_ldap_bind</key><priority>MAJOR</priority><configKey>Access Control: Anonymous LDAP Bind</configKey>
+	</rule>
+	<rule>
+		<key>missing_xml_validation</key><priority>MAJOR</priority><configKey>Missing XML Validation</configKey>
+	</rule>
+	<rule>
+		<key>unreleased_resource_synchronization</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Synchronization</configKey>
+	</rule>
+	<rule>
+		<key>unreleased_resource_unmanaged_object</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Unmanaged Object</configKey>
+	</rule>
+	<rule>
+		<key>null_dereference</key><priority>BLOCKER</priority><configKey>Null Dereference</configKey>
+	</rule>
+	<rule>
+		<key>missing_check_against_null</key><priority>MAJOR</priority><configKey>Missing Check against Null</configKey>
+	</rule>
+	<rule>
+		<key>unreleased_resource_streams</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Streams</configKey>
+	</rule>
+	<rule>
+		<key>unreleased_resource_database</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Database</configKey>
+	</rule>
+	<rule>
+		<key>unreleased_resource</key><priority>BLOCKER</priority><configKey>Unreleased Resource</configKey>
+	</rule>
+	<rule>
+		<key>asp_net_bad_practices_use_of_impersonation_context</key><priority>MAJOR</priority><configKey>ASP.NET Bad Practices: Use of Impersonation Context</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_cookie_not_sent_over_ssl</key><priority>MAJOR</priority><configKey>Cookie Security: Cookie not Sent Over SSL</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_httponly_not_set</key><priority>MAJOR</priority><configKey>Cookie Security: HTTPOnly not Set</configKey>
+	</rule>
+	<rule>
+		<key>asp_net_bad_practices_leftover_debug_code</key><priority>MAJOR</priority><configKey>ASP.NET Bad Practices: Leftover Debug Code</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_tostring_on_array</key><priority>MAJOR</priority><configKey>Code Correctness: ToString on Array</configKey>
+	</rule>
+	<rule>
+		<key>password_management_password_in_comment</key><priority>MAJOR</priority><configKey>Password Management: Password in Comment</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_class_implements_icloneable</key><priority>MAJOR</priority><configKey>Code Correctness: Class Implements ICloneable</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_call_to_gc_collect</key><priority>MAJOR</priority><configKey>Code Correctness: Call to GC.Collect()</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_misspelled_method_name</key><priority>MAJOR</priority><configKey>Code Correctness: Misspelled Method Name</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_missing_serializable_attribute</key><priority>MAJOR</priority><configKey>Code Correctness: Missing [Serializable] Attribute</configKey>
+	</rule>
+	<rule>
+		<key>dead_code_unused_field</key><priority>MAJOR</priority><configKey>Dead Code: Unused Field</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_null_argument_to_equals</key><priority>MAJOR</priority><configKey>Code Correctness: null Argument to Equals()</configKey>
+	</rule>
+	<rule>
+		<key>dead_code_unused_method</key><priority>MAJOR</priority><configKey>Dead Code: Unused Method</configKey>
+	</rule>
+	<rule>
+		<key>asp_net_bad_practices_non_serializable_object_stored_in_session</key><priority>BLOCKER</priority><configKey>ASP.NET Bad Practices: Non-Serializable Object Stored in Session</configKey>
+	</rule>
+	<rule>
+		<key>object_model_violation_just_one_of_equals_and_gethashcode_defined</key><priority>MAJOR</priority><configKey>Object Model Violation: Just One of Equals() and GetHashCode() Defined</configKey>
+	</rule>
+	<rule>
+		<key>poor_error_handling_empty_catch_block</key><priority>MAJOR</priority><configKey>Poor Error Handling: Empty Catch Block</configKey>
+	</rule>
+	<rule>
+		<key>poor_error_handling_overly_broad_catch</key><priority>MAJOR</priority><configKey>Poor Error Handling: Overly Broad Catch</configKey>
+	</rule>
+	<rule>
+		<key>poor_error_handling_program_catches_nullreferenceexception</key><priority>MAJOR</priority><configKey>Poor Error Handling: Program Catches NullReferenceException</configKey>
+	</rule>
+	<rule>
+		<key>poor_logging_practice_use_of_a_system_output_stream</key><priority>MAJOR</priority><configKey>Poor Logging Practice: Use of a System Output Stream</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_persistent_cookie</key><priority>MAJOR</priority><configKey>Cookie Security: Persistent Cookie</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_class_does_not_implement_equals</key><priority>MAJOR</priority><configKey>Code Correctness: Class Does Not Implement Equals</configKey>
+	</rule>
+	<rule>
+		<key>asp_net_mvc_bad_practices_request_parameters_bound_into_persisted_objects</key><priority>BLOCKER</priority><configKey>ASP.NET MVC Bad Practices: Request Parameters Bound into Persisted Objects</configKey>
+	</rule>
+	<rule>
+		<key>privacy_violation_heap_inspection</key><priority>BLOCKER</priority><configKey>Privacy Violation: Heap Inspection</configKey>
 	</rule>
 	<rule>
 		<key>unsafe_native_invoke</key><priority>BLOCKER</priority><configKey>Unsafe Native Invoke</configKey>

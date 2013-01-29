@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Ignoring an exception can cause the program to overlook unexpected states and conditions.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Just about every serious attack on a software system begins with the violation of a programmer's assumptions. After the attack, the programmer's assumptions seem flimsy and poorly founded, but before an attack many programmers would defend their assumptions well past the end of their lunch break.<br /><br />Two dubious assumptions that are easy to spot in code are "this method call can never fail" and "it doesn't matter if this call fails". When a programmer ignores an exception, they implicitly state that they are operating under one of these assumptions.<br /><br /><b>Example 1:</b> The following code excerpt ignores a rarely-thrown exception from <code>doExchange()</code>.<br /><br /><pre><br />try {<br />  doExchange();<br />}<br />catch (RareException e) {<br />  // this can never happen<br />}<br /></pre><br /><br />If a <code>RareException</code> were to ever be thrown, the program would continue to execute as though nothing unusual had occurred. The program records no evidence indicating the special situation, potentially frustrating any later attempt to explain the program's behavior.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

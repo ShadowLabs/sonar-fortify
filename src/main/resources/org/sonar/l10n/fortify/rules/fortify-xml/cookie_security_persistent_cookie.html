@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Storing sensitive data in a persistent cookie can lead to a breach of confidentiality or account compromise.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Most Web programming environments default to creating non-persistent cookies. These cookies reside only in browser memory (they are not written to disk) and are lost when the browser is closed. Programmers can specify that cookies be persisted across browser sessions until some future date. Such cookies are written to disk and survive across browser sessions and computer restarts.<br /><br />If private information is stored in persistent cookies, attackers have a larger time window in which to steal this data - especially since persistent cookies are often set to expire in the distant future. Persistent cookies are often used to profile users as they interact with a site. Depending on what is done with this tracking data, it is possible to use persistent cookies to violate users' privacy.<br /><p><br />In this case <code>setMaxAge()</code> is called in <Replace key="PrimaryLocation.file"/> at line <Replace key="PrimaryLocation.line"/> with a non-zero parameter.<br /></p><br /><br /><b>Example:</b> The following code sets a cookie to expire in 10 years.<br /><pre><br />	Cookie cookie = new Cookie("emailCookie", email);<br />	cookie.setMaxAge(60*60*24*365*10);<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

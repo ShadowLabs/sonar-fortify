@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The Castor query does not explicitly define a query mode.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  By default Castor executes queries in shared mode. Since shared mode allows both read and write access, it is unclear what kind of operation the query is intended for. If the object is going to be used in a read-only context, shared access adds unnecessary performance overhead.<br /><br /><b>Example 1:</b> The following example does not specify a query mode.<br /><pre><br />results = query.execute();    //missing query mode<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

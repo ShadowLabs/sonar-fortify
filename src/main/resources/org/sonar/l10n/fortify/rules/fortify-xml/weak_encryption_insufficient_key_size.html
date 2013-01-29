@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  An otherwise strong encryption algorithm is vulnerable to brute force attack when a small key size is used.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Current cryptography guidelines suggest that key lengths of at least 1024 bits should be used with the RSA algorithm. However, increased computing power and advances in factoring techniques[1] are challenging the security of 1024 bit RSA encryption.<br /><br /><b>Example 1:</b> The following code generates a 512 bit RSA encryption key.<br /><pre><br />  public static KeyPair getRSAKey() throws NoSuchAlgorithmException {<br />    KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");<br />    keyGen.initialize(512);<br /><br />    KeyPair key = keyGen.generateKeyPair();<br />    return key;<br />  }<br /></pre><br /><br />When it comes to symmetric encryption, the key lengths should be at least 128 bits.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

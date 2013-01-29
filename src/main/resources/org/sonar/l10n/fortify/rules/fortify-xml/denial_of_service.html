@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  An attacker could cause the program to crash or otherwise become unavailable to legitimate users.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Attackers may be able to deny service to legitimate users by flooding the application with requests, but flooding attacks can often be defused at the network layer. More problematic are bugs that allow an attacker to overload the application using a small number of requests. Such bugs allow the attacker to specify the quantity of system resources their requests will consume or the duration for which they will use them.<br /><br /><b>Example 1:</b> The following code allows a user to specify the amount of time for which a thread will sleep. By specifying a large number, an attacker can tie up the thread indefinitely. With a small number of requests, the attacker can deplete the application's thread pool.<br /><br /><pre><br />  int usrSleepTime = Integer.parseInt(usrInput);<br />  Thread.sleep(usrSleepTime);<br /></pre><br /><br /><b>Example 2:</b> The following code reads a String from a zip file. Because it uses the <code>readLine()</code> method, it will read an unbounded amount of input. An attacker can take advantage of this code to cause an <code>OutOfMemoryException</code> or to consume a large amount of memory so that the program spends more time performing garbage collection or runs out of memory during some subsequent operation.<br /><br /><pre><br />  InputStream zipInput = zipFile.getInputStream(zipEntry);<br />  Reader zipReader = new InputStreamReader(zipInput);<br />  BufferedReader br = new BufferedReader(zipReader);<br />  String line = br.readLine();<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

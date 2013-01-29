@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Without proper access control, executing a SQLite statement that contains a user-controlled primary key can allow an attacker to view unauthorized records.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Access control errors occur in SQLite queries when:<br /><br />  1.	Data enters a program from an untrusted source.<br />  <p><br />  In this case the data enters at <Replace key="SourceFunction" link="SourceLocation"/> in <Replace key="SourceLocation.file"/> at line <Replace key="SourceLocation.line"/>.<br />  </p><br /><br />  2.	The data is used to specify the value of a primary key in a SQLite query.<br />  <p><br />  In this case the data is used by <Replace key="SinkFunction" link="SinkLocation"/> in <Replace key="SinkLocation.file"/> at line <Replace key="SinkLocation.line"/>.<br />  </p><br /><br />  <b>Example 1:</b> The following code uses a parametrized statement, which escapes metacharacters and prevents query string injection vulnerabilities, to construct and execute a SQLite query that searches for an invoice that matches a user-specified identifier.<br /><br />  <pre><br />  ...<br />  id = this.getIntent().getExtras().getInt("id");<br />  cursor = db.query(Uri.parse(invoices), columns, "id = ? ", {id}, null, null, null);<br />  ...<br />  </pre><br /><br />  The problem is that the developer has failed to consider all of the possible values of <code>id</code>. Although the query generates a list of invoice identifiers that belong to the current user, an attacker can bypass this behavior to request any desired invoice. Because the code in this example does not ensure that the user has permission to access the requested invoice, it will display any invoice, even if it does not belong to the current user.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

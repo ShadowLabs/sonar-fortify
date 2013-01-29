@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  The program sends a broadcast without specifying the receiver permission.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Broadcasts sent without the receiver permission are accessible to any receiver. If these broadcasts contain sensitive data or reach a malicious receiver, the application may be compromised.<br /><br /><b>Example 1:</b> The following code sends a broadcast without specifying the receiver permission.<br /><pre><br />...<br />context.sendBroadcast(intent);<br />...<br /></pre>
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

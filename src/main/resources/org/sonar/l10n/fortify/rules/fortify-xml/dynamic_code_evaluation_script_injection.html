@@ -1,0 +1,12 @@
+<h2>ABSTRACT</h2>
+<p>
+  Interpreting user-controlled instructions at run-time can allow attackers to execute malicious code.
+</p>
+<h2>EXPLANATION</h2>
+<p>
+  Many modern programming languages allow dynamic interpretation of source instructions. This capability allows programmers to perform dynamic instructions based on input received from the user. Code injection vulnerabilities occur when the programmer incorrectly assumes that instructions supplied directly from the user will perform only innocent operations, such as performing simple calculations on active user objects or otherwise modifying the user's state. However, without proper validation, a user might specify operations the programmer does not intend.<br /><IfDef var="ConditionalDescriptions"><br /> <p><br />  <ConditionalText condition="taint:number"><br />Even though the data in this case is a number, it is unvalidated and thus still considered malicious, hence the vulnerability is still reported but with reduced priority values.<br />  </ConditionalText><br /> </p><br /></IfDef><br /><br /> <br /><b>Example:</b> In this classic code injection example, the application implements a basic calculator that allows the user to specify commands for execution. <br /><br /><pre><br />...<br />	ScriptEngineManager scriptEngineManager = new ScriptEngineManager();<br />	ScriptEngine scriptEngine = scriptEngineManager.getEngineByExtension("js");<br />	userOps = request.getParameter("operation");<br />	Object result = scriptEngine.eval(userOps);<br />...<br /></pre><br /><br />The program behaves correctly when the <code>operation</code> parameter is a benign value, such as &quot;8 + 7 * 2&quot;, in which case the <code>result</code> variable is assigned a value of 22. However, if an attacker specifies languages operations that are both valid and malicious, those operations would be executed with the full privilege of the parent process. Such attacks are even more dangerous when the underlying language provides access to system resources or allows execution of system commands. For example, Javascript allows invocation of Java objects; if an attacker were to specify &quot; java.System.RunTime.exec(&quot;shutdown -h now&quot;)&quot; as the value of  <code>operation</code>, a shutdown command would be executed on the host system.
+</p>
+<h2>REFERENCES</h2>
+<p>
+  
+</p>

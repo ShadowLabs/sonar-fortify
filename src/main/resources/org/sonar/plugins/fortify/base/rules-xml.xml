@@ -1,10 +1,613 @@
 <rules>
 	<!-- see names and descriptions in org/sonar/l10n/ -->
 	<rule>
-		<key>header_checking_disabled</key><priority>MAJOR</priority><configKey>Header Checking Disabled</configKey>
+		<key>pci_privacy_violation</key><priority>BLOCKER</priority><configKey>PCI Privacy Violation</configKey>
+	</rule>
+	<rule>
+		<key>trust_boundary_violation</key><priority>MAJOR</priority><configKey>Trust Boundary Violation</configKey>
+	</rule>
+	<rule>
+		<key>system_information_leak</key><priority>MAJOR</priority><configKey>System Information Leak</configKey>
+	</rule>
+	<rule>
+		<key>privacy_violation</key><priority>BLOCKER</priority><configKey>Privacy Violation</configKey>
+	</rule>
+	<rule>
+		<key>header_manipulation</key><priority>BLOCKER</priority><configKey>Header Manipulation</configKey>
+	</rule>
+	<rule>
+		<key>access_control_database</key><priority>BLOCKER</priority><configKey>Access Control: Database</configKey>
+	</rule>
+	<rule>
+		<key>sql_injection</key><priority>BLOCKER</priority><configKey>SQL Injection</configKey>
+	</rule>
+	<rule>
+		<key>password_management</key><priority>MAJOR</priority><configKey>Password Management</configKey>
+	</rule>
+	<rule>
+		<key>password_management_weak_cryptography</key><priority>MAJOR</priority><configKey>Password Management: Weak Cryptography</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_scripting_reflected</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Reflected</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_scripting_persistent</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: Persistent</configKey>
+	</rule>
+	<rule>
+		<key>password_management_null_password</key><priority>MAJOR</priority><configKey>Password Management: Null Password</configKey>
+	</rule>
+	<rule>
+		<key>password_management_empty_password</key><priority>BLOCKER</priority><configKey>Password Management: Empty Password</configKey>
+	</rule>
+	<rule>
+		<key>password_management_hardcoded_password</key><priority>BLOCKER</priority><configKey>Password Management: Hardcoded Password</configKey>
+	</rule>
+	<rule>
+		<key>adf_faces_bad_practices_unsecure_attribute</key><priority>MAJOR</priority><configKey>ADF Faces Bad Practices: unsecure Attribute</configKey>
+	</rule>
+	<rule>
+		<key>password_management_password_in_comment</key><priority>MAJOR</priority><configKey>Password Management: Password in Comment</configKey>
+	</rule>
+	<rule>
+		<key>race_condition_singleton_member_field</key><priority>BLOCKER</priority><configKey>Race Condition: Singleton Member Field</configKey>
+	</rule>
+	<rule>
+		<key>system_information_leak_html_comment_in_jsp</key><priority>MAJOR</priority><configKey>System Information Leak: HTML Comment in JSP</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_scripting_poor_validation</key><priority>MAJOR</priority><configKey>Cross-Site Scripting: Poor Validation</configKey>
+	</rule>
+	<rule>
+		<key>unsafe_reflection</key><priority>MAJOR</priority><configKey>Unsafe Reflection</configKey>
+	</rule>
+	<rule>
+		<key>path_manipulation</key><priority>BLOCKER</priority><configKey>Path Manipulation</configKey>
+	</rule>
+	<rule>
+		<key>xml_injection</key><priority>BLOCKER</priority><configKey>XML Injection</configKey>
+	</rule>
+	<rule>
+		<key>dynamic_code_evaluation_code_injection</key><priority>BLOCKER</priority><configKey>Dynamic Code Evaluation: Code Injection</configKey>
+	</rule>
+	<rule>
+		<key>resource_injection</key><priority>MAJOR</priority><configKey>Resource Injection</configKey>
+	</rule>
+	<rule>
+		<key>open_redirect</key><priority>BLOCKER</priority><configKey>Open Redirect</configKey>
+	</rule>
+	<rule>
+		<key>dangerous_file_inclusion</key><priority>BLOCKER</priority><configKey>Dangerous File Inclusion</configKey>
+	</rule>
+	<rule>
+		<key>setting_manipulation</key><priority>MAJOR</priority><configKey>Setting Manipulation</configKey>
+	</rule>
+	<rule>
+		<key>log_forging</key><priority>MAJOR</priority><configKey>Log Forging</configKey>
+	</rule>
+	<rule>
+		<key>portability_flaw_file_separator</key><priority>BLOCKER</priority><configKey>Portability Flaw: File Separator</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_missing_content_provider_permission</key><priority>BLOCKER</priority><configKey>Privilege Management: Missing Content Provider Permission</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_missing_intent_permission</key><priority>BLOCKER</priority><configKey>Privilege Management: Missing Intent Permission</configKey>
+	</rule>
+	<rule>
+		<key>query_string_injection_android_provider</key><priority>BLOCKER</priority><configKey>Query String Injection: Android Provider</configKey>
+	</rule>
+	<rule>
+		<key>access_control_android_provider</key><priority>BLOCKER</priority><configKey>Access Control: Android Provider</configKey>
+	</rule>
+	<rule>
+		<key>header_manipulation_cookies</key><priority>BLOCKER</priority><configKey>Header Manipulation: Cookies</configKey>
+	</rule>
+	<rule>
+		<key>log_forging_debug</key><priority>MAJOR</priority><configKey>Log Forging (debug)</configKey>
+	</rule>
+	<rule>
+		<key>command_injection</key><priority>BLOCKER</priority><configKey>Command Injection</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_amazon_web_services_unchecked_permissions</key><priority>BLOCKER</priority><configKey>Privilege Management: Amazon Web Services Unchecked Permissions</configKey>
+	</rule>
+	<rule>
+		<key>denial_of_service</key><priority>MAJOR</priority><configKey>Denial of Service</configKey>
+	</rule>
+	<rule>
+		<key>access_control_amazon_web_services</key><priority>BLOCKER</priority><configKey>Access Control: Amazon Web Services</configKey>
+	</rule>
+	<rule>
+		<key>query_string_injection_amazon_web_services</key><priority>BLOCKER</priority><configKey>Query String Injection: Amazon Web Services</configKey>
+	</rule>
+	<rule>
+		<key>javascript_hijacking_ad_hoc_ajax</key><priority>MAJOR</priority><configKey>JavaScript Hijacking: Ad Hoc Ajax</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_scripting_dom</key><priority>BLOCKER</priority><configKey>Cross-Site Scripting: DOM</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_erroneous_class_compare</key><priority>MAJOR</priority><configKey>Code Correctness: Erroneous Class Compare</configKey>
 	</rule>
 	<rule>
 		<key>html5_overly_permissive_cors_policy</key><priority>MAJOR</priority><configKey>HTML5: Overly Permissive CORS Policy</configKey>
+	</rule>
+	<rule>
+		<key>process_control</key><priority>BLOCKER</priority><configKey>Process Control</configKey>
+	</rule>
+	<rule>
+		<key>unsafe_jni</key><priority>BLOCKER</priority><configKey>Unsafe JNI</configKey>
+	</rule>
+	<rule>
+		<key>sql_injection_hibernate</key><priority>BLOCKER</priority><configKey>SQL Injection: Hibernate</configKey>
+	</rule>
+	<rule>
+		<key>ldap_manipulation</key><priority>MAJOR</priority><configKey>LDAP Manipulation</configKey>
+	</rule>
+	<rule>
+		<key>ldap_injection</key><priority>BLOCKER</priority><configKey>LDAP Injection</configKey>
+	</rule>
+	<rule>
+		<key>access_control_ldap</key><priority>BLOCKER</priority><configKey>Access Control: LDAP</configKey>
+	</rule>
+	<rule>
+		<key>dynamic_code_evaluation_script_injection</key><priority>BLOCKER</priority><configKey>Dynamic Code Evaluation: Script Injection</configKey>
+	</rule>
+	<rule>
+		<key>dynamic_code_evaluation_code_manipulation</key><priority>BLOCKER</priority><configKey>Dynamic Code Evaluation: Code Manipulation</configKey>
+	</rule>
+	<rule>
+		<key>sql_injection_persistence</key><priority>BLOCKER</priority><configKey>SQL Injection: Persistence</configKey>
+	</rule>
+	<rule>
+		<key>xpath_injection</key><priority>BLOCKER</priority><configKey>XPath Injection</configKey>
+	</rule>
+	<rule>
+		<key>sql_injection_jdo</key><priority>BLOCKER</priority><configKey>SQL Injection: JDO</configKey>
+	</rule>
+	<rule>
+		<key>privacy_violation_heap_inspection</key><priority>BLOCKER</priority><configKey>Privacy Violation: Heap Inspection</configKey>
+	</rule>
+	<rule>
+		<key>denial_of_service_parse_double</key><priority>BLOCKER</priority><configKey>Denial of Service: Parse Double</configKey>
+	</rule>
+	<rule>
+		<key>file_disclosure_struts</key><priority>BLOCKER</priority><configKey>File Disclosure: Struts</configKey>
+	</rule>
+	<rule>
+		<key>file_disclosure_j2ee</key><priority>BLOCKER</priority><configKey>File Disclosure: J2EE</configKey>
+	</rule>
+	<rule>
+		<key>file_disclosure_spring</key><priority>BLOCKER</priority><configKey>File Disclosure: Spring</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_regular_expressions_denial_of_service</key><priority>BLOCKER</priority><configKey>Code Correctness: Regular Expressions Denial of Service</configKey>
+	</rule>
+	<rule>
+		<key>hadoop_job_manipulation</key><priority>BLOCKER</priority><configKey>Hadoop Job Manipulation</configKey>
+	</rule>
+	<rule>
+		<key>hadoop_cluster_manipulation</key><priority>BLOCKER</priority><configKey>Hadoop Cluster Manipulation</configKey>
+	</rule>
+	<rule>
+		<key>insecure_transport</key><priority>BLOCKER</priority><configKey>Insecure Transport</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_weak_authentication</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Weak Authentication</configKey>
+	</rule>
+	<rule>
+		<key>privacy_violation_android_internal_storage</key><priority>BLOCKER</priority><configKey>Privacy Violation: Android Internal Storage</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_android_messaging</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Messaging</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_android_location</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Location</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_android_telephony</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Telephony</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_missing_broadcaster_permission</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Missing Broadcaster Permission</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_missing_receiver_permission</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Missing Receiver Permission</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_sticky_broadcast</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Sticky Broadcast</configKey>
+	</rule>
+	<rule>
+		<key>insecure_storage_android_external_storage</key><priority>MAJOR</priority><configKey>Insecure Storage: Android External Storage</configKey>
+	</rule>
+	<rule>
+		<key>unchecked_return_value</key><priority>MAJOR</priority><configKey>Unchecked Return Value</configKey>
+	</rule>
+	<rule>
+		<key>obsolete</key><priority>MAJOR</priority><configKey>Obsolete</configKey>
+	</rule>
+	<rule>
+		<key>hidden_field</key><priority>MAJOR</priority><configKey>Hidden Field</configKey>
+	</rule>
+	<rule>
+		<key>process_control_invoker_servlet</key><priority>BLOCKER</priority><configKey>Process Control: Invoker Servlet</configKey>
+	</rule>
+	<rule>
+		<key>cross_site_request_forgery</key><priority>MAJOR</priority><configKey>Cross-Site Request Forgery</configKey>
+	</rule>
+	<rule>
+		<key>javascript_hijacking_vulnerable_framework</key><priority>MAJOR</priority><configKey>JavaScript Hijacking: Vulnerable Framework</configKey>
+	</rule>
+	<rule>
+		<key>insecure_randomness</key><priority>BLOCKER</priority><configKey>Insecure Randomness</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_overly_broad_domain</key><priority>BLOCKER</priority><configKey>Cookie Security: Overly Broad Domain</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_overly_broad_path</key><priority>BLOCKER</priority><configKey>Cookie Security: Overly Broad Path</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_cookie_not_sent_over_ssl</key><priority>MAJOR</priority><configKey>Cookie Security: Cookie not Sent Over SSL</configKey>
+	</rule>
+	<rule>
+		<key>cookie_security_persistent_cookie</key><priority>MAJOR</priority><configKey>Cookie Security: Persistent Cookie</configKey>
+	</rule>
+	<rule>
+		<key>weak_cryptographic_hash</key><priority>MAJOR</priority><configKey>Weak Cryptographic Hash</configKey>
+	</rule>
+	<rule>
+		<key>weak_encryption</key><priority>BLOCKER</priority><configKey>Weak Encryption</configKey>
+	</rule>
+	<rule>
+		<key>often_misused_authentication</key><priority>BLOCKER</priority><configKey>Often Misused: Authentication</configKey>
+	</rule>
+	<rule>
+		<key>access_control_anonymous_ldap_bind</key><priority>MAJOR</priority><configKey>Access Control: Anonymous LDAP Bind</configKey>
+	</rule>
+	<rule>
+		<key>password_management_password_in_redirect</key><priority>MAJOR</priority><configKey>Password Management: Password in Redirect</configKey>
+	</rule>
+	<rule>
+		<key>j2ee_bad_practices_system_exit</key><priority>MAJOR</priority><configKey>J2EE Bad Practices: System.exit</configKey>
+	</rule>
+	<rule>
+		<key>j2ee_bad_practices_sockets</key><priority>MAJOR</priority><configKey>J2EE Bad Practices: Sockets</configKey>
+	</rule>
+	<rule>
+		<key>j2ee_bad_practices_getconnection</key><priority>MAJOR</priority><configKey>J2EE Bad Practices: getConnection()</configKey>
+	</rule>
+	<rule>
+		<key>j2ee_bad_practices_threads</key><priority>MAJOR</priority><configKey>J2EE Bad Practices: Threads</configKey>
+	</rule>
+	<rule>
+		<key>often_misused_file_upload</key><priority>MAJOR</priority><configKey>Often Misused: File Upload</configKey>
+	</rule>
+	<rule>
+		<key>axis_2_misconfiguration_insecure_message_security</key><priority>MAJOR</priority><configKey>Axis 2 Misconfiguration: Insecure Message Security</configKey>
+	</rule>
+	<rule>
+		<key>obsolete_deprecated_by_esapi</key><priority>MAJOR</priority><configKey>Obsolete: Deprecated by ESAPI</configKey>
+	</rule>
+	<rule>
+		<key>often_misused_encoding</key><priority>MAJOR</priority><configKey>Often Misused: Encoding</configKey>
+	</rule>
+	<rule>
+		<key>weak_cryptographic_hash_hardcoded_salt</key><priority>MAJOR</priority><configKey>Weak Cryptographic Hash: Hardcoded Salt</configKey>
+	</rule>
+	<rule>
+		<key>castor_bad_practices_unspecified_query_mode</key><priority>MAJOR</priority><configKey>Castor Bad Practices: Unspecified Query Mode</configKey>
+	</rule>
+	<rule>
+		<key>weak_encryption_inadequate_rsa_padding</key><priority>MAJOR</priority><configKey>Weak Encryption: Inadequate RSA Padding</configKey>
+	</rule>
+	<rule>
+		<key>weak_encryption_insufficient_key_size</key><priority>BLOCKER</priority><configKey>Weak Encryption: Insufficient Key Size</configKey>
+	</rule>
+	<rule>
+		<key>often_misused_boolean_getboolean</key><priority>BLOCKER</priority><configKey>Often Misused: Boolean.getBoolean()</configKey>
+	</rule>
+	<rule>
+		<key>missing_check_for_null_parameter</key><priority>MAJOR</priority><configKey>Missing Check for Null Parameter</configKey>
+	</rule>
+	<rule>
+		<key>session_fixation</key><priority>BLOCKER</priority><configKey>Session Fixation</configKey>
+	</rule>
+	<rule>
+		<key>null_dereference</key><priority>BLOCKER</priority><configKey>Null Dereference</configKey>
+	</rule>
+	<rule>
+		<key>missing_check_against_null</key><priority>MAJOR</priority><configKey>Missing Check against Null</configKey>
+	</rule>
+	<rule>
+		<key>missing_xml_validation</key><priority>MAJOR</priority><configKey>Missing XML Validation</configKey>
+	</rule>
+	<rule>
+		<key>unreleased_resource_streams</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Streams</configKey>
+	</rule>
+	<rule>
+		<key>unreleased_resource_database</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Database</configKey>
+	</rule>
+	<rule>
+		<key>missing_xml_validation_untyped_response</key><priority>MAJOR</priority><configKey>Missing XML Validation: Untyped Response</configKey>
+	</rule>
+	<rule>
+		<key>unreleased_resource_synchronization</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Synchronization</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_call_to_sleep_in_lock</key><priority>MAJOR</priority><configKey>Code Correctness: Call to sleep() in Lock</configKey>
+	</rule>
+	<rule>
+		<key>unreleased_resource_files</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Files</configKey>
+	</rule>
+	<rule>
+		<key>unreleased_resource_sockets</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Sockets</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_multiple_stream_commits</key><priority>MAJOR</priority><configKey>Code Correctness: Multiple Stream Commits</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_use_of_released_media_resource</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Use of Released Media Resource</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_use_of_released_camera_resource</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Use of Released Camera Resource</configKey>
+	</rule>
+	<rule>
+		<key>android_bad_practices_use_of_released_sqlite_resource</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Use of Released SQLite Resource</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_negative_content_length</key><priority>BLOCKER</priority><configKey>Code Correctness: Negative Content-Length</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_missing_api_permission</key><priority>BLOCKER</priority><configKey>Privilege Management: Missing API Permission</configKey>
+	</rule>
+	<rule>
+		<key>unreleased_resource_android_media</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Android Media</configKey>
+	</rule>
+	<rule>
+		<key>unreleased_resource_android_camera</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Android Camera</configKey>
+	</rule>
+	<rule>
+		<key>unreleased_resource_android_sqlite_database</key><priority>BLOCKER</priority><configKey>Unreleased Resource: Android SQLite Database</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_tostring_on_array</key><priority>MAJOR</priority><configKey>Code Correctness: toString on Array</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_class_does_not_implement_equals</key><priority>MAJOR</priority><configKey>Code Correctness: Class Does Not Implement equals</configKey>
+	</rule>
+	<rule>
+		<key>unsafe_mobile_code_database_access</key><priority>MAJOR</priority><configKey>Unsafe Mobile Code: Database Access</configKey>
+	</rule>
+	<rule>
+		<key>poor_error_handling_unhandled_ssl_exception</key><priority>MAJOR</priority><configKey>Poor Error Handling: Unhandled SSL Exception</configKey>
+	</rule>
+	<rule>
+		<key>race_condition_format_flaw</key><priority>MAJOR</priority><configKey>Race Condition: Format Flaw</configKey>
+	</rule>
+	<rule>
+		<key>struts_form_field_without_validator</key><priority>MAJOR</priority><configKey>Struts: Form Field Without Validator</configKey>
+	</rule>
+	<rule>
+		<key>struts_2_unvalidated_action</key><priority>MAJOR</priority><configKey>Struts 2: Unvalidated Action</configKey>
+	</rule>
+	<rule>
+		<key>struts_2_duplicate_validation_files</key><priority>MAJOR</priority><configKey>Struts 2: Duplicate Validation Files</configKey>
+	</rule>
+	<rule>
+		<key>struts_2_action_field_without_validator</key><priority>MAJOR</priority><configKey>Struts 2: Action Field Without Validator</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_call_to_thread_run</key><priority>MAJOR</priority><configKey>Code Correctness: Call to Thread.run()</configKey>
+	</rule>
+	<rule>
+		<key>j2ee_bad_practices_non_serializable_object_stored_in_session</key><priority>BLOCKER</priority><configKey>J2EE Bad Practices: Non-Serializable Object Stored in Session</configKey>
+	</rule>
+	<rule>
+		<key>system_information_leak_incomplete_servlet_error_handling</key><priority>MAJOR</priority><configKey>System Information Leak: Incomplete Servlet Error Handling</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_call_to_system_gc</key><priority>MAJOR</priority><configKey>Code Correctness: Call to System.gc()</configKey>
+	</rule>
+	<rule>
+		<key>dead_code_unused_method</key><priority>MAJOR</priority><configKey>Dead Code: Unused Method</configKey>
+	</rule>
+	<rule>
+		<key>dead_code_unused_field</key><priority>MAJOR</priority><configKey>Dead Code: Unused Field</configKey>
+	</rule>
+	<rule>
+		<key>dead_code_expression_is_always_false</key><priority>MAJOR</priority><configKey>Dead Code: Expression is Always false</configKey>
+	</rule>
+	<rule>
+		<key>dead_code_expression_is_always_true</key><priority>MAJOR</priority><configKey>Dead Code: Expression is Always true</configKey>
+	</rule>
+	<rule>
+		<key>poor_error_handling_empty_catch_block</key><priority>MAJOR</priority><configKey>Poor Error Handling: Empty Catch Block</configKey>
+	</rule>
+	<rule>
+		<key>poor_error_handling_overly_broad_catch</key><priority>MAJOR</priority><configKey>Poor Error Handling: Overly Broad Catch</configKey>
+	</rule>
+	<rule>
+		<key>poor_error_handling_overly_broad_throws</key><priority>MAJOR</priority><configKey>Poor Error Handling: Overly Broad Throws</configKey>
+	</rule>
+	<rule>
+		<key>poor_logging_practice_use_of_a_system_output_stream</key><priority>MAJOR</priority><configKey>Poor Logging Practice: Use of a System Output Stream</configKey>
+	</rule>
+	<rule>
+		<key>poor_style_confusing_naming</key><priority>MAJOR</priority><configKey>Poor Style: Confusing Naming</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_double_checked_locking</key><priority>BLOCKER</priority><configKey>Code Correctness: Double-Checked Locking</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_erroneous_finalize_method</key><priority>MAJOR</priority><configKey>Code Correctness: Erroneous finalize() Method</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_misspelled_method_name</key><priority>MAJOR</priority><configKey>Code Correctness: Misspelled Method Name</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_null_argument_to_equals</key><priority>MAJOR</priority><configKey>Code Correctness: null Argument to equals()</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_class_does_not_implement_cloneable</key><priority>MAJOR</priority><configKey>Code Correctness: Class Does Not Implement Cloneable</configKey>
+	</rule>
+	<rule>
+		<key>j2ee_bad_practices_leftover_debug_code</key><priority>MAJOR</priority><configKey>J2EE Bad Practices: Leftover Debug Code</configKey>
+	</rule>
+	<rule>
+		<key>object_model_violation_erroneous_clone_method</key><priority>MAJOR</priority><configKey>Object Model Violation: Erroneous clone() Method</configKey>
+	</rule>
+	<rule>
+		<key>object_model_violation_just_one_of_equals_and_hashcode_defined</key><priority>MAJOR</priority><configKey>Object Model Violation: Just one of equals() and hashCode() Defined</configKey>
+	</rule>
+	<rule>
+		<key>object_model_violation_just_one_of_restorestate_and_savestate_defined</key><priority>MAJOR</priority><configKey>Object Model Violation: Just one of restoreState() and saveState() Defined</configKey>
+	</rule>
+	<rule>
+		<key>poor_error_handling_program_catches_nullpointerexception</key><priority>MAJOR</priority><configKey>Poor Error Handling: Program Catches NullPointerException</configKey>
+	</rule>
+	<rule>
+		<key>poor_error_handling_return_inside_finally</key><priority>BLOCKER</priority><configKey>Poor Error Handling: Return Inside Finally</configKey>
+	</rule>
+	<rule>
+		<key>poor_logging_practice_multiple_loggers</key><priority>MAJOR</priority><configKey>Poor Logging Practice: Multiple Loggers</configKey>
+	</rule>
+	<rule>
+		<key>poor_logging_practice_logger_not_declared_static_final</key><priority>MAJOR</priority><configKey>Poor Logging Practice: Logger Not Declared Static Final</configKey>
+	</rule>
+	<rule>
+		<key>poor_style_empty_synchronized_block</key><priority>MAJOR</priority><configKey>Poor Style: Empty Synchronized Block</configKey>
+	</rule>
+	<rule>
+		<key>poor_style_explicit_call_to_finalize</key><priority>MAJOR</priority><configKey>Poor Style: Explicit Call to finalize()</configKey>
+	</rule>
+	<rule>
+		<key>poor_style_identifier_contains_dollar_symbol</key><priority>MAJOR</priority><configKey>Poor Style: Identifier Contains Dollar Symbol ($)</configKey>
+	</rule>
+	<rule>
+		<key>ejb_bad_practices_use_of_synchronization_primitives</key><priority>MAJOR</priority><configKey>EJB Bad Practices: Use of Synchronization Primitives</configKey>
+	</rule>
+	<rule>
+		<key>ejb_bad_practices_use_of_awt_swing</key><priority>MAJOR</priority><configKey>EJB Bad Practices: Use of AWT/Swing</configKey>
+	</rule>
+	<rule>
+		<key>ejb_bad_practices_use_of_java_io</key><priority>MAJOR</priority><configKey>EJB Bad Practices: Use of java.io</configKey>
+	</rule>
+	<rule>
+		<key>ejb_bad_practices_use_of_sockets</key><priority>MAJOR</priority><configKey>EJB Bad Practices: Use of Sockets</configKey>
+	</rule>
+	<rule>
+		<key>ejb_bad_practices_use_of_class_loader</key><priority>MAJOR</priority><configKey>EJB Bad Practices: Use of Class Loader</configKey>
+	</rule>
+	<rule>
+		<key>race_condition_static_database_connection</key><priority>BLOCKER</priority><configKey>Race Condition: Static Database Connection</configKey>
+	</rule>
+	<rule>
+		<key>unsafe_mobile_code_unsafe_public_field</key><priority>MAJOR</priority><configKey>Unsafe Mobile Code: Unsafe Public Field</configKey>
+	</rule>
+	<rule>
+		<key>unsafe_mobile_code_unsafe_array_declaration</key><priority>MAJOR</priority><configKey>Unsafe Mobile Code: Unsafe Array Declaration</configKey>
+	</rule>
+	<rule>
+		<key>unsafe_mobile_code_inner_class</key><priority>MAJOR</priority><configKey>Unsafe Mobile Code: Inner Class</configKey>
+	</rule>
+	<rule>
+		<key>unsafe_mobile_code_public_finalize_method</key><priority>MAJOR</priority><configKey>Unsafe Mobile Code: Public finalize() Method</configKey>
+	</rule>
+	<rule>
+		<key>unsafe_mobile_code_access_violation</key><priority>MAJOR</priority><configKey>Unsafe Mobile Code: Access Violation</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_erroneous_string_compare</key><priority>MAJOR</priority><configKey>Code Correctness: Erroneous String Compare</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_non_synchronized_method_overrides_synchronized_method</key><priority>MAJOR</priority><configKey>Code Correctness: Non-Synchronized Method Overrides Synchronized Method</configKey>
+	</rule>
+	<rule>
+		<key>struts_erroneous_validate_method</key><priority>BLOCKER</priority><configKey>Struts: Erroneous validate() Method</configKey>
+	</rule>
+	<rule>
+		<key>poor_style_value_never_read</key><priority>MAJOR</priority><configKey>Poor Style: Value Never Read</configKey>
+	</rule>
+	<rule>
+		<key>poor_style_redundant_initialization</key><priority>MAJOR</priority><configKey>Poor Style: Redundant Initialization</configKey>
+	</rule>
+	<rule>
+		<key>password_management_weak_redundancy</key><priority>BLOCKER</priority><configKey>Password Management: Weak Redundancy</configKey>
+	</rule>
+	<rule>
+		<key>dangerous_type</key><priority>BLOCKER</priority><configKey>Dangerous Type</configKey>
+	</rule>
+	<rule>
+		<key>dangerous_method</key><priority>BLOCKER</priority><configKey>Dangerous Method</configKey>
+	</rule>
+	<rule>
+		<key>dangerous_field</key><priority>MAJOR</priority><configKey>Dangerous Field</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_erroneous_negative_value</key><priority>MAJOR</priority><configKey>Code Correctness: Erroneous Negative Value</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_erroneous_zero_value</key><priority>MAJOR</priority><configKey>Code Correctness: Erroneous Zero Value</configKey>
+	</rule>
+	<rule>
+		<key>immutable_classes_non_final_fields</key><priority>MAJOR</priority><configKey>Immutable Classes: Non-final Fields</configKey>
+	</rule>
+	<rule>
+		<key>immutable_classes_public_mutable_fields</key><priority>MAJOR</priority><configKey>Immutable Classes: Public Mutable Fields</configKey>
+	</rule>
+	<rule>
+		<key>immutable_classes_field_mutation</key><priority>MAJOR</priority><configKey>Immutable Classes: Field Mutation</configKey>
+	</rule>
+	<rule>
+		<key>missing_securitymanager_check_cloneable</key><priority>MAJOR</priority><configKey>Missing SecurityManager Check: Cloneable</configKey>
+	</rule>
+	<rule>
+		<key>missing_securitymanager_check_serializable</key><priority>MAJOR</priority><configKey>Missing SecurityManager Check: Serializable</configKey>
+	</rule>
+	<rule>
+		<key>privilege_management_overly_broad_access_specifier</key><priority>MAJOR</priority><configKey>Privilege Management: Overly Broad Access Specifier</configKey>
+	</rule>
+	<rule>
+		<key>castor_bad_practices_query_mode_not_read_only</key><priority>MAJOR</priority><configKey>Castor Bad Practices: Query Mode Not Read-Only</configKey>
+	</rule>
+	<rule>
+		<key>poor_error_handling_throw_inside_finally</key><priority>MAJOR</priority><configKey>Poor Error Handling: Throw Inside Finally</configKey>
+	</rule>
+	<rule>
+		<key>weak_securitymanager_check_overridable_method</key><priority>BLOCKER</priority><configKey>Weak SecurityManager Check: Overridable Method</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_incorrect_serialpersistentfields_modifier</key><priority>MAJOR</priority><configKey>Code Correctness: Incorrect serialPersistentFields Modifier</configKey>
+	</rule>
+	<rule>
+		<key>code_correctness_call_to_notify</key><priority>MAJOR</priority><configKey>Code Correctness: Call to notify()</configKey>
+	</rule>
+	<rule>
+		<key>poor_error_handling_swallowed_threaddeath</key><priority>MAJOR</priority><configKey>Poor Error Handling: Swallowed ThreadDeath</configKey>
+	</rule>
+	<rule>
+		<key>dead_code_empty_try_block</key><priority>MAJOR</priority><configKey>Dead Code: Empty Try Block</configKey>
+	</rule>
+	<rule>
+		<key>poor_style_non_final_public_static_field</key><priority>MAJOR</priority><configKey>Poor Style: Non-final Public Static Field</configKey>
+	</rule>
+	<rule>
+		<key>spring_mvc_bad_practices_request_parameters_bound_into_persisted_objects</key><priority>BLOCKER</priority><configKey>Spring MVC Bad Practices: Request Parameters Bound into Persisted Objects</configKey>
+	</rule>
+	<rule>
+		<key>insecure_storage_android_world_readable_or_writeable</key><priority>BLOCKER</priority><configKey>Insecure Storage: Android World Readable or Writeable</configKey>
+	</rule>
+	<rule>
+		<key>insecure_ssl_android_customized_implementation</key><priority>BLOCKER</priority><configKey>Insecure SSL: Android Customized Implementation</configKey>
+	</rule>
+	<rule>
+		<key>insecure_ssl_android_hostname_verification_disabled</key><priority>BLOCKER</priority><configKey>Insecure SSL: Android Hostname Verification Disabled</configKey>
+	</rule>
+	<rule>
+		<key>insecure_ssl_android_socket</key><priority>BLOCKER</priority><configKey>Insecure SSL: Android Socket</configKey>
+	</rule>
+	<rule>
+		<key>often_misused_android_permission_check</key><priority>BLOCKER</priority><configKey>Often Misused: Android Permission Check</configKey>
 	</rule>
 	<rule>
 		<key>flash_misconfiguration_overly_permissive_cross_domain_policy</key><priority>MAJOR</priority><configKey>Flash Misconfiguration: Overly Permissive Cross-Domain Policy</configKey>
@@ -34,9 +637,6 @@
 		<key>wcf_misconfiguration_unsafe_revocation_mode</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Unsafe Revocation Mode</configKey>
 	</rule>
 	<rule>
-		<key>weak_cryptographic_hash</key><priority>MAJOR</priority><configKey>Weak Cryptographic Hash</configKey>
-	</rule>
-	<rule>
 		<key>wcf_misconfiguration_msmq_anonymous_transport_client</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: MSMQ Anonymous Transport Client</configKey>
 	</rule>
 	<rule>
@@ -53,9 +653,6 @@
 	</rule>
 	<rule>
 		<key>privilege_management_unnecessary_permission</key><priority>BLOCKER</priority><configKey>Privilege Management: Unnecessary Permission</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_missing_intent_permission</key><priority>BLOCKER</priority><configKey>Privilege Management: Missing Intent Permission</configKey>
 	</rule>
 	<rule>
 		<key>android_bad_practices_provider_permission_defined</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Provider permission Defined</configKey>
@@ -76,19 +673,10 @@
 		<key>wcf_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>WCF Misconfiguration: Debug Information</configKey>
 	</rule>
 	<rule>
-		<key>privilege_management_android_messaging</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Messaging</configKey>
-	</rule>
-	<rule>
 		<key>privilege_management_android_disable</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Disable</configKey>
 	</rule>
 	<rule>
 		<key>privilege_management_android_data_storage</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Data Storage</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_android_location</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Location</configKey>
-	</rule>
-	<rule>
-		<key>privilege_management_android_telephony</key><priority>BLOCKER</priority><configKey>Privilege Management: Android Telephony</configKey>
 	</rule>
 	<rule>
 		<key>android_bad_practices_application_permission_defined</key><priority>BLOCKER</priority><configKey>Android Bad Practices: Application Permission Defined</configKey>
@@ -256,9 +844,6 @@
 		<key>build_misconfiguration_external_ant_dependency_repository</key><priority>MAJOR</priority><configKey>Build Misconfiguration: External Ant Dependency Repository</configKey>
 	</rule>
 	<rule>
-		<key>javascript_hijacking_vulnerable_framework</key><priority>MAJOR</priority><configKey>JavaScript Hijacking: Vulnerable Framework</configKey>
-	</rule>
-	<rule>
 		<key>j2ee_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>J2EE Misconfiguration: Debug Information</configKey>
 	</rule>
 	<rule>
@@ -383,9 +968,6 @@
 	</rule>
 	<rule>
 		<key>axis_2_service_requester_misconfiguration_unsigned_outbound_timestamp</key><priority>MAJOR</priority><configKey>Axis 2 Service Requester Misconfiguration: Unsigned Outbound Timestamp</configKey>
-	</rule>
-	<rule>
-		<key>axis_2_misconfiguration_insecure_message_security</key><priority>MAJOR</priority><configKey>Axis 2 Misconfiguration: Insecure Message Security</configKey>
 	</rule>
 	<rule>
 		<key>axis_2_misconfiguration_debug_information</key><priority>MAJOR</priority><configKey>Axis 2 Misconfiguration: Debug Information</configKey>
@@ -691,9 +1273,6 @@
 		<key>struts_validator_without_form_field</key><priority>MAJOR</priority><configKey>Struts: Validator Without Form Field</configKey>
 	</rule>
 	<rule>
-		<key>struts_form_field_without_validator</key><priority>MAJOR</priority><configKey>Struts: Form Field Without Validator</configKey>
-	</rule>
-	<rule>
 		<key>often_misused_spring_web_service</key><priority>BLOCKER</priority><configKey>Often Misused: Spring Web Service</configKey>
 	</rule>
 	<rule>
@@ -704,6 +1283,9 @@
 	</rule>
 	<rule>
 		<key>asp_net_misconfiguration_excessive_session_timeout</key><priority>MAJOR</priority><configKey>ASP.NET Misconfiguration: Excessive Session Timeout</configKey>
+	</rule>
+	<rule>
+		<key>header_checking_disabled</key><priority>MAJOR</priority><configKey>Header Checking Disabled</configKey>
 	</rule>
 	<rule>
 		<key>html5_form_validation_turned_off</key><priority>MAJOR</priority><configKey>HTML5: Form Validation Turned Off</configKey>
@@ -718,15 +1300,6 @@
 		<key>password_management_insecure_submission</key><priority>BLOCKER</priority><configKey>Password Management: Insecure Submission</configKey>
 	</rule>
 	<rule>
-		<key>cross_site_request_forgery</key><priority>MAJOR</priority><configKey>Cross-Site Request Forgery</configKey>
-	</rule>
-	<rule>
 		<key>hardcoded_domain_in_html</key><priority>MAJOR</priority><configKey>Hardcoded Domain in HTML</configKey>
-	</rule>
-	<rule>
-		<key>hidden_field</key><priority>MAJOR</priority><configKey>Hidden Field</configKey>
-	</rule>
-	<rule>
-		<key>often_misused_file_upload</key><priority>MAJOR</priority><configKey>Often Misused: File Upload</configKey>
 	</rule>
 </rules>
